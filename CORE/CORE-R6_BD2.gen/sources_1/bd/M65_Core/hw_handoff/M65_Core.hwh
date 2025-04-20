@@ -1,0 +1,544 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Mar 16 14:35:32 2025" VIVADOVERSION="2024.2.1">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a200t" NAME="M65_Core" PACKAGE="fbg484" SPEEDGRADE="-3"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" LEFT="15" NAME="cart_a_i" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="15" NAME="cart_a_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="cart_addr_oe_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="cart_ba_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="cart_ba_o" SIGIS="undef"/>
+    <PORT DIR="O" NAME="cart_ctrl_oe_o" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="7" NAME="cart_d_i" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="7" NAME="cart_d_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="cart_data_oe_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="cart_dma_i" SIGIS="undef"/>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="cart_dotclock_o" SIGIS="clk"/>
+    <PORT DIR="O" NAME="cart_en_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="cart_exrom_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="cart_exrom_o" SIGIS="undef"/>
+    <PORT DIR="O" NAME="cart_exrom_oe_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="cart_game_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="cart_game_o" SIGIS="undef"/>
+    <PORT DIR="O" NAME="cart_game_oe_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="cart_io1_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="cart_io1_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="cart_io2_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="cart_io2_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="cart_irq_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="cart_irq_o" SIGIS="undef"/>
+    <PORT DIR="O" NAME="cart_irq_oe_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="cart_nmi_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="cart_nmi_o" SIGIS="undef"/>
+    <PORT DIR="O" NAME="cart_nmi_oe_o" SIGIS="undef"/>
+    <PORT DIR="O" NAME="cart_phi2_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="cart_reset_i" POLARITY="ACTIVE_HIGH" SIGIS="rst"/>
+    <PORT DIR="O" NAME="cart_reset_o" POLARITY="ACTIVE_LOW" SIGIS="rst"/>
+    <PORT DIR="O" NAME="cart_reset_oe_o" POLARITY="ACTIVE_LOW" SIGIS="rst"/>
+    <PORT DIR="I" NAME="cart_romh_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="cart_romh_o" SIGIS="undef"/>
+    <PORT DIR="O" NAME="cart_romh_oe_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="cart_roml_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="cart_roml_o" SIGIS="undef"/>
+    <PORT DIR="O" NAME="cart_roml_oe_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="cart_rw_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="cart_rw_o" SIGIS="undef"/>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk_i" SIGIS="clk" SIGNAME="External_Ports_clk_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clk_0" PORT="sys_clk_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="hr_clk_i" SIGIS="clk"/>
+    <PORT DIR="O" LEFT="31" NAME="hr_core_address_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="7" NAME="hr_core_burstcount_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="1" NAME="hr_core_byteenable_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="hr_core_read_o" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="15" NAME="hr_core_readdata_i" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="hr_core_readdatavalid_i" SIGIS="undef"/>
+    <PORT DIR="I" NAME="hr_core_waitrequest_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="hr_core_write_o" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="15" NAME="hr_core_writedata_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="hr_high_i" SIGIS="undef"/>
+    <PORT DIR="I" NAME="hr_low_i" SIGIS="undef"/>
+    <PORT DIR="I" NAME="hr_rst_i" POLARITY="ACTIVE_HIGH" SIGIS="rst"/>
+    <PORT DIR="O" NAME="iec_atn_n_o" SIGIS="undef"/>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="iec_clk_en_o" SIGIS="clk"/>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="iec_clk_n_i" SIGIS="clk"/>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="iec_clk_n_o" SIGIS="clk"/>
+    <PORT DIR="O" NAME="iec_data_en_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="iec_data_n_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="iec_data_n_o" SIGIS="undef"/>
+    <PORT DIR="O" NAME="iec_reset_n_o" POLARITY="ACTIVE_LOW" SIGIS="rst"/>
+    <PORT DIR="O" NAME="iec_srq_en_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="iec_srq_n_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="iec_srq_n_o" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="15" NAME="main_audio_left_o" RIGHT="0" SIGIS="undef" SIGNAME="M65_Main_0_audio_left_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M65_Main_0" PORT="audio_left_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="main_audio_right_o" RIGHT="0" SIGIS="undef" SIGNAME="M65_Main_0_audio_right_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M65_Main_0" PORT="audio_right_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="main_clk_o" SIGIS="clk" SIGNAME="clk_0_main_clk_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clk_0" PORT="main_clk_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="23" NAME="main_drive_led_col_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="main_drive_led_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="main_joy_1_down_n_i" SIGIS="undef" SIGNAME="External_Ports_main_joy_1_down_n_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M65_Main_0" PORT="joy_1_down_n_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="main_joy_1_down_n_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="main_joy_1_fire_n_i" SIGIS="undef" SIGNAME="External_Ports_main_joy_1_fire_n_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M65_Main_0" PORT="joy_1_fire_n_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="main_joy_1_fire_n_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="main_joy_1_left_n_i" SIGIS="undef" SIGNAME="External_Ports_main_joy_1_left_n_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M65_Main_0" PORT="joy_1_left_n_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="main_joy_1_left_n_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="main_joy_1_right_n_i" SIGIS="undef" SIGNAME="External_Ports_main_joy_1_right_n_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M65_Main_0" PORT="joy_1_right_n_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="main_joy_1_right_n_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="main_joy_1_up_n_i" SIGIS="undef" SIGNAME="External_Ports_main_joy_1_up_n_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M65_Main_0" PORT="joy_1_up_n_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="main_joy_1_up_n_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="main_joy_2_down_n_i" SIGIS="undef" SIGNAME="External_Ports_main_joy_2_down_n_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M65_Main_0" PORT="joy_2_down_n_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="main_joy_2_down_n_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="main_joy_2_fire_n_i" SIGIS="undef" SIGNAME="External_Ports_main_joy_2_fire_n_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M65_Main_0" PORT="joy_2_fire_n_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="main_joy_2_fire_n_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="main_joy_2_left_n_i" SIGIS="undef" SIGNAME="External_Ports_main_joy_2_left_n_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M65_Main_0" PORT="joy_2_left_n_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="main_joy_2_left_n_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="main_joy_2_right_n_i" SIGIS="undef" SIGNAME="External_Ports_main_joy_2_right_n_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M65_Main_0" PORT="joy_2_right_n_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="main_joy_2_right_n_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="main_joy_2_up_n_i" SIGIS="undef" SIGNAME="External_Ports_main_joy_2_up_n_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M65_Main_0" PORT="joy_2_up_n_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="main_joy_2_up_n_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="main_kb_key_num_i" SIGIS="undef" SIGNAME="External_Ports_main_kb_key_num_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M65_Main_0" PORT="kb_key_num_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="main_kb_key_pressed_n_i" SIGIS="undef" SIGNAME="External_Ports_main_kb_key_pressed_n_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M65_Main_0" PORT="kb_key_pressed_n_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="255" NAME="main_osm_control_i" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="main_pause_core_i" SIGIS="undef" SIGNAME="External_Ports_main_pause_core_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M65_Main_0" PORT="pause_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="main_pot1_x_i" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_main_pot1_x_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M65_Main_0" PORT="pot1_x_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="main_pot1_y_i" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_main_pot1_y_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M65_Main_0" PORT="pot1_y_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="main_pot2_x_i" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_main_pot2_x_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M65_Main_0" PORT="pot2_x_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="main_pot2_y_i" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_main_pot2_y_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M65_Main_0" PORT="pot2_y_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="23" NAME="main_power_led_col_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="main_power_led_o" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="255" NAME="main_qnice_gp_reg_i" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="main_reset_core_i" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_main_reset_core_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M65_Main_0" PORT="reset_soft_i"/>
+        <CONNECTION INSTANCE="M65_vdrives_0" PORT="reset_core_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="main_reset_m2m_i" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_main_reset_m2m_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M65_Main_0" PORT="reset_hard_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="main_rst_o" POLARITY="ACTIVE_LOW" SIGIS="rst"/>
+    <PORT DIR="I" LEFT="64" NAME="main_rtc_i" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="1" NAME="qnice_ascal_mode_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="qnice_ascal_polyphase_o" SIGIS="undef"/>
+    <PORT DIR="O" NAME="qnice_ascal_triplebuf_o" SIGIS="undef"/>
+    <PORT DIR="O" NAME="qnice_audio_filter_o" SIGIS="undef"/>
+    <PORT DIR="O" NAME="qnice_audio_mute_o" SIGIS="undef"/>
+    <PORT CLKFREQUENCY="50000000" DIR="I" NAME="qnice_clk_i" SIGIS="clk" SIGNAME="External_Ports_qnice_clk_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M65_vdrives_0" PORT="clk_qnice_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="qnice_csync_o" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="27" NAME="qnice_dev_addr_i" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_qnice_dev_addr_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M65_vdrives_0" PORT="qnice_addr_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="qnice_dev_ce_i" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="15" NAME="qnice_dev_data_i" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_qnice_dev_data_i">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M65_vdrives_0" PORT="qnice_data_i"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="qnice_dev_data_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="15" NAME="qnice_dev_id_i" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="qnice_dev_wait_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="qnice_dev_we_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="qnice_dvi_o" SIGIS="undef"/>
+    <PORT DIR="O" NAME="qnice_flip_joyports_o" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="255" NAME="qnice_gp_reg_i" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="8" NAME="qnice_osm_cfg_scaling_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="255" NAME="qnice_osm_control_i" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="qnice_retro15kHz_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="qnice_rst_i" POLARITY="ACTIVE_HIGH" SIGIS="rst"/>
+    <PORT DIR="O" NAME="qnice_scandoubler_o" SIGIS="undef"/>
+    <PORT DIR="O" NAME="qnice_video_mode_o" SIGIS="undef"/>
+    <PORT DIR="O" NAME="qnice_zoom_crop_o" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="7" NAME="video_blue_o" RIGHT="0" SIGIS="undef" SIGNAME="M65_Main_0_video_blue_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M65_Main_0" PORT="video_blue_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="video_ce_o" SIGIS="undef" SIGNAME="M65_Main_0_video_ce_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M65_Main_0" PORT="video_ce_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="video_ce_ovl_o" SIGIS="undef" SIGNAME="M65_Main_0_video_ce_ovl_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M65_Main_0" PORT="video_ce_ovl_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="video_clk_o" SIGIS="clk" SIGNAME="clk_0_main_clk_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clk_0" PORT="main_clk_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="video_green_o" RIGHT="0" SIGIS="undef" SIGNAME="M65_Main_0_video_green_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M65_Main_0" PORT="video_green_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="video_hblank_o" SIGIS="undef" SIGNAME="M65_Main_0_video_hblank_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M65_Main_0" PORT="video_hblank_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="video_hs_o" SIGIS="undef" SIGNAME="M65_Main_0_video_hs_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M65_Main_0" PORT="video_hs_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="video_red_o" RIGHT="0" SIGIS="undef" SIGNAME="M65_Main_0_video_red_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M65_Main_0" PORT="video_red_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="video_rst_o" POLARITY="ACTIVE_LOW" SIGIS="rst"/>
+    <PORT DIR="O" NAME="video_vblank_o" SIGIS="undef" SIGNAME="M65_Main_0_video_vblank_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M65_Main_0" PORT="video_vblank_o"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="video_vs_o" SIGIS="undef" SIGNAME="M65_Main_0_video_vs_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="M65_Main_0" PORT="video_vs_o"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="2" FULLNAME="/M65_Main_0" HWVERSION="1.0" INSTANCE="M65_Main_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="M65_Main" VLNV="xilinx.com:user:M65_Main:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="M65_Core_M65_Main_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="15" NAME="audio_left_o" RIGHT="0" SIGIS="undef" SIGNAME="M65_Main_0_audio_left_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="main_audio_left_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="audio_right_o" RIGHT="0" SIGIS="undef" SIGNAME="M65_Main_0_audio_right_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="main_audio_right_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="50000000" DIR="I" NAME="clk_main_i" SIGIS="clk" SIGNAME="clk_0_main_clk_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_0" PORT="main_clk_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clk_main_speed_i" SIGIS="undef"/>
+        <PORT DIR="I" NAME="joy_1_down_n_i" SIGIS="undef" SIGNAME="External_Ports_main_joy_1_down_n_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="main_joy_1_down_n_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="joy_1_fire_n_i" SIGIS="undef" SIGNAME="External_Ports_main_joy_1_fire_n_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="main_joy_1_fire_n_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="joy_1_left_n_i" SIGIS="undef" SIGNAME="External_Ports_main_joy_1_left_n_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="main_joy_1_left_n_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="joy_1_right_n_i" SIGIS="undef" SIGNAME="External_Ports_main_joy_1_right_n_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="main_joy_1_right_n_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="joy_1_up_n_i" SIGIS="undef" SIGNAME="External_Ports_main_joy_1_up_n_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="main_joy_1_up_n_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="joy_2_down_n_i" SIGIS="undef" SIGNAME="External_Ports_main_joy_2_down_n_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="main_joy_2_down_n_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="joy_2_fire_n_i" SIGIS="undef" SIGNAME="External_Ports_main_joy_2_fire_n_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="main_joy_2_fire_n_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="joy_2_left_n_i" SIGIS="undef" SIGNAME="External_Ports_main_joy_2_left_n_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="main_joy_2_left_n_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="joy_2_right_n_i" SIGIS="undef" SIGNAME="External_Ports_main_joy_2_right_n_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="main_joy_2_right_n_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="joy_2_up_n_i" SIGIS="undef" SIGNAME="External_Ports_main_joy_2_up_n_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="main_joy_2_up_n_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="kb_key_num_i" SIGIS="undef" SIGNAME="External_Ports_main_kb_key_num_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="main_kb_key_num_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="kb_key_pressed_n_i" SIGIS="undef" SIGNAME="External_Ports_main_kb_key_pressed_n_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="main_kb_key_pressed_n_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="paddle_speed_i" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="pause_i" SIGIS="undef" SIGNAME="External_Ports_main_pause_core_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="main_pause_core_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="pot1_x_i" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_main_pot1_x_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="main_pot1_x_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="pot1_y_i" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_main_pot1_y_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="main_pot1_y_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="pot2_x_i" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_main_pot2_x_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="main_pot2_x_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="pot2_y_i" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_main_pot2_y_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="main_pot2_y_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset_hard_i" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_main_reset_m2m_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="main_reset_m2m_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset_soft_i" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_main_reset_core_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="main_reset_core_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="video_blue_o" RIGHT="0" SIGIS="undef" SIGNAME="M65_Main_0_video_blue_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="video_blue_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="video_ce_o" SIGIS="undef" SIGNAME="M65_Main_0_video_ce_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="video_ce_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="video_ce_ovl_o" SIGIS="undef" SIGNAME="M65_Main_0_video_ce_ovl_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="video_ce_ovl_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="video_green_o" RIGHT="0" SIGIS="undef" SIGNAME="M65_Main_0_video_green_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="video_green_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="video_hblank_o" SIGIS="undef" SIGNAME="M65_Main_0_video_hblank_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="video_hblank_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="video_hs_o" SIGIS="undef" SIGNAME="M65_Main_0_video_hs_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="video_hs_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="video_red_o" RIGHT="0" SIGIS="undef" SIGNAME="M65_Main_0_video_red_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="video_red_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="video_vblank_o" SIGIS="undef" SIGNAME="M65_Main_0_video_vblank_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="video_vblank_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="video_vs_o" SIGIS="undef" SIGNAME="M65_Main_0_video_vs_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="video_vs_o"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/M65_vdrives_0" HWVERSION="1.0" INSTANCE="M65_vdrives_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="M65_vdrives" VLNV="xilinx.com:user:M65_vdrives:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="M65_Core_M65_vdrives_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="cache_dirty_o" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="1" NAME="cache_flushing_o" RIGHT="0" SIGIS="undef"/>
+        <PORT CLKFREQUENCY="50000000" DIR="I" NAME="clk_core_i" SIGIS="clk" SIGNAME="clk_0_main_clk_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_0" PORT="main_clk_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="50000000" DIR="I" NAME="clk_qnice_i" SIGIS="clk" SIGNAME="External_Ports_qnice_clk_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="qnice_clk_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="drive_mounted_o" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="0" NAME="img_mounted_o" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="img_readonly_o" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="img_size_o" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="1" NAME="img_type_o" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="27" NAME="qnice_addr_i" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_qnice_dev_addr_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="qnice_dev_addr_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="qnice_ce_i" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="15" NAME="qnice_data_i" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_qnice_dev_data_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="qnice_dev_data_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="qnice_data_o" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="qnice_we_i" SIGIS="undef"/>
+        <PORT DIR="I" NAME="reset_core_i" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_main_reset_core_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="main_reset_core_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="sd_ack_o" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="5" NAME="sd_blk_cnt_i" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="13" NAME="sd_buff_addr_o" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="7" NAME="sd_buff_din_i" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="7" NAME="sd_buff_dout_o" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="sd_buff_wr_o" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="sd_lba_i" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="0" NAME="sd_rd_i" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="0" NAME="sd_wr_i" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/clk_0" HWVERSION="1.0" INSTANCE="clk_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk" VLNV="xilinx.com:module_ref:clk:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="M65_Core_clk_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="main_clk_o" SIGIS="undef" SIGNAME="clk_0_main_clk_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="main_clk_o"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="video_clk_o"/>
+            <CONNECTION INSTANCE="M65_Main_0" PORT="clk_main_i"/>
+            <CONNECTION INSTANCE="M65_vdrives_0" PORT="clk_core_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="main_rst_o" SIGIS="undef"/>
+        <PORT DIR="I" NAME="sys_clk_i" SIGIS="undef" SIGNAME="External_Ports_clk_i">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_i"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

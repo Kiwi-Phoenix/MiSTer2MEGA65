@@ -1,0 +1,58 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.469725",
+   "Default View_TopLeft":"-1107,2",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port port-id_clk_main_i -pg 1 -lvl 0 -x -20 -y 60 -defaultsOSRD
+preplace port port-id_reset_soft_i -pg 1 -lvl 0 -x -20 -y 360 -defaultsOSRD
+preplace port port-id_reset_hard_i -pg 1 -lvl 0 -x -20 -y 340 -defaultsOSRD
+preplace port port-id_pause_i -pg 1 -lvl 0 -x -20 -y 320 -defaultsOSRD
+preplace port port-id_clk_main_speed_i -pg 1 -lvl 0 -x -20 -y 40 -defaultsOSRD
+preplace port port-id_video_ce_o -pg 1 -lvl 2 -x 420 -y 20 -defaultsOSRD
+preplace port port-id_video_ce_ovl_o -pg 1 -lvl 2 -x 420 -y 40 -defaultsOSRD
+preplace port port-id_video_vs_o -pg 1 -lvl 2 -x 420 -y 1520 -defaultsOSRD
+preplace port port-id_video_hs_o -pg 1 -lvl 2 -x 420 -y 1460 -defaultsOSRD
+preplace port port-id_video_hblank_o -pg 1 -lvl 2 -x 420 -y 60 -defaultsOSRD
+preplace port port-id_video_vblank_o -pg 1 -lvl 2 -x 420 -y 80 -defaultsOSRD
+preplace port port-id_kb_key_pressed_n_i -pg 1 -lvl 0 -x -20 -y 100 -defaultsOSRD
+preplace port port-id_joy_1_up_n_i -pg 1 -lvl 0 -x -20 -y 200 -defaultsOSRD
+preplace port port-id_joy_1_down_n_i -pg 1 -lvl 0 -x -20 -y 120 -defaultsOSRD
+preplace port port-id_joy_1_left_n_i -pg 1 -lvl 0 -x -20 -y 160 -defaultsOSRD
+preplace port port-id_joy_1_right_n_i -pg 1 -lvl 0 -x -20 -y 180 -defaultsOSRD
+preplace port port-id_joy_1_fire_n_i -pg 1 -lvl 0 -x -20 -y 140 -defaultsOSRD
+preplace port port-id_joy_2_up_n_i -pg 1 -lvl 0 -x -20 -y 300 -defaultsOSRD
+preplace port port-id_joy_2_down_n_i -pg 1 -lvl 0 -x -20 -y 220 -defaultsOSRD
+preplace port port-id_joy_2_left_n_i -pg 1 -lvl 0 -x -20 -y 260 -defaultsOSRD
+preplace port port-id_joy_2_right_n_i -pg 1 -lvl 0 -x -20 -y 280 -defaultsOSRD
+preplace port port-id_joy_2_fire_n_i -pg 1 -lvl 0 -x -20 -y 240 -defaultsOSRD
+preplace portBus video_red_o -pg 1 -lvl 2 -x 420 -y 1580 -defaultsOSRD
+preplace portBus video_green_o -pg 1 -lvl 2 -x 420 -y 1440 -defaultsOSRD
+preplace portBus video_blue_o -pg 1 -lvl 2 -x 420 -y 1360 -defaultsOSRD
+preplace portBus audio_left_o -pg 1 -lvl 2 -x 420 -y 220 -defaultsOSRD
+preplace portBus audio_right_o -pg 1 -lvl 2 -x 420 -y 260 -defaultsOSRD
+preplace portBus pot1_x_i -pg 1 -lvl 0 -x -20 -y 380 -defaultsOSRD
+preplace portBus pot1_y_i -pg 1 -lvl 0 -x -20 -y 400 -defaultsOSRD
+preplace portBus pot2_x_i -pg 1 -lvl 0 -x -20 -y 420 -defaultsOSRD
+preplace portBus pot2_y_i -pg 1 -lvl 0 -x -20 -y 440 -defaultsOSRD
+preplace portBus paddle_speed_i -pg 1 -lvl 0 -x -20 -y 20 -defaultsOSRD
+preplace portBus kb_key_num_i -pg 1 -lvl 0 -x -20 -y 80 -defaultsOSRD
+preplace inst keyboard_0 -pg 1 -lvl 1 -x 210 -y 80 -defaultsOSRD
+preplace inst Amiga_EMU_0 -pg 1 -lvl 1 -x 210 -y 890 -defaultsOSRD
+preplace netloc Amiga_EMU_0_AUDIO_L 1 1 1 NJ 220
+preplace netloc Amiga_EMU_0_AUDIO_R 1 1 1 NJ 260
+preplace netloc Amiga_EMU_0_VGA_B 1 1 1 NJ 1360
+preplace netloc Amiga_EMU_0_VGA_G 1 1 1 NJ 1440
+preplace netloc Amiga_EMU_0_VGA_HS 1 1 1 NJ 1460
+preplace netloc Amiga_EMU_0_VGA_VS 1 1 1 NJ 1520
+preplace netloc Amiga_EMU_0_VIDEO_R 1 1 1 NJ 1580
+preplace netloc clk_main_i_1 1 0 1 50 60n
+preplace netloc kb_key_num_i_1 1 0 1 NJ 80
+preplace netloc kb_key_pressed_n_i_1 1 0 1 NJ 100
+preplace netloc reset_hard_i_1 1 0 1 0 340n
+levelinfo -pg 1 -20 210 420
+pagesize -pg 1 -db -bbox -sgen -210 0 610 1640
+"
+}
+0

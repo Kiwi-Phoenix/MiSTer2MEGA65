@@ -1,0 +1,36 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-1341,-298",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port port-id_clk_qnice_i -pg 1 -lvl 0 -x 0 -y 40 -defaultsOSRD
+preplace port port-id_clk_core_i -pg 1 -lvl 0 -x 0 -y 20 -defaultsOSRD
+preplace port port-id_reset_core_i -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace port port-id_img_readonly_o -pg 1 -lvl 1 -x 40 -y 140 -defaultsOSRD
+preplace port port-id_sd_buff_wr_o -pg 1 -lvl 1 -x 40 -y 160 -defaultsOSRD
+preplace port port-id_qnice_ce_i -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
+preplace port port-id_qnice_we_i -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
+preplace portBus img_mounted_o -pg 1 -lvl 1 -x 40 -y 80 -defaultsOSRD
+preplace portBus img_size_o -pg 1 -lvl 1 -x 40 -y 100 -defaultsOSRD
+preplace portBus img_type_o -pg 1 -lvl 1 -x 40 -y 120 -defaultsOSRD
+preplace portBus drive_mounted_o -pg 1 -lvl 1 -x 40 -y 60 -defaultsOSRD
+preplace portBus cache_dirty_o -pg 1 -lvl 1 -x 40 -y 20 -defaultsOSRD
+preplace portBus cache_flushing_o -pg 1 -lvl 1 -x 40 -y 40 -defaultsOSRD
+preplace portBus sd_lba_i -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
+preplace portBus sd_blk_cnt_i -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
+preplace portBus sd_rd_i -pg 1 -lvl 0 -x 0 -y 220 -defaultsOSRD
+preplace portBus sd_wr_i -pg 1 -lvl 0 -x 0 -y 240 -defaultsOSRD
+preplace portBus sd_ack_o -pg 1 -lvl 1 -x 40 -y 200 -defaultsOSRD
+preplace portBus sd_buff_addr_o -pg 1 -lvl 1 -x 40 -y 220 -defaultsOSRD
+preplace portBus sd_buff_dout_o -pg 1 -lvl 1 -x 40 -y 240 -defaultsOSRD
+preplace portBus sd_buff_din_i -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
+preplace portBus qnice_addr_i -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace portBus qnice_data_i -pg 1 -lvl 0 -x 0 -y 140 -defaultsOSRD
+preplace portBus qnice_data_o -pg 1 -lvl 1 -x 40 -y 180 -defaultsOSRD
+levelinfo -pg 1 0 40
+pagesize -pg 1 -db -bbox -sgen -170 0 230 260
+"
+}
+

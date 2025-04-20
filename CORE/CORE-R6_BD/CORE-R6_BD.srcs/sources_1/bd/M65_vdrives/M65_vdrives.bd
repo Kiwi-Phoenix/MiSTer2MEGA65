@@ -1,0 +1,184 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x997B5D41DDF8B3CE",
+      "device": "xc7a200tfbg484-3",
+      "gen_directory": "../../../../CORE-R6_BD.gen/sources_1/bd/M65_vdrives",
+      "name": "M65_vdrives",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.2.1",
+      "validated": "true"
+    },
+    "design_tree": {},
+    "ports": {
+      "clk_qnice_i": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "M65_vdrives_clk_qnice_i",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "clk_core_i": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "M65_vdrives_clk_core_i",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "reset_core_i": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "img_mounted_o": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "img_readonly_o": {
+        "direction": "O"
+      },
+      "img_size_o": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "img_type_o": {
+        "direction": "O",
+        "left": "1",
+        "right": "0"
+      },
+      "drive_mounted_o": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "cache_dirty_o": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "cache_flushing_o": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "sd_lba_i": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "sd_blk_cnt_i": {
+        "direction": "I",
+        "left": "5",
+        "right": "0"
+      },
+      "sd_rd_i": {
+        "direction": "I",
+        "left": "0",
+        "right": "0"
+      },
+      "sd_wr_i": {
+        "direction": "I",
+        "left": "0",
+        "right": "0"
+      },
+      "sd_ack_o": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "sd_buff_addr_o": {
+        "direction": "O",
+        "left": "13",
+        "right": "0"
+      },
+      "sd_buff_dout_o": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "sd_buff_din_i": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "sd_buff_wr_o": {
+        "direction": "O"
+      },
+      "qnice_addr_i": {
+        "direction": "I",
+        "left": "27",
+        "right": "0"
+      },
+      "qnice_data_i": {
+        "type": "data",
+        "direction": "I",
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "qnice_data_o": {
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      },
+      "qnice_ce_i": {
+        "direction": "I"
+      },
+      "qnice_we_i": {
+        "direction": "I"
+      }
+    }
+  }
+}

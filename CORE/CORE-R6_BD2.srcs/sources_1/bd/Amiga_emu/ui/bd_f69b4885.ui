@@ -1,0 +1,516 @@
+{
+   "ActiveEmotionalView":"Color Coded",
+   "Color Coded_ExpandedHierarchyInLayout":"",
+   "Color Coded_Layout":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port port-id_CLK_50M -pg 1 -lvl 0 -x -30 -y 2680 -defaultsOSRD
+preplace port port-id_RESET -pg 1 -lvl 0 -x -30 -y 2330 -defaultsOSRD
+preplace port port-id_CLK_VIDEO -pg 1 -lvl 19 -x 8510 -y 2380 -defaultsOSRD
+preplace port port-id_CE_PIXEL -pg 1 -lvl 19 -x 8510 -y 2680 -defaultsOSRD
+preplace port port-id_VGA_HS -pg 1 -lvl 19 -x 8510 -y 2340 -defaultsOSRD
+preplace port port-id_VGA_VS -pg 1 -lvl 19 -x 8510 -y 2940 -defaultsOSRD
+preplace port port-id_VGA_DE -pg 1 -lvl 19 -x 8510 -y 2920 -defaultsOSRD
+preplace port port-id_VGA_F1 -pg 1 -lvl 19 -x 8510 -y 1690 -defaultsOSRD
+preplace port port-id_VGA_SCALER -pg 1 -lvl 19 -x 8510 -y 400 -defaultsOSRD
+preplace port port-id_FB_EN -pg 1 -lvl 19 -x 8510 -y 1110 -defaultsOSRD
+preplace port port-id_FB_VBL -pg 1 -lvl 0 -x -30 -y 40 -defaultsOSRD
+preplace port port-id_FB_LL -pg 1 -lvl 0 -x -30 -y 20 -defaultsOSRD
+preplace port port-id_FB_PAL_CLK -pg 1 -lvl 19 -x 8510 -y 1230 -defaultsOSRD
+preplace port port-id_FB_PAL_WR -pg 1 -lvl 19 -x 8510 -y 1290 -defaultsOSRD
+preplace port port-id_LED_USER -pg 1 -lvl 19 -x 8510 -y 1530 -defaultsOSRD
+preplace port port-id_CLK_AUDIO -pg 1 -lvl 0 -x -30 -y 2420 -defaultsOSRD
+preplace port port-id_SD_SCK -pg 1 -lvl 19 -x 8510 -y 380 -defaultsOSRD
+preplace port port-id_SD_MOSI -pg 1 -lvl 19 -x 8510 -y 360 -defaultsOSRD
+preplace port port-id_SD_MISO -pg 1 -lvl 0 -x -30 -y 120 -defaultsOSRD
+preplace port port-id_SD_CS -pg 1 -lvl 19 -x 8510 -y 340 -defaultsOSRD
+preplace port port-id_SD_CD -pg 1 -lvl 0 -x -30 -y 100 -defaultsOSRD
+preplace port port-id_DDRAM_CLK -pg 1 -lvl 19 -x 8510 -y 120 -defaultsOSRD
+preplace port port-id_DDRAM_BUSY -pg 1 -lvl 0 -x -30 -y 160 -defaultsOSRD
+preplace port port-id_DDRAM_DOUT_READY -pg 1 -lvl 0 -x -30 -y 330 -defaultsOSRD
+preplace port port-id_DDRAM_RD -pg 1 -lvl 19 -x 8510 -y 180 -defaultsOSRD
+preplace port port-id_DDRAM_WE -pg 1 -lvl 19 -x 8510 -y 240 -defaultsOSRD
+preplace port port-id_SDRAM_CLK -pg 1 -lvl 19 -x 8510 -y 770 -defaultsOSRD
+preplace port port-id_SDRAM_CKE -pg 1 -lvl 19 -x 8510 -y 790 -defaultsOSRD
+preplace port port-id_SDRAM_nCS -pg 1 -lvl 19 -x 8510 -y 630 -defaultsOSRD
+preplace port port-id_SDRAM_nCAS -pg 1 -lvl 19 -x 8510 -y 100 -defaultsOSRD
+preplace port port-id_SDRAM_nRAS -pg 1 -lvl 19 -x 8510 -y 670 -defaultsOSRD
+preplace port port-id_SDRAM_nWE -pg 1 -lvl 19 -x 8510 -y 650 -defaultsOSRD
+preplace port port-id_SDRAM2_EN -pg 1 -lvl 0 -x -30 -y 80 -defaultsOSRD
+preplace port port-id_SDRAM2_CLK -pg 1 -lvl 19 -x 8510 -y 260 -defaultsOSRD
+preplace port port-id_SDRAM2_nCS -pg 1 -lvl 19 -x 8510 -y 280 -defaultsOSRD
+preplace port port-id_SDRAM2_nCAS -pg 1 -lvl 19 -x 8510 -y 690 -defaultsOSRD
+preplace port port-id_SDRAM2_nRAS -pg 1 -lvl 19 -x 8510 -y 300 -defaultsOSRD
+preplace port port-id_SDRAM2_nWE -pg 1 -lvl 19 -x 8510 -y 320 -defaultsOSRD
+preplace port port-id_UART_CTS -pg 1 -lvl 0 -x -30 -y 1620 -defaultsOSRD
+preplace port port-id_UART_RTS -pg 1 -lvl 19 -x 8510 -y 1430 -defaultsOSRD
+preplace port port-id_UART_RXD -pg 1 -lvl 0 -x -30 -y 4100 -defaultsOSRD
+preplace port port-id_UART_TXD -pg 1 -lvl 19 -x 8510 -y 1450 -defaultsOSRD
+preplace port port-id_UART_DTR -pg 1 -lvl 19 -x 8510 -y 1550 -defaultsOSRD
+preplace port port-id_UART_DSR -pg 1 -lvl 0 -x -30 -y 1640 -defaultsOSRD
+preplace port port-id_OSD_STATUS -pg 1 -lvl 0 -x -30 -y 60 -defaultsOSRD
+preplace portBus HPS_BUS -pg 1 -lvl 19 -x 8510 -y 2840 -defaultsOSRD
+preplace portBus VIDEO_ARX -pg 1 -lvl 19 -x 8510 -y 2530 -defaultsOSRD
+preplace portBus VIDEO_ARY -pg 1 -lvl 19 -x 8510 -y 2550 -defaultsOSRD
+preplace portBus VGA_R -pg 1 -lvl 19 -x 8510 -y 2160 -defaultsOSRD
+preplace portBus VGA_G -pg 1 -lvl 19 -x 8510 -y 2280 -defaultsOSRD
+preplace portBus VGA_B -pg 1 -lvl 19 -x 8510 -y 2040 -defaultsOSRD
+preplace portBus VGA_SL -pg 1 -lvl 19 -x 8510 -y 1970 -defaultsOSRD
+preplace portBus VGA_DISABLE -pg 1 -lvl 19 -x 8510 -y 3310 -defaultsOSRD
+preplace portBus HDMI_WIDTH -pg 1 -lvl 0 -x -30 -y 2770 -defaultsOSRD
+preplace portBus HDMI_HEIGHT -pg 1 -lvl 0 -x -30 -y 2350 -defaultsOSRD
+preplace portBus HDMI_FREEZE -pg 1 -lvl 19 -x 8510 -y 3210 -defaultsOSRD
+preplace portBus FB_FORMAT -pg 1 -lvl 19 -x 8510 -y 1170 -defaultsOSRD
+preplace portBus FB_WIDTH -pg 1 -lvl 19 -x 8510 -y 1130 -defaultsOSRD
+preplace portBus FB_HEIGHT -pg 1 -lvl 19 -x 8510 -y 1150 -defaultsOSRD
+preplace portBus FB_BASE -pg 1 -lvl 19 -x 8510 -y 1190 -defaultsOSRD
+preplace portBus FB_STRIDE -pg 1 -lvl 19 -x 8510 -y 1210 -defaultsOSRD
+preplace portBus FB_FORCE_BLANK -pg 1 -lvl 19 -x 8510 -y 3110 -defaultsOSRD
+preplace portBus FB_PAL_ADDR -pg 1 -lvl 19 -x 8510 -y 1270 -defaultsOSRD
+preplace portBus FB_PAL_DOUT -pg 1 -lvl 19 -x 8510 -y 1250 -defaultsOSRD
+preplace portBus FB_PAL_DIN -pg 1 -lvl 0 -x -30 -y 910 -defaultsOSRD
+preplace portBus LED_POWER -pg 1 -lvl 19 -x 8510 -y 1470 -defaultsOSRD
+preplace portBus LED_DISK -pg 1 -lvl 19 -x 8510 -y 1900 -defaultsOSRD
+preplace portBus BUTTONS -pg 1 -lvl 19 -x 8510 -y 2740 -defaultsOSRD
+preplace portBus AUDIO_L -pg 1 -lvl 19 -x 8510 -y 1620 -defaultsOSRD
+preplace portBus AUDIO_R -pg 1 -lvl 19 -x 8510 -y 1760 -defaultsOSRD
+preplace portBus AUDIO_S -pg 1 -lvl 19 -x 8510 -y 3010 -defaultsOSRD
+preplace portBus AUDIO_MIX -pg 1 -lvl 19 -x 8510 -y 1830 -defaultsOSRD
+preplace portBus ADC_BUS -pg 1 -lvl 19 -x 8510 -y 20 -defaultsOSRD
+preplace portBus DDRAM_BURSTCNT -pg 1 -lvl 19 -x 8510 -y 140 -defaultsOSRD
+preplace portBus DDRAM_ADDR -pg 1 -lvl 19 -x 8510 -y 160 -defaultsOSRD
+preplace portBus DDRAM_DOUT -pg 1 -lvl 0 -x -30 -y 180 -defaultsOSRD
+preplace portBus DDRAM_DIN -pg 1 -lvl 19 -x 8510 -y 200 -defaultsOSRD
+preplace portBus DDRAM_BE -pg 1 -lvl 19 -x 8510 -y 220 -defaultsOSRD
+preplace portBus SDRAM_A -pg 1 -lvl 19 -x 8510 -y 590 -defaultsOSRD
+preplace portBus SDRAM_BA -pg 1 -lvl 19 -x 8510 -y 610 -defaultsOSRD
+preplace portBus SDRAM_DQ -pg 1 -lvl 19 -x 8510 -y 750 -defaultsOSRD
+preplace portBus SDRAM_DQML -pg 1 -lvl 19 -x 8510 -y 730 -defaultsOSRD
+preplace portBus SDRAM_DQMH -pg 1 -lvl 19 -x 8510 -y 710 -defaultsOSRD
+preplace portBus SDRAM2_A -pg 1 -lvl 19 -x 8510 -y 40 -defaultsOSRD
+preplace portBus SDRAM2_BA -pg 1 -lvl 19 -x 8510 -y 60 -defaultsOSRD
+preplace portBus SDRAM2_DQ -pg 1 -lvl 19 -x 8510 -y 80 -defaultsOSRD
+preplace portBus USER_IN -pg 1 -lvl 0 -x -30 -y 2520 -defaultsOSRD
+preplace portBus USER_OUT -pg 1 -lvl 19 -x 8510 -y 2360 -defaultsOSRD
+preplace inst amiga_clk_0 -pg 1 -lvl 10 -x 4930 -y 1350 -defaultsOSRD
+preplace inst pll_hier -pg 1 -lvl 6 -x 3410 -y 2580 -defaultsOSRD
+preplace inst pll_reset_reg -pg 1 -lvl 9 -x 4610 -y 2290 -defaultsOSRD
+preplace inst pll_reset_reg_2 -pg 1 -lvl 8 -x 4310 -y 2290 -defaultsOSRD
+preplace inst hps_io_hier -pg 1 -lvl 7 -x 3840 -y 3340 -defaultsOSRD
+preplace inst hps_ext_0 -pg 1 -lvl 3 -x 1090 -y 1910 -defaultsOSRD
+preplace inst cpu_wrapper_0 -pg 1 -lvl 3 -x 1090 -y 680 -defaultsOSRD
+preplace inst cdda_0 -pg 1 -lvl 2 -x 560 -y 2170 -defaultsOSRD
+preplace inst minimig_0 -pg 1 -lvl 4 -x 1960 -y 1680 -defaultsOSRD
+preplace inst fastchip_0 -pg 1 -lvl 18 -x 8190 -y 1210 -defaultsOSRD
+preplace inst sdram_ctrl_0_ram1 -pg 1 -lvl 18 -x 8190 -y 720 -defaultsOSRD
+preplace inst lpf4400_IIR_filter_0 -pg 1 -lvl 12 -x 5630 -y 1450 -defaultsOSRD
+preplace inst lpf3275_IIR_filter_0 -pg 1 -lvl 15 -x 6670 -y 1350 -defaultsOSRD
+preplace inst ddram_ctrl_0_ram2 -pg 1 -lvl 18 -x 8190 -y 200 -defaultsOSRD
+preplace inst mt32pi -pg 1 -lvl 2 -x 560 -y 2520 -defaultsOSRD
+preplace inst video_mixer -pg 1 -lvl 17 -x 7500 -y 2260 -defaultsOSRD
+preplace inst video_freak -pg 1 -lvl 18 -x 8190 -y 2530 -defaultsOSRD
+preplace inst ce_comb -pg 1 -lvl 11 -x 5290 -y 1370 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 11 -x 5290 -y 1480 -defaultsOSRD
+preplace inst ilconstant_0 -pg 1 -lvl 11 -x 5290 -y 1120 -defaultsOSRD
+preplace inst ilconstant_1 -pg 1 -lvl 11 -x 5290 -y 1240 -defaultsOSRD
+preplace inst ilconstant_2 -pg 1 -lvl 11 -x 5290 -y 1580 -defaultsOSRD
+preplace inst input_l_comb -pg 1 -lvl 11 -x 5290 -y 1790 -defaultsOSRD
+preplace inst input_r_comb -pg 1 -lvl 11 -x 5290 -y 1960 -defaultsOSRD
+preplace inst output_l_comb -pg 1 -lvl 13 -x 6010 -y 1750 -defaultsOSRD
+preplace inst output_r_comb -pg 1 -lvl 13 -x 6010 -y 1600 -defaultsOSRD
+preplace inst output_comb -pg 1 -lvl 14 -x 6340 -y 1750 -defaultsOSRD
+preplace inst output2_l_comb -pg 1 -lvl 16 -x 7020 -y 1620 -defaultsOSRD
+preplace inst output2_r_comb -pg 1 -lvl 16 -x 7020 -y 1760 -defaultsOSRD
+preplace inst vm_vblank -pg 1 -lvl 15 -x 6670 -y 1760 -defaultsOSRD
+preplace inst vm_vblank2 -pg 1 -lvl 16 -x 7020 -y 2230 -defaultsOSRD
+preplace inst HPS_BUS -pg 1 -lvl 18 -x 8190 -y 2860 -defaultsOSRD
+preplace inst led_disk_0 -pg 1 -lvl 17 -x 7500 -y 1470 -defaultsOSRD
+preplace inst led_disk_1 -pg 1 -lvl 18 -x 8190 -y 1900 -defaultsOSRD
+preplace inst hps_ext_ide_0 -pg 1 -lvl 2 -x 560 -y 1850 -defaultsOSRD
+preplace inst hps_ext_ide_1 -pg 1 -lvl 1 -x 190 -y 980 -defaultsOSRD
+preplace inst hps_ext_ide_2 -pg 1 -lvl 1 -x 190 -y 2230 -defaultsOSRD
+preplace inst audio_l_comb_0 -pg 1 -lvl 17 -x 7500 -y 1620 -defaultsOSRD
+preplace inst audio_r_comb_0 -pg 1 -lvl 17 -x 7500 -y 1760 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 3 -x 1090 -y 2200 -defaultsOSRD
+preplace inst cpu_wrap_0 -pg 1 -lvl 2 -x 560 -y 260 -defaultsOSRD
+preplace inst cpu_wrap_1 -pg 1 -lvl 1 -x 190 -y 90 -defaultsOSRD
+preplace inst cpu_wrap_2 -pg 1 -lvl 1 -x 190 -y 260 -defaultsOSRD
+preplace inst rxd_0 -pg 1 -lvl 3 -x 1090 -y 2420 -defaultsOSRD
+preplace inst rxd_1 -pg 1 -lvl 2 -x 560 -y 4090 -defaultsOSRD
+preplace inst audio_r_comb_1 -pg 1 -lvl 18 -x 8190 -y 1760 -defaultsOSRD
+preplace inst audio_l_comb_1 -pg 1 -lvl 18 -x 8190 -y 1620 -defaultsOSRD
+preplace inst hps_status_0 -pg 1 -lvl 6 -x 3410 -y 2930 -defaultsOSRD
+preplace inst hps_status_1 -pg 1 -lvl 5 -x 3030 -y 2900 -defaultsOSRD
+preplace inst vga_b_comb_0 -pg 1 -lvl 18 -x 8190 -y 2040 -defaultsOSRD
+preplace inst vga_g_omb_0 -pg 1 -lvl 18 -x 8190 -y 2280 -defaultsOSRD
+preplace inst vga_r_comb_0 -pg 1 -lvl 18 -x 8190 -y 2160 -defaultsOSRD
+preplace inst vga_comb_1 -pg 1 -lvl 16 -x 7020 -y 2520 -defaultsOSRD
+preplace inst vga_comb_2 -pg 1 -lvl 17 -x 7500 -y 2530 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 16 -x 7020 -y 2370 -defaultsOSRD
+preplace inst ilconstant_3 -pg 1 -lvl 18 -x 8190 -y 3010 -defaultsOSRD
+preplace inst ilconstant_4 -pg 1 -lvl 18 -x 8190 -y 2740 -defaultsOSRD
+preplace inst ilconstant_5 -pg 1 -lvl 18 -x 8190 -y 3110 -defaultsOSRD
+preplace inst ilconstant_6 -pg 1 -lvl 18 -x 8190 -y 3210 -defaultsOSRD
+preplace inst ilconstant_7 -pg 1 -lvl 18 -x 8190 -y 3310 -defaultsOSRD
+preplace inst pll_config_0 -pg 1 -lvl 6 -x 3410 -y 2760 -defaultsOSRD
+preplace netloc ARX_1 1 4 14 NJ 1790 NJ 1790 NJ 1790 NJ 1790 NJ 1790 NJ 1790 5060J 1860 5490J 1830 NJ 1830 NJ 1830 NJ 1830 NJ 1830 NJ 1830 7770
+preplace netloc B_1 1 4 13 NJ 1770 NJ 1770 NJ 1770 NJ 1770 NJ 1770 NJ 1770 5080J 1880 NJ 1880 NJ 1880 NJ 1880 NJ 1880 NJ 1880 7220
+preplace netloc CLK_50M_1 1 0 6 NJ 2680 NJ 2680 NJ 2680 NJ 2680 N 2680 3210
+preplace netloc CLK_AUDIO_1 1 0 2 NJ 2420 NJ
+preplace netloc DDRAM_BUSY_1 1 0 18 NJ 160 NJ 160 NJ 160 NJ 160 NJ 160 NJ 160 NJ 160 NJ 160 NJ 160 NJ 160 NJ 160 NJ 160 NJ 160 NJ 160 NJ 160 NJ 160 NJ 160 NJ
+preplace netloc DDRAM_DOUT_1 1 0 18 NJ 180 NJ 180 NJ 180 NJ 180 NJ 180 NJ 180 NJ 180 NJ 180 NJ 180 NJ 180 NJ 180 NJ 180 NJ 180 NJ 180 NJ 180 NJ 180 NJ 180 NJ
+preplace netloc DDRAM_DOUT_READY_1 1 0 18 NJ 330 NJ 330 710J 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 7680J
+preplace netloc FB_PAL_DIN_1 1 0 18 -10J 340 NJ 340 720J 330 NJ 330 NJ 330 NJ 330 NJ 330 NJ 330 NJ 330 NJ 330 NJ 330 NJ 330 NJ 330 NJ 330 NJ 330 NJ 330 NJ 330 7930J
+preplace netloc G_1 1 4 13 2380J 840 NJ 840 NJ 840 NJ 840 NJ 840 NJ 840 NJ 840 NJ 840 NJ 840 NJ 840 NJ 840 NJ 840 7340
+preplace netloc HBlank_1 1 4 13 2370J 850 NJ 850 NJ 850 NJ 850 NJ 850 NJ 850 NJ 850 NJ 850 NJ 850 NJ 850 NJ 850 NJ 850 7270
+preplace netloc HDMI_HEIGHT_1 1 0 18 -10J 2070 NJ 2070 880J 2290 NJ 2290 2520J 2140 NJ 2140 NJ 2140 NJ 2140 NJ 2140 NJ 2140 NJ 2140 NJ 2140 NJ 2140 NJ 2140 NJ 2140 NJ 2140 7200J 2460 7700J
+preplace netloc HDMI_WIDTH_1 1 0 18 10J 2310 NJ 2310 770J 2490 1270J 2430 NJ 2430 NJ 2430 NJ 2430 NJ 2430 NJ 2430 NJ 2430 NJ 2430 NJ 2430 NJ 2430 NJ 2430 NJ 2430 NJ 2430 7180J 2440 7710J
+preplace netloc HSync_1 1 4 13 2350J 860 NJ 860 NJ 860 NJ 860 NJ 860 NJ 860 NJ 860 NJ 860 NJ 860 NJ 860 NJ 860 NJ 860 7280
+preplace netloc Net 1 3 5 1490 980 NJ 980 NJ 980 NJ 980 4070
+preplace netloc Net1 1 7 12 4100 2930 NJ 2930 NJ 2930 NJ 2930 NJ 2930 NJ 2930 NJ 2930 NJ 2930 NJ 2930 NJ 2930 NJ 2930 8400
+preplace netloc Net2 1 18 1 8480J 730n
+preplace netloc Net3 1 7 11 N 3510 NJ 3510 NJ 3510 NJ 3510 NJ 3510 NJ 3510 NJ 3510 NJ 3510 NJ 3510 NJ 3510 7660
+preplace netloc Net4 1 18 1 NJ 2840
+preplace netloc RESET_1 1 0 8 0J 2320 NJ 2320 NJ 2320 1370J 2280 NJ 2280 NJ 2280 NJ 2280 NJ
+preplace netloc R_1 1 4 13 2410J 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 7300
+preplace netloc UART_CTS_1 1 0 4 NJ 1620 NJ 1620 NJ 1620 NJ
+preplace netloc UART_DSR_1 1 0 4 NJ 1640 NJ 1640 NJ 1640 1620
+preplace netloc UART_RXD_1 1 0 2 NJ 4100 NJ
+preplace netloc USER_IN_1 1 0 2 NJ 2520 NJ
+preplace netloc VSync_1 1 4 13 2340J 820 NJ 820 NJ 820 NJ 820 NJ 820 NJ 820 NJ 820 NJ 820 NJ 820 NJ 820 NJ 820 NJ 820 7310
+preplace netloc amiga_clk_0_c1 1 3 15 1700 990 NJ 990 NJ 990 NJ 990 NJ 990 NJ 990 4770J 980 5090 570 NJ 570 NJ 570 NJ 570 NJ 570 NJ 570 NJ 570 N
+preplace netloc amiga_clk_0_c3 1 3 8 1710 1000 NJ 1000 NJ 1000 NJ 1000 NJ 1000 NJ 1000 4780J 990 5050
+preplace netloc amiga_clk_0_cck 1 3 8 1650 900 2290J 880 NJ 880 NJ 880 NJ 880 NJ 880 NJ 880 5060
+preplace netloc amiga_clk_0_clk7_en 1 3 8 1750 1110 2400J 1470 NJ 1470 NJ 1470 NJ 1470 NJ 1470 NJ 1470 5080
+preplace netloc amiga_clk_0_clk7n_en 1 3 8 1770 1130 2390J 1460 NJ 1460 NJ 1460 NJ 1460 NJ 1460 NJ 1460 5070
+preplace netloc amiga_clk_0_eclk 1 3 8 1720 1010 NJ 1010 NJ 1010 NJ 1010 NJ 1010 NJ 1010 NJ 1010 5040
+preplace netloc audio_l_comb_0_Res 1 17 1 7810 1620n
+preplace netloc audio_l_comb_1_Res 1 18 1 NJ 1620
+preplace netloc audio_r_comb_0_Res 1 17 1 7650 1760n
+preplace netloc audio_r_comb_1_Res 1 18 1 NJ 1760
+preplace netloc cdda_0_WRITE_REQ 1 2 1 780 2030n
+preplace netloc ce_comb_Res 1 11 1 N 1370
+preplace netloc cpu_wrap_0_Res 1 2 1 790 260n
+preplace netloc cpu_wrap_1_Res 1 1 1 350 90n
+preplace netloc cpu_wrap_2_Res 1 1 1 350 260n
+preplace netloc cpu_wrapper_0_cacr 1 3 15 1310 650 NJ 650 NJ 650 NJ 650 NJ 650 NJ 650 NJ 650 NJ 650 NJ 650 NJ 650 NJ 650 NJ 650 NJ 650 NJ 650 7710
+preplace netloc cpu_wrapper_0_chip_addr 1 3 15 1610 890 NJ 890 NJ 890 NJ 890 NJ 890 NJ 890 NJ 890 NJ 890 NJ 890 NJ 890 NJ 890 NJ 890 NJ 890 NJ 890 7900J
+preplace netloc cpu_wrapper_0_chip_as 1 3 1 1560 520n
+preplace netloc cpu_wrapper_0_chip_din 1 3 15 1600 880 2230J 900 NJ 900 NJ 900 NJ 900 NJ 900 NJ 900 NJ 900 NJ 900 NJ 900 NJ 900 NJ 900 NJ 900 NJ 900 7870
+preplace netloc cpu_wrapper_0_chip_lds 1 3 1 1520 560n
+preplace netloc cpu_wrapper_0_chip_rw 1 3 1 1510 580n
+preplace netloc cpu_wrapper_0_chip_uds 1 3 1 1530 540n
+preplace netloc cpu_wrapper_0_cpustate 1 3 15 1330 830 NJ 830 NJ 830 NJ 830 NJ 830 NJ 830 NJ 830 NJ 830 NJ 830 NJ 830 NJ 830 NJ 830 NJ 830 NJ 830 7770
+preplace netloc cpu_wrapper_0_fastchip_lds 1 3 15 NJ 620 NJ 620 NJ 620 NJ 620 NJ 620 NJ 620 NJ 620 NJ 620 NJ 620 NJ 620 NJ 620 NJ 620 NJ 620 NJ 620 7920
+preplace netloc cpu_wrapper_0_fastchip_lw 1 3 15 NJ 680 NJ 680 NJ 680 NJ 680 NJ 680 NJ 680 NJ 680 NJ 680 NJ 680 NJ 680 NJ 680 NJ 680 NJ 680 NJ 680 7850
+preplace netloc cpu_wrapper_0_fastchip_rnw 1 3 15 NJ 660 NJ 660 NJ 660 NJ 660 NJ 660 NJ 660 NJ 660 NJ 660 NJ 660 NJ 660 NJ 660 NJ 660 NJ 660 NJ 660 7890
+preplace netloc cpu_wrapper_0_fastchip_sel 1 3 15 NJ 600 NJ 600 NJ 600 NJ 600 NJ 600 NJ 600 NJ 600 NJ 600 NJ 600 NJ 600 NJ 600 NJ 600 NJ 600 NJ 600 7950
+preplace netloc cpu_wrapper_0_fastchip_uds 1 3 15 1540J 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 7660
+preplace netloc cpu_wrapper_0_nmi_addr 1 3 1 1500 900n
+preplace netloc cpu_wrapper_0_ramaddr 1 3 15 1260 710 NJ 710 NJ 710 NJ 710 NJ 710 NJ 710 NJ 710 NJ 710 NJ 710 NJ 710 NJ 710 NJ 710 NJ 710 NJ 710 7680
+preplace netloc cpu_wrapper_0_ramdin 1 3 15 1300 720 NJ 720 NJ 720 NJ 720 NJ 720 NJ 720 NJ 720 NJ 720 NJ 720 NJ 720 NJ 720 NJ 720 NJ 720 NJ 720 7990
+preplace netloc cpu_wrapper_0_ramlds 1 3 15 1330 730 NJ 730 NJ 730 NJ 730 NJ 730 NJ 730 NJ 730 NJ 730 NJ 730 NJ 730 NJ 730 NJ 730 NJ 730 NJ 730 7700
+preplace netloc cpu_wrapper_0_ramshared 1 3 15 1290 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 7690J
+preplace netloc cpu_wrapper_0_ramuds 1 3 15 N 780 NJ 780 NJ 780 NJ 780 NJ 780 NJ 780 NJ 780 NJ 780 NJ 780 NJ 780 NJ 780 NJ 780 NJ 780 NJ 780 7980
+preplace netloc cpu_wrapper_0_reset_out 1 3 1 1550 460n
+preplace netloc cpu_wrapper_0_toccata_base 1 3 1 1440 840n
+preplace netloc cpu_wrapper_0_toccata_ena 1 3 1 1480 820n
+preplace netloc ddram_ctrl_0_ram2_DDRAM_ADDR 1 18 1 NJ 160
+preplace netloc ddram_ctrl_0_ram2_DDRAM_BE 1 18 1 NJ 220
+preplace netloc ddram_ctrl_0_ram2_DDRAM_BURSTCNT 1 18 1 NJ 140
+preplace netloc ddram_ctrl_0_ram2_DDRAM_CLK 1 18 1 NJ 120
+preplace netloc ddram_ctrl_0_ram2_DDRAM_DIN 1 18 1 NJ 200
+preplace netloc ddram_ctrl_0_ram2_DDRAM_RD 1 18 1 NJ 180
+preplace netloc ddram_ctrl_0_ram2_DDRAM_WE 1 18 1 NJ 240
+preplace netloc ddram_ctrl_0_ram2_cpuRD 1 0 19 10 -10 NJ -10 NJ -10 NJ -10 NJ -10 NJ -10 NJ -10 NJ -10 NJ -10 NJ -10 NJ -10 NJ -10 NJ -10 NJ -10 NJ -10 NJ -10 NJ -10 NJ -10 8490
+preplace netloc ddram_ctrl_0_ram2_ramready 1 0 19 30 190 NJ 190 NJ 190 NJ 190 NJ 190 NJ 190 NJ 190 NJ 190 NJ 190 NJ 190 NJ 190 NJ 190 NJ 190 NJ 190 NJ 190 NJ 190 NJ 190 7970J 400 8400
+preplace netloc fastchip_0_dout 1 2 17 880 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 7950J 430 8450
+preplace netloc fastchip_0_ide_irq 1 3 16 1730 1020 NJ 1020 NJ 1020 NJ 1020 NJ 1020 NJ 1020 4790J 1000 NJ 1000 NJ 1000 NJ 1000 NJ 1000 NJ 1000 NJ 1000 NJ 1000 7790J 990 8400
+preplace netloc fastchip_0_ide_led 1 16 3 7350 950 NJ 950 8470
+preplace netloc fastchip_0_ide_readdata 1 0 19 30 910 NJ 910 750J 960 1260J 910 NJ 910 NJ 910 NJ 910 NJ 910 NJ 910 NJ 910 NJ 910 NJ 910 NJ 910 NJ 910 NJ 910 NJ 910 NJ 910 7910J 960 8460
+preplace netloc fastchip_0_ide_req 1 0 19 20 900 NJ 900 760J 970 1470J 920 NJ 920 NJ 920 NJ 920 NJ 920 NJ 920 NJ 920 NJ 920 NJ 920 NJ 920 NJ 920 NJ 920 NJ 920 NJ 920 7880J 970 8410
+preplace netloc fastchip_0_ready 1 2 17 890 390 NJ 390 NJ 390 NJ 390 NJ 390 NJ 390 NJ 390 NJ 390 NJ 390 NJ 390 NJ 390 NJ 390 NJ 390 NJ 390 NJ 390 7940J 420 8390
+preplace netloc fastchip_0_rtg_base 1 18 1 NJ 1190
+preplace netloc fastchip_0_rtg_ena 1 18 1 NJ 1110
+preplace netloc fastchip_0_rtg_format 1 18 1 NJ 1170
+preplace netloc fastchip_0_rtg_hsize 1 18 1 NJ 1130
+preplace netloc fastchip_0_rtg_pal_a 1 18 1 NJ 1270
+preplace netloc fastchip_0_rtg_pal_clk 1 18 1 NJ 1230
+preplace netloc fastchip_0_rtg_pal_dw 1 18 1 NJ 1250
+preplace netloc fastchip_0_rtg_pal_wr 1 18 1 NJ 1290
+preplace netloc fastchip_0_rtg_stride 1 18 1 NJ 1210
+preplace netloc fastchip_0_rtg_vsize 1 18 1 NJ 1150
+preplace netloc fastchip_0_sel_ack 1 2 17 830 340 NJ 340 NJ 340 NJ 340 NJ 340 NJ 340 NJ 340 NJ 340 NJ 340 NJ 340 NJ 340 NJ 340 NJ 340 NJ 340 NJ 340 7670J 440 8440
+preplace netloc hps_ext_0_cdda_dout 1 1 3 410 2260 NJ 2260 1270
+preplace netloc hps_ext_0_cdda_wr 1 1 3 400 2300 NJ 2300 1290
+preplace netloc hps_ext_0_ide_addr 1 3 15 1390 1030 NJ 1030 NJ 1030 NJ 1030 NJ 1030 NJ 1030 NJ 1030 NJ 1030 NJ 1030 NJ 1030 NJ 1030 NJ 1030 NJ 1030 NJ 1030 7740
+preplace netloc hps_ext_0_ide_dout 1 3 15 1580 1040 NJ 1040 NJ 1040 NJ 1040 NJ 1040 NJ 1040 4800J 1020 NJ 1020 NJ 1020 NJ 1020 NJ 1020 NJ 1020 NJ 1020 NJ 1020 7700
+preplace netloc hps_ext_0_ide_rd 1 3 15 1260 1050 NJ 1050 NJ 1050 NJ 1050 NJ 1050 NJ 1050 NJ 1050 5080J 1010 NJ 1010 NJ 1010 NJ 1010 NJ 1010 NJ 1010 NJ 1010 7710
+preplace netloc hps_ext_0_ide_wr 1 3 15 1400 1060 NJ 1060 NJ 1060 NJ 1060 NJ 1060 NJ 1060 NJ 1060 NJ 1060 NJ 1060 NJ 1060 NJ 1060 NJ 1060 NJ 1060 NJ 1060 7650
+preplace netloc hps_ext_0_io_din 1 3 1 1410 1800n
+preplace netloc hps_ext_0_io_fpga 1 3 1 1460 1760n
+preplace netloc hps_ext_0_io_strobe 1 3 1 1470 1740n
+preplace netloc hps_ext_0_io_uio 1 3 1 1450 1780n
+preplace netloc hps_ext_0_kbd_mouse_data 1 3 1 1420 1880n
+preplace netloc hps_ext_0_kbd_mouse_level 1 3 1 1430 1840n
+preplace netloc hps_ext_0_kbd_mouse_type 1 3 1 1280 1860n
+preplace netloc hps_ext_0_mouse_buttons 1 3 1 1590 1820n
+preplace netloc hps_ext_ide_1_Res 1 1 1 350 980n
+preplace netloc hps_ext_ide_2_Res 1 1 1 350 1860n
+preplace netloc hps_ext_ide_Res 1 2 1 910 1830n
+preplace netloc hps_io_hier_RTC 1 3 5 1740 1070 NJ 1070 NJ 1070 NJ 1070 4050
+preplace netloc hps_io_hier_buttons 1 7 1 4130 2300n
+preplace netloc hps_io_hier_forced_scandoubler 1 7 10 4120 2150 NJ 2150 NJ 2150 NJ 2150 NJ 2150 NJ 2150 NJ 2150 NJ 2150 NJ 2150 7230J
+preplace netloc hps_io_hier_joystick_0 1 3 5 1690 970 NJ 970 NJ 970 NJ 970 4090
+preplace netloc hps_io_hier_joystick_1 1 3 5 1680 960 NJ 960 NJ 960 NJ 960 4030
+preplace netloc hps_io_hier_joystick_2 1 3 5 1640 930 2290J 950 NJ 950 NJ 950 4060
+preplace netloc hps_io_hier_joystick_3 1 3 5 1660 940 2320J 930 NJ 930 NJ 930 4080
+preplace netloc hps_io_hier_joystick_l_analog_0 1 3 5 1760 1120 NJ 1120 NJ 1120 NJ 1120 4020
+preplace netloc hps_io_hier_joystick_l_analog_1 1 3 5 1670 950 2330J 940 NJ 940 NJ 940 4040
+preplace netloc hps_io_hier_status 1 1 17 410 2830 NJ 2830 NJ 2830 NJ 2830 3190J 3000 3620J 2650 4140 2630 NJ 2630 NJ 2630 NJ 2630 NJ 2630 NJ 2630 NJ 2630 NJ 2630 NJ 2630 NJ 2630 NJ
+preplace netloc hps_io_hier_uart_mode 1 1 7 410 4020 NJ 4020 NJ 4020 NJ 4020 NJ 4020 NJ 4020 4030
+preplace netloc hps_status_0_Res 1 6 1 3610 2930n
+preplace netloc hps_status_1_Res 1 5 1 3180 2900n
+preplace netloc ilconstant_0_dout 1 11 1 5450J 1120n
+preplace netloc ilconstant_1_dout 1 11 1 5440J 1240n
+preplace netloc ilconstant_2_dout 1 11 1 5440J 1490n
+preplace netloc ilconstant_3_dout 1 18 1 NJ 3010
+preplace netloc ilconstant_4_dout 1 18 1 NJ 2740
+preplace netloc ilconstant_5_dout 1 18 1 NJ 3110
+preplace netloc ilconstant_6_dout 1 18 1 NJ 3210
+preplace netloc ilconstant_7_dout 1 18 1 NJ 3310
+preplace netloc info_1 1 2 5 NJ 2510 1310J 2470 NJ 2470 NJ 2470 3590
+preplace netloc info_req_1 1 2 5 NJ 2570 NJ 2570 NJ 2570 3200J 3010 3580
+preplace netloc input_l_comb_Res 1 11 2 5470 1760 NJ
+preplace netloc input_r_comb_Res 1 11 2 5480 1630 5810J
+preplace netloc ioctl_wait_1 1 4 3 NJ 1550 NJ 1550 3600
+preplace netloc led_disk_0_Res 1 17 1 7800 1470n
+preplace netloc led_disk_1_Res 1 18 1 NJ 1900
+preplace netloc lpf3275_IIR_filter_0_output_l 1 15 1 6850 1340n
+preplace netloc lpf3275_IIR_filter_0_output_r 1 15 1 6840 1360n
+preplace netloc lpf4400_IIR_filter_0_output_l 1 12 1 5830 1440n
+preplace netloc lpf4400_IIR_filter_0_output_r 1 12 1 5840 1460n
+preplace netloc minimig_0_IO_DOUT 1 2 3 920 1080 NJ 1080 2180
+preplace netloc minimig_0__cpu_dtack 1 2 3 820 260 NJ 260 2170
+preplace netloc minimig_0__cpu_ipl 1 2 3 840 270 NJ 270 2160
+preplace netloc minimig_0__cpu_reset 1 2 16 920 320 NJ 320 2240 450 NJ 450 NJ 450 NJ 450 NJ 450 NJ 450 NJ 450 NJ 450 NJ 450 NJ 450 NJ 450 NJ 450 NJ 450 7960
+preplace netloc minimig_0__ram_bhe 1 4 14 2270 740 NJ 740 NJ 740 NJ 740 NJ 740 NJ 740 NJ 740 NJ 740 NJ 740 NJ 740 NJ 740 NJ 740 NJ 740 7710J
+preplace netloc minimig_0__ram_ble 1 4 14 2260 700 NJ 700 NJ 700 NJ 700 NJ 700 NJ 700 NJ 700 NJ 700 NJ 700 NJ 700 NJ 700 NJ 700 NJ 700 7710J
+preplace netloc minimig_0__ram_oe 1 4 14 2300 750 NJ 750 NJ 750 NJ 750 NJ 750 NJ 750 NJ 750 NJ 750 NJ 750 NJ 750 NJ 750 NJ 750 NJ 750 NJ
+preplace netloc minimig_0__ram_we 1 4 14 2310 760 NJ 760 NJ 760 NJ 760 NJ 760 NJ 760 NJ 760 NJ 760 NJ 760 NJ 760 NJ 760 NJ 760 NJ 760 7720J
+preplace netloc minimig_0_aud_mix 1 4 15 NJ 1970 NJ 1970 NJ 1970 NJ 1970 NJ 1970 NJ 1970 5050J 2030 NJ 2030 NJ 2030 NJ 2030 NJ 2030 NJ 2030 NJ 2030 7950J 1830 NJ
+preplace netloc minimig_0_bootrom 1 2 3 850 280 NJ 280 2220
+preplace netloc minimig_0_cachecfg 1 2 3 860 360 NJ 360 2200
+preplace netloc minimig_0_cpu_data 1 2 3 870 370 NJ 370 2150
+preplace netloc minimig_0_cpucfg 1 2 3 910 400 NJ 400 2190
+preplace netloc minimig_0_dtr 1 4 15 2360J 1480 NJ 1480 NJ 1480 NJ 1480 NJ 1480 NJ 1480 5120J 1640 NJ 1640 5780J 1510 NJ 1510 6520J 1540 6820J 1520 7350J 1550 NJ 1550 NJ
+preplace netloc minimig_0_fdd_led 1 4 15 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 5090J 1670 NJ 1670 NJ 1670 NJ 1670 NJ 1670 6850J 1690 NJ 1690 7660J 1530 NJ
+preplace netloc minimig_0_field1 1 4 15 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 5810J 1680 NJ 1680 6520 1680 6830J 1540 NJ 1540 7820J 1690 NJ
+preplace netloc minimig_0_hdd_led 1 4 13 NJ 1530 NJ 1530 NJ 1530 NJ 1530 NJ 1530 NJ 1530 5050J 1660 NJ 1660 5790J 1840 NJ 1840 NJ 1840 NJ 1840 7200
+preplace netloc minimig_0_ide_ena 1 4 14 2470J 1080 NJ 1080 NJ 1080 NJ 1080 NJ 1080 NJ 1080 5120J 1050 NJ 1050 NJ 1050 NJ 1050 NJ 1050 NJ 1050 NJ 1050 7720
+preplace netloc minimig_0_ide_fast 1 4 14 2510J 1680 NJ 1680 NJ 1680 NJ 1680 NJ 1680 NJ 1680 NJ 1680 NJ 1680 5780J 1900 NJ 1900 NJ 1900 NJ 1900 NJ 1900 7780
+preplace netloc minimig_0_ide_readdata 1 0 5 20 2080 NJ 2080 830J 2270 NJ 2270 2150
+preplace netloc minimig_0_ide_req 1 0 5 40 2160 340J 2280 NJ 2280 1310J 2260 2160
+preplace netloc minimig_0_lace 1 4 11 NJ 1670 NJ 1670 NJ 1670 NJ 1670 NJ 1670 NJ 1670 5040J 1690 5440J 1820 NJ 1820 NJ 1820 6490
+preplace netloc minimig_0_ldata 1 4 7 2500J 1850 NJ 1850 NJ 1850 NJ 1850 NJ 1850 NJ 1850 5120
+preplace netloc minimig_0_ldata_okk 1 4 7 2490J 1840 NJ 1840 NJ 1840 NJ 1840 NJ 1840 NJ 1840 5110
+preplace netloc minimig_0_memcfg 1 2 3 900 300 NJ 300 2210
+preplace netloc minimig_0_pwr_led 1 4 15 2430J 1090 NJ 1090 NJ 1090 4140J 1070 NJ 1070 4810J 1040 NJ 1040 NJ 1040 NJ 1040 NJ 1040 NJ 1040 NJ 1040 NJ 1040 7760J 980 8490J
+preplace netloc minimig_0_ram_address 1 4 14 2250 690 NJ 690 NJ 690 NJ 690 NJ 690 NJ 690 NJ 690 NJ 690 NJ 690 NJ 690 NJ 690 NJ 690 NJ 690 7690J
+preplace netloc minimig_0_ram_data 1 4 14 2280 770 NJ 770 NJ 770 NJ 770 NJ 770 NJ 770 NJ 770 NJ 770 NJ 770 NJ 770 NJ 770 NJ 770 NJ 770 NJ
+preplace netloc minimig_0_rdata 1 4 7 NJ 1910 NJ 1910 NJ 1910 NJ 1910 NJ 1910 NJ 1910 5120
+preplace netloc minimig_0_rdata_okk 1 4 7 NJ 1950 NJ 1950 NJ 1950 NJ 1950 NJ 1950 NJ 1950 N
+preplace netloc minimig_0_res 1 4 14 2340J 1870 NJ 1870 NJ 1870 NJ 1870 NJ 1870 NJ 1870 NJ 1870 NJ 1870 NJ 1870 NJ 1870 NJ 1870 NJ 1870 NJ 1870 7750
+preplace netloc minimig_0_rst_out 1 4 14 2460 1180 NJ 1180 NJ 1180 NJ 1180 NJ 1180 NJ 1180 NJ 1180 5440J 1110 NJ 1110 NJ 1110 NJ 1110 NJ 1110 NJ 1110 NJ
+preplace netloc minimig_0_rts 1 4 15 2440J 1130 NJ 1130 NJ 1130 NJ 1130 NJ 1130 NJ 1130 5110J 990 NJ 990 NJ 990 NJ 990 NJ 990 6860J 1400 NJ 1400 7660J 1430 NJ
+preplace netloc minimig_0_scanline 1 4 15 2430J 1860 NJ 1860 NJ 1860 NJ 1860 NJ 1860 NJ 1860 5040J 1890 NJ 1890 NJ 1890 NJ 1890 NJ 1890 NJ 1890 NJ 1890 7790J 1970 NJ
+preplace netloc minimig_0_toccata_aud_left 1 4 13 2480J 1700 NJ 1700 NJ 1700 NJ 1700 NJ 1700 NJ 1700 NJ 1700 NJ 1700 5800J 1520 NJ 1520 6490J 1550 NJ 1550 7330
+preplace netloc minimig_0_toccata_aud_right 1 4 13 2520J 1710 NJ 1710 NJ 1710 NJ 1710 NJ 1710 NJ 1710 NJ 1710 NJ 1710 5820J 1530 NJ 1530 NJ 1530 NJ 1530 7320
+preplace netloc minimig_0_txd 1 4 15 2450J 1140 NJ 1140 NJ 1140 NJ 1140 NJ 1140 NJ 1140 5100J 980 NJ 980 NJ 980 NJ 980 NJ 980 NJ 980 NJ 980 7680J 1450 NJ
+preplace netloc minimig_0_vblank 1 4 12 2290J 1720 NJ 1720 NJ 1720 NJ 1720 NJ 1720 NJ 1720 NJ 1720 NJ 1720 5770J 1850 NJ 1850 NJ 1850 6820
+preplace netloc mt32pi_USER_OUT 1 2 17 790J 2310 1430J 2320 NJ 2320 NJ 2320 NJ 2320 4140J 2360 NJ 2360 4810J 2310 NJ 2310 NJ 2310 NJ 2310 NJ 2310 NJ 2310 NJ 2310 7180J 2420 7990J 2360 NJ
+preplace netloc mt32pi_midi_rx 1 2 1 820 2410n
+preplace netloc mt32pi_mt32_available 1 2 4 710J 2500 NJ 2500 NJ 2500 3220
+preplace netloc mt32pi_mt32_i2s_l 1 2 16 730J 290 NJ 290 NJ 290 NJ 290 NJ 290 NJ 290 NJ 290 NJ 290 NJ 290 NJ 290 NJ 290 NJ 290 NJ 290 NJ 290 NJ 290 7860
+preplace netloc mt32pi_mt32_i2s_r 1 2 16 740J 310 NJ 310 NJ 310 NJ 310 NJ 310 NJ 310 NJ 310 NJ 310 NJ 310 NJ 310 NJ 310 NJ 310 NJ 310 NJ 310 NJ 310 7840
+preplace netloc mt32pi_mt32_lcd_en 1 2 14 740J 2520 1500J 2480 NJ 2480 NJ 2480 NJ 2480 NJ 2480 NJ 2480 NJ 2480 NJ 2480 NJ 2480 NJ 2480 NJ 2480 NJ 2480 6860
+preplace netloc mt32pi_mt32_lcd_pix 1 2 14 880J 2560 1530J 2490 NJ 2490 NJ 2490 NJ 2490 NJ 2490 NJ 2490 NJ 2490 NJ 2490 NJ 2490 NJ 2490 NJ 2490 NJ 2490 6820
+preplace netloc mt32pi_mt32_lcd_update 1 2 15 850J 2530 NJ 2530 NJ 2530 3210J 2440 NJ 2440 NJ 2440 NJ 2440 NJ 2440 NJ 2440 NJ 2440 NJ 2440 NJ 2440 NJ 2440 NJ 2440 7170
+preplace netloc mt32pi_mt32_rom 1 2 3 710J 2540 NJ 2540 2520
+preplace netloc mt32pi_mt32_sf 1 2 3 NJ 2550 NJ 2550 2180
+preplace netloc output2_l_comb_Res 1 16 1 7290 1620n
+preplace netloc output2_r_comb_Res 1 16 1 7220 1760n
+preplace netloc output_comb_Res 1 14 2 6510 1610 6870
+preplace netloc output_l_comb_Res 1 13 1 6170 1740n
+preplace netloc output_r_comb_Res 1 13 1 6160 1600n
+preplace netloc pll_config_0_locked 1 6 3 3610J 2390 NJ 2390 4460J
+preplace netloc pll_config_0_outclk_0 1 1 18 390 2330 N 2330 N 2330 N 2330 N 2330 3580 2160 NJ 2160 NJ 2160 NJ 2160 NJ 2160 NJ 2160 NJ 2160 NJ 2160 NJ 2160 NJ 2160 7260J 2090 7830 2370 8490
+preplace netloc pll_config_0_outclk_1 1 1 17 410 1780 810 1090 1570 1090 2420 1150 N 1150 3630 1240 N 1240 N 1240 4820 1240 5120 1300 5480 1230 N 1230 N 1230 6520 1090 N 1090 N 1090 N
+preplace netloc pll_reset_reg_2_Res 1 8 1 4460 2280n
+preplace netloc pll_reset_reg_Res 1 1 17 380 1440 NJ 1440 1590 1100 NJ 1100 NJ 1100 NJ 1100 4130J 980 NJ 980 4760 610 NJ 610 NJ 610 NJ 610 NJ 610 NJ 610 NJ 610 NJ 610 7660
+preplace netloc rxd_0_Res 1 3 1 1610 1600n
+preplace netloc rxd_1_Res 1 2 1 840 2430n
+preplace netloc sdram_ctrl_0_ram1_chip48 1 3 16 1630 490 NJ 490 NJ 490 NJ 490 NJ 490 NJ 490 NJ 490 NJ 490 NJ 490 NJ 490 NJ 490 NJ 490 NJ 490 NJ 490 NJ 490 8430
+preplace netloc sdram_ctrl_0_ram1_chipRD 1 3 16 1620 480 NJ 480 NJ 480 NJ 480 NJ 480 NJ 480 NJ 480 NJ 480 NJ 480 NJ 480 NJ 480 NJ 480 NJ 480 NJ 480 NJ 480 8400
+preplace netloc sdram_ctrl_0_ram1_cpuRD 1 0 19 40 0 NJ 0 NJ 0 NJ 0 NJ 0 NJ 0 NJ 0 NJ 0 NJ 0 NJ 0 NJ 0 NJ 0 NJ 0 NJ 0 NJ 0 NJ 0 NJ 0 NJ 0 8420
+preplace netloc sdram_ctrl_0_ram1_ramready 1 0 19 40 350 NJ 350 NJ 350 1260J 410 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 8410
+preplace netloc sdram_ctrl_0_ram1_sd_addr 1 18 1 NJ 590
+preplace netloc sdram_ctrl_0_ram1_sd_ba 1 18 1 NJ 610
+preplace netloc sdram_ctrl_0_ram1_sd_cas 1 18 1 NJ 690
+preplace netloc sdram_ctrl_0_ram1_sd_cke 1 18 1 8460J 770n
+preplace netloc sdram_ctrl_0_ram1_sd_clk 1 18 1 8470J 750n
+preplace netloc sdram_ctrl_0_ram1_sd_cs 1 18 1 NJ 630
+preplace netloc sdram_ctrl_0_ram1_sd_dqm 1 18 1 8490 710n
+preplace netloc sdram_ctrl_0_ram1_sd_ras 1 18 1 NJ 670
+preplace netloc sdram_ctrl_0_ram1_sd_we 1 18 1 NJ 650
+preplace netloc vga_b_comb_0_Res 1 18 1 NJ 2040
+preplace netloc vga_comb_1_Res 1 16 1 N 2520
+preplace netloc vga_comb_2_Res 1 17 1 7650 2050n
+preplace netloc vga_g_omb_0_Res 1 18 1 NJ 2280
+preplace netloc vga_r_comb_0_Res 1 18 1 NJ 2160
+preplace netloc video_freak_VIDEO_ARX 1 18 1 NJ 2530
+preplace netloc video_freak_VIDEO_ARY 1 18 1 NJ 2550
+preplace netloc video_mixer_CE_PIXEL 1 17 2 7730 2680 NJ
+preplace netloc video_mixer_VGA_B 1 17 1 7980 2030n
+preplace netloc video_mixer_VGA_DE 1 1 18 400 2340 NJ 2340 NJ 2340 NJ 2340 NJ 2340 NJ 2340 4110J 2370 NJ 2370 4760J 2300 NJ 2300 NJ 2300 NJ 2300 NJ 2300 NJ 2300 NJ 2300 7190J 2430 7680 2940 8450J
+preplace netloc video_mixer_VGA_G 1 17 1 7760 2260n
+preplace netloc video_mixer_VGA_HS 1 17 2 7740J 2350 8400J
+preplace netloc video_mixer_VGA_R 1 17 1 7990 2150n
+preplace netloc video_mixer_VGA_VS 1 1 18 410 2350 NJ 2350 NJ 2350 NJ 2350 NJ 2350 NJ 2350 4100J 2380 NJ 2380 NJ 2380 NJ 2380 NJ 2380 NJ 2380 NJ 2380 NJ 2380 6860J 2450 NJ 2450 7690 2950 8490J
+preplace netloc vm_vblank2_Res 1 16 1 7210 2230n
+preplace netloc vm_vblank_Res 1 15 1 6830 1760n
+preplace netloc xlconstant_0_dout 1 11 1 5440J 1410n
+preplace netloc xlconstant_1_dout 1 3 1 1600J 1680n
+preplace netloc xlconstant_2_dout 1 16 1 NJ 2370
+preplace cgraphic comment_1 place top 0 0 textcolor 4 linecolor 3
+preplace cgraphic comment_0 place top 0 0 textcolor 4 linecolor 3
+levelinfo -pg 1 -30 190 560 1090 1960 3030 3410 3840 4310 4610 4930 5290 5630 6010 6340 6670 7020 7500 8190 8510
+pagesize -pg 1 -db -bbox -sgen -240 -80 8730 4160
+",
+   "Color Coded_ScaleFactor":"0.749816",
+   "Color Coded_TopLeft":"-239,2375",
+   "Default View_ScaleFactor":"1.22373",
+   "Default View_TopLeft":"-489,0",
+   "ExpandedHierarchyInLayout":"",
+   "comment_0":"Enter Comments here",
+   "comment_1":"To Be Completed",
+   "commentid":"comment_0|comment_1|",
+   "font_comment_0":"14",
+   "font_comment_1":"14",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port port-id_CLK_50M -pg 1 -lvl 0 -x 0 -y 70 -defaultsOSRD
+preplace port port-id_RESET -pg 1 -lvl 0 -x 0 -y 360 -defaultsOSRD
+preplace port port-id_CLK_VIDEO -pg 1 -lvl 5 -x 1260 -y 700 -defaultsOSRD
+preplace port port-id_CE_PIXEL -pg 1 -lvl 5 -x 1260 -y 680 -defaultsOSRD
+preplace port port-id_VGA_HS -pg 1 -lvl 5 -x 1260 -y 1340 -defaultsOSRD
+preplace port port-id_VGA_VS -pg 1 -lvl 5 -x 1260 -y 1380 -defaultsOSRD
+preplace port port-id_VGA_DE -pg 1 -lvl 5 -x 1260 -y 1280 -defaultsOSRD
+preplace port port-id_VGA_F1 -pg 1 -lvl 5 -x 1260 -y 1320 -defaultsOSRD
+preplace port port-id_VGA_SCALER -pg 1 -lvl 5 -x 1260 -y 1360 -defaultsOSRD
+preplace port port-id_VGA_DISABLE -pg 1 -lvl 5 -x 1260 -y 1300 -defaultsOSRD
+preplace port port-id_HDMI_FREEZE -pg 1 -lvl 5 -x 1260 -y 860 -defaultsOSRD
+preplace port port-id_FB_EN -pg 1 -lvl 5 -x 1260 -y 780 -defaultsOSRD
+preplace port port-id_FB_VBL -pg 1 -lvl 0 -x 0 -y 230 -defaultsOSRD
+preplace port port-id_FB_LL -pg 1 -lvl 0 -x 0 -y 210 -defaultsOSRD
+preplace port port-id_FB_FORCE_BLANK -pg 1 -lvl 5 -x 1260 -y 800 -defaultsOSRD
+preplace port port-id_FB_PAL_CLK -pg 1 -lvl 5 -x 1260 -y 820 -defaultsOSRD
+preplace port port-id_FB_PAL_WR -pg 1 -lvl 5 -x 1260 -y 840 -defaultsOSRD
+preplace port port-id_LED_USER -pg 1 -lvl 5 -x 1260 -y 880 -defaultsOSRD
+preplace port port-id_CLK_AUDIO -pg 1 -lvl 0 -x 0 -y 150 -defaultsOSRD
+preplace port port-id_AUDIO_S -pg 1 -lvl 5 -x 1260 -y 660 -defaultsOSRD
+preplace port port-id_SD_SCK -pg 1 -lvl 5 -x 1260 -y 1200 -defaultsOSRD
+preplace port port-id_SD_MOSI -pg 1 -lvl 5 -x 1260 -y 1180 -defaultsOSRD
+preplace port port-id_SD_MISO -pg 1 -lvl 0 -x 0 -y 310 -defaultsOSRD
+preplace port port-id_SD_CS -pg 1 -lvl 5 -x 1260 -y 1160 -defaultsOSRD
+preplace port port-id_SD_CD -pg 1 -lvl 0 -x 0 -y 290 -defaultsOSRD
+preplace port port-id_DDRAM_CLK -pg 1 -lvl 5 -x 1260 -y 720 -defaultsOSRD
+preplace port port-id_DDRAM_BUSY -pg 1 -lvl 0 -x 0 -y 170 -defaultsOSRD
+preplace port port-id_DDRAM_DOUT_READY -pg 1 -lvl 0 -x 0 -y 190 -defaultsOSRD
+preplace port port-id_DDRAM_RD -pg 1 -lvl 5 -x 1260 -y 740 -defaultsOSRD
+preplace port port-id_DDRAM_WE -pg 1 -lvl 5 -x 1260 -y 760 -defaultsOSRD
+preplace port port-id_SDRAM_CLK -pg 1 -lvl 5 -x 1260 -y 920 -defaultsOSRD
+preplace port port-id_SDRAM_CKE -pg 1 -lvl 5 -x 1260 -y 900 -defaultsOSRD
+preplace port port-id_SDRAM_DQML -pg 1 -lvl 5 -x 1260 -y 960 -defaultsOSRD
+preplace port port-id_SDRAM_DQMH -pg 1 -lvl 5 -x 1260 -y 940 -defaultsOSRD
+preplace port port-id_SDRAM_nCS -pg 1 -lvl 5 -x 1260 -y 1000 -defaultsOSRD
+preplace port port-id_SDRAM_nCAS -pg 1 -lvl 5 -x 1260 -y 980 -defaultsOSRD
+preplace port port-id_SDRAM_nRAS -pg 1 -lvl 5 -x 1260 -y 1020 -defaultsOSRD
+preplace port port-id_SDRAM_nWE -pg 1 -lvl 5 -x 1260 -y 1040 -defaultsOSRD
+preplace port port-id_SDRAM2_EN -pg 1 -lvl 0 -x 0 -y 270 -defaultsOSRD
+preplace port port-id_SDRAM2_CLK -pg 1 -lvl 5 -x 1260 -y 1060 -defaultsOSRD
+preplace port port-id_SDRAM2_nCS -pg 1 -lvl 5 -x 1260 -y 1100 -defaultsOSRD
+preplace port port-id_SDRAM2_nCAS -pg 1 -lvl 5 -x 1260 -y 1080 -defaultsOSRD
+preplace port port-id_SDRAM2_nRAS -pg 1 -lvl 5 -x 1260 -y 1120 -defaultsOSRD
+preplace port port-id_SDRAM2_nWE -pg 1 -lvl 5 -x 1260 -y 1140 -defaultsOSRD
+preplace port port-id_UART_CTS -pg 1 -lvl 0 -x 0 -y 330 -defaultsOSRD
+preplace port port-id_UART_RTS -pg 1 -lvl 5 -x 1260 -y 1240 -defaultsOSRD
+preplace port port-id_UART_RXD -pg 1 -lvl 0 -x 0 -y 400 -defaultsOSRD
+preplace port port-id_UART_TXD -pg 1 -lvl 5 -x 1260 -y 1260 -defaultsOSRD
+preplace port port-id_UART_DTR -pg 1 -lvl 5 -x 1260 -y 1220 -defaultsOSRD
+preplace port port-id_UART_DSR -pg 1 -lvl 0 -x 0 -y 380 -defaultsOSRD
+preplace port port-id_OSD_STATUS -pg 1 -lvl 0 -x 0 -y 250 -defaultsOSRD
+preplace portBus HPS_BUS -pg 1 -lvl 5 -x 1260 -y 340 -defaultsOSRD
+preplace portBus VIDEO_ARX -pg 1 -lvl 5 -x 1260 -y 620 -defaultsOSRD
+preplace portBus VIDEO_ARY -pg 1 -lvl 5 -x 1260 -y 640 -defaultsOSRD
+preplace portBus VGA_R -pg 1 -lvl 5 -x 1260 -y 580 -defaultsOSRD
+preplace portBus VGA_G -pg 1 -lvl 5 -x 1260 -y 560 -defaultsOSRD
+preplace portBus VGA_B -pg 1 -lvl 5 -x 1260 -y 540 -defaultsOSRD
+preplace portBus VGA_SL -pg 1 -lvl 5 -x 1260 -y 600 -defaultsOSRD
+preplace portBus HDMI_WIDTH -pg 1 -lvl 0 -x 0 -y 110 -defaultsOSRD
+preplace portBus HDMI_HEIGHT -pg 1 -lvl 0 -x 0 -y 90 -defaultsOSRD
+preplace portBus FB_FORMAT -pg 1 -lvl 5 -x 1260 -y 220 -defaultsOSRD
+preplace portBus FB_WIDTH -pg 1 -lvl 5 -x 1260 -y 320 -defaultsOSRD
+preplace portBus FB_HEIGHT -pg 1 -lvl 5 -x 1260 -y 240 -defaultsOSRD
+preplace portBus FB_BASE -pg 1 -lvl 5 -x 1260 -y 200 -defaultsOSRD
+preplace portBus FB_STRIDE -pg 1 -lvl 5 -x 1260 -y 300 -defaultsOSRD
+preplace portBus FB_PAL_ADDR -pg 1 -lvl 5 -x 1260 -y 260 -defaultsOSRD
+preplace portBus FB_PAL_DOUT -pg 1 -lvl 5 -x 1260 -y 280 -defaultsOSRD
+preplace portBus FB_PAL_DIN -pg 1 -lvl 0 -x 0 -y 40 -defaultsOSRD
+preplace portBus LED_POWER -pg 1 -lvl 5 -x 1260 -y 380 -defaultsOSRD
+preplace portBus LED_DISK -pg 1 -lvl 5 -x 1260 -y 360 -defaultsOSRD
+preplace portBus BUTTONS -pg 1 -lvl 5 -x 1260 -y 100 -defaultsOSRD
+preplace portBus AUDIO_L -pg 1 -lvl 5 -x 1260 -y 40 -defaultsOSRD
+preplace portBus AUDIO_R -pg 1 -lvl 5 -x 1260 -y 80 -defaultsOSRD
+preplace portBus AUDIO_MIX -pg 1 -lvl 5 -x 1260 -y 60 -defaultsOSRD
+preplace portBus ADC_BUS -pg 1 -lvl 5 -x 1260 -y 20 -defaultsOSRD
+preplace portBus DDRAM_BURSTCNT -pg 1 -lvl 5 -x 1260 -y 160 -defaultsOSRD
+preplace portBus DDRAM_ADDR -pg 1 -lvl 5 -x 1260 -y 120 -defaultsOSRD
+preplace portBus DDRAM_DOUT -pg 1 -lvl 0 -x 0 -y 20 -defaultsOSRD
+preplace portBus DDRAM_DIN -pg 1 -lvl 5 -x 1260 -y 180 -defaultsOSRD
+preplace portBus DDRAM_BE -pg 1 -lvl 5 -x 1260 -y 140 -defaultsOSRD
+preplace portBus SDRAM_A -pg 1 -lvl 5 -x 1260 -y 400 -defaultsOSRD
+preplace portBus SDRAM_BA -pg 1 -lvl 5 -x 1260 -y 420 -defaultsOSRD
+preplace portBus SDRAM_DQ -pg 1 -lvl 5 -x 1260 -y 440 -defaultsOSRD
+preplace portBus SDRAM2_A -pg 1 -lvl 5 -x 1260 -y 460 -defaultsOSRD
+preplace portBus SDRAM2_BA -pg 1 -lvl 5 -x 1260 -y 480 -defaultsOSRD
+preplace portBus SDRAM2_DQ -pg 1 -lvl 5 -x 1260 -y 500 -defaultsOSRD
+preplace portBus USER_IN -pg 1 -lvl 0 -x 0 -y 130 -defaultsOSRD
+preplace portBus USER_OUT -pg 1 -lvl 5 -x 1260 -y 520 -defaultsOSRD
+preplace inst amiga_clk_0 -pg 1 -lvl 4 -x 1130 -y 280 -defaultsOSRD
+preplace inst pll_hier -pg 1 -lvl 2 -x 540 -y 280 -defaultsOSRD
+preplace inst pll_cfg_hier -pg 1 -lvl 1 -x 200 -y 140 -defaultsOSRD
+preplace inst pll_reset_reg -pg 1 -lvl 3 -x 870 -y 420 -defaultsOSRD
+preplace inst pll_reset_reg_2 -pg 1 -lvl 2 -x 540 -y 410 -defaultsOSRD
+preplace inst hps_io_hier -pg 1 -lvl 1 -x 200 -y 420 -defaultsOSRD
+preplace netloc CLK_50M_1 1 0 2 20 260 NJ
+preplace netloc pll_cfg_hier_reconfig_to_pll 1 1 1 370 120n
+preplace netloc pll_hier_reconfig_from_pll 1 0 3 30 10 NJ 10 710
+preplace netloc pll_hier_outclk1 1 2 2 N 270 NJ
+preplace netloc pll_reset_reg_Res 1 3 1 1020 290n
+preplace netloc pll_hier_locked 1 2 1 720 290n
+preplace netloc pll_reset_reg_2_Res 1 2 1 N 410
+preplace netloc RESET_1 1 0 2 NJ 360 370J
+preplace netloc hps_io_hier_buttons 1 1 1 NJ 420
+levelinfo -pg 1 0 200 540 870 1130 1260
+pagesize -pg 1 -db -bbox -sgen -210 0 1480 1400
+",
+   "linktoobj_comment_0":"",
+   "linktoobj_comment_1":"",
+   "linktotype_comment_0":"bd_design",
+   "linktotype_comment_1":"bd_design"
+}
+0
+{
+   "/comment_0":"comment_1",
+   "/comment_1":"comment_0"
+}

@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2024.2.1 (64-bit)
+# SW Build 5266912 on Sun Dec 15 09:03:24 MST 2024
+# IP Build 5264866 on Sun Dec 15 16:27:47 MST 2024
+# SharedData Build 5264680 on Wed Dec 11 12:48:36 MST 2024
+# Start of session at: Thu Mar  6 20:19:44 2025
+# Process ID         : 8168
+# Current directory  : D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/CORE/CORE-R6.runs/synth_1
+# Command line       : vivado.exe -log mega65_r6.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mega65_r6.tcl
+# Log file           : D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/CORE/CORE-R6.runs/synth_1/mega65_r6.vds
+# Journal file       : D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/CORE/CORE-R6.runs/synth_1\vivado.jou
+# Running On         : Retro-PC
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) i7-14700T
+# CPU Frequency      : 1306 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 28
+# Host memory        : 33971 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36118 MB
+# Available Virtual  : 23214 MB
+#-----------------------------------------------------------
+source mega65_r6.tcl -notrace
+source D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/CORE/m2m-rom/synth_pre.tcl
+couldn't execute ".\make_rom.sh": no such file or directory
+sourcing script D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/CORE/m2m-rom/synth_pre.tcl failed
+INFO: [Common 17-206] Exiting Vivado at Thu Mar  6 20:19:46 2025...

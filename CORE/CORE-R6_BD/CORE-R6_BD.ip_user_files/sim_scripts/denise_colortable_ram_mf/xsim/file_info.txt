@@ -1,0 +1,2 @@
+denise_colortable_ram_mf.v,verilog,xil_defaultlib,../../../../CORE-R6_BD.gen/sources_1/ip/denise_colortable_ram_mf/sim/denise_colortable_ram_mf.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

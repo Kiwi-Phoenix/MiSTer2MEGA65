@@ -1,0 +1,164 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/tdp_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tdp_ram'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/2port2clk_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dualport_2clk_ram'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/2port2clk_ram_byteenable.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dualport_2clk_ram_byteenable'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/QNICE/vhdl/EAE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'EAE'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/QNICE/vhdl/cpu_constants.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/QNICE/vhdl/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'alu'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/QNICE/vhdl/alu_shifter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'alu_shifter'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/av_pipeline/vga_recover_counters.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'vga_recover_counters'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/ram_init.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ram_init'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/av_pipeline/vga_osm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'vga_osm'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/av_pipeline/video_overlay.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'video_overlay'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/av_pipeline/analog_pipeline.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'analog_pipeline'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/av_pipeline/ascal.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ascal'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/controllers/M65/audio.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'audio'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/QNICE/vhdl/tools.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/av_pipeline/video_modes_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/CORE/vhdl/globals.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/controllers/HDMI/types_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/cdc_stable.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'cdc_stable'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/cdc_pulse.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'cdc_pulse'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/av_pipeline/video_counters.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'video_counters'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/av_pipeline/crop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'crop'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/av_pipeline/clk_synthetic_enable.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'clk_synthetic_enable'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/memory/avm_decrease.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'avm_decrease'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/controllers/HDMI/sync_reg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sync_reg'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/controllers/HDMI/hdmi_tx_encoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hdmi_tx_encoder'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/controllers/HDMI/vga_to_hdmi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'vga_to_hdmi'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/controllers/HDMI/serialiser_10to1_selectio.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'serialiser_10to1_selectio'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/av_pipeline/digital_pipeline.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'digital_pipeline'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/hdmi_flicker_free.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hdmi_flicker_free'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/av_pipeline/av_pipeline.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'av_pipeline'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/memory/avm_arbit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'avm_arbit'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/memory/avm_arbit_general.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'avm_arbit_general'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/memory/axi_fifo.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'axi_fifo'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/memory/avm_fifo.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'avm_fifo'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/QNICE/vhdl/basic_uart.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'basic_uart'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/QNICE/qnice_globals.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/QNICE/vhdl/block_ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'BRAM'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/QNICE/vhdl/block_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'BROM'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/QNICE/vhdl/bus_uart.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bus_uart'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/QNICE/vhdl/byte_bram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'byte_bram'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/CORE/vhdl/clk.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'clk'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/clk_m2m.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'clk_m2m'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/clock_counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'clock_counter'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/CORE/vhdl/config.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'config'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/i2c/cpu_to_i2c_master.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'cpu_to_i2c_master'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/QNICE/vhdl/cycle_counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'cycle_counter'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/debounce.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'debounce'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/debouncer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'debouncer'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/QNICE/vhdl/fifo.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ring_buffer'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/controllers/HDMI/video_out_clock.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'video_out_clock'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/reset_manager.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'reset_manager'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/controllers/M65/kb_matrix_ram.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'kb_matrix_ram'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/controllers/M65/mega65kbd_to_matrix.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mega65kbd_to_matrix'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/controllers/M65/matrix_to_keynum.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'matrix_to_keynum'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/m2m_keyb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'm2m_keyb'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/QNICE/vhdl/qnice_cpu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'QNICE_CPU'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/QNICE/sdmux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sdmux'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/QNICE/vhdl/sdcard.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sdcard'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/QNICE/qnice_mmio.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mmio_mux'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/QNICE/qnice.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'QNICE'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/qnice2hyperram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'qnice2hyperram'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/controllers/M65/mouse_input.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mouse_input'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/qnice_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'qnice_wrapper'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/controllers/hyperram/hyperram_errata.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hyperram_errata'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/controllers/hyperram/hyperram_config.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hyperram_config'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/controllers/hyperram/hyperram_ctrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hyperram_ctrl'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/controllers/hyperram/hyperram_fifo.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hyperram_fifo'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/controllers/hyperram/hyperram_rx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hyperram_rx'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/controllers/hyperram/hyperram_tx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hyperram_tx'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/controllers/hyperram/hyperram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hyperram'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/i2c/rtc_master.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'rtc_master'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/i2c/rtc_controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'rtc_controller'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/qnice_arbit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'qnice_arbit'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/i2c/i2c_master.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'i2c_master'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/i2c/i2c_controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'i2c_controller'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/i2c/rtc_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'rtc_wrapper'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/framework.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'framework'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/CORE/vhdl/keyboard.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'keyboard'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/CORE/vhdl/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/vdrives.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'vdrives'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/CORE/vhdl/mega65.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEGA65_Core'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/QNICE/vhdl/register_file.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'register_file'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/QNICE/vhdl/sd_spi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sd_controller'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/top_mega65-r6.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mega65_r6'

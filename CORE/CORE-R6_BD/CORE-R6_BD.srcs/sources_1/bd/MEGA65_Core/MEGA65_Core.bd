@@ -1,0 +1,2706 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x52FEB6BC8FA30246",
+      "device": "xc7a200tfbg484-3",
+      "gen_directory": "../../../../CORE-R6_BD.gen/sources_1/bd/MEGA65_Core",
+      "name": "MEGA65_Core",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "None",
+      "tool_version": "2024.2.1"
+    },
+    "design_tree": {
+      "audio_0": "",
+      "framework_0": "",
+      "Core_0": "",
+      "util_vector_logic_0": "",
+      "util_vector_logic_1": "",
+      "util_vector_logic_2": "",
+      "util_vector_logic_3": "",
+      "util_vector_logic_4": "",
+      "util_vector_logic_5": "",
+      "Reset_n_i0_i": "",
+      "util_vector_logic_6": "",
+      "Cart_a_io": {},
+      "cart_ba_io": {},
+      "cart_ba_io_reg": "",
+      "cart_d_io": {},
+      "cart_d_io_reg": "",
+      "cart_ctrl_en_o_i": "",
+      "cart_exrom_io": {},
+      "cart_exrom_io_reg": "",
+      "cart_exrom_oe_n_o_i": "",
+      "cart_game_io_reg": "",
+      "cart_game_oe_n_o_i": "",
+      "cart_game_io": {},
+      "cart_io1_io": {},
+      "cart_io1_io_reg": "",
+      "cart_io2_io": {},
+      "cart_io2_io_reg": "",
+      "cart_irg_io": {},
+      "cart_irq_io_reg": "",
+      "cart_irq_oe_n_o_i": "",
+      "cart_nmi_io": {},
+      "cart_nmi_io_reg": "",
+      "cart_reset_io": {},
+      "cart_reset_io_reg": "",
+      "Cart_romh_io": {},
+      "cart_romh_io_reg": "",
+      "cart_roml_io": {},
+      "cart_roml_io_reg": "",
+      "cart_rw_io": {},
+      "cart_rw_io_reg": ""
+    },
+    "ports": {
+      "clk_i": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "100000000"
+          }
+        }
+      },
+      "reset_button_i": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "uart_rxd_i": {
+        "direction": "I"
+      },
+      "uart_txd_o": {
+        "direction": "O"
+      },
+      "vga_red_o": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "vga_green_o": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "vga_blue_o": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "vga_hs_o": {
+        "direction": "O"
+      },
+      "vga_vs_o": {
+        "direction": "O"
+      },
+      "vga_scl_io": {
+        "direction": "IO"
+      },
+      "vga_sda_io": {
+        "direction": "IO"
+      },
+      "vdac_clk_o": {
+        "direction": "O"
+      },
+      "vdac_sync_n_o": {
+        "direction": "O"
+      },
+      "vdac_blank_n_o": {
+        "direction": "O"
+      },
+      "vdac_psave_n_o": {
+        "direction": "O"
+      },
+      "tmds_data_p_o": {
+        "direction": "O",
+        "left": "2",
+        "right": "0"
+      },
+      "tmds_data_n_o": {
+        "direction": "O",
+        "left": "2",
+        "right": "0"
+      },
+      "tmds_clk_p_o": {
+        "direction": "O"
+      },
+      "tmds_clk_n_o": {
+        "direction": "O"
+      },
+      "hdmi_hiz_en_o": {
+        "direction": "O"
+      },
+      "hdmi_ls_oe_n_o": {
+        "direction": "O"
+      },
+      "hdmi_hpd_i": {
+        "direction": "I"
+      },
+      "hdmi_scl_io": {
+        "direction": "IO"
+      },
+      "hdmi_sda_io": {
+        "direction": "IO"
+      },
+      "kb_io0_o": {
+        "direction": "O"
+      },
+      "kb_io1_o": {
+        "direction": "O"
+      },
+      "kb_io2_i": {
+        "direction": "I"
+      },
+      "kb_tck_o": {
+        "direction": "O"
+      },
+      "kb_tdo_i": {
+        "direction": "I"
+      },
+      "kb_tms_o": {
+        "direction": "O"
+      },
+      "kb_tdi_o": {
+        "direction": "O"
+      },
+      "kb_jtagen_o": {
+        "direction": "O"
+      },
+      "sd_reset_o": {
+        "direction": "O"
+      },
+      "sd_clk_o": {
+        "direction": "O"
+      },
+      "sd_mosi_o": {
+        "direction": "O"
+      },
+      "sd_miso_i": {
+        "direction": "I"
+      },
+      "sd_cd_i": {
+        "direction": "I"
+      },
+      "sd_d1_i": {
+        "direction": "I"
+      },
+      "sd_d2_i": {
+        "direction": "I"
+      },
+      "sd2_reset_o": {
+        "direction": "O"
+      },
+      "sd2_clk_o": {
+        "direction": "O"
+      },
+      "sd2_mosi_o": {
+        "direction": "O"
+      },
+      "sd2_miso_i": {
+        "direction": "I"
+      },
+      "sd2_cd_i": {
+        "direction": "I"
+      },
+      "sd2_wp_i": {
+        "direction": "I"
+      },
+      "sd2_d1_i": {
+        "direction": "I"
+      },
+      "sd2_d2_i": {
+        "direction": "I"
+      },
+      "audio_mclk_o": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "12288000"
+          }
+        }
+      },
+      "audio_bick_o": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "3072000"
+          }
+        }
+      },
+      "audio_sdti_o": {
+        "direction": "O"
+      },
+      "audio_lrclk_o": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "48000000"
+          }
+        }
+      },
+      "audio_pdn_n_o": {
+        "direction": "O"
+      },
+      "audio_i2cfil_o": {
+        "direction": "O"
+      },
+      "audio_scl_io": {
+        "type": "ce",
+        "direction": "IO"
+      },
+      "audio_sda_io": {
+        "type": "data",
+        "direction": "IO"
+      },
+      "fa_up_n_i": {
+        "direction": "I"
+      },
+      "fa_down_n_i": {
+        "direction": "I"
+      },
+      "fa_left_n_i": {
+        "direction": "I"
+      },
+      "fa_right_n_i": {
+        "direction": "I"
+      },
+      "fa_fire_n_i": {
+        "direction": "I"
+      },
+      "fa_fire_n_o": {
+        "direction": "O"
+      },
+      "fa_up_n_o": {
+        "direction": "O"
+      },
+      "fa_left_n_o": {
+        "direction": "O"
+      },
+      "fa_down_n_o": {
+        "direction": "O"
+      },
+      "fa_right_n_o": {
+        "direction": "O"
+      },
+      "fb_up_n_i": {
+        "direction": "I"
+      },
+      "fb_down_n_i": {
+        "direction": "I"
+      },
+      "fb_left_n_i": {
+        "direction": "I"
+      },
+      "fb_right_n_i": {
+        "direction": "I"
+      },
+      "fb_fire_n_i": {
+        "direction": "I"
+      },
+      "fb_up_n_o": {
+        "direction": "O"
+      },
+      "fb_down_n_o": {
+        "direction": "O"
+      },
+      "fb_fire_n_o": {
+        "direction": "O"
+      },
+      "fb_right_n_o": {
+        "direction": "O"
+      },
+      "fb_left_n_o": {
+        "direction": "O"
+      },
+      "joystick_5v_disable_o": {
+        "direction": "O"
+      },
+      "joystick_5v_powergood_i": {
+        "direction": "I"
+      },
+      "paddle_i": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "paddle_drain_o": {
+        "direction": "O"
+      },
+      "hr_d_io": {
+        "direction": "IO",
+        "left": "7",
+        "right": "0"
+      },
+      "hr_rwds_io": {
+        "direction": "IO"
+      },
+      "hr_reset_o": {
+        "direction": "O"
+      },
+      "hr_clk_p_o": {
+        "direction": "O"
+      },
+      "hr_cs0_o": {
+        "direction": "O"
+      },
+      "iec_reset_n_o": {
+        "direction": "O"
+      },
+      "iec_atn_n_o": {
+        "direction": "O"
+      },
+      "iec_clk_en_n_o": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "iec_clk_n_i": {
+        "direction": "I"
+      },
+      "iec_clk_n_o": {
+        "direction": "O"
+      },
+      "iec_data_en_n_o": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "iec_data_n_i": {
+        "direction": "I"
+      },
+      "iec_data_n_o": {
+        "direction": "O"
+      },
+      "iec_srq_en_n_o": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "iec_srq_n_i": {
+        "direction": "I"
+      },
+      "iec_srq_n_o": {
+        "direction": "O"
+      },
+      "cart_phi2_o": {
+        "direction": "O"
+      },
+      "cart_dotclock_o": {
+        "type": "clk",
+        "direction": "O"
+      },
+      "cart_dma_i": {
+        "direction": "I"
+      },
+      "cart_reset_oe_n_o": {
+        "direction": "O"
+      },
+      "cart_reset_io": {
+        "direction": "IO"
+      },
+      "cart_game_oe_n_o": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "cart_game_io": {
+        "direction": "IO"
+      },
+      "cart_exrom_oe_n_o": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "cart_exrom_io": {
+        "direction": "IO"
+      },
+      "cart_nmi_oe_n_o": {
+        "direction": "O"
+      },
+      "cart_nmi_io": {
+        "direction": "IO"
+      },
+      "cart_irq_oe_n_o": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "cart_irq_io": {
+        "direction": "IO"
+      },
+      "cart_ctrl_en_o": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "cart_ctrl_dir_o": {
+        "direction": "O"
+      },
+      "cart_ba_io": {
+        "direction": "IO"
+      },
+      "cart_rw_io": {
+        "direction": "IO"
+      },
+      "cart_io1_io": {
+        "direction": "IO"
+      },
+      "cart_io2_io": {
+        "direction": "IO"
+      },
+      "cart_romh_oe_n_o": {
+        "direction": "O"
+      },
+      "cart_romh_io": {
+        "direction": "IO"
+      },
+      "cart_roml_oe_n_o": {
+        "direction": "O"
+      },
+      "cart_roml_io": {
+        "direction": "IO"
+      },
+      "cart_en_o": {
+        "direction": "O"
+      },
+      "cart_addr_en_o": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "cart_haddr_dir_o": {
+        "direction": "O"
+      },
+      "cart_laddr_dir_o": {
+        "direction": "O"
+      },
+      "cart_a_io": {
+        "direction": "IO",
+        "left": "15",
+        "right": "0"
+      },
+      "cart_data_en_o": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "cart_data_dir_o": {
+        "direction": "O"
+      },
+      "cart_d_io": {
+        "direction": "IO",
+        "left": "7",
+        "right": "0"
+      },
+      "eth_clock_o": {
+        "type": "clk",
+        "direction": "O"
+      },
+      "eth_led2_o": {
+        "direction": "O"
+      },
+      "eth_mdc_o": {
+        "direction": "O"
+      },
+      "eth_mdio_io": {
+        "direction": "IO"
+      },
+      "eth_reset_o": {
+        "type": "rst",
+        "direction": "O"
+      },
+      "eth_rxd_i": {
+        "direction": "I",
+        "left": "1",
+        "right": "0"
+      },
+      "eth_rxdv_i": {
+        "direction": "I"
+      },
+      "eth_rxer_i": {
+        "direction": "I"
+      },
+      "eth_txd_o": {
+        "direction": "O",
+        "left": "1",
+        "right": "0"
+      },
+      "eth_txen_o": {
+        "direction": "O"
+      },
+      "f_density_o": {
+        "direction": "O"
+      },
+      "f_diskchanged_i": {
+        "direction": "I"
+      },
+      "f_index_i": {
+        "direction": "I"
+      },
+      "f_motora_o": {
+        "direction": "O"
+      },
+      "f_motorb_o": {
+        "direction": "O"
+      },
+      "f_rdata_i": {
+        "type": "data",
+        "direction": "I"
+      },
+      "f_selecta_o": {
+        "direction": "O"
+      },
+      "f_selectb_o": {
+        "direction": "O"
+      },
+      "f_side1_o": {
+        "direction": "O"
+      },
+      "f_stepdir_o": {
+        "direction": "O"
+      },
+      "f_step_o": {
+        "direction": "O"
+      },
+      "f_track0_i": {
+        "direction": "I"
+      },
+      "f_wdata_o": {
+        "direction": "O"
+      },
+      "f_wgate_o": {
+        "direction": "O"
+      },
+      "f_writeprotect_i": {
+        "direction": "I"
+      },
+      "fpga_sda_io": {
+        "direction": "IO"
+      },
+      "fpga_scl_io": {
+        "direction": "IO"
+      },
+      "grove_sda_io": {
+        "direction": "IO"
+      },
+      "grove_scl_io": {
+        "direction": "IO"
+      },
+      "led_g_n_o": {
+        "direction": "O"
+      },
+      "led_r_n_o": {
+        "direction": "O"
+      },
+      "led_o": {
+        "direction": "O"
+      },
+      "p1lo_io": {
+        "direction": "IO",
+        "left": "3",
+        "right": "0"
+      },
+      "p1hi_io": {
+        "direction": "IO",
+        "left": "3",
+        "right": "0"
+      },
+      "p2lo_io": {
+        "direction": "IO",
+        "left": "3",
+        "right": "0"
+      },
+      "p2hi_io": {
+        "direction": "IO",
+        "left": "3",
+        "right": "0"
+      },
+      "pmod1_en_o": {
+        "direction": "O"
+      },
+      "pmod1_flag_i": {
+        "direction": "I"
+      },
+      "pmod2_en_o": {
+        "direction": "O"
+      },
+      "pmod2_flag_i": {
+        "direction": "I"
+      },
+      "qspidb_io": {
+        "direction": "IO",
+        "left": "3",
+        "right": "0"
+      },
+      "qspicsn_o": {
+        "direction": "O"
+      },
+      "i2c_scl_io": {
+        "direction": "IO"
+      },
+      "i2c_sda_io": {
+        "direction": "IO"
+      },
+      "dbg_io_11": {
+        "direction": "IO"
+      },
+      "sdram_clk_o": {
+        "type": "clk",
+        "direction": "O"
+      },
+      "sdram_cke_o": {
+        "direction": "O"
+      },
+      "sdram_ras_n_o": {
+        "direction": "O"
+      },
+      "sdram_cas_n_o": {
+        "direction": "O"
+      },
+      "sdram_we_n_o": {
+        "direction": "O"
+      },
+      "sdram_cs_n_o": {
+        "direction": "O"
+      },
+      "sdram_ba_o": {
+        "direction": "O",
+        "left": "1",
+        "right": "0"
+      },
+      "sdram_a_o": {
+        "direction": "O",
+        "left": "12",
+        "right": "0"
+      },
+      "sdram_dqml_o": {
+        "direction": "O"
+      },
+      "sdram_dqmh_o": {
+        "direction": "O"
+      },
+      "sdram_dq_io": {
+        "direction": "IO",
+        "left": "15",
+        "right": "0"
+      }
+    },
+    "components": {
+      "audio_0": {
+        "vlnv": "xilinx.com:module_ref:audio:1.0",
+        "ip_revision": "1",
+        "xci_name": "MEGA65_Core_audio_0_0",
+        "xci_path": "ip\\MEGA65_Core_audio_0_0\\MEGA65_Core_audio_0_0.xci",
+        "inst_hier_path": "audio_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "audio",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "audio_clk_i": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "const_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "const_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "MEGA65_Core_framework_0_0_audio_clk_o",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "audio_reset_i": {
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "const_prop"
+              }
+            }
+          },
+          "audio_left_i": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "audio_right_i": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "audio_mclk_o": {
+            "direction": "O"
+          },
+          "audio_bick_o": {
+            "direction": "O"
+          },
+          "audio_sdti_o": {
+            "direction": "O"
+          },
+          "audio_lrclk_o": {
+            "direction": "O"
+          },
+          "audio_pdn_n_o": {
+            "direction": "O"
+          }
+        }
+      },
+      "framework_0": {
+        "vlnv": "xilinx.com:user:framework:1.0",
+        "ip_revision": "2",
+        "xci_name": "MEGA65_Core_framework_0_0",
+        "xci_path": "ip\\MEGA65_Core_framework_0_0\\MEGA65_Core_framework_0_0.xci",
+        "inst_hier_path": "framework_0"
+      },
+      "Core_0": {
+        "vlnv": "xilinx.com:user:Core:1.0",
+        "ip_revision": "2",
+        "xci_name": "MEGA65_Core_Core_0_0",
+        "xci_path": "ip\\MEGA65_Core_Core_0_0\\MEGA65_Core_Core_0_0.xci",
+        "inst_hier_path": "Core_0"
+      },
+      "util_vector_logic_0": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "MEGA65_Core_util_vector_logic_0_0",
+        "xci_path": "ip\\MEGA65_Core_util_vector_logic_0_0\\MEGA65_Core_util_vector_logic_0_0.xci",
+        "inst_hier_path": "util_vector_logic_0",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "or"
+          }
+        }
+      },
+      "util_vector_logic_1": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "MEGA65_Core_util_vector_logic_1_0",
+        "xci_path": "ip\\MEGA65_Core_util_vector_logic_1_0\\MEGA65_Core_util_vector_logic_1_0.xci",
+        "inst_hier_path": "util_vector_logic_1",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "or"
+          }
+        }
+      },
+      "util_vector_logic_2": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "MEGA65_Core_util_vector_logic_2_0",
+        "xci_path": "ip\\MEGA65_Core_util_vector_logic_2_0\\MEGA65_Core_util_vector_logic_2_0.xci",
+        "inst_hier_path": "util_vector_logic_2",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "or"
+          }
+        }
+      },
+      "util_vector_logic_3": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "MEGA65_Core_util_vector_logic_3_0",
+        "xci_path": "ip\\MEGA65_Core_util_vector_logic_3_0\\MEGA65_Core_util_vector_logic_3_0.xci",
+        "inst_hier_path": "util_vector_logic_3",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "not"
+          },
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "util_vector_logic_4": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "MEGA65_Core_util_vector_logic_4_0",
+        "xci_path": "ip\\MEGA65_Core_util_vector_logic_4_0\\MEGA65_Core_util_vector_logic_4_0.xci",
+        "inst_hier_path": "util_vector_logic_4",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "not"
+          },
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "util_vector_logic_5": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "MEGA65_Core_util_vector_logic_5_0",
+        "xci_path": "ip\\MEGA65_Core_util_vector_logic_5_0\\MEGA65_Core_util_vector_logic_5_0.xci",
+        "inst_hier_path": "util_vector_logic_5",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "not"
+          },
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "Reset_n_i0_i": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "MEGA65_Core_util_vector_logic_6_0",
+        "xci_path": "ip\\MEGA65_Core_util_vector_logic_6_0\\MEGA65_Core_util_vector_logic_6_0.xci",
+        "inst_hier_path": "Reset_n_i0_i",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "not"
+          },
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "util_vector_logic_6": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "MEGA65_Core_util_vector_logic_6_1",
+        "xci_path": "ip\\MEGA65_Core_util_vector_logic_6_1\\MEGA65_Core_util_vector_logic_6_1.xci",
+        "inst_hier_path": "util_vector_logic_6",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "and"
+          },
+          "C_SIZE": {
+            "value": "16"
+          }
+        }
+      },
+      "Cart_a_io": {
+        "ports": {
+          "cart_a_io": {
+            "direction": "IO",
+            "left": "15",
+            "right": "0"
+          },
+          "cart_a_io_reg": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "cart_ba_io": {
+        "ports": {
+          "cart_ba_io": {
+            "direction": "IO"
+          },
+          "cart_ba_i": {
+            "direction": "I"
+          }
+        }
+      },
+      "cart_ba_io_reg": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "MEGA65_Core_util_vector_logic_7_1",
+        "xci_path": "ip\\MEGA65_Core_util_vector_logic_7_1\\MEGA65_Core_util_vector_logic_7_1.xci",
+        "inst_hier_path": "cart_ba_io_reg",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "cart_d_io": {
+        "ports": {
+          "cart_d_io": {
+            "direction": "IO",
+            "left": "7",
+            "right": "0"
+          },
+          "cart_d_i": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "cart_d_io_reg": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "MEGA65_Core_util_vector_logic_7_3",
+        "xci_path": "ip\\MEGA65_Core_util_vector_logic_7_3\\MEGA65_Core_util_vector_logic_7_3.xci",
+        "inst_hier_path": "cart_d_io_reg"
+      },
+      "cart_ctrl_en_o_i": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "MEGA65_Core_util_vector_logic_7_4",
+        "xci_path": "ip\\MEGA65_Core_util_vector_logic_7_4\\MEGA65_Core_util_vector_logic_7_4.xci",
+        "inst_hier_path": "cart_ctrl_en_o_i",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "not"
+          },
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "cart_exrom_io": {
+        "ports": {
+          "cart_exrom_io": {
+            "direction": "IO"
+          },
+          "cart_exrom_i": {
+            "direction": "I"
+          }
+        }
+      },
+      "cart_exrom_io_reg": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "MEGA65_Core_util_vector_logic_7_5",
+        "xci_path": "ip\\MEGA65_Core_util_vector_logic_7_5\\MEGA65_Core_util_vector_logic_7_5.xci",
+        "inst_hier_path": "cart_exrom_io_reg",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "cart_exrom_oe_n_o_i": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "MEGA65_Core_util_vector_logic_7_6",
+        "xci_path": "ip\\MEGA65_Core_util_vector_logic_7_6\\MEGA65_Core_util_vector_logic_7_6.xci",
+        "inst_hier_path": "cart_exrom_oe_n_o_i",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "not"
+          },
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "cart_game_io_reg": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "MEGA65_Core_util_vector_logic_7_7",
+        "xci_path": "ip\\MEGA65_Core_util_vector_logic_7_7\\MEGA65_Core_util_vector_logic_7_7.xci",
+        "inst_hier_path": "cart_game_io_reg",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "cart_game_oe_n_o_i": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "MEGA65_Core_util_vector_logic_7_8",
+        "xci_path": "ip\\MEGA65_Core_util_vector_logic_7_8\\MEGA65_Core_util_vector_logic_7_8.xci",
+        "inst_hier_path": "cart_game_oe_n_o_i",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "not"
+          },
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "cart_game_io": {
+        "ports": {
+          "cart_game_io": {
+            "direction": "IO"
+          },
+          "cart_game_i": {
+            "direction": "I"
+          }
+        }
+      },
+      "cart_io1_io": {
+        "ports": {
+          "cart_io1_io": {
+            "direction": "IO"
+          },
+          "cart_io1_ioi": {
+            "direction": "I"
+          }
+        }
+      },
+      "cart_io1_io_reg": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "MEGA65_Core_util_vector_logic_7_9",
+        "xci_path": "ip\\MEGA65_Core_util_vector_logic_7_9\\MEGA65_Core_util_vector_logic_7_9.xci",
+        "inst_hier_path": "cart_io1_io_reg",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "cart_io2_io": {
+        "ports": {
+          "cart_io2_io": {
+            "direction": "IO"
+          },
+          "cart_io2_ioi": {
+            "direction": "I"
+          }
+        }
+      },
+      "cart_io2_io_reg": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "MEGA65_Core_util_vector_logic_7_10",
+        "xci_path": "ip\\MEGA65_Core_util_vector_logic_7_10\\MEGA65_Core_util_vector_logic_7_10.xci",
+        "inst_hier_path": "cart_io2_io_reg",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "cart_irg_io": {
+        "ports": {
+          "cart_irq_ioi": {
+            "direction": "I"
+          },
+          "cart_irq_io": {
+            "direction": "IO"
+          }
+        }
+      },
+      "cart_irq_io_reg": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "MEGA65_Core_util_vector_logic_7_11",
+        "xci_path": "ip\\MEGA65_Core_util_vector_logic_7_11\\MEGA65_Core_util_vector_logic_7_11.xci",
+        "inst_hier_path": "cart_irq_io_reg",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "cart_irq_oe_n_o_i": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "MEGA65_Core_util_vector_logic_7_12",
+        "xci_path": "ip\\MEGA65_Core_util_vector_logic_7_12\\MEGA65_Core_util_vector_logic_7_12.xci",
+        "inst_hier_path": "cart_irq_oe_n_o_i",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "not"
+          },
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "cart_nmi_io": {
+        "ports": {
+          "cart_nmi_io": {
+            "direction": "IO"
+          },
+          "cart_nmi_ioi": {
+            "direction": "I"
+          }
+        }
+      },
+      "cart_nmi_io_reg": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "MEGA65_Core_util_vector_logic_7_13",
+        "xci_path": "ip\\MEGA65_Core_util_vector_logic_7_13\\MEGA65_Core_util_vector_logic_7_13.xci",
+        "inst_hier_path": "cart_nmi_io_reg",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "cart_reset_io": {
+        "ports": {
+          "cart_reset_io": {
+            "direction": "IO"
+          },
+          "cart_reset_ioi": {
+            "direction": "I"
+          }
+        }
+      },
+      "cart_reset_io_reg": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "MEGA65_Core_util_vector_logic_7_14",
+        "xci_path": "ip\\MEGA65_Core_util_vector_logic_7_14\\MEGA65_Core_util_vector_logic_7_14.xci",
+        "inst_hier_path": "cart_reset_io_reg",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "Cart_romh_io": {
+        "ports": {
+          "cart_romh_io": {
+            "direction": "IO"
+          },
+          "cart_romh_ioi": {
+            "direction": "I"
+          }
+        }
+      },
+      "cart_romh_io_reg": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "MEGA65_Core_util_vector_logic_7_15",
+        "xci_path": "ip\\MEGA65_Core_util_vector_logic_7_15\\MEGA65_Core_util_vector_logic_7_15.xci",
+        "inst_hier_path": "cart_romh_io_reg",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "cart_roml_io": {
+        "ports": {
+          "cart_roml_io": {
+            "direction": "IO"
+          },
+          "cart_roml_ioi": {
+            "direction": "I"
+          }
+        }
+      },
+      "cart_roml_io_reg": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "MEGA65_Core_util_vector_logic_7_16",
+        "xci_path": "ip\\MEGA65_Core_util_vector_logic_7_16\\MEGA65_Core_util_vector_logic_7_16.xci",
+        "inst_hier_path": "cart_roml_io_reg",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "cart_rw_io": {
+        "ports": {
+          "cart_rw_io": {
+            "direction": "IO"
+          },
+          "cart_rw_ioi": {
+            "direction": "I"
+          }
+        }
+      },
+      "cart_rw_io_reg": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "MEGA65_Core_util_vector_logic_7_17",
+        "xci_path": "ip\\MEGA65_Core_util_vector_logic_7_17\\MEGA65_Core_util_vector_logic_7_17.xci",
+        "inst_hier_path": "cart_rw_io_reg",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Core_0_cart_a_o": {
+        "ports": [
+          "Core_0/cart_a_o",
+          "util_vector_logic_6/Op1"
+        ]
+      },
+      "Core_0_cart_addr_oe_o": {
+        "ports": [
+          "Core_0/cart_addr_oe_o",
+          "util_vector_logic_6/Op2",
+          "cart_haddr_dir_o",
+          "cart_laddr_dir_o"
+        ]
+      },
+      "Core_0_cart_ba_o": {
+        "ports": [
+          "Core_0/cart_ba_o",
+          "cart_ba_io_reg/Op1"
+        ]
+      },
+      "Core_0_cart_ctrl_oe_o": {
+        "ports": [
+          "Core_0/cart_ctrl_oe_o",
+          "cart_ba_io_reg/Op2",
+          "cart_ctrl_dir_o",
+          "cart_io1_io_reg/Op2",
+          "cart_io2_io_reg/Op2",
+          "cart_rw_io_reg/Op2"
+        ]
+      },
+      "Core_0_cart_d_o": {
+        "ports": [
+          "Core_0/cart_d_o",
+          "cart_d_io_reg/Op1"
+        ]
+      },
+      "Core_0_cart_data_oe_o": {
+        "ports": [
+          "Core_0/cart_data_oe_o",
+          "cart_d_io_reg/Op2",
+          "cart_data_dir_o"
+        ]
+      },
+      "Core_0_cart_dotclock_o": {
+        "ports": [
+          "Core_0/cart_dotclock_o",
+          "cart_dotclock_o"
+        ]
+      },
+      "Core_0_cart_en_o": {
+        "ports": [
+          "Core_0/cart_en_o",
+          "cart_en_o",
+          "cart_ctrl_en_o_i/Op1"
+        ]
+      },
+      "Core_0_cart_exrom_o": {
+        "ports": [
+          "Core_0/cart_exrom_o",
+          "cart_exrom_io_reg/Op1"
+        ]
+      },
+      "Core_0_cart_exrom_oe_o": {
+        "ports": [
+          "Core_0/cart_exrom_oe_o",
+          "cart_exrom_io_reg/Op2",
+          "cart_exrom_oe_n_o_i/Op1"
+        ]
+      },
+      "Core_0_cart_game_o": {
+        "ports": [
+          "Core_0/cart_game_o",
+          "cart_game_io_reg/Op1"
+        ]
+      },
+      "Core_0_cart_game_oe_o": {
+        "ports": [
+          "Core_0/cart_game_oe_o",
+          "cart_game_io_reg/Op2",
+          "cart_game_oe_n_o_i/Op1"
+        ]
+      },
+      "Core_0_cart_io1_o": {
+        "ports": [
+          "Core_0/cart_io1_o",
+          "cart_io1_io_reg/Op1"
+        ]
+      },
+      "Core_0_cart_io2_o": {
+        "ports": [
+          "Core_0/cart_io2_o",
+          "cart_io2_io_reg/Op1"
+        ]
+      },
+      "Core_0_cart_irq_o": {
+        "ports": [
+          "Core_0/cart_irq_o",
+          "cart_irq_io_reg/Op1"
+        ]
+      },
+      "Core_0_cart_irq_oe_o": {
+        "ports": [
+          "Core_0/cart_irq_oe_o",
+          "cart_irq_io_reg/Op2",
+          "cart_irq_oe_n_o_i/Op1"
+        ]
+      },
+      "Core_0_cart_nmi_o": {
+        "ports": [
+          "Core_0/cart_nmi_o",
+          "cart_nmi_io_reg/Op1"
+        ]
+      },
+      "Core_0_cart_nmi_oe_o": {
+        "ports": [
+          "Core_0/cart_nmi_oe_o",
+          "cart_nmi_io_reg/Op2",
+          "cart_nmi_oe_n_o"
+        ]
+      },
+      "Core_0_cart_phi2_o": {
+        "ports": [
+          "Core_0/cart_phi2_o",
+          "cart_phi2_o"
+        ]
+      },
+      "Core_0_cart_reset_o": {
+        "ports": [
+          "Core_0/cart_reset_o",
+          "cart_reset_io_reg/Op1"
+        ]
+      },
+      "Core_0_cart_reset_oe_o": {
+        "ports": [
+          "Core_0/cart_reset_oe_o",
+          "cart_reset_io_reg/Op2",
+          "cart_reset_oe_n_o"
+        ]
+      },
+      "Core_0_cart_romh_o": {
+        "ports": [
+          "Core_0/cart_romh_o",
+          "cart_romh_io_reg/Op1"
+        ]
+      },
+      "Core_0_cart_romh_oe_o": {
+        "ports": [
+          "Core_0/cart_romh_oe_o",
+          "cart_romh_io_reg/Op2",
+          "cart_romh_oe_n_o"
+        ]
+      },
+      "Core_0_cart_roml_o": {
+        "ports": [
+          "Core_0/cart_roml_o",
+          "cart_roml_io_reg/Op1"
+        ]
+      },
+      "Core_0_cart_roml_oe_o": {
+        "ports": [
+          "Core_0/cart_roml_oe_o",
+          "cart_roml_io_reg/Op2",
+          "cart_roml_oe_n_o"
+        ]
+      },
+      "Core_0_cart_rw_o": {
+        "ports": [
+          "Core_0/cart_rw_o",
+          "cart_rw_io_reg/Op1"
+        ]
+      },
+      "Core_0_hr_core_address_o": {
+        "ports": [
+          "Core_0/hr_core_address_o",
+          "framework_0/hr_core_address_i"
+        ]
+      },
+      "Core_0_hr_core_burstcount_o": {
+        "ports": [
+          "Core_0/hr_core_burstcount_o",
+          "framework_0/hr_core_burstcount_i"
+        ]
+      },
+      "Core_0_hr_core_byteenable_o": {
+        "ports": [
+          "Core_0/hr_core_byteenable_o",
+          "framework_0/hr_core_byteenable_i"
+        ]
+      },
+      "Core_0_hr_core_read_o": {
+        "ports": [
+          "Core_0/hr_core_read_o",
+          "framework_0/hr_core_read_i"
+        ]
+      },
+      "Core_0_hr_core_write_o": {
+        "ports": [
+          "Core_0/hr_core_write_o",
+          "framework_0/hr_core_write_i"
+        ]
+      },
+      "Core_0_hr_core_writedata_o": {
+        "ports": [
+          "Core_0/hr_core_writedata_o",
+          "framework_0/hr_core_writedata_i"
+        ]
+      },
+      "Core_0_iec_atn_n_o": {
+        "ports": [
+          "Core_0/iec_atn_n_o",
+          "iec_atn_n_o"
+        ]
+      },
+      "Core_0_iec_clk_en_o": {
+        "ports": [
+          "Core_0/iec_clk_en_o",
+          "util_vector_logic_3/Op1"
+        ]
+      },
+      "Core_0_iec_clk_n_o": {
+        "ports": [
+          "Core_0/iec_clk_n_o",
+          "iec_clk_n_o"
+        ]
+      },
+      "Core_0_iec_data_en_o": {
+        "ports": [
+          "Core_0/iec_data_en_o",
+          "util_vector_logic_4/Op1"
+        ]
+      },
+      "Core_0_iec_data_n_o": {
+        "ports": [
+          "Core_0/iec_data_n_o",
+          "iec_data_n_o"
+        ]
+      },
+      "Core_0_iec_reset_n_o": {
+        "ports": [
+          "Core_0/iec_reset_n_o",
+          "iec_reset_n_o"
+        ]
+      },
+      "Core_0_iec_srq_en_o": {
+        "ports": [
+          "Core_0/iec_srq_en_o",
+          "util_vector_logic_5/Op1"
+        ]
+      },
+      "Core_0_iec_srq_n_o": {
+        "ports": [
+          "Core_0/iec_srq_n_o",
+          "iec_srq_n_o"
+        ]
+      },
+      "Core_0_main_audio_left_o": {
+        "ports": [
+          "Core_0/main_audio_left_o",
+          "framework_0/main_audio_l_i"
+        ]
+      },
+      "Core_0_main_audio_right_o": {
+        "ports": [
+          "Core_0/main_audio_right_o",
+          "framework_0/main_audio_r_i"
+        ]
+      },
+      "Core_0_main_clk_o": {
+        "ports": [
+          "Core_0/main_clk_o",
+          "framework_0/main_clk_i"
+        ]
+      },
+      "Core_0_main_drive_led_col_o": {
+        "ports": [
+          "Core_0/main_drive_led_col_o",
+          "framework_0/main_drive_led_col_i"
+        ]
+      },
+      "Core_0_main_drive_led_o": {
+        "ports": [
+          "Core_0/main_drive_led_o",
+          "framework_0/main_drive_led_i"
+        ]
+      },
+      "Core_0_main_joy_1_down_n_o": {
+        "ports": [
+          "Core_0/main_joy_1_down_n_o",
+          "framework_0/main_joy1_down_n_i"
+        ]
+      },
+      "Core_0_main_joy_1_fire_n_o": {
+        "ports": [
+          "Core_0/main_joy_1_fire_n_o",
+          "framework_0/main_joy1_fire_n_i"
+        ]
+      },
+      "Core_0_main_joy_1_left_n_o": {
+        "ports": [
+          "Core_0/main_joy_1_left_n_o",
+          "framework_0/main_joy1_left_n_i"
+        ]
+      },
+      "Core_0_main_joy_1_right_n_o": {
+        "ports": [
+          "Core_0/main_joy_1_right_n_o",
+          "framework_0/main_joy1_right_n_i"
+        ]
+      },
+      "Core_0_main_joy_1_up_n_o": {
+        "ports": [
+          "Core_0/main_joy_1_up_n_o",
+          "framework_0/main_joy1_up_n_i"
+        ]
+      },
+      "Core_0_main_joy_2_down_n_o": {
+        "ports": [
+          "Core_0/main_joy_2_down_n_o",
+          "framework_0/main_joy2_down_n_i"
+        ]
+      },
+      "Core_0_main_joy_2_fire_n_o": {
+        "ports": [
+          "Core_0/main_joy_2_fire_n_o",
+          "framework_0/main_joy2_fire_n_i"
+        ]
+      },
+      "Core_0_main_joy_2_left_n_o": {
+        "ports": [
+          "Core_0/main_joy_2_left_n_o",
+          "framework_0/main_joy2_left_n_i"
+        ]
+      },
+      "Core_0_main_joy_2_right_n_o": {
+        "ports": [
+          "Core_0/main_joy_2_right_n_o",
+          "framework_0/main_joy2_right_n_i"
+        ]
+      },
+      "Core_0_main_joy_2_up_n_o": {
+        "ports": [
+          "Core_0/main_joy_2_up_n_o",
+          "framework_0/main_joy2_up_n_i"
+        ]
+      },
+      "Core_0_main_power_led_col_o": {
+        "ports": [
+          "Core_0/main_power_led_col_o",
+          "framework_0/main_power_led_col_i"
+        ]
+      },
+      "Core_0_main_power_led_o": {
+        "ports": [
+          "Core_0/main_power_led_o",
+          "framework_0/main_power_led_i"
+        ]
+      },
+      "Core_0_main_rst_o": {
+        "ports": [
+          "Core_0/main_rst_o",
+          "util_vector_logic_1/Op2",
+          "framework_0/main_rst_i"
+        ]
+      },
+      "Core_0_qnice_ascal_mode_o": {
+        "ports": [
+          "Core_0/qnice_ascal_mode_o",
+          "framework_0/qnice_ascal_mode_i"
+        ]
+      },
+      "Core_0_qnice_ascal_polyphase_o": {
+        "ports": [
+          "Core_0/qnice_ascal_polyphase_o",
+          "framework_0/qnice_ascal_polyphase_i"
+        ]
+      },
+      "Core_0_qnice_ascal_triplebuf_o": {
+        "ports": [
+          "Core_0/qnice_ascal_triplebuf_o",
+          "framework_0/qnice_ascal_triplebuf_i"
+        ]
+      },
+      "Core_0_qnice_audio_filter_o": {
+        "ports": [
+          "Core_0/qnice_audio_filter_o",
+          "framework_0/qnice_audio_filter_i"
+        ]
+      },
+      "Core_0_qnice_audio_mute_o": {
+        "ports": [
+          "Core_0/qnice_audio_mute_o",
+          "framework_0/qnice_audio_mute_i"
+        ]
+      },
+      "Core_0_qnice_csync_o": {
+        "ports": [
+          "Core_0/qnice_csync_o",
+          "framework_0/qnice_csync_i"
+        ]
+      },
+      "Core_0_qnice_dev_data_o": {
+        "ports": [
+          "Core_0/qnice_dev_data_o",
+          "framework_0/qnice_ramrom_data_in_i"
+        ]
+      },
+      "Core_0_qnice_dev_wait_o": {
+        "ports": [
+          "Core_0/qnice_dev_wait_o",
+          "framework_0/qnice_ramrom_wait_i"
+        ]
+      },
+      "Core_0_qnice_dvi_o": {
+        "ports": [
+          "Core_0/qnice_dvi_o",
+          "framework_0/qnice_dvi_i"
+        ]
+      },
+      "Core_0_qnice_flip_joyports_o": {
+        "ports": [
+          "Core_0/qnice_flip_joyports_o",
+          "framework_0/qnice_flip_joyports_i"
+        ]
+      },
+      "Core_0_qnice_osm_cfg_scaling_o": {
+        "ports": [
+          "Core_0/qnice_osm_cfg_scaling_o",
+          "framework_0/qnice_osm_cfg_scaling_i"
+        ]
+      },
+      "Core_0_qnice_retro15kHz_o": {
+        "ports": [
+          "Core_0/qnice_retro15kHz_o",
+          "framework_0/qnice_retro15kHz_i"
+        ]
+      },
+      "Core_0_qnice_scandoubler_o": {
+        "ports": [
+          "Core_0/qnice_scandoubler_o",
+          "framework_0/qnice_scandoubler_i"
+        ]
+      },
+      "Core_0_qnice_video_mode_o": {
+        "ports": [
+          "Core_0/qnice_video_mode_o",
+          "framework_0/qnice_video_mode_i"
+        ]
+      },
+      "Core_0_qnice_zoom_crop_o": {
+        "ports": [
+          "Core_0/qnice_zoom_crop_o",
+          "framework_0/qnice_zoom_crop_i"
+        ]
+      },
+      "Core_0_video_blue_o": {
+        "ports": [
+          "Core_0/video_blue_o",
+          "framework_0/video_blue_i"
+        ]
+      },
+      "Core_0_video_ce_o": {
+        "ports": [
+          "Core_0/video_ce_o",
+          "framework_0/video_ce_i"
+        ]
+      },
+      "Core_0_video_ce_ovl_o": {
+        "ports": [
+          "Core_0/video_ce_ovl_o",
+          "framework_0/video_ce_ovl_i"
+        ]
+      },
+      "Core_0_video_clk_o": {
+        "ports": [
+          "Core_0/video_clk_o",
+          "framework_0/video_clk_i"
+        ]
+      },
+      "Core_0_video_green_o": {
+        "ports": [
+          "Core_0/video_green_o",
+          "framework_0/video_green_i"
+        ]
+      },
+      "Core_0_video_hblank_o": {
+        "ports": [
+          "Core_0/video_hblank_o",
+          "framework_0/video_hblank_i"
+        ]
+      },
+      "Core_0_video_hs_o": {
+        "ports": [
+          "Core_0/video_hs_o",
+          "framework_0/video_hs_i"
+        ]
+      },
+      "Core_0_video_red_o": {
+        "ports": [
+          "Core_0/video_red_o",
+          "framework_0/video_red_i"
+        ]
+      },
+      "Core_0_video_rst_o": {
+        "ports": [
+          "Core_0/video_rst_o",
+          "framework_0/video_rst_i"
+        ]
+      },
+      "Core_0_video_vblank_o": {
+        "ports": [
+          "Core_0/video_vblank_o",
+          "framework_0/video_vblank_i"
+        ]
+      },
+      "Core_0_video_vs_o": {
+        "ports": [
+          "Core_0/video_vs_o",
+          "framework_0/video_vs_i"
+        ]
+      },
+      "Net": {
+        "ports": [
+          "hr_d_io",
+          "framework_0/hr_d_io"
+        ]
+      },
+      "Net1": {
+        "ports": [
+          "vga_scl_io",
+          "framework_0/vga_scl_io"
+        ]
+      },
+      "Net2": {
+        "ports": [
+          "vga_sda_io",
+          "framework_0/vga_sda_io"
+        ]
+      },
+      "Net3": {
+        "ports": [
+          "audio_scl_io",
+          "framework_0/audio_scl_io"
+        ]
+      },
+      "Net4": {
+        "ports": [
+          "audio_sda_io",
+          "framework_0/audio_sda_io"
+        ]
+      },
+      "Net5": {
+        "ports": [
+          "fpga_scl_io",
+          "framework_0/fpga_scl_io"
+        ]
+      },
+      "Net6": {
+        "ports": [
+          "fpga_sda_io",
+          "framework_0/fpga_sda_io"
+        ]
+      },
+      "Net7": {
+        "ports": [
+          "grove_scl_io",
+          "framework_0/grove_scl_io"
+        ]
+      },
+      "Net8": {
+        "ports": [
+          "grove_sda_io",
+          "framework_0/grove_sda_io"
+        ]
+      },
+      "Net9": {
+        "ports": [
+          "hdmi_scl_io",
+          "framework_0/hdmi_scl_io"
+        ]
+      },
+      "Net10": {
+        "ports": [
+          "hdmi_sda_io",
+          "framework_0/hdmi_sda_io"
+        ]
+      },
+      "Net11": {
+        "ports": [
+          "hr_rwds_io",
+          "framework_0/hr_rwds_io"
+        ]
+      },
+      "Net12": {
+        "ports": [
+          "i2c_scl_io",
+          "framework_0/i2c_scl_io"
+        ]
+      },
+      "Net13": {
+        "ports": [
+          "i2c_sda_io",
+          "framework_0/i2c_sda_io"
+        ]
+      },
+      "Net14": {
+        "ports": [
+          "cart_a_io",
+          "Cart_a_io/cart_a_io"
+        ]
+      },
+      "Net15": {
+        "ports": [
+          "cart_ba_io",
+          "cart_ba_io/cart_ba_io"
+        ]
+      },
+      "Net16": {
+        "ports": [
+          "cart_d_io",
+          "cart_d_io/cart_d_io"
+        ]
+      },
+      "Net17": {
+        "ports": [
+          "cart_exrom_io",
+          "cart_exrom_io/cart_exrom_io"
+        ]
+      },
+      "Net18": {
+        "ports": [
+          "cart_game_io",
+          "cart_game_io/cart_game_io"
+        ]
+      },
+      "Net19": {
+        "ports": [
+          "cart_io1_io",
+          "cart_io1_io/cart_io1_io"
+        ]
+      },
+      "Net20": {
+        "ports": [
+          "cart_io2_io",
+          "cart_io2_io/cart_io2_io"
+        ]
+      },
+      "Net21": {
+        "ports": [
+          "cart_irq_io",
+          "cart_irg_io/cart_irq_io"
+        ]
+      },
+      "Net22": {
+        "ports": [
+          "cart_nmi_io",
+          "cart_nmi_io/cart_nmi_io"
+        ]
+      },
+      "Net23": {
+        "ports": [
+          "cart_reset_io",
+          "cart_reset_io/cart_reset_io"
+        ]
+      },
+      "Net24": {
+        "ports": [
+          "cart_romh_io",
+          "Cart_romh_io/cart_romh_io"
+        ]
+      },
+      "Net25": {
+        "ports": [
+          "cart_roml_io",
+          "cart_roml_io/cart_roml_io"
+        ]
+      },
+      "Net26": {
+        "ports": [
+          "cart_rw_io",
+          "cart_rw_io/cart_rw_io"
+        ]
+      },
+      "Signal_Reset_n_i0_i": {
+        "ports": [
+          "Reset_n_i0_i/Res",
+          "framework_0/reset_n_i"
+        ]
+      },
+      "audio_0_audio_bick_o": {
+        "ports": [
+          "audio_0/audio_bick_o",
+          "audio_bick_o"
+        ]
+      },
+      "audio_0_audio_lrclk_o": {
+        "ports": [
+          "audio_0/audio_lrclk_o",
+          "audio_lrclk_o"
+        ]
+      },
+      "audio_0_audio_mclk_o": {
+        "ports": [
+          "audio_0/audio_mclk_o",
+          "audio_mclk_o"
+        ]
+      },
+      "audio_0_audio_pdn_n_o": {
+        "ports": [
+          "audio_0/audio_pdn_n_o",
+          "audio_pdn_n_o"
+        ]
+      },
+      "audio_0_audio_sdti_o": {
+        "ports": [
+          "audio_0/audio_sdti_o",
+          "audio_sdti_o"
+        ]
+      },
+      "cart_ba_io_reg_Res": {
+        "ports": [
+          "cart_ba_io_reg/Res",
+          "cart_ba_io/cart_ba_i",
+          "Core_0/cart_ba_i"
+        ]
+      },
+      "cart_ctrl_en_o_i_Res": {
+        "ports": [
+          "cart_ctrl_en_o_i/Res",
+          "cart_addr_en_o",
+          "cart_ctrl_en_o",
+          "cart_data_en_o"
+        ]
+      },
+      "cart_d_io_reg_Res": {
+        "ports": [
+          "cart_d_io_reg/Res",
+          "cart_d_io/cart_d_i",
+          "Core_0/cart_d_i"
+        ]
+      },
+      "cart_dma_i_1": {
+        "ports": [
+          "cart_dma_i",
+          "Core_0/cart_dma_i"
+        ]
+      },
+      "cart_game_io_reg_Res": {
+        "ports": [
+          "cart_game_io_reg/Res",
+          "cart_game_io/cart_game_i",
+          "Core_0/cart_game_i"
+        ]
+      },
+      "cart_irq_io_reg_Res": {
+        "ports": [
+          "cart_irq_io_reg/Res",
+          "cart_irg_io/cart_irq_ioi",
+          "Core_0/cart_irq_i"
+        ]
+      },
+      "cart_irq_oe_n_o_i_Res": {
+        "ports": [
+          "cart_irq_oe_n_o_i/Res",
+          "cart_irq_oe_n_o"
+        ]
+      },
+      "cart_nmi_io_reg_Res": {
+        "ports": [
+          "cart_nmi_io_reg/Res",
+          "cart_nmi_io/cart_nmi_ioi",
+          "Core_0/cart_nmi_i"
+        ]
+      },
+      "cart_reset_io_reg_Res": {
+        "ports": [
+          "cart_reset_io_reg/Res",
+          "cart_reset_io/cart_reset_ioi",
+          "Core_0/cart_reset_i"
+        ]
+      },
+      "cart_romh_io_reg_Res": {
+        "ports": [
+          "cart_romh_io_reg/Res",
+          "Cart_romh_io/cart_romh_ioi",
+          "Core_0/cart_romh_i"
+        ]
+      },
+      "cart_roml_io_reg_Res": {
+        "ports": [
+          "cart_roml_io_reg/Res",
+          "cart_roml_io/cart_roml_ioi",
+          "Core_0/cart_roml_i"
+        ]
+      },
+      "clk_i_1": {
+        "ports": [
+          "clk_i",
+          "framework_0/clk_i",
+          "Core_0/clk_i"
+        ]
+      },
+      "fa_down_n_i_1": {
+        "ports": [
+          "fa_down_n_i",
+          "framework_0/joy_1_down_n_i"
+        ]
+      },
+      "fa_fire_n_i_1": {
+        "ports": [
+          "fa_fire_n_i",
+          "framework_0/joy_1_fire_n_i"
+        ]
+      },
+      "fa_left_n_i_1": {
+        "ports": [
+          "fa_left_n_i",
+          "framework_0/joy_1_left_n_i"
+        ]
+      },
+      "fa_right_n_i_1": {
+        "ports": [
+          "fa_right_n_i",
+          "framework_0/joy_1_right_n_i"
+        ]
+      },
+      "fa_up_n_i_1": {
+        "ports": [
+          "fa_up_n_i",
+          "framework_0/joy_1_up_n_i"
+        ]
+      },
+      "fb_down_n_i_1": {
+        "ports": [
+          "fb_down_n_i",
+          "framework_0/joy_2_down_n_i"
+        ]
+      },
+      "fb_fire_n_i_1": {
+        "ports": [
+          "fb_fire_n_i",
+          "framework_0/joy_2_fire_n_i"
+        ]
+      },
+      "fb_left_n_i_1": {
+        "ports": [
+          "fb_left_n_i",
+          "framework_0/joy_2_left_n_i"
+        ]
+      },
+      "fb_right_n_i_1": {
+        "ports": [
+          "fb_right_n_i",
+          "framework_0/joy_2_right_n_i"
+        ]
+      },
+      "fb_up_n_i_1": {
+        "ports": [
+          "fb_up_n_i",
+          "framework_0/joy_2_up_n_i"
+        ]
+      },
+      "framework_0_audio_clk_o": {
+        "ports": [
+          "framework_0/audio_clk_o",
+          "audio_0/audio_clk_i"
+        ]
+      },
+      "framework_0_audio_left_o": {
+        "ports": [
+          "framework_0/audio_left_o",
+          "audio_0/audio_left_i"
+        ]
+      },
+      "framework_0_audio_reset_o": {
+        "ports": [
+          "framework_0/audio_reset_o",
+          "audio_0/audio_reset_i"
+        ]
+      },
+      "framework_0_audio_right_o": {
+        "ports": [
+          "framework_0/audio_right_o",
+          "audio_0/audio_right_i"
+        ]
+      },
+      "framework_0_hr_clk_o": {
+        "ports": [
+          "framework_0/hr_clk_o",
+          "Core_0/hr_clk_i"
+        ]
+      },
+      "framework_0_hr_clk_p_o": {
+        "ports": [
+          "framework_0/hr_clk_p_o",
+          "hr_clk_p_o"
+        ]
+      },
+      "framework_0_hr_core_readdata_o": {
+        "ports": [
+          "framework_0/hr_core_readdata_o",
+          "Core_0/hr_core_readdata_i"
+        ]
+      },
+      "framework_0_hr_core_readdatavalid_o": {
+        "ports": [
+          "framework_0/hr_core_readdatavalid_o",
+          "Core_0/hr_core_readdatavalid_i"
+        ]
+      },
+      "framework_0_hr_core_waitrequest_o": {
+        "ports": [
+          "framework_0/hr_core_waitrequest_o",
+          "Core_0/hr_core_waitrequest_i"
+        ]
+      },
+      "framework_0_hr_cs0_o": {
+        "ports": [
+          "framework_0/hr_cs0_o",
+          "hr_cs0_o"
+        ]
+      },
+      "framework_0_hr_high_o": {
+        "ports": [
+          "framework_0/hr_high_o",
+          "Core_0/hr_high_i"
+        ]
+      },
+      "framework_0_hr_low_o": {
+        "ports": [
+          "framework_0/hr_low_o",
+          "Core_0/hr_low_i"
+        ]
+      },
+      "framework_0_hr_reset_o": {
+        "ports": [
+          "framework_0/hr_reset_o",
+          "hr_reset_o"
+        ]
+      },
+      "framework_0_hr_rst_o": {
+        "ports": [
+          "framework_0/hr_rst_o",
+          "Core_0/hr_rst_i"
+        ]
+      },
+      "framework_0_joy_1_down_n_o": {
+        "ports": [
+          "framework_0/joy_1_down_n_o",
+          "fa_down_n_o"
+        ]
+      },
+      "framework_0_joy_1_fire_n_o": {
+        "ports": [
+          "framework_0/joy_1_fire_n_o",
+          "fa_fire_n_o"
+        ]
+      },
+      "framework_0_joy_1_left_n_o": {
+        "ports": [
+          "framework_0/joy_1_left_n_o",
+          "fa_left_n_o"
+        ]
+      },
+      "framework_0_joy_1_right_n_o": {
+        "ports": [
+          "framework_0/joy_1_right_n_o",
+          "fa_right_n_o"
+        ]
+      },
+      "framework_0_joy_1_up_n_o": {
+        "ports": [
+          "framework_0/joy_1_up_n_o",
+          "fa_up_n_o"
+        ]
+      },
+      "framework_0_joy_2_down_n_o": {
+        "ports": [
+          "framework_0/joy_2_down_n_o",
+          "fb_down_n_o"
+        ]
+      },
+      "framework_0_joy_2_fire_n_o": {
+        "ports": [
+          "framework_0/joy_2_fire_n_o",
+          "fb_fire_n_o"
+        ]
+      },
+      "framework_0_joy_2_left_n_o": {
+        "ports": [
+          "framework_0/joy_2_left_n_o",
+          "fb_left_n_o"
+        ]
+      },
+      "framework_0_joy_2_right_n_o": {
+        "ports": [
+          "framework_0/joy_2_right_n_o",
+          "fb_right_n_o"
+        ]
+      },
+      "framework_0_joy_2_up_n_o": {
+        "ports": [
+          "framework_0/joy_2_up_n_o",
+          "fb_up_n_o"
+        ]
+      },
+      "framework_0_kb_io0_o": {
+        "ports": [
+          "framework_0/kb_io0_o",
+          "kb_io0_o"
+        ]
+      },
+      "framework_0_kb_io1_o": {
+        "ports": [
+          "framework_0/kb_io1_o",
+          "kb_io1_o"
+        ]
+      },
+      "framework_0_main_joy1_down_n_o": {
+        "ports": [
+          "framework_0/main_joy1_down_n_o",
+          "Core_0/main_joy_1_down_n_i"
+        ]
+      },
+      "framework_0_main_joy1_fire_n_o": {
+        "ports": [
+          "framework_0/main_joy1_fire_n_o",
+          "Core_0/main_joy_1_fire_n_i"
+        ]
+      },
+      "framework_0_main_joy1_left_n_o": {
+        "ports": [
+          "framework_0/main_joy1_left_n_o",
+          "Core_0/main_joy_1_left_n_i"
+        ]
+      },
+      "framework_0_main_joy1_right_n_o": {
+        "ports": [
+          "framework_0/main_joy1_right_n_o",
+          "Core_0/main_joy_1_right_n_i"
+        ]
+      },
+      "framework_0_main_joy1_up_n_o": {
+        "ports": [
+          "framework_0/main_joy1_up_n_o",
+          "Core_0/main_joy_1_up_n_i"
+        ]
+      },
+      "framework_0_main_joy2_down_n_o": {
+        "ports": [
+          "framework_0/main_joy2_down_n_o",
+          "Core_0/main_joy_2_down_n_i"
+        ]
+      },
+      "framework_0_main_joy2_fire_n_o": {
+        "ports": [
+          "framework_0/main_joy2_fire_n_o",
+          "Core_0/main_joy_2_fire_n_i"
+        ]
+      },
+      "framework_0_main_joy2_left_n_o": {
+        "ports": [
+          "framework_0/main_joy2_left_n_o",
+          "Core_0/main_joy_2_left_n_i"
+        ]
+      },
+      "framework_0_main_joy2_right_n_o": {
+        "ports": [
+          "framework_0/main_joy2_right_n_o",
+          "Core_0/main_joy_2_right_n_i"
+        ]
+      },
+      "framework_0_main_joy2_up_n_o": {
+        "ports": [
+          "framework_0/main_joy2_up_n_o",
+          "Core_0/main_joy_2_up_n_i"
+        ]
+      },
+      "framework_0_main_key_num_o": {
+        "ports": [
+          "framework_0/main_key_num_o",
+          "Core_0/main_kb_key_num_i"
+        ]
+      },
+      "framework_0_main_key_pressed_n_o": {
+        "ports": [
+          "framework_0/main_key_pressed_n_o",
+          "Core_0/main_kb_key_pressed_n_i"
+        ]
+      },
+      "framework_0_main_osm_control_m_o": {
+        "ports": [
+          "framework_0/main_osm_control_m_o",
+          "Core_0/main_osm_control_i"
+        ]
+      },
+      "framework_0_main_pot1_x_o": {
+        "ports": [
+          "framework_0/main_pot1_x_o",
+          "Core_0/main_pot1_x_i"
+        ]
+      },
+      "framework_0_main_pot1_y_o": {
+        "ports": [
+          "framework_0/main_pot1_y_o",
+          "Core_0/main_pot1_y_i"
+        ]
+      },
+      "framework_0_main_pot2_x_o": {
+        "ports": [
+          "framework_0/main_pot2_x_o",
+          "Core_0/main_pot2_x_i"
+        ]
+      },
+      "framework_0_main_pot2_y_o": {
+        "ports": [
+          "framework_0/main_pot2_y_o",
+          "Core_0/main_pot2_y_i"
+        ]
+      },
+      "framework_0_main_qnice_gp_reg_o": {
+        "ports": [
+          "framework_0/main_qnice_gp_reg_o",
+          "Core_0/main_qnice_gp_reg_i"
+        ]
+      },
+      "framework_0_main_qnice_pause_o": {
+        "ports": [
+          "framework_0/main_qnice_pause_o",
+          "Core_0/main_pause_core_i"
+        ]
+      },
+      "framework_0_main_qnice_reset_o": {
+        "ports": [
+          "framework_0/main_qnice_reset_o",
+          "util_vector_logic_0/Op2",
+          "util_vector_logic_2/Op2"
+        ]
+      },
+      "framework_0_main_reset_core_o": {
+        "ports": [
+          "framework_0/main_reset_core_o",
+          "util_vector_logic_0/Op1"
+        ]
+      },
+      "framework_0_main_reset_m2m_o": {
+        "ports": [
+          "framework_0/main_reset_m2m_o",
+          "util_vector_logic_2/Op1"
+        ]
+      },
+      "framework_0_main_rtc_o": {
+        "ports": [
+          "framework_0/main_rtc_o",
+          "Core_0/main_rtc_i"
+        ]
+      },
+      "framework_0_paddle_drain_o": {
+        "ports": [
+          "framework_0/paddle_drain_o",
+          "paddle_drain_o"
+        ]
+      },
+      "framework_0_qnice_clk_o": {
+        "ports": [
+          "framework_0/qnice_clk_o",
+          "Core_0/qnice_clk_i"
+        ]
+      },
+      "framework_0_qnice_gp_reg_o": {
+        "ports": [
+          "framework_0/qnice_gp_reg_o",
+          "Core_0/qnice_gp_reg_i"
+        ]
+      },
+      "framework_0_qnice_osm_control_m_o": {
+        "ports": [
+          "framework_0/qnice_osm_control_m_o",
+          "Core_0/qnice_osm_control_i"
+        ]
+      },
+      "framework_0_qnice_ramrom_addr_o": {
+        "ports": [
+          "framework_0/qnice_ramrom_addr_o",
+          "Core_0/qnice_dev_addr_i"
+        ]
+      },
+      "framework_0_qnice_ramrom_ce_o": {
+        "ports": [
+          "framework_0/qnice_ramrom_ce_o",
+          "Core_0/qnice_dev_ce_i"
+        ]
+      },
+      "framework_0_qnice_ramrom_data_out_o": {
+        "ports": [
+          "framework_0/qnice_ramrom_data_out_o",
+          "Core_0/qnice_dev_data_i"
+        ]
+      },
+      "framework_0_qnice_ramrom_dev_o": {
+        "ports": [
+          "framework_0/qnice_ramrom_dev_o",
+          "Core_0/qnice_dev_id_i"
+        ]
+      },
+      "framework_0_qnice_ramrom_we_o": {
+        "ports": [
+          "framework_0/qnice_ramrom_we_o",
+          "Core_0/qnice_dev_we_i"
+        ]
+      },
+      "framework_0_qnice_rst_o": {
+        "ports": [
+          "framework_0/qnice_rst_o",
+          "Core_0/qnice_rst_i"
+        ]
+      },
+      "framework_0_sd2_clk_o": {
+        "ports": [
+          "framework_0/sd2_clk_o",
+          "sd2_clk_o"
+        ]
+      },
+      "framework_0_sd2_mosi_o": {
+        "ports": [
+          "framework_0/sd2_mosi_o",
+          "sd2_mosi_o"
+        ]
+      },
+      "framework_0_sd2_reset_o": {
+        "ports": [
+          "framework_0/sd2_reset_o",
+          "sd2_reset_o"
+        ]
+      },
+      "framework_0_sd_clk_o": {
+        "ports": [
+          "framework_0/sd_clk_o",
+          "sd_clk_o"
+        ]
+      },
+      "framework_0_sd_mosi_o": {
+        "ports": [
+          "framework_0/sd_mosi_o",
+          "sd_mosi_o"
+        ]
+      },
+      "framework_0_sd_reset_o": {
+        "ports": [
+          "framework_0/sd_reset_o",
+          "sd_reset_o"
+        ]
+      },
+      "framework_0_tmds_clk_n_o": {
+        "ports": [
+          "framework_0/tmds_clk_n_o",
+          "tmds_clk_n_o"
+        ]
+      },
+      "framework_0_tmds_clk_p_o": {
+        "ports": [
+          "framework_0/tmds_clk_p_o",
+          "tmds_clk_p_o"
+        ]
+      },
+      "framework_0_tmds_data_n_o": {
+        "ports": [
+          "framework_0/tmds_data_n_o",
+          "tmds_data_n_o"
+        ]
+      },
+      "framework_0_tmds_data_p_o": {
+        "ports": [
+          "framework_0/tmds_data_p_o",
+          "tmds_data_p_o"
+        ]
+      },
+      "framework_0_uart_txd_o": {
+        "ports": [
+          "framework_0/uart_txd_o",
+          "uart_txd_o"
+        ]
+      },
+      "framework_0_vdac_blank_n_o": {
+        "ports": [
+          "framework_0/vdac_blank_n_o",
+          "vdac_blank_n_o"
+        ]
+      },
+      "framework_0_vdac_clk_o": {
+        "ports": [
+          "framework_0/vdac_clk_o",
+          "vdac_clk_o"
+        ]
+      },
+      "framework_0_vdac_sync_n_o": {
+        "ports": [
+          "framework_0/vdac_sync_n_o",
+          "vdac_sync_n_o"
+        ]
+      },
+      "framework_0_vga_blue_o": {
+        "ports": [
+          "framework_0/vga_blue_o",
+          "vga_blue_o"
+        ]
+      },
+      "framework_0_vga_green_o": {
+        "ports": [
+          "framework_0/vga_green_o",
+          "vga_green_o"
+        ]
+      },
+      "framework_0_vga_hs_o": {
+        "ports": [
+          "framework_0/vga_hs_o",
+          "vga_hs_o"
+        ]
+      },
+      "framework_0_vga_red_o": {
+        "ports": [
+          "framework_0/vga_red_o",
+          "vga_red_o"
+        ]
+      },
+      "framework_0_vga_vs_o": {
+        "ports": [
+          "framework_0/vga_vs_o",
+          "vga_vs_o"
+        ]
+      },
+      "iec_clk_n_i_1": {
+        "ports": [
+          "iec_clk_n_i",
+          "Core_0/iec_clk_n_i"
+        ]
+      },
+      "iec_data_n_i_1": {
+        "ports": [
+          "iec_data_n_i",
+          "Core_0/iec_data_n_i"
+        ]
+      },
+      "iec_srq_n_i_1": {
+        "ports": [
+          "iec_srq_n_i",
+          "Core_0/iec_srq_n_i"
+        ]
+      },
+      "kb_io2_i_1": {
+        "ports": [
+          "kb_io2_i",
+          "framework_0/kb_io2_i"
+        ]
+      },
+      "paddle_i_1": {
+        "ports": [
+          "paddle_i",
+          "framework_0/paddle_i"
+        ]
+      },
+      "reset_button_i_1": {
+        "ports": [
+          "reset_button_i",
+          "Reset_n_i0_i/Op1"
+        ]
+      },
+      "sd2_cd_i_1": {
+        "ports": [
+          "sd2_cd_i",
+          "framework_0/sd2_cd_i"
+        ]
+      },
+      "sd2_miso_i_1": {
+        "ports": [
+          "sd2_miso_i",
+          "framework_0/sd2_miso_i"
+        ]
+      },
+      "sd_cd_i_1": {
+        "ports": [
+          "sd_cd_i",
+          "framework_0/sd_cd_i"
+        ]
+      },
+      "sd_miso_i_1": {
+        "ports": [
+          "sd_miso_i",
+          "framework_0/sd_miso_i"
+        ]
+      },
+      "uart_rxd_i_1": {
+        "ports": [
+          "uart_rxd_i",
+          "framework_0/uart_rxd_i"
+        ]
+      },
+      "util_vector_logic_0_Res": {
+        "ports": [
+          "util_vector_logic_0/Res",
+          "Core_0/main_reset_core_i"
+        ]
+      },
+      "util_vector_logic_1_Res": {
+        "ports": [
+          "util_vector_logic_1/Res",
+          "Core_0/main_reset_m2m_i"
+        ]
+      },
+      "util_vector_logic_2_Res": {
+        "ports": [
+          "util_vector_logic_2/Res",
+          "util_vector_logic_1/Op1"
+        ]
+      },
+      "util_vector_logic_3_Res": {
+        "ports": [
+          "util_vector_logic_3/Res",
+          "iec_clk_en_n_o"
+        ]
+      },
+      "util_vector_logic_4_Res": {
+        "ports": [
+          "util_vector_logic_4/Res",
+          "iec_data_en_n_o"
+        ]
+      },
+      "util_vector_logic_5_Res": {
+        "ports": [
+          "util_vector_logic_5/Res",
+          "iec_srq_en_n_o"
+        ]
+      },
+      "util_vector_logic_6_Res": {
+        "ports": [
+          "util_vector_logic_6/Res",
+          "Cart_a_io/cart_a_io_reg",
+          "Core_0/cart_a_i"
+        ]
+      },
+      "util_vector_logic_7_Res": {
+        "ports": [
+          "cart_exrom_io_reg/Res",
+          "cart_exrom_io/cart_exrom_i",
+          "Core_0/cart_exrom_i"
+        ]
+      },
+      "util_vector_logic_7_Res1": {
+        "ports": [
+          "cart_exrom_oe_n_o_i/Res",
+          "cart_exrom_oe_n_o"
+        ]
+      },
+      "util_vector_logic_7_Res2": {
+        "ports": [
+          "cart_game_oe_n_o_i/Res",
+          "cart_game_oe_n_o"
+        ]
+      },
+      "util_vector_logic_7_Res3": {
+        "ports": [
+          "cart_io1_io_reg/Res",
+          "cart_io1_io/cart_io1_ioi",
+          "Core_0/cart_io1_i"
+        ]
+      },
+      "util_vector_logic_7_Res4": {
+        "ports": [
+          "cart_io2_io_reg/Res",
+          "cart_io2_io/cart_io2_ioi",
+          "Core_0/cart_io2_i"
+        ]
+      },
+      "util_vector_logic_7_Res5": {
+        "ports": [
+          "cart_rw_io_reg/Res",
+          "cart_rw_io/cart_rw_ioi",
+          "Core_0/cart_rw_i"
+        ]
+      }
+    }
+  }
+}

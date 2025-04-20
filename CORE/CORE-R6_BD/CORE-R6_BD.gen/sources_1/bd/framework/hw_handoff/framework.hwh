@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Mar  8 17:04:26 2025" VIVADOVERSION="2024.2.1">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a200t" NAME="framework" PACKAGE="fbg484" SPEEDGRADE="-3"/>
+
+  <EXTERNALPORTS>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="audio_clk_o" SIGIS="clk"/>
+    <PORT DIR="O" LEFT="15" NAME="audio_left_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="audio_reset_o" POLARITY="ACTIVE_LOW" SIGIS="rst"/>
+    <PORT DIR="O" LEFT="15" NAME="audio_right_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="IO" NAME="audio_scl_io" SIGIS="undef"/>
+    <PORT DIR="IO" NAME="audio_sda_io" SIGIS="undef"/>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk_i" SIGIS="clk"/>
+    <PORT DIR="IO" NAME="fpga_scl_io" SIGIS="undef"/>
+    <PORT DIR="IO" NAME="fpga_sda_io" SIGIS="undef"/>
+    <PORT DIR="IO" NAME="grove_scl_io" SIGIS="undef"/>
+    <PORT DIR="IO" NAME="grove_sda_io" SIGIS="undef"/>
+    <PORT DIR="IO" NAME="hdmi_scl_io" SIGIS="undef"/>
+    <PORT DIR="IO" NAME="hdmi_sda_io" SIGIS="undef"/>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="hr_clk_o" SIGIS="clk"/>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="hr_clk_p_o" SIGIS="clk"/>
+    <PORT DIR="I" LEFT="31" NAME="hr_core_address_i" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="7" NAME="hr_core_burstcount_i" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="1" NAME="hr_core_byteenable_i" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="hr_core_read_i" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="15" NAME="hr_core_readdata_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="hr_core_readdatavalid_o" SIGIS="undef"/>
+    <PORT DIR="O" NAME="hr_core_waitrequest_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="hr_core_write_i" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="15" NAME="hr_core_writedata_i" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="hr_cs0_o" SIGIS="undef"/>
+    <PORT DIR="IO" LEFT="7" NAME="hr_d_io" RIGHT="0" SIGIS="data"/>
+    <PORT DIR="O" NAME="hr_high_o" SIGIS="undef"/>
+    <PORT DIR="O" NAME="hr_low_o" SIGIS="undef"/>
+    <PORT DIR="O" NAME="hr_reset_o" POLARITY="ACTIVE_LOW" SIGIS="rst"/>
+    <PORT DIR="O" NAME="hr_rst_o" POLARITY="ACTIVE_LOW" SIGIS="rst"/>
+    <PORT DIR="IO" NAME="hr_rwds_io" SIGIS="data"/>
+    <PORT DIR="IO" NAME="i2c_scl_io" SIGIS="undef"/>
+    <PORT DIR="IO" NAME="i2c_sda_io" SIGIS="undef"/>
+    <PORT DIR="I" NAME="joy_1_down_n_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="joy_1_down_n_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="joy_1_fire_n_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="joy_1_fire_n_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="joy_1_left_n_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="joy_1_left_n_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="joy_1_right_n_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="joy_1_right_n_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="joy_1_up_n_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="joy_1_up_n_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="joy_2_down_n_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="joy_2_down_n_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="joy_2_fire_n_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="joy_2_fire_n_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="joy_2_left_n_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="joy_2_left_n_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="joy_2_right_n_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="joy_2_right_n_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="joy_2_up_n_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="joy_2_up_n_o" SIGIS="undef"/>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="kb_io0_o" SIGIS="clk"/>
+    <PORT DIR="O" NAME="kb_io1_o" SIGIS="data"/>
+    <PORT DIR="I" NAME="kb_io2_i" SIGIS="data"/>
+    <PORT DIR="I" LEFT="15" NAME="main_audio_l_i" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="15" NAME="main_audio_r_i" RIGHT="0" SIGIS="undef"/>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="main_clk_i" SIGIS="clk"/>
+    <PORT DIR="I" LEFT="23" NAME="main_drive_led_col_i" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="main_drive_led_i" SIGIS="undef"/>
+    <PORT DIR="I" NAME="main_joy1_down_n_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="main_joy1_down_n_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="main_joy1_fire_n_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="main_joy1_fire_n_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="main_joy1_left_n_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="main_joy1_left_n_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="main_joy1_right_n_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="main_joy1_right_n_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="main_joy1_up_n_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="main_joy1_up_n_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="main_joy2_down_n_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="main_joy2_down_n_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="main_joy2_fire_n_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="main_joy2_fire_n_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="main_joy2_left_n_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="main_joy2_left_n_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="main_joy2_right_n_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="main_joy2_right_n_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="main_joy2_up_n_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="main_joy2_up_n_o" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="79" NAME="main_key_num_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="main_key_pressed_n_o" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="255" NAME="main_osm_control_m_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="7" NAME="main_pot1_x_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="7" NAME="main_pot1_y_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="7" NAME="main_pot2_x_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="7" NAME="main_pot2_y_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="23" NAME="main_power_led_col_i" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="main_power_led_i" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="255" NAME="main_qnice_gp_reg_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="main_qnice_pause_o" SIGIS="undef"/>
+    <PORT DIR="O" NAME="main_qnice_reset_o" POLARITY="ACTIVE_LOW" SIGIS="rst"/>
+    <PORT DIR="O" NAME="main_reset_core_o" POLARITY="ACTIVE_LOW" SIGIS="rst"/>
+    <PORT DIR="O" NAME="main_reset_m2m_o" POLARITY="ACTIVE_LOW" SIGIS="rst"/>
+    <PORT DIR="I" NAME="main_rst_i" POLARITY="ACTIVE_HIGH" SIGIS="rst"/>
+    <PORT DIR="O" LEFT="64" NAME="main_rtc_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="paddle_drain_o" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="3" NAME="paddle_i" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="1" NAME="qnice_ascal_mode_i" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="qnice_ascal_polyphase_i" SIGIS="undef"/>
+    <PORT DIR="I" NAME="qnice_ascal_triplebuf_i" SIGIS="undef"/>
+    <PORT DIR="I" NAME="qnice_audio_filter_i" SIGIS="undef"/>
+    <PORT DIR="I" NAME="qnice_audio_mute_i" SIGIS="undef"/>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="qnice_clk_o" SIGIS="clk"/>
+    <PORT DIR="I" NAME="qnice_csync_i" SIGIS="undef"/>
+    <PORT DIR="I" NAME="qnice_dvi_i" SIGIS="undef"/>
+    <PORT DIR="I" NAME="qnice_flip_joyports_i" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="255" NAME="qnice_gp_reg_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="8" NAME="qnice_osm_cfg_scaling_i" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="255" NAME="qnice_osm_control_m_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="27" NAME="qnice_ramrom_addr_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="qnice_ramrom_ce_o" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="15" NAME="qnice_ramrom_data_in_i" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="15" NAME="qnice_ramrom_data_out_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="15" NAME="qnice_ramrom_dev_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="qnice_ramrom_wait_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="qnice_ramrom_we_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="qnice_retro15kHz_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="qnice_rst_o" POLARITY="ACTIVE_LOW" SIGIS="rst"/>
+    <PORT DIR="I" NAME="qnice_scandoubler_i" SIGIS="undef"/>
+    <PORT DIR="I" NAME="qnice_video_mode_i" SIGIS="undef"/>
+    <PORT DIR="I" NAME="qnice_zoom_crop_i" SIGIS="undef"/>
+    <PORT DIR="I" NAME="reset_n_i" POLARITY="ACTIVE_HIGH" SIGIS="rst"/>
+    <PORT DIR="I" NAME="sd2_cd_i" SIGIS="undef"/>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="sd2_clk_o" SIGIS="clk"/>
+    <PORT DIR="I" NAME="sd2_miso_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="sd2_mosi_o" SIGIS="undef"/>
+    <PORT DIR="O" NAME="sd2_reset_o" SIGIS="undef"/>
+    <PORT DIR="I" NAME="sd_cd_i" SIGIS="undef"/>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="sd_clk_o" SIGIS="clk"/>
+    <PORT DIR="I" NAME="sd_miso_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="sd_mosi_o" SIGIS="undef"/>
+    <PORT DIR="O" NAME="sd_reset_o" SIGIS="undef"/>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="tmds_clk_n_o" SIGIS="clk"/>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="tmds_clk_p_o" SIGIS="clk"/>
+    <PORT DIR="O" LEFT="2" NAME="tmds_data_n_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="2" NAME="tmds_data_p_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="uart_rxd_i" SIGIS="undef"/>
+    <PORT DIR="O" NAME="uart_txd_o" SIGIS="undef"/>
+    <PORT DIR="O" NAME="vdac_blank_n_o" SIGIS="undef"/>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="vdac_clk_o" SIGIS="clk"/>
+    <PORT DIR="O" NAME="vdac_sync_n_o" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="7" NAME="vga_blue_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="7" NAME="vga_green_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="vga_hs_o" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="7" NAME="vga_red_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="IO" NAME="vga_scl_io" SIGIS="undef"/>
+    <PORT DIR="IO" NAME="vga_sda_io" SIGIS="undef"/>
+    <PORT DIR="O" NAME="vga_vs_o" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="7" NAME="video_blue_i" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="video_ce_i" SIGIS="undef"/>
+    <PORT DIR="I" NAME="video_ce_ovl_i" SIGIS="undef"/>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="video_clk_i" SIGIS="clk"/>
+    <PORT DIR="I" LEFT="7" NAME="video_green_i" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="video_hblank_i" SIGIS="undef"/>
+    <PORT DIR="I" NAME="video_hs_i" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="7" NAME="video_red_i" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="video_rst_i" POLARITY="ACTIVE_HIGH" SIGIS="rst"/>
+    <PORT DIR="I" NAME="video_vblank_i" SIGIS="undef"/>
+    <PORT DIR="I" NAME="video_vs_i" SIGIS="undef"/>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES/>
+
+</EDKSYSTEM>

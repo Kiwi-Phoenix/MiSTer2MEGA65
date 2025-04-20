@@ -108,9 +108,11 @@ wire hs_g, vs_g;
 wire hb_g, vb_g;
 wire [DWIDTH_SD:0] R_gamma, G_gamma, B_gamma;
 
+
 generate
 	if(GAMMA) begin
-		assign gamma_bus[21] = 1;
+		assign gamma_bus[21] = 1;	
+		assign gamma_bus[19] = 0;   // DJR
 		gamma_corr gamma(
 			.clk_sys(gamma_bus[20]),
 			.clk_vid(CLK_VIDEO),

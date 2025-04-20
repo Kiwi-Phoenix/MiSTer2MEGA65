@@ -1,0 +1,75 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "Amiga_emu_hps_ext_0_0",
+    "cell_name": "hps_ext_0",
+    "component_reference": "xilinx.com:module_ref:hps_ext:1.0",
+    "ip_revision": "1",
+    "gen_directory": "../../../../../../CORE-R6_BD2.gen/sources_1/bd/Amiga_emu/ip/Amiga_emu_hps_ext_0_0",
+    "parameters": {
+      "component_parameters": {
+        "Component_Name": [ { "value": "Amiga_emu_hps_ext_0_0", "resolve_type": "user", "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "artix7" } ],
+        "BASE_BOARD_PART": [ { "value": "" } ],
+        "BOARD_CONNECTIONS": [ { "value": "" } ],
+        "DEVICE": [ { "value": "xc7a200t" } ],
+        "PACKAGE": [ { "value": "fbg484" } ],
+        "PREFHDL": [ { "value": "VERILOG" } ],
+        "SILICON_REVISION": [ { "value": "" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
+        "SPEEDGRADE": [ { "value": "-3" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+        "IPREVISION": [ { "value": "1" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../CORE-R6_BD2.gen/sources_1/bd/Amiga_emu/ip/Amiga_emu_hps_ext_0_0" } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "../../ipshared" } ],
+        "SWVERSION": [ { "value": "2024.2.1" } ],
+        "SYNTHESISFLOW": [ { "value": "OOC_HIERARCHICAL" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "clk_sys": [ { "direction": "in" } ],
+        "EXT_BUS": [ { "direction": "inout", "size_left": "35", "size_right": "0" } ],
+        "io_strobe": [ { "direction": "out" } ],
+        "io_fpga": [ { "direction": "out" } ],
+        "io_uio": [ { "direction": "out" } ],
+        "io_din": [ { "direction": "out", "size_left": "15", "size_right": "0" } ],
+        "fpga_dout": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
+        "ide_din": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
+        "ide_dout": [ { "direction": "out", "size_left": "15", "size_right": "0" } ],
+        "ide_addr": [ { "direction": "out", "size_left": "4", "size_right": "0" } ],
+        "ide_rd": [ { "direction": "out" } ],
+        "ide_wr": [ { "direction": "out" } ],
+        "ide_req": [ { "direction": "in", "size_left": "5", "size_right": "0" } ],
+        "mouse_buttons": [ { "direction": "out", "size_left": "2", "size_right": "0" } ],
+        "kbd_mouse_level": [ { "direction": "out" } ],
+        "kbd_mouse_type": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
+        "kbd_mouse_data": [ { "direction": "out", "size_left": "7", "size_right": "0" } ],
+        "scr_hbl_l": [ { "direction": "in", "size_left": "11", "size_right": "0" } ],
+        "scr_hbl_r": [ { "direction": "in", "size_left": "11", "size_right": "0" } ],
+        "scr_hsize": [ { "direction": "in", "size_left": "11", "size_right": "0" } ],
+        "scr_vbl_t": [ { "direction": "in", "size_left": "11", "size_right": "0" } ],
+        "scr_vbl_b": [ { "direction": "in", "size_left": "11", "size_right": "0" } ],
+        "scr_vsize": [ { "direction": "in", "size_left": "11", "size_right": "0" } ],
+        "scr_flg": [ { "direction": "in", "size_left": "6", "size_right": "0" } ],
+        "scr_res": [ { "direction": "in", "size_left": "1", "size_right": "0" } ],
+        "shbl_l": [ { "direction": "out", "size_left": "11", "size_right": "0" } ],
+        "shbl_r": [ { "direction": "out", "size_left": "11", "size_right": "0" } ],
+        "svbl_t": [ { "direction": "out", "size_left": "11", "size_right": "0" } ],
+        "svbl_b": [ { "direction": "out", "size_left": "11", "size_right": "0" } ],
+        "sset": [ { "direction": "out" } ],
+        "cdda_req": [ { "direction": "in" } ],
+        "cdda_wr": [ { "direction": "out" } ],
+        "cdda_dout": [ { "direction": "out", "size_left": "15", "size_right": "0" } ]
+      }
+    }
+  }
+}

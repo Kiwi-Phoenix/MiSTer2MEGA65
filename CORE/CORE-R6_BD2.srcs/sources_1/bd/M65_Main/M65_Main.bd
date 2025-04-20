@@ -1,0 +1,302 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x3420912536F4B4B1",
+      "device": "xc7a200tfbg484-3",
+      "gen_directory": "../../../../CORE-R6_BD2.gen/sources_1/bd/M65_Main",
+      "name": "M65_Main",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.2.1"
+    },
+    "design_tree": {
+      "Amiga_emu_0": "",
+      "keyboard_0": "",
+      "pll_audio_0002_0": ""
+    },
+    "ports": {
+      "clk_main_i": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "50000000"
+          }
+        }
+      },
+      "reset_soft_i": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "reset_hard_i": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "pause_i": {
+        "direction": "I"
+      },
+      "clk_main_speed_i": {
+        "direction": "I"
+      },
+      "video_ce_o": {
+        "direction": "O"
+      },
+      "video_ce_ovl_o": {
+        "direction": "O"
+      },
+      "video_red_o": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "video_green_o": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "video_blue_o": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "video_vs_o": {
+        "direction": "O"
+      },
+      "video_hs_o": {
+        "direction": "O"
+      },
+      "video_hblank_o": {
+        "direction": "O"
+      },
+      "video_vblank_o": {
+        "direction": "O"
+      },
+      "audio_left_o": {
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      },
+      "audio_right_o": {
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      },
+      "kb_key_num_i": {
+        "direction": "I"
+      },
+      "kb_key_pressed_n_i": {
+        "direction": "I"
+      },
+      "joy_1_up_n_i": {
+        "direction": "I"
+      },
+      "joy_1_down_n_i": {
+        "direction": "I"
+      },
+      "joy_1_left_n_i": {
+        "direction": "I"
+      },
+      "joy_1_right_n_i": {
+        "direction": "I"
+      },
+      "joy_1_fire_n_i": {
+        "direction": "I"
+      },
+      "joy_2_up_n_i": {
+        "direction": "I"
+      },
+      "joy_2_down_n_i": {
+        "direction": "I"
+      },
+      "joy_2_left_n_i": {
+        "direction": "I"
+      },
+      "joy_2_right_n_i": {
+        "direction": "I"
+      },
+      "joy_2_fire_n_i": {
+        "direction": "I"
+      },
+      "pot1_x_i": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "pot1_y_i": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "pot2_x_i": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "pot2_y_i": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "paddle_speed_i": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      }
+    },
+    "components": {
+      "Amiga_emu_0": {
+        "vlnv": "xilinx.com:user:Amiga_emu:1.0",
+        "ip_revision": "2",
+        "xci_name": "M65_Main_Amiga_emu_0_0",
+        "xci_path": "ip\\M65_Main_Amiga_emu_0_0\\M65_Main_Amiga_emu_0_0.xci",
+        "inst_hier_path": "Amiga_emu_0"
+      },
+      "keyboard_0": {
+        "vlnv": "xilinx.com:module_ref:keyboard:1.0",
+        "ip_revision": "1",
+        "xci_name": "M65_Main_keyboard_0_0",
+        "xci_path": "ip\\M65_Main_keyboard_0_0\\M65_Main_keyboard_0_0.xci",
+        "inst_hier_path": "keyboard_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "keyboard",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk_main_i": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "50000000",
+                "value_src": "user_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "default_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "M65_Main_clk_main_i",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "key_num_i": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "key_pressed_n_i": {
+            "direction": "I"
+          },
+          "example_n_o": {
+            "direction": "O",
+            "left": "79",
+            "right": "0"
+          }
+        }
+      },
+      "pll_audio_0002_0": {
+        "vlnv": "xilinx.com:module_ref:pll_audio_0002:1.0",
+        "ip_revision": "1",
+        "xci_name": "M65_Main_pll_audio_0002_0_0",
+        "xci_path": "ip\\M65_Main_pll_audio_0002_0_0\\M65_Main_pll_audio_0002_0_0.xci",
+        "inst_hier_path": "pll_audio_0002_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "pll_audio_0002",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "refclk": {
+            "direction": "I"
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "outclk_0": {
+            "direction": "O"
+          },
+          "locked": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Amiga_emu_0_AUDIO_L": {
+        "ports": [
+          "Amiga_emu_0/AUDIO_L",
+          "audio_left_o"
+        ]
+      },
+      "Amiga_emu_0_AUDIO_R": {
+        "ports": [
+          "Amiga_emu_0/AUDIO_R",
+          "audio_right_o"
+        ]
+      },
+      "Amiga_emu_0_VGA_B": {
+        "ports": [
+          "Amiga_emu_0/VGA_B",
+          "video_blue_o"
+        ]
+      },
+      "Amiga_emu_0_VGA_G": {
+        "ports": [
+          "Amiga_emu_0/VGA_G",
+          "video_green_o"
+        ]
+      },
+      "Amiga_emu_0_VGA_HS": {
+        "ports": [
+          "Amiga_emu_0/VGA_HS",
+          "video_hs_o"
+        ]
+      },
+      "Amiga_emu_0_VGA_R": {
+        "ports": [
+          "Amiga_emu_0/VGA_R",
+          "video_red_o"
+        ]
+      },
+      "Amiga_emu_0_VGA_VS": {
+        "ports": [
+          "Amiga_emu_0/VGA_VS",
+          "video_vs_o"
+        ]
+      },
+      "clk_main_i_1": {
+        "ports": [
+          "clk_main_i",
+          "keyboard_0/clk_main_i",
+          "Amiga_emu_0/CLK_50M",
+          "pll_audio_0002_0/refclk"
+        ]
+      },
+      "pll_audio_0002_0_outclk_0": {
+        "ports": [
+          "pll_audio_0002_0/outclk_0",
+          "Amiga_emu_0/CLK_AUDIO"
+        ]
+      },
+      "reset_hard_i_1": {
+        "ports": [
+          "reset_hard_i",
+          "Amiga_emu_0/RESET",
+          "pll_audio_0002_0/rst"
+        ]
+      }
+    }
+  }
+}

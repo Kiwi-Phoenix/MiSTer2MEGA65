@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../M2M/vhdl/av_pipeline/audio_out.v" \
+"../../../../../M2M/vhdl/controllers/MiSTer/csync.sv" \
+"../../../../../M2M/vhdl/controllers/MiSTer/hq2x.sv" \
+"../../../../../M2M/vhdl/controllers/MiSTer/iir_filter.v" \
+"../../../../../M2M/vhdl/controllers/MiSTer/scandoubler.v" \
+"../../../../../M2M/vhdl/controllers/MiSTer/video_freezer.sv" \
+"../../../../../M2M/vhdl/controllers/MiSTer/video_mixer.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

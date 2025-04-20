@@ -104,7 +104,7 @@ port (
    clk_i                   : in  std_logic;              -- 100 MHz clock
 
    -- Share clock and reset with the framework
-   main_clk_o              : out std_logic;              -- CORE's 54 MHz clock
+   main_clk_o              : out std_logic;              -- CORE's 50 MHz clock
    main_rst_o              : out std_logic;              -- CORE's reset, synchronized
 
    -- M2M's reset manager provides 2 signals:
@@ -316,7 +316,7 @@ begin
    clk_gen : entity work.clk
       port map (
          sys_clk_i         => clk_i,           -- expects 100 MHz
-         main_clk_o        => main_clk,        -- CORE's 54 MHz clock
+         main_clk_o        => main_clk,        -- CORE's 50 MHz clock
          main_rst_o        => main_rst         -- CORE's reset, synchronized
       ); -- clk_gen
 
@@ -340,50 +340,55 @@ begin
          G_VDNUM              => C_VDNUM
       )
       port map (
-         clk_main_i           => main_clk,
-         reset_soft_i         => main_reset_core_i,
-         reset_hard_i         => main_reset_m2m_i,
-         pause_i              => main_pause_core_i,
+          clk_main_i           => main_clk
+         ,reset_soft_i         => main_reset_core_i
+         ,reset_hard_i         => main_reset_m2m_i
+         ,pause_i              => main_pause_core_i
 
-         clk_main_speed_i     => CORE_CLK_SPEED,
+
+         -- Paddle speed
+         ,paddle_speed_i       => main_qnice_gp_reg_i(3 downto 0)
+
+         ,clk_main_speed_i     => CORE_CLK_SPEED
+--         ,clk_main_speed_i    => clk_i
 
          -- Video output
          -- This is PAL 720x576 @ 50 Hz (pixel clock 27 MHz), but synchronized to main_clk (54 MHz).
-         video_ce_o           => video_ce_o,
-         video_ce_ovl_o       => video_ce_ovl_o,
-         video_red_o          => video_red_o,
-         video_green_o        => video_green_o,
-         video_blue_o         => video_blue_o,
-         video_vs_o           => video_vs_o,
-         video_hs_o           => video_hs_o,
-         video_hblank_o       => video_hblank_o,
-         video_vblank_o       => video_vblank_o,
+         ,video_ce_o           => video_ce_o
+         ,video_ce_ovl_o       => video_ce_ovl_o
+         ,video_red_o          => video_red_o
+         ,video_green_o        => video_green_o
+         ,video_blue_o         => video_blue_o
+         ,video_vs_o           => video_vs_o
+         ,video_hs_o           => video_hs_o
+         ,video_hblank_o       => video_hblank_o
+         ,video_vblank_o       => video_vblank_o
 
          -- audio output (pcm format, signed values)
-         audio_left_o         => main_audio_left_o,
-         audio_right_o        => main_audio_right_o,
+         ,audio_left_o         => main_audio_left_o
+         ,audio_right_o        => main_audio_right_o
 
          -- M2M Keyboard interface
-         kb_key_num_i         => main_kb_key_num_i,
-         kb_key_pressed_n_i   => main_kb_key_pressed_n_i,
+         ,kb_key_num_i         => main_kb_key_num_i
+         ,kb_key_pressed_n_i   => main_kb_key_pressed_n_i
 
          -- MEGA65 joysticks and paddles/mouse/potentiometers
-         joy_1_up_n_i         => main_joy_1_up_n_i ,
-         joy_1_down_n_i       => main_joy_1_down_n_i,
-         joy_1_left_n_i       => main_joy_1_left_n_i,
-         joy_1_right_n_i      => main_joy_1_right_n_i,
-         joy_1_fire_n_i       => main_joy_1_fire_n_i,
+         ,joy_1_up_n_i         => main_joy_1_up_n_i
+         ,joy_1_down_n_i       => main_joy_1_down_n_i
+         ,joy_1_left_n_i       => main_joy_1_left_n_i
+         ,joy_1_right_n_i      => main_joy_1_right_n_i
+         ,joy_1_fire_n_i       => main_joy_1_fire_n_i
 
-         joy_2_up_n_i         => main_joy_2_up_n_i,
-         joy_2_down_n_i       => main_joy_2_down_n_i,
-         joy_2_left_n_i       => main_joy_2_left_n_i,
-         joy_2_right_n_i      => main_joy_2_right_n_i,
-         joy_2_fire_n_i       => main_joy_2_fire_n_i,
+         ,joy_2_up_n_i         => main_joy_2_up_n_i
+         ,joy_2_down_n_i       => main_joy_2_down_n_i
+         ,joy_2_left_n_i       => main_joy_2_left_n_i
+         ,joy_2_right_n_i      => main_joy_2_right_n_i
+         ,joy_2_fire_n_i       => main_joy_2_fire_n_i
 
-         pot1_x_i             => main_pot1_x_i,
-         pot1_y_i             => main_pot1_y_i,
-         pot2_x_i             => main_pot2_x_i,
-         pot2_y_i             => main_pot2_y_i
+         ,pot1_x_i             => main_pot1_x_i
+         ,pot1_y_i             => main_pot1_y_i
+         ,pot2_x_i             => main_pot2_x_i
+         ,pot2_y_i             => main_pot2_y_i
       ); -- i_main
 
    ---------------------------------------------------------------------------------------------

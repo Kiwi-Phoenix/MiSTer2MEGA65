@@ -1,0 +1,24 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/av_pipeline/audio_out.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module audio_out
+INFO: [VRFC 10-311] analyzing module aud_mix_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/controllers/MiSTer/csync.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module csync
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/controllers/MiSTer/hq2x.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Hq2x
+INFO: [VRFC 10-311] analyzing module hq2x_in
+INFO: [VRFC 10-311] analyzing module hq2x_buf
+INFO: [VRFC 10-311] analyzing module DiffCheck
+INFO: [VRFC 10-311] analyzing module Blend
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/controllers/MiSTer/iir_filter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IIR_filter
+INFO: [VRFC 10-311] analyzing module iir_filter_tap
+INFO: [VRFC 10-311] analyzing module DC_blocker
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/controllers/MiSTer/scandoubler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scandoubler
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/controllers/MiSTer/video_freezer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module video_freezer
+INFO: [VRFC 10-311] analyzing module sync_lock
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/M2M/vhdl/controllers/MiSTer/video_mixer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module video_mixer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/CORE/CORE-R6.sim/sim/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

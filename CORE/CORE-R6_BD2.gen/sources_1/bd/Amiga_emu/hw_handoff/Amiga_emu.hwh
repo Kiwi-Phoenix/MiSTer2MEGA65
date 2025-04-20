@@ -1,0 +1,2754 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Mar 16 14:32:24 2025" VIVADOVERSION="2024.2.1">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a200t" NAME="Amiga_emu" PACKAGE="fbg484" SPEEDGRADE="-3"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="IO" LEFT="3" NAME="ADC_BUS" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="15" NAME="AUDIO_L" RIGHT="0" SIGIS="undef" SIGNAME="audio_l_comb_1_Res">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="audio_l_comb_1" PORT="Res"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="AUDIO_MIX" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_aud_mix">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="minimig_0" PORT="aud_mix"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="AUDIO_R" RIGHT="0" SIGIS="undef" SIGNAME="audio_r_comb_1_Res">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="audio_r_comb_1" PORT="Res"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="AUDIO_S" RIGHT="0" SIGIS="undef" SIGNAME="ilconstant_3_dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ilconstant_3" PORT="dout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="BUTTONS" RIGHT="0" SIGIS="undef" SIGNAME="ilconstant_4_dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ilconstant_4" PORT="dout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CE_PIXEL" SIGIS="undef"/>
+    <PORT CLKFREQUENCY="50000000" DIR="I" NAME="CLK_50M" SIGIS="clk"/>
+    <PORT CLKFREQUENCY="24576000" DIR="I" NAME="CLK_AUDIO" SIGIS="clk"/>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="CLK_VIDEO" SIGIS="clk"/>
+    <PORT DIR="O" LEFT="28" NAME="DDRAM_ADDR" RIGHT="0" SIGIS="undef" SIGNAME="ddram_ctrl_0_ram2_DDRAM_ADDR">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ddram_ctrl_0_ram2" PORT="DDRAM_ADDR"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="DDRAM_BE" RIGHT="0" SIGIS="undef" SIGNAME="ddram_ctrl_0_ram2_DDRAM_BE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ddram_ctrl_0_ram2" PORT="DDRAM_BE"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="DDRAM_BURSTCNT" RIGHT="0" SIGIS="undef" SIGNAME="ddram_ctrl_0_ram2_DDRAM_BURSTCNT">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ddram_ctrl_0_ram2" PORT="DDRAM_BURSTCNT"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="DDRAM_BUSY" SIGIS="undef" SIGNAME="External_Ports_DDRAM_BUSY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ddram_ctrl_0_ram2" PORT="DDRAM_BUSY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="DDRAM_CLK" SIGIS="clk" SIGNAME="ddram_ctrl_0_ram2_DDRAM_CLK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ddram_ctrl_0_ram2" PORT="DDRAM_CLK"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="63" NAME="DDRAM_DIN" RIGHT="0" SIGIS="undef" SIGNAME="ddram_ctrl_0_ram2_DDRAM_DIN">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ddram_ctrl_0_ram2" PORT="DDRAM_DIN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="63" NAME="DDRAM_DOUT" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_DDRAM_DOUT">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ddram_ctrl_0_ram2" PORT="DDRAM_DOUT"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="DDRAM_DOUT_READY" SIGIS="undef" SIGNAME="External_Ports_DDRAM_DOUT_READY">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ddram_ctrl_0_ram2" PORT="DDRAM_DOUT_READY"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="DDRAM_RD" SIGIS="undef" SIGNAME="ddram_ctrl_0_ram2_DDRAM_RD">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ddram_ctrl_0_ram2" PORT="DDRAM_RD"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="DDRAM_WE" SIGIS="undef" SIGNAME="ddram_ctrl_0_ram2_DDRAM_WE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ddram_ctrl_0_ram2" PORT="DDRAM_WE"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="FB_BASE" RIGHT="0" SIGIS="undef" SIGNAME="fastchip_0_rtg_base">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="fastchip_0" PORT="rtg_base"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="FB_EN" SIGIS="undef" SIGNAME="fastchip_0_rtg_ena">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="fastchip_0" PORT="rtg_ena"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="FB_FORCE_BLANK" RIGHT="0" SIGIS="undef" SIGNAME="ilconstant_5_dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ilconstant_5" PORT="dout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="4" NAME="FB_FORMAT" RIGHT="0" SIGIS="undef" SIGNAME="fastchip_0_rtg_format">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="fastchip_0" PORT="rtg_format"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="11" NAME="FB_HEIGHT" RIGHT="0" SIGIS="undef" SIGNAME="fastchip_0_rtg_vsize">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="fastchip_0" PORT="rtg_vsize"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="FB_LL" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="7" NAME="FB_PAL_ADDR" RIGHT="0" SIGIS="undef" SIGNAME="fastchip_0_rtg_pal_a">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="fastchip_0" PORT="rtg_pal_a"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="FB_PAL_CLK" SIGIS="clk" SIGNAME="fastchip_0_rtg_pal_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="fastchip_0" PORT="rtg_pal_clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="23" NAME="FB_PAL_DIN" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_FB_PAL_DIN">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="fastchip_0" PORT="rtg_pal_dr"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="23" NAME="FB_PAL_DOUT" RIGHT="0" SIGIS="undef" SIGNAME="fastchip_0_rtg_pal_dw">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="fastchip_0" PORT="rtg_pal_dw"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="FB_PAL_WR" SIGIS="undef" SIGNAME="fastchip_0_rtg_pal_wr">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="fastchip_0" PORT="rtg_pal_wr"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="13" NAME="FB_STRIDE" RIGHT="0" SIGIS="undef" SIGNAME="fastchip_0_rtg_stride">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="fastchip_0" PORT="rtg_stride"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="FB_VBL" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="11" NAME="FB_WIDTH" RIGHT="0" SIGIS="undef" SIGNAME="fastchip_0_rtg_hsize">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="fastchip_0" PORT="rtg_hsize"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="HDMI_FREEZE" RIGHT="0" SIGIS="undef" SIGNAME="ilconstant_6_dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ilconstant_6" PORT="dout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="11" NAME="HDMI_HEIGHT" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="11" NAME="HDMI_WIDTH" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="IO" LEFT="48" NAME="HPS_BUS" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="0" NAME="LED_DISK" RIGHT="0" SIGIS="undef" SIGNAME="led_disk_1_Res">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="led_disk_1" PORT="Res"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="LED_POWER" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_pwr_led">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="minimig_0" PORT="pwr_led"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="LED_USER" SIGIS="undef" SIGNAME="minimig_0_fdd_led">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="minimig_0" PORT="fdd_led"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="OSD_STATUS" SIGIS="undef"/>
+    <PORT DIR="I" NAME="RESET" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_RESET">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pll_reset_reg_2" PORT="Op1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="12" NAME="SDRAM2_A" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="1" NAME="SDRAM2_BA" RIGHT="0" SIGIS="undef"/>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="SDRAM2_CLK" SIGIS="clk"/>
+    <PORT DIR="IO" LEFT="15" NAME="SDRAM2_DQ" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="SDRAM2_EN" SIGIS="undef"/>
+    <PORT DIR="O" NAME="SDRAM2_nCAS" SIGIS="undef" SIGNAME="sdram_ctrl_0_ram1_sd_cas">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="sdram_ctrl_0_ram1" PORT="sd_cas"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SDRAM2_nCS" SIGIS="undef"/>
+    <PORT DIR="O" NAME="SDRAM2_nRAS" SIGIS="undef"/>
+    <PORT DIR="O" NAME="SDRAM2_nWE" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="12" NAME="SDRAM_A" RIGHT="0" SIGIS="undef" SIGNAME="sdram_ctrl_0_ram1_sd_addr">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="sdram_ctrl_0_ram1" PORT="sd_addr"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="SDRAM_BA" RIGHT="0" SIGIS="undef" SIGNAME="sdram_ctrl_0_ram1_sd_ba">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="sdram_ctrl_0_ram1" PORT="sd_ba"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SDRAM_CKE" SIGIS="undef" SIGNAME="sdram_ctrl_0_ram1_sd_cke">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="sdram_ctrl_0_ram1" PORT="sd_cke"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="SDRAM_CLK" SIGIS="clk" SIGNAME="sdram_ctrl_0_ram1_sd_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="sdram_ctrl_0_ram1" PORT="sd_clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" LEFT="15" NAME="SDRAM_DQ" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_SDRAM_DQ">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="sdram_ctrl_0_ram1" PORT="sd_data"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="SDRAM_DQMH" RIGHT="0" SIGIS="undef" SIGNAME="sdram_ctrl_0_ram1_sd_dqm">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="sdram_ctrl_0_ram1" PORT="sd_dqm"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="SDRAM_DQML" RIGHT="0" SIGIS="undef" SIGNAME="sdram_ctrl_0_ram1_sd_dqm">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="sdram_ctrl_0_ram1" PORT="sd_dqm"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SDRAM_nCAS" SIGIS="undef"/>
+    <PORT DIR="O" NAME="SDRAM_nCS" SIGIS="undef" SIGNAME="sdram_ctrl_0_ram1_sd_cs">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="sdram_ctrl_0_ram1" PORT="sd_cs"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SDRAM_nRAS" SIGIS="undef" SIGNAME="sdram_ctrl_0_ram1_sd_ras">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="sdram_ctrl_0_ram1" PORT="sd_ras"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SDRAM_nWE" SIGIS="undef" SIGNAME="sdram_ctrl_0_ram1_sd_we">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="sdram_ctrl_0_ram1" PORT="sd_we"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="SD_CD" SIGIS="undef"/>
+    <PORT DIR="O" NAME="SD_CS" SIGIS="undef"/>
+    <PORT DIR="I" NAME="SD_MISO" SIGIS="undef"/>
+    <PORT DIR="O" NAME="SD_MOSI" SIGIS="undef"/>
+    <PORT DIR="O" NAME="SD_SCK" SIGIS="undef"/>
+    <PORT DIR="I" NAME="UART_CTS" SIGIS="undef" SIGNAME="External_Ports_UART_CTS">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="minimig_0" PORT="cts"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="UART_DSR" SIGIS="undef" SIGNAME="External_Ports_UART_DSR">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="minimig_0" PORT="dsr"/>
+        <CONNECTION INSTANCE="minimig_0" PORT="cd"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="UART_DTR" SIGIS="undef" SIGNAME="minimig_0_dtr">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="minimig_0" PORT="dtr"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="UART_RTS" SIGIS="undef" SIGNAME="minimig_0_rts">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="minimig_0" PORT="rts"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="UART_RXD" SIGIS="undef" SIGNAME="External_Ports_UART_RXD">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="rxd_1" PORT="Op2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="UART_TXD" SIGIS="undef" SIGNAME="minimig_0_txd">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="minimig_0" PORT="txd"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="6" NAME="USER_IN" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="6" NAME="USER_OUT" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="7" NAME="VGA_B" RIGHT="0" SIGIS="undef" SIGNAME="vga_b_comb_0_Res">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="vga_b_comb_0" PORT="Res"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="VGA_DE" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="0" NAME="VGA_DISABLE" RIGHT="0" SIGIS="undef" SIGNAME="ilconstant_7_dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ilconstant_7" PORT="dout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="VGA_F1" SIGIS="undef" SIGNAME="minimig_0_field1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="minimig_0" PORT="field1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="VGA_G" RIGHT="0" SIGIS="undef" SIGNAME="vga_g_omb_0_Res">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="vga_g_omb_0" PORT="Res"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="VGA_HS" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="7" NAME="VGA_R" RIGHT="0" SIGIS="undef" SIGNAME="vga_r_comb_0_Res">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="vga_r_comb_0" PORT="Res"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="VGA_SCALER" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="2" NAME="VGA_SL" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_scanline">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="minimig_0" PORT="scanline"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="VGA_VS" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="12" NAME="VIDEO_ARX" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="12" NAME="VIDEO_ARY" RIGHT="0" SIGIS="undef"/>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/amiga_clk_0" HWVERSION="1.0" INSTANCE="amiga_clk_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="amiga_clk" VLNV="xilinx.com:module_ref:amiga_clk:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_amiga_clk_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="c1" SIGIS="undef" SIGNAME="amiga_clk_0_c1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="c1"/>
+            <CONNECTION INSTANCE="sdram_ctrl_0_ram1" PORT="c_7m"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="c3" SIGIS="undef" SIGNAME="amiga_clk_0_c3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="c3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="cck" SIGIS="undef" SIGNAME="amiga_clk_0_cck">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="cck"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clk7_en" SIGIS="undef" SIGNAME="amiga_clk_0_clk7_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="clk7_en"/>
+            <CONNECTION INSTANCE="ce_comb" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clk7n_en" SIGIS="undef" SIGNAME="amiga_clk_0_clk7n_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="clk7n_en"/>
+            <CONNECTION INSTANCE="ce_comb" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clk_28" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="9" NAME="eclk" RIGHT="0" SIGIS="undef" SIGNAME="amiga_clk_0_eclk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="eclk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset_n" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="pll_reset_reg_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pll_reset_reg" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/audio_l_comb_0" HWVERSION="2.0" INSTANCE="audio_l_comb_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="16"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_util_vector_logic_0_17"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_toccata_aud_left">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="toccata_aud_left"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="output2_l_comb_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="output2_l_comb" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="audio_l_comb_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="audio_l_comb_1" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/audio_l_comb_1" HWVERSION="2.0" INSTANCE="audio_l_comb_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="16"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_util_vector_logic_0_25"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Op1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="15" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="audio_l_comb_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="audio_l_comb_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="audio_l_comb_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="AUDIO_L"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/audio_r_comb_0" HWVERSION="2.0" INSTANCE="audio_r_comb_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="16"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_util_vector_logic_0_18"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_toccata_aud_right">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="toccata_aud_right"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="output2_r_comb_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="output2_r_comb" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="audio_r_comb_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="audio_r_comb_1" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/audio_r_comb_1" HWVERSION="2.0" INSTANCE="audio_r_comb_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="16"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_util_vector_logic_0_24"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Op1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="15" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="audio_r_comb_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="audio_r_comb_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="audio_r_comb_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="AUDIO_R"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/cdda_0" HWVERSION="1.0" INSTANCE="cdda_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="cdda" VLNV="xilinx.com:module_ref:cdda:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CLK_RATE" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_cdda_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="AUDIO_CE" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="15" NAME="AUDIO_L" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="15" NAME="AUDIO_R" RIGHT="0" SIGIS="undef"/>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk"/>
+        <PORT DIR="I" LEFT="15" NAME="DIN" RIGHT="0" SIGIS="undef" SIGNAME="hps_ext_0_cdda_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hps_ext_0" PORT="cdda_dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="WRITE" SIGIS="undef" SIGNAME="hps_ext_0_cdda_wr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hps_ext_0" PORT="cdda_wr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="WRITE_REQ" SIGIS="undef" SIGNAME="cdda_0_WRITE_REQ">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hps_ext_0" PORT="cdda_req"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="nRESET" POLARITY="ACTIVE_HIGH" SIGIS="undef" SIGNAME="pll_reset_reg_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pll_reset_reg" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/ce_comb" HWVERSION="2.0" INSTANCE="ce_comb" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="or"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_util_vector_logic_0_2"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_orgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="amiga_clk_0_clk7_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="amiga_clk_0" PORT="clk7_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="amiga_clk_0_clk7n_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="amiga_clk_0" PORT="clk7n_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="ce_comb_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="lpf4400_IIR_filter_0" PORT="ce"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/cpu_wrap_0" HWVERSION="2.0" INSTANCE="cpu_wrap_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="16"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_util_vector_logic_0_19"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="cpu_wrap_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrap_1" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="cpu_wrap_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrap_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="cpu_wrap_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="ramdout"/>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="ramready"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/cpu_wrap_1" HWVERSION="2.0" INSTANCE="cpu_wrap_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="16"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_util_vector_logic_0_20"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="sdram_ctrl_0_ram1_cpuRD">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sdram_ctrl_0_ram1" PORT="cpuRD"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="ddram_ctrl_0_ram2_cpuRD">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ddram_ctrl_0_ram2" PORT="cpuRD"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="cpu_wrap_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrap_0" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/cpu_wrap_2" HWVERSION="2.0" INSTANCE="cpu_wrap_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_util_vector_logic_0_21"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="sdram_ctrl_0_ram1_ramready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sdram_ctrl_0_ram1" PORT="ramready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="ddram_ctrl_0_ram2_ramready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ddram_ctrl_0_ram2" PORT="ramready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="cpu_wrap_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrap_0" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/cpu_wrapper_0" HWVERSION="1.0" INSTANCE="cpu_wrapper_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="cpu_wrapper" VLNV="xilinx.com:module_ref:cpu_wrapper:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_cpu_wrapper_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="bootrom" SIGIS="undef" SIGNAME="minimig_0_bootrom">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="bootrom"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="cachecfg" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_cachecfg">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="cachecfg"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="cacr" RIGHT="0" SIGIS="undef" SIGNAME="cpu_wrapper_0_cacr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sdram_ctrl_0_ram1" PORT="cpu_cache_ctrl"/>
+            <CONNECTION INSTANCE="ddram_ctrl_0_ram2" PORT="cpu_cache_ctrl"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="chip_addr" RIGHT="1" SIGIS="undef" SIGNAME="cpu_wrapper_0_chip_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="cpu_address"/>
+            <CONNECTION INSTANCE="fastchip_0" PORT="addr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="chip_as" SIGIS="undef" SIGNAME="cpu_wrapper_0_chip_as">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="_cpu_as"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="chip_din" RIGHT="0" SIGIS="undef" SIGNAME="cpu_wrapper_0_chip_din">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="cpudata_in"/>
+            <CONNECTION INSTANCE="fastchip_0" PORT="din"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="chip_dout" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_cpu_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="cpu_data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="chip_dtack" SIGIS="undef" SIGNAME="minimig_0__cpu_dtack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="_cpu_dtack"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="chip_ipl" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0__cpu_ipl">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="_cpu_ipl"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="chip_lds" SIGIS="undef" SIGNAME="cpu_wrapper_0_chip_lds">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="_cpu_lds"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="chip_rw" SIGIS="undef" SIGNAME="cpu_wrapper_0_chip_rw">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="cpu_r_w"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="chip_uds" SIGIS="undef" SIGNAME="cpu_wrapper_0_chip_uds">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="_cpu_uds"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk"/>
+        <PORT DIR="I" LEFT="1" NAME="cpucfg" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_cpucfg">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="cpucfg"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="cpustate" RIGHT="0" SIGIS="undef" SIGNAME="cpu_wrapper_0_cpustate">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sdram_ctrl_0_ram1" PORT="cpustate"/>
+            <CONNECTION INSTANCE="ddram_ctrl_0_ram2" PORT="cpustate"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="fastchip_dout" RIGHT="0" SIGIS="undef" SIGNAME="fastchip_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fastchip_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="fastchip_lds" SIGIS="undef" SIGNAME="cpu_wrapper_0_fastchip_lds">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fastchip_0" PORT="lds"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="fastchip_lw" SIGIS="undef" SIGNAME="cpu_wrapper_0_fastchip_lw">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fastchip_0" PORT="longword"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="fastchip_ready" SIGIS="undef" SIGNAME="fastchip_0_ready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fastchip_0" PORT="ready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="fastchip_rnw" SIGIS="undef" SIGNAME="cpu_wrapper_0_fastchip_rnw">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fastchip_0" PORT="rnw"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="fastchip_sel" SIGIS="undef" SIGNAME="cpu_wrapper_0_fastchip_sel">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fastchip_0" PORT="sel"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="fastchip_selack" SIGIS="undef" SIGNAME="fastchip_0_sel_ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fastchip_0" PORT="sel_ack"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="fastchip_uds" SIGIS="undef" SIGNAME="cpu_wrapper_0_fastchip_uds">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fastchip_0" PORT="uds"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="fastramcfg" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_memcfg">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="memcfg"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="nmi_addr" RIGHT="0" SIGIS="undef" SIGNAME="cpu_wrapper_0_nmi_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="nmi_addr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ph1" SIGIS="undef"/>
+        <PORT DIR="I" NAME="ph2" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="28" NAME="ramaddr" RIGHT="1" SIGIS="undef" SIGNAME="cpu_wrapper_0_ramaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sdram_ctrl_0_ram1" PORT="cpuAddr"/>
+            <CONNECTION INSTANCE="sdram_ctrl_0_ram1" PORT="cpuCS"/>
+            <CONNECTION INSTANCE="ddram_ctrl_0_ram2" PORT="cpuCS"/>
+            <CONNECTION INSTANCE="ddram_ctrl_0_ram2" PORT="cpuAddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="ramdin" RIGHT="0" SIGIS="undef" SIGNAME="cpu_wrapper_0_ramdin">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sdram_ctrl_0_ram1" PORT="cpuWR"/>
+            <CONNECTION INSTANCE="ddram_ctrl_0_ram2" PORT="cpuWR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="ramdout" RIGHT="0" SIGIS="undef" SIGNAME="cpu_wrap_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrap_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ramlds" SIGIS="undef" SIGNAME="cpu_wrapper_0_ramlds">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sdram_ctrl_0_ram1" PORT="cpuL"/>
+            <CONNECTION INSTANCE="ddram_ctrl_0_ram2" PORT="cpuL"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ramready" SIGIS="undef" SIGNAME="cpu_wrap_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrap_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ramsel" SIGIS="undef"/>
+        <PORT DIR="O" NAME="ramshared" SIGIS="undef" SIGNAME="cpu_wrapper_0_ramshared">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ddram_ctrl_0_ram2" PORT="ramshared"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ramuds" SIGIS="undef" SIGNAME="cpu_wrapper_0_ramuds">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sdram_ctrl_0_ram1" PORT="cpuU"/>
+            <CONNECTION INSTANCE="ddram_ctrl_0_ram2" PORT="cpuU"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="minimig_0__cpu_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="_cpu_reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="reset_out" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="cpu_wrapper_0_reset_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="_cpu_reset_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="toccata_base" RIGHT="0" SIGIS="undef" SIGNAME="cpu_wrapper_0_toccata_base">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="toccata_base"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="toccata_ena" SIGIS="undef" SIGNAME="cpu_wrapper_0_toccata_ena">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="toccata_ena"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/ddram_ctrl_0_ram2" HWVERSION="1.0" INSTANCE="ddram_ctrl_0_ram2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ddram_ctrl" VLNV="xilinx.com:module_ref:ddram_ctrl:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_ddram_ctrl_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="28" NAME="DDRAM_ADDR" RIGHT="0" SIGIS="undef" SIGNAME="ddram_ctrl_0_ram2_DDRAM_ADDR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="DDRAM_ADDR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="DDRAM_BE" RIGHT="0" SIGIS="undef" SIGNAME="ddram_ctrl_0_ram2_DDRAM_BE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="DDRAM_BE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="DDRAM_BURSTCNT" RIGHT="0" SIGIS="undef" SIGNAME="ddram_ctrl_0_ram2_DDRAM_BURSTCNT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="DDRAM_BURSTCNT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="DDRAM_BUSY" SIGIS="undef" SIGNAME="External_Ports_DDRAM_BUSY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="DDRAM_BUSY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="DDRAM_CLK" SIGIS="clk" SIGNAME="ddram_ctrl_0_ram2_DDRAM_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="DDRAM_CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="63" NAME="DDRAM_DIN" RIGHT="0" SIGIS="undef" SIGNAME="ddram_ctrl_0_ram2_DDRAM_DIN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="DDRAM_DIN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="63" NAME="DDRAM_DOUT" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_DDRAM_DOUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="DDRAM_DOUT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="DDRAM_DOUT_READY" SIGIS="undef" SIGNAME="External_Ports_DDRAM_DOUT_READY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="DDRAM_DOUT_READY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="DDRAM_RD" SIGIS="undef" SIGNAME="ddram_ctrl_0_ram2_DDRAM_RD">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="DDRAM_RD"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="DDRAM_WE" SIGIS="undef" SIGNAME="ddram_ctrl_0_ram2_DDRAM_WE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="DDRAM_WE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="cache_inhibit" SIGIS="undef"/>
+        <PORT DIR="I" NAME="cache_rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="minimig_0__cpu_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="_cpu_reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="28" NAME="cpuAddr" RIGHT="1" SIGIS="undef" SIGNAME="cpu_wrapper_0_ramaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="ramaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="cpuCS" SIGIS="undef" SIGNAME="cpu_wrapper_0_ramaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="ramaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="cpuL" SIGIS="undef" SIGNAME="cpu_wrapper_0_ramlds">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="ramlds"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="cpuRD" RIGHT="0" SIGIS="undef" SIGNAME="ddram_ctrl_0_ram2_cpuRD">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrap_1" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="cpuU" SIGIS="undef" SIGNAME="cpu_wrapper_0_ramuds">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="ramuds"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="cpuWR" RIGHT="0" SIGIS="undef" SIGNAME="cpu_wrapper_0_ramdin">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="ramdin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="cpu_cache_ctrl" RIGHT="0" SIGIS="undef" SIGNAME="cpu_wrapper_0_cacr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="cacr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="cpustate" RIGHT="0" SIGIS="undef" SIGNAME="cpu_wrapper_0_cpustate">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="cpustate"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ramready" SIGIS="undef" SIGNAME="ddram_ctrl_0_ram2_ramready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrap_2" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ramshared" SIGIS="undef" SIGNAME="cpu_wrapper_0_ramshared">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="ramshared"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset_n" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="pll_reset_reg_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pll_reset_reg" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sysclk" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/fastchip_0" HWVERSION="1.0" INSTANCE="fastchip_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="fastchip" VLNV="xilinx.com:module_ref:fastchip:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_fastchip_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="addr" RIGHT="0" SIGIS="undef" SIGNAME="cpu_wrapper_0_chip_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="chip_addr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk"/>
+        <PORT DIR="I" NAME="clk_sys" SIGIS="undef"/>
+        <PORT DIR="I" NAME="cyc" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="15" NAME="din" RIGHT="0" SIGIS="undef" SIGNAME="cpu_wrapper_0_chip_din">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="chip_din"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="fastchip_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="fastchip_dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="ide_address" RIGHT="0" SIGIS="undef" SIGNAME="hps_ext_0_ide_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hps_ext_0" PORT="ide_addr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ide_ena" SIGIS="undef" SIGNAME="minimig_0_ide_ena">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="ide_ena"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ide_irq" SENSITIVITY="LEVEL_HIGH" SIGIS="INTERRUPT" SIGNAME="fastchip_0_ide_irq">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="ide_ext_irq"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ide_led" SIGIS="undef" SIGNAME="fastchip_0_ide_led">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="led_disk_0" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ide_read" SIGIS="undef" SIGNAME="hps_ext_0_ide_rd">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hps_ext_0" PORT="ide_rd"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="ide_readdata" RIGHT="0" SIGIS="undef" SIGNAME="fastchip_0_ide_readdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hps_ext_ide_1" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="5" NAME="ide_req" RIGHT="0" SIGIS="undef" SIGNAME="fastchip_0_ide_req">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hps_ext_ide_1" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ide_write" SIGIS="undef" SIGNAME="hps_ext_0_ide_wr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hps_ext_0" PORT="ide_wr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="ide_writedata" RIGHT="0" SIGIS="undef" SIGNAME="hps_ext_0_ide_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hps_ext_0" PORT="ide_dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="lds" SIGIS="undef" SIGNAME="cpu_wrapper_0_fastchip_lds">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="fastchip_lds"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="longword" SIGIS="undef" SIGNAME="cpu_wrapper_0_fastchip_lw">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="fastchip_lw"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ready" SIGIS="undef" SIGNAME="fastchip_0_ready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="fastchip_ready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="minimig_0_rst_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="rst_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rnw" SIGIS="undef" SIGNAME="cpu_wrapper_0_fastchip_rnw">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="fastchip_rnw"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="rtg_base" RIGHT="0" SIGIS="undef" SIGNAME="fastchip_0_rtg_base">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="FB_BASE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="rtg_ena" SIGIS="undef" SIGNAME="fastchip_0_rtg_ena">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="FB_EN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="rtg_format" RIGHT="0" SIGIS="undef" SIGNAME="fastchip_0_rtg_format">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="FB_FORMAT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="11" NAME="rtg_hsize" RIGHT="0" SIGIS="undef" SIGNAME="fastchip_0_rtg_hsize">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="FB_WIDTH"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="rtg_pal_a" RIGHT="0" SIGIS="undef" SIGNAME="fastchip_0_rtg_pal_a">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="FB_PAL_ADDR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="rtg_pal_clk" SIGIS="clk" SIGNAME="fastchip_0_rtg_pal_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="FB_PAL_CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="rtg_pal_dr" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_FB_PAL_DIN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="FB_PAL_DIN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="rtg_pal_dw" RIGHT="0" SIGIS="undef" SIGNAME="fastchip_0_rtg_pal_dw">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="FB_PAL_DOUT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="rtg_pal_wr" SIGIS="undef" SIGNAME="fastchip_0_rtg_pal_wr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="FB_PAL_WR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="13" NAME="rtg_stride" RIGHT="0" SIGIS="undef" SIGNAME="fastchip_0_rtg_stride">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="FB_STRIDE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="11" NAME="rtg_vsize" RIGHT="0" SIGIS="undef" SIGNAME="fastchip_0_rtg_vsize">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="FB_HEIGHT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sel" SIGIS="undef" SIGNAME="cpu_wrapper_0_fastchip_sel">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="fastchip_sel"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sel_ack" SIGIS="undef" SIGNAME="fastchip_0_sel_ack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="fastchip_selack"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="uds" SIGIS="undef" SIGNAME="cpu_wrapper_0_fastchip_uds">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="fastchip_uds"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/hps_ext_0" HWVERSION="1.0" INSTANCE="hps_ext_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="hps_ext" VLNV="xilinx.com:module_ref:hps_ext:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_hps_ext_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="IO" LEFT="35" NAME="EXT_BUS" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="15" NAME="cdda_dout" RIGHT="0" SIGIS="undef" SIGNAME="hps_ext_0_cdda_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cdda_0" PORT="DIN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="cdda_req" SIGIS="undef" SIGNAME="cdda_0_WRITE_REQ">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cdda_0" PORT="WRITE_REQ"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="cdda_wr" SIGIS="undef" SIGNAME="hps_ext_0_cdda_wr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cdda_0" PORT="WRITE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clk_sys" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="15" NAME="fpga_dout" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_IO_DOUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="IO_DOUT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="ide_addr" RIGHT="0" SIGIS="undef" SIGNAME="hps_ext_0_ide_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="ide_address"/>
+            <CONNECTION INSTANCE="fastchip_0" PORT="ide_address"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="ide_din" RIGHT="0" SIGIS="undef" SIGNAME="hps_ext_ide_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hps_ext_ide_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="ide_dout" RIGHT="0" SIGIS="undef" SIGNAME="hps_ext_0_ide_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="ide_writedata"/>
+            <CONNECTION INSTANCE="fastchip_0" PORT="ide_writedata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ide_rd" SIGIS="undef" SIGNAME="hps_ext_0_ide_rd">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="ide_read"/>
+            <CONNECTION INSTANCE="fastchip_0" PORT="ide_read"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="5" NAME="ide_req" RIGHT="0" SIGIS="undef" SIGNAME="hps_ext_ide_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hps_ext_ide_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ide_wr" SIGIS="undef" SIGNAME="hps_ext_0_ide_wr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="ide_write"/>
+            <CONNECTION INSTANCE="fastchip_0" PORT="ide_write"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="io_din" RIGHT="0" SIGIS="undef" SIGNAME="hps_ext_0_io_din">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="IO_DIN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="io_fpga" SIGIS="undef" SIGNAME="hps_ext_0_io_fpga">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="IO_FPGA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="io_strobe" SIGIS="undef" SIGNAME="hps_ext_0_io_strobe">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="IO_STROBE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="io_uio" SIGIS="undef" SIGNAME="hps_ext_0_io_uio">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="IO_UIO"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="kbd_mouse_data" RIGHT="0" SIGIS="undef" SIGNAME="hps_ext_0_kbd_mouse_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="kbd_mouse_data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="kbd_mouse_level" SIGIS="undef" SIGNAME="hps_ext_0_kbd_mouse_level">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="kms_level"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="kbd_mouse_type" RIGHT="0" SIGIS="undef" SIGNAME="hps_ext_0_kbd_mouse_type">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="kbd_mouse_type"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="mouse_buttons" RIGHT="0" SIGIS="undef" SIGNAME="hps_ext_0_mouse_buttons">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="mouse_btn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="6" NAME="scr_flg" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="11" NAME="scr_hbl_l" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="11" NAME="scr_hbl_r" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="11" NAME="scr_hsize" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="1" NAME="scr_res" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="11" NAME="scr_vbl_b" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="11" NAME="scr_vbl_t" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="11" NAME="scr_vsize" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="11" NAME="shbl_l" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="11" NAME="shbl_r" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="sset" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="11" NAME="svbl_b" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="11" NAME="svbl_t" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/hps_ext_ide_0" HWVERSION="2.0" INSTANCE="hps_ext_ide_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="16"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_util_vector_logic_0_14"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="hps_ext_ide_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hps_ext_ide_1" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="hps_ext_ide_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hps_ext_ide_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="hps_ext_ide_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hps_ext_0" PORT="ide_din"/>
+            <CONNECTION INSTANCE="hps_ext_0" PORT="ide_req"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/hps_ext_ide_1" HWVERSION="2.0" INSTANCE="hps_ext_ide_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="16"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_util_vector_logic_0_15"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="fastchip_0_ide_req">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fastchip_0" PORT="ide_req"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="fastchip_0_ide_readdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fastchip_0" PORT="ide_readdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="hps_ext_ide_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hps_ext_ide_0" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/hps_ext_ide_2" HWVERSION="2.0" INSTANCE="hps_ext_ide_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="16"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_util_vector_logic_0_16"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_ide_req">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="ide_req"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_ide_readdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="ide_readdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="hps_ext_ide_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hps_ext_ide_0" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/hps_status_0" HWVERSION="2.0" INSTANCE="hps_status_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="16"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_util_vector_logic_0_26"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Op1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="15" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="hps_status_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hps_status_1" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="Res" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/hps_status_1" HWVERSION="2.0" INSTANCE="hps_status_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="16"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_util_vector_logic_0_27"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Op1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="15" NAME="Op2" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="15" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="hps_status_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hps_status_0" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="0" FULLNAME="/ilconstant_0" HWVERSION="2.0" INSTANCE="ilconstant_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x08"/>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_ilconstant_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="7" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="ilconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="lpf4400_IIR_filter_0" PORT="cx0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="0" FULLNAME="/ilconstant_1" HWVERSION="2.0" INSTANCE="ilconstant_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x1"/>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_ilconstant_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="ilconstant_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="lpf4400_IIR_filter_0" PORT="sample_ce"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="0" FULLNAME="/ilconstant_2" HWVERSION="2.0" INSTANCE="ilconstant_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x000018"/>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="24"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_ilconstant_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="23" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="ilconstant_2_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="lpf4400_IIR_filter_0" PORT="cy0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="0" FULLNAME="/ilconstant_3" HWVERSION="2.0" INSTANCE="ilconstant_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x1"/>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_ilconstant_3_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="ilconstant_3_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="AUDIO_S"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="0" FULLNAME="/ilconstant_4" HWVERSION="2.0" INSTANCE="ilconstant_4" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x2"/>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_ilconstant_4_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="1" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="ilconstant_4_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BUTTONS"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="0" FULLNAME="/ilconstant_5" HWVERSION="2.0" INSTANCE="ilconstant_5" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x1"/>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_ilconstant_5_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="ilconstant_5_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="FB_FORCE_BLANK"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="0" FULLNAME="/ilconstant_6" HWVERSION="2.0" INSTANCE="ilconstant_6" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x1"/>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_ilconstant_6_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="ilconstant_6_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="HDMI_FREEZE"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="0" FULLNAME="/ilconstant_7" HWVERSION="2.0" INSTANCE="ilconstant_7" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x1"/>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_ilconstant_7_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="ilconstant_7_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="VGA_DISABLE"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/input_l_comb" HWVERSION="2.0" INSTANCE="input_l_comb" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="16"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_util_vector_logic_0_3"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_ldata_okk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="ldata_okk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_ldata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="ldata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="input_l_comb_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="lpf4400_IIR_filter_0" PORT="input_l"/>
+            <CONNECTION INSTANCE="output_l_comb" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/input_r_comb" HWVERSION="2.0" INSTANCE="input_r_comb" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="16"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_util_vector_logic_0_4"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_rdata_okk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="rdata_okk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="input_r_comb_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="lpf4400_IIR_filter_0" PORT="input_r"/>
+            <CONNECTION INSTANCE="output_r_comb" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/led_disk_0" HWVERSION="2.0" INSTANCE="led_disk_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_util_vector_logic_0_12"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="1" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_hdd_led">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="hdd_led"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="fastchip_0_ide_led">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fastchip_0" PORT="ide_led"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="led_disk_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="led_disk_1" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/led_disk_1" HWVERSION="2.0" INSTANCE="led_disk_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_util_vector_logic_0_13"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="led_disk_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="led_disk_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_ide_fast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="ide_fast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="led_disk_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="LED_DISK"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/lpf3275_IIR_filter_0" HWVERSION="1.0" INSTANCE="lpf3275_IIR_filter_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="IIR_filter" VLNV="xilinx.com:module_ref:IIR_filter:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="coeff_x" VALUE="7.7470198351366008e-06"/>
+        <PARAMETER NAME="coeff_x0" VALUE="3"/>
+        <PARAMETER NAME="coeff_x1" VALUE="3"/>
+        <PARAMETER NAME="coeff_x2" VALUE="1"/>
+        <PARAMETER NAME="coeff_y0" VALUE="-2.9643815062655108"/>
+        <PARAMETER NAME="coeff_y1" VALUE="2.929394527351211"/>
+        <PARAMETER NAME="coeff_y2" VALUE="-0.96500747158831091"/>
+        <PARAMETER NAME="stereo" VALUE="1"/>
+        <PARAMETER NAME="use_params" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_IIR_filter_0_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="ce" SIGIS="undef"/>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk"/>
+        <PORT DIR="I" LEFT="39" NAME="cx" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="7" NAME="cx0" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="7" NAME="cx1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="7" NAME="cx2" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="23" NAME="cy0" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="23" NAME="cy1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="23" NAME="cy2" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="15" NAME="input_l" RIGHT="0" SIGIS="undef" SIGNAME="output_comb_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="output_comb" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="input_r" RIGHT="0" SIGIS="undef" SIGNAME="output_comb_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="output_comb" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="output_l" RIGHT="0" SIGIS="undef" SIGNAME="lpf3275_IIR_filter_0_output_l">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="output2_l_comb" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="output_r" RIGHT="0" SIGIS="undef" SIGNAME="lpf3275_IIR_filter_0_output_r">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="output2_r_comb" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst"/>
+        <PORT DIR="I" NAME="sample_ce" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/lpf4400_IIR_filter_0" HWVERSION="1.0" INSTANCE="lpf4400_IIR_filter_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="IIR_filter" VLNV="xilinx.com:module_ref:IIR_filter:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="coeff_x" VALUE="7.7470198351366008e-06"/>
+        <PARAMETER NAME="coeff_x0" VALUE="3"/>
+        <PARAMETER NAME="coeff_x1" VALUE="3"/>
+        <PARAMETER NAME="coeff_x2" VALUE="1"/>
+        <PARAMETER NAME="coeff_y0" VALUE="-2.9643815062655108"/>
+        <PARAMETER NAME="coeff_y1" VALUE="2.929394527351211"/>
+        <PARAMETER NAME="coeff_y2" VALUE="-0.96500747158831091"/>
+        <PARAMETER NAME="stereo" VALUE="1"/>
+        <PARAMETER NAME="use_params" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_IIR_filter_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="ce" SIGIS="undef" SIGNAME="ce_comb_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ce_comb" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk"/>
+        <PORT DIR="I" LEFT="39" NAME="cx" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="cx0" RIGHT="0" SIGIS="undef" SIGNAME="ilconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ilconstant_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="cx1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="7" NAME="cx2" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="23" NAME="cy0" RIGHT="0" SIGIS="undef" SIGNAME="ilconstant_2_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ilconstant_2" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="cy1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="23" NAME="cy2" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="15" NAME="input_l" RIGHT="0" SIGIS="undef" SIGNAME="input_l_comb_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="input_l_comb" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="input_r" RIGHT="0" SIGIS="undef" SIGNAME="input_r_comb_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="input_r_comb" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="output_l" RIGHT="0" SIGIS="undef" SIGNAME="lpf4400_IIR_filter_0_output_l">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="output_l_comb" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="output_r" RIGHT="0" SIGIS="undef" SIGNAME="lpf4400_IIR_filter_0_output_r">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="output_r_comb" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst"/>
+        <PORT DIR="I" NAME="sample_ce" SIGIS="undef" SIGNAME="ilconstant_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ilconstant_1" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/minimig_0" HWVERSION="1.0" INSTANCE="minimig_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="minimig" VLNV="xilinx.com:module_ref:minimig:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_minimig_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="IO_DIN" RIGHT="0" SIGIS="undef" SIGNAME="hps_ext_0_io_din">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hps_ext_0" PORT="io_din"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="IO_DOUT" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_IO_DOUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hps_ext_0" PORT="fpga_dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="IO_FPGA" SIGIS="undef" SIGNAME="hps_ext_0_io_fpga">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hps_ext_0" PORT="io_fpga"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="IO_STROBE" SIGIS="undef" SIGNAME="hps_ext_0_io_strobe">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hps_ext_0" PORT="io_strobe"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="IO_UIO" SIGIS="undef" SIGNAME="hps_ext_0_io_uio">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hps_ext_0" PORT="io_uio"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="IO_WAIT" SIGIS="undef"/>
+        <PORT DIR="I" NAME="_cpu_as" SIGIS="undef" SIGNAME="cpu_wrapper_0_chip_as">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="chip_as"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="_cpu_dtack" SIGIS="undef" SIGNAME="minimig_0__cpu_dtack">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="chip_dtack"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="_cpu_ipl" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0__cpu_ipl">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="chip_ipl"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="_cpu_lds" SIGIS="undef" SIGNAME="cpu_wrapper_0_chip_lds">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="chip_lds"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="_cpu_reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="minimig_0__cpu_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="reset"/>
+            <CONNECTION INSTANCE="ddram_ctrl_0_ram2" PORT="cache_rst"/>
+            <CONNECTION INSTANCE="sdram_ctrl_0_ram1" PORT="cache_rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="_cpu_reset_in" POLARITY="ACTIVE_LOW" SIGIS="undef" SIGNAME="cpu_wrapper_0_reset_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="reset_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="_cpu_uds" SIGIS="undef" SIGNAME="cpu_wrapper_0_chip_uds">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="chip_uds"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="_csync" SIGIS="undef"/>
+        <PORT DIR="O" NAME="_hsync" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="15" NAME="_joy1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="15" NAME="_joy2" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="15" NAME="_joy3" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="15" NAME="_joy4" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="_ram_bhe" SIGIS="undef" SIGNAME="minimig_0__ram_bhe">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sdram_ctrl_0_ram1" PORT="chipU"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="_ram_ble" SIGIS="undef" SIGNAME="minimig_0__ram_ble">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sdram_ctrl_0_ram1" PORT="chipL"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="_ram_oe" SIGIS="undef" SIGNAME="minimig_0__ram_oe">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sdram_ctrl_0_ram1" PORT="chipDMA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="_ram_we" SIGIS="undef" SIGNAME="minimig_0__ram_we">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sdram_ctrl_0_ram1" PORT="chipRW"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="_vsync" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="1" NAME="ar" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="1" NAME="aud_mix" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_aud_mix">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="AUDIO_MIX"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="blue" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="bootrom" SIGIS="undef" SIGNAME="minimig_0_bootrom">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="bootrom"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="c1" SIGIS="undef" SIGNAME="amiga_clk_0_c1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="amiga_clk_0" PORT="c1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="c3" SIGIS="undef" SIGNAME="amiga_clk_0_c3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="amiga_clk_0" PORT="c3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="cachecfg" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_cachecfg">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="cachecfg"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="cck" SIGIS="undef" SIGNAME="amiga_clk_0_cck">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="amiga_clk_0" PORT="cck"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="cd" SIGIS="undef" SIGNAME="External_Ports_UART_DSR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="UART_DSR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ce_pix" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="47" NAME="chip48" RIGHT="0" SIGIS="undef" SIGNAME="sdram_ctrl_0_ram1_chip48">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sdram_ctrl_0_ram1" PORT="chip48"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk"/>
+        <PORT DIR="I" NAME="clk7_en" SIGIS="undef" SIGNAME="amiga_clk_0_clk7_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="amiga_clk_0" PORT="clk7_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clk7n_en" SIGIS="undef" SIGNAME="amiga_clk_0_clk7n_en">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="amiga_clk_0" PORT="clk7n_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="cpu_address" RIGHT="1" SIGIS="undef" SIGNAME="cpu_wrapper_0_chip_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="chip_addr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="cpu_data" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_cpu_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="chip_dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="cpu_r_w" SIGIS="undef" SIGNAME="cpu_wrapper_0_chip_rw">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="chip_rw"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="cpucfg" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_cpucfg">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="cpucfg"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="cpudata_in" RIGHT="0" SIGIS="undef" SIGNAME="cpu_wrapper_0_chip_din">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="chip_din"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="cts" SIGIS="undef" SIGNAME="External_Ports_UART_CTS">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="UART_CTS"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="dsr" SIGIS="undef" SIGNAME="External_Ports_UART_DSR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="UART_DSR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="dtr" SIGIS="undef" SIGNAME="minimig_0_dtr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="UART_DTR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="9" NAME="eclk" RIGHT="0" SIGIS="undef" SIGNAME="amiga_clk_0_eclk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="amiga_clk_0" PORT="eclk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="fdd_led" SIGIS="undef" SIGNAME="minimig_0_fdd_led">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="LED_USER"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="field1" SIGIS="undef" SIGNAME="minimig_0_field1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="VGA_F1"/>
+            <CONNECTION INSTANCE="vm_vblank" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="green" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="hblank" SIGIS="undef"/>
+        <PORT DIR="O" NAME="hdd_led" SIGIS="undef" SIGNAME="minimig_0_hdd_led">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="led_disk_0" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="ide_address" RIGHT="0" SIGIS="undef" SIGNAME="hps_ext_0_ide_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hps_ext_0" PORT="ide_addr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ide_ena" SIGIS="undef" SIGNAME="minimig_0_ide_ena">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fastchip_0" PORT="ide_ena"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ide_ext_irq" SENSITIVITY="LEVEL_HIGH" SIGIS="INTERRUPT" SIGNAME="fastchip_0_ide_irq">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fastchip_0" PORT="ide_irq"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ide_fast" SIGIS="undef" SIGNAME="minimig_0_ide_fast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="led_disk_1" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ide_read" SIGIS="undef" SIGNAME="hps_ext_0_ide_rd">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hps_ext_0" PORT="ide_rd"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="ide_readdata" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_ide_readdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hps_ext_ide_2" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="5" NAME="ide_req" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_ide_req">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hps_ext_ide_2" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ide_write" SIGIS="undef" SIGNAME="hps_ext_0_ide_wr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hps_ext_0" PORT="ide_wr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="ide_writedata" RIGHT="0" SIGIS="undef" SIGNAME="hps_ext_0_ide_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hps_ext_0" PORT="ide_dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="joya1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="15" NAME="joya2" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="7" NAME="kbd_mouse_data" RIGHT="0" SIGIS="undef" SIGNAME="hps_ext_0_kbd_mouse_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hps_ext_0" PORT="kbd_mouse_data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="kbd_mouse_type" RIGHT="0" SIGIS="undef" SIGNAME="hps_ext_0_kbd_mouse_type">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hps_ext_0" PORT="kbd_mouse_type"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="kms_level" SIGIS="undef" SIGNAME="hps_ext_0_kbd_mouse_level">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hps_ext_0" PORT="kbd_mouse_level"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="lace" SIGIS="undef" SIGNAME="minimig_0_lace">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="vm_vblank" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="14" NAME="ldata" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_ldata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="input_l_comb" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="8" NAME="ldata_okk" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_ldata_okk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="input_l_comb" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="6" NAME="memcfg" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_memcfg">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="fastramcfg"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="mouse_btn" RIGHT="0" SIGIS="undef" SIGNAME="hps_ext_0_mouse_buttons">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hps_ext_0" PORT="mouse_buttons"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="nmi_addr" RIGHT="0" SIGIS="undef" SIGNAME="cpu_wrapper_0_nmi_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="nmi_addr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ntsc" SIGIS="undef"/>
+        <PORT DIR="O" NAME="ovr" SIGIS="undef"/>
+        <PORT DIR="O" NAME="pwr_led" SIGIS="undef" SIGNAME="minimig_0_pwr_led">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="LED_POWER"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="ram_address" RIGHT="1" SIGIS="undef" SIGNAME="minimig_0_ram_address">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sdram_ctrl_0_ram1" PORT="chipAddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="ram_data" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_ram_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sdram_ctrl_0_ram1" PORT="chipWR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="ramdata_in" RIGHT="0" SIGIS="undef" SIGNAME="sdram_ctrl_0_ram1_chipRD">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sdram_ctrl_0_ram1" PORT="chipRD"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="14" NAME="rdata" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="input_r_comb" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="8" NAME="rdata_okk" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_rdata_okk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="input_r_comb" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="red" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="1" NAME="res" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="ri" SIGIS="undef" SIGNAME="xlconstant_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_1" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst_ext" POLARITY="ACTIVE_HIGH" SIGIS="undef" SIGNAME="pll_reset_reg_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pll_reset_reg" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="rst_out" SIGIS="undef" SIGNAME="minimig_0_rst_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fastchip_0" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="64" NAME="rtc" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="rts" SIGIS="undef" SIGNAME="minimig_0_rts">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="UART_RTS"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rxd" SIGIS="undef" SIGNAME="rxd_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rxd_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="scanline" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_scanline">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="VGA_SL"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="toccata_aud_left" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_toccata_aud_left">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="audio_l_comb_0" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="toccata_aud_right" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_toccata_aud_right">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="audio_r_comb_0" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="toccata_base" RIGHT="0" SIGIS="undef" SIGNAME="cpu_wrapper_0_toccata_base">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="toccata_base"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="toccata_ena" SIGIS="undef" SIGNAME="cpu_wrapper_0_toccata_ena">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="toccata_ena"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="txd" SIGIS="undef" SIGNAME="minimig_0_txd">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="UART_TXD"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="vblank" SIGIS="undef" SIGNAME="minimig_0_vblank">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="vm_vblank2" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/output2_l_comb" HWVERSION="2.0" INSTANCE="output2_l_comb" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="16"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_util_vector_logic_0_8"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="output_comb_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="output_comb" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="lpf3275_IIR_filter_0_output_l">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="lpf3275_IIR_filter_0" PORT="output_l"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="output2_l_comb_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="audio_l_comb_0" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/output2_r_comb" HWVERSION="2.0" INSTANCE="output2_r_comb" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="16"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_util_vector_logic_0_9"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="output_comb_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="output_comb" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="lpf3275_IIR_filter_0_output_r">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="lpf3275_IIR_filter_0" PORT="output_r"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="output2_r_comb_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="audio_r_comb_0" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/output_comb" HWVERSION="2.0" INSTANCE="output_comb" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="16"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_util_vector_logic_0_7"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="output_l_comb_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="output_l_comb" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="output_r_comb_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="output_r_comb" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="output_comb_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="lpf3275_IIR_filter_0" PORT="input_l"/>
+            <CONNECTION INSTANCE="lpf3275_IIR_filter_0" PORT="input_r"/>
+            <CONNECTION INSTANCE="output2_l_comb" PORT="Op1"/>
+            <CONNECTION INSTANCE="output2_r_comb" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/output_l_comb" HWVERSION="2.0" INSTANCE="output_l_comb" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="16"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_util_vector_logic_0_5"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="lpf4400_IIR_filter_0_output_l">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="lpf4400_IIR_filter_0" PORT="output_l"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="input_l_comb_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="input_l_comb" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="output_l_comb_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="output_comb" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/output_r_comb" HWVERSION="2.0" INSTANCE="output_r_comb" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="16"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_util_vector_logic_0_6"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="lpf4400_IIR_filter_0_output_r">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="lpf4400_IIR_filter_0" PORT="output_r"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="input_r_comb_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="input_r_comb" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="output_r_comb_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="output_comb" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/pll_reset_reg" HWVERSION="2.0" INSTANCE="pll_reset_reg" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="or"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_util_vector_logic_0_0"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_orgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" POLARITY="ACTIVE_HIGH" RIGHT="0" SIGIS="undef" SIGNAME="pll_reset_reg_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pll_reset_reg_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="0" NAME="Res" POLARITY="ACTIVE_HIGH" RIGHT="0" SIGIS="undef" SIGNAME="pll_reset_reg_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="amiga_clk_0" PORT="reset_n"/>
+            <CONNECTION INSTANCE="sdram_ctrl_0_ram1" PORT="reset_n"/>
+            <CONNECTION INSTANCE="minimig_0" PORT="rst_ext"/>
+            <CONNECTION INSTANCE="ddram_ctrl_0_ram2" PORT="reset_n"/>
+            <CONNECTION INSTANCE="cdda_0" PORT="nRESET"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/pll_reset_reg_2" HWVERSION="2.0" INSTANCE="pll_reset_reg_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="or"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_util_vector_logic_0_1"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_orgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" POLARITY="ACTIVE_HIGH" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_RESET">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RESET"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="0" NAME="Res" POLARITY="ACTIVE_HIGH" RIGHT="0" SIGIS="undef" SIGNAME="pll_reset_reg_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pll_reset_reg" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/rxd_0" HWVERSION="2.0" INSTANCE="rxd_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_util_vector_logic_0_22"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="rxd_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rxd_1" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="rxd_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="rxd"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/rxd_1" HWVERSION="2.0" INSTANCE="rxd_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_util_vector_logic_0_23"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_UART_RXD">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="UART_RXD"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="rxd_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rxd_0" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/sdram_ctrl_0_ram1" HWVERSION="1.0" INSTANCE="sdram_ctrl_0_ram1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sdram_ctrl" VLNV="xilinx.com:module_ref:sdram_ctrl:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_sdram_ctrl_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="c_7m" SIGIS="undef" SIGNAME="amiga_clk_0_c1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="amiga_clk_0" PORT="c1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="cache_inhibit" SIGIS="undef"/>
+        <PORT DIR="I" NAME="cache_rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="minimig_0__cpu_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="_cpu_reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="47" NAME="chip48" RIGHT="0" SIGIS="undef" SIGNAME="sdram_ctrl_0_ram1_chip48">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="chip48"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="24" NAME="chipAddr" RIGHT="1" SIGIS="undef" SIGNAME="minimig_0_ram_address">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="ram_address"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="chipDMA" SIGIS="undef" SIGNAME="minimig_0__ram_oe">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="_ram_oe"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="chipL" SIGIS="undef" SIGNAME="minimig_0__ram_ble">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="_ram_ble"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="chipRD" RIGHT="0" SIGIS="undef" SIGNAME="sdram_ctrl_0_ram1_chipRD">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="ramdata_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="chipRW" SIGIS="undef" SIGNAME="minimig_0__ram_we">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="_ram_we"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="chipU" SIGIS="undef" SIGNAME="minimig_0__ram_bhe">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="_ram_bhe"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="chipWR" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_ram_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="ram_data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="24" NAME="cpuAddr" RIGHT="1" SIGIS="undef" SIGNAME="cpu_wrapper_0_ramaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="ramaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="cpuCS" SIGIS="undef" SIGNAME="cpu_wrapper_0_ramaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="ramaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="cpuL" SIGIS="undef" SIGNAME="cpu_wrapper_0_ramlds">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="ramlds"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="cpuRD" RIGHT="0" SIGIS="undef" SIGNAME="sdram_ctrl_0_ram1_cpuRD">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrap_1" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="cpuU" SIGIS="undef" SIGNAME="cpu_wrapper_0_ramuds">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="ramuds"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="cpuWR" RIGHT="0" SIGIS="undef" SIGNAME="cpu_wrapper_0_ramdin">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="ramdin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="cpu_cache_ctrl" RIGHT="0" SIGIS="undef" SIGNAME="cpu_wrapper_0_cacr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="cacr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="cpustate" RIGHT="0" SIGIS="undef" SIGNAME="cpu_wrapper_0_cpustate">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrapper_0" PORT="cpustate"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ramready" SIGIS="undef" SIGNAME="sdram_ctrl_0_ram1_ramready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cpu_wrap_2" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset_n" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="pll_reset_reg_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="pll_reset_reg" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="12" NAME="sd_addr" RIGHT="0" SIGIS="undef" SIGNAME="sdram_ctrl_0_ram1_sd_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SDRAM_A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="sd_ba" RIGHT="0" SIGIS="undef" SIGNAME="sdram_ctrl_0_ram1_sd_ba">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SDRAM_BA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sd_cas" SIGIS="undef" SIGNAME="sdram_ctrl_0_ram1_sd_cas">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SDRAM2_nCAS"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sd_cke" SIGIS="undef" SIGNAME="sdram_ctrl_0_ram1_sd_cke">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SDRAM_CKE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="sd_clk" SIGIS="clk" SIGNAME="sdram_ctrl_0_ram1_sd_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SDRAM_CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sd_cs" SIGIS="undef" SIGNAME="sdram_ctrl_0_ram1_sd_cs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SDRAM_nCS"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="IO" LEFT="15" NAME="sd_data" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_SDRAM_DQ">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SDRAM_DQ"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="sd_dqm" RIGHT="0" SIGIS="undef" SIGNAME="sdram_ctrl_0_ram1_sd_dqm">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SDRAM_DQMH"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="SDRAM_DQML"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sd_ras" SIGIS="undef" SIGNAME="sdram_ctrl_0_ram1_sd_ras">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SDRAM_nRAS"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="sd_we" SIGIS="undef" SIGNAME="sdram_ctrl_0_ram1_sd_we">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SDRAM_nWE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="sysclk" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/vga_b_comb_0" HWVERSION="2.0" INSTANCE="vga_b_comb_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="8"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_util_vector_logic_0_28"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="Op1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="7" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="vga_comb_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="vga_comb_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="vga_b_comb_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="VGA_B"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/vga_comb_1" HWVERSION="2.0" INSTANCE="vga_comb_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="8"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_util_vector_logic_0_31"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="Op1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="7" NAME="Op2" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="7" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="vga_comb_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="vga_comb_2" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/vga_comb_2" HWVERSION="2.0" INSTANCE="vga_comb_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="8"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_util_vector_logic_0_32"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="vga_comb_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="vga_comb_1" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="Op2" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="7" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="vga_comb_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="vga_b_comb_0" PORT="Op2"/>
+            <CONNECTION INSTANCE="vga_g_omb_0" PORT="Op2"/>
+            <CONNECTION INSTANCE="vga_r_comb_0" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/vga_g_omb_0" HWVERSION="2.0" INSTANCE="vga_g_omb_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="8"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_util_vector_logic_0_29"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="Op1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="7" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="vga_comb_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="vga_comb_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="vga_g_omb_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="VGA_G"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/vga_r_comb_0" HWVERSION="2.0" INSTANCE="vga_r_comb_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="8"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_util_vector_logic_0_30"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="Op1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="7" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="vga_comb_2_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="vga_comb_2" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="vga_r_comb_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="VGA_R"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/vm_vblank" HWVERSION="2.0" INSTANCE="vm_vblank" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_util_vector_logic_0_10"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_field1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="field1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_lace">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="lace"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="vm_vblank_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="vm_vblank2" PORT="Op2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/vm_vblank2" HWVERSION="2.0" INSTANCE="vm_vblank2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="and"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_util_vector_logic_0_11"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_andgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="minimig_0_vblank">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="vblank"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="Op2" RIGHT="0" SIGIS="undef" SIGNAME="vm_vblank_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="vm_vblank" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="9" FULLNAME="/xlconstant_0" HWVERSION="1.1" INSTANCE="xlconstant_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x0000000028"/>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="40"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_xlconstant_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="39" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="lpf4400_IIR_filter_0" PORT="cx"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="9" FULLNAME="/xlconstant_1" HWVERSION="1.1" INSTANCE="xlconstant_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x1"/>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_xlconstant_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="minimig_0" PORT="ri"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="9" FULLNAME="/xlconstant_2" HWVERSION="1.1" INSTANCE="xlconstant_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x1"/>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="Amiga_emu_xlconstant_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

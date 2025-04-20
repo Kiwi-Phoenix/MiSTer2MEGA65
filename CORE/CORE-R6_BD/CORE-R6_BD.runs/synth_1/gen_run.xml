@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a200tfbg484-2" LaunchTime="1741245582">
+  <File Type="REPORTS-TCL" Name="mega65_r6_reports.tcl"/>
+  <File Type="RDS-UTIL" Name="mega65_r6_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="mega65_r6_utilization_synth.pb"/>
+  <File Type="PA-TCL" Name="mega65_r6.tcl"/>
+  <File Type="RDS-RDS" Name="mega65_r6.vds"/>
+  <File Type="RDS-DCP" Name="mega65_r6.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/av_pipeline/audio_out.v">
+      <FileInfo SFType="SVerilog">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/av_pipeline/audio_out.v"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/controllers/MiSTer/csync.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/controllers/MiSTer/csync.sv"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/controllers/MiSTer/hq2x.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/controllers/MiSTer/hq2x.sv"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/controllers/MiSTer/iir_filter.v">
+      <FileInfo SFType="SVerilog">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/controllers/MiSTer/iir_filter.v"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/controllers/MiSTer/scandoubler.v">
+      <FileInfo SFType="SVerilog">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/controllers/MiSTer/scandoubler.v"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/controllers/MiSTer/video_freezer.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/controllers/MiSTer/video_freezer.sv"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/controllers/MiSTer/video_mixer.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/controllers/MiSTer/video_mixer.sv"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/QNICE/vhdl/cycle_counter.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/QNICE/vhdl/cycle_counter.vhd"/>
+        <Attr Name="ImportTime" Val="1735855291"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/tdp_ram.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/tdp_ram.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/2port2clk_ram.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/2port2clk_ram.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/2port2clk_ram_byteenable.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/2port2clk_ram_byteenable.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/QNICE/vhdl/EAE.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/QNICE/vhdl/EAE.vhd"/>
+        <Attr Name="ImportTime" Val="1735855291"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/QNICE/vhdl/cpu_constants.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/QNICE/vhdl/cpu_constants.vhd"/>
+        <Attr Name="ImportTime" Val="1735855291"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/QNICE/vhdl/alu.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/QNICE/vhdl/alu.vhd"/>
+        <Attr Name="ImportTime" Val="1735855291"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/QNICE/vhdl/alu_shifter.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/QNICE/vhdl/alu_shifter.vhd"/>
+        <Attr Name="ImportTime" Val="1735855291"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/av_pipeline/vga_recover_counters.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/av_pipeline/vga_recover_counters.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/ram_init.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/ram_init.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/av_pipeline/vga_osm.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/av_pipeline/vga_osm.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/av_pipeline/video_overlay.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/av_pipeline/video_overlay.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/av_pipeline/analog_pipeline.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/av_pipeline/analog_pipeline.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/av_pipeline/ascal.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/av_pipeline/ascal.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/controllers/M65/audio.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/controllers/M65/audio.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/QNICE/vhdl/tools.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/QNICE/vhdl/tools.vhd"/>
+        <Attr Name="ImportTime" Val="1735855291"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/av_pipeline/video_modes_pkg.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/av_pipeline/video_modes_pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/CORE/vhdl/globals.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../vhdl/globals.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/controllers/HDMI/types_pkg.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/controllers/HDMI/types_pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/cdc_stable.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/cdc_stable.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/cdc_pulse.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/cdc_pulse.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/av_pipeline/video_counters.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/av_pipeline/video_counters.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/av_pipeline/crop.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/av_pipeline/crop.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/av_pipeline/clk_synthetic_enable.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/av_pipeline/clk_synthetic_enable.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/memory/avm_decrease.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/memory/avm_decrease.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/controllers/HDMI/sync_reg.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/controllers/HDMI/sync_reg.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/controllers/HDMI/hdmi_tx_encoder.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/controllers/HDMI/hdmi_tx_encoder.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/controllers/HDMI/vga_to_hdmi.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/controllers/HDMI/vga_to_hdmi.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/controllers/HDMI/serialiser_10to1_selectio.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/controllers/HDMI/serialiser_10to1_selectio.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/av_pipeline/digital_pipeline.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/av_pipeline/digital_pipeline.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/hdmi_flicker_free.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/hdmi_flicker_free.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/av_pipeline/av_pipeline.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/av_pipeline/av_pipeline.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/memory/avm_arbit.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/memory/avm_arbit.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/memory/avm_arbit_general.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/memory/avm_arbit_general.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/memory/axi_fifo.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/memory/axi_fifo.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/memory/avm_fifo.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/memory/avm_fifo.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/QNICE/vhdl/basic_uart.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/QNICE/vhdl/basic_uart.vhd"/>
+        <Attr Name="ImportTime" Val="1735855291"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/QNICE/qnice_globals.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/QNICE/qnice_globals.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/QNICE/vhdl/block_ram.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/QNICE/vhdl/block_ram.vhd"/>
+        <Attr Name="ImportTime" Val="1735855291"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/QNICE/vhdl/block_rom.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/QNICE/vhdl/block_rom.vhd"/>
+        <Attr Name="ImportTime" Val="1735855291"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/QNICE/vhdl/bus_uart.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/QNICE/vhdl/bus_uart.vhd"/>
+        <Attr Name="ImportTime" Val="1735855291"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/QNICE/vhdl/byte_bram.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/QNICE/vhdl/byte_bram.vhd"/>
+        <Attr Name="ImportTime" Val="1735855291"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/CORE/vhdl/clk.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../vhdl/clk.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/clk_m2m.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/clk_m2m.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/clock_counter.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/clock_counter.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/CORE/vhdl/config.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../vhdl/config.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/i2c/cpu_to_i2c_master.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/i2c/cpu_to_i2c_master.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/debounce.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/debounce.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/debouncer.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/debouncer.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/QNICE/vhdl/fifo.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/QNICE/vhdl/fifo.vhd"/>
+        <Attr Name="ImportTime" Val="1735855291"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/controllers/HDMI/video_out_clock.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/controllers/HDMI/video_out_clock.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/reset_manager.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/reset_manager.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/controllers/M65/kb_matrix_ram.vhdl">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/controllers/M65/kb_matrix_ram.vhdl"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/controllers/M65/mega65kbd_to_matrix.vhdl">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/controllers/M65/mega65kbd_to_matrix.vhdl"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/controllers/M65/matrix_to_keynum.vhdl">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/controllers/M65/matrix_to_keynum.vhdl"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/m2m_keyb.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/m2m_keyb.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/QNICE/vhdl/qnice_cpu.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/QNICE/vhdl/qnice_cpu.vhd"/>
+        <Attr Name="ImportTime" Val="1735855291"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/QNICE/sdmux.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/QNICE/sdmux.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/QNICE/vhdl/sdcard.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/QNICE/vhdl/sdcard.vhd"/>
+        <Attr Name="ImportTime" Val="1735855291"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/QNICE/qnice_mmio.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/QNICE/qnice_mmio.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/QNICE/qnice.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/QNICE/qnice.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/qnice2hyperram.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/qnice2hyperram.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/controllers/M65/mouse_input.vhdl">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/controllers/M65/mouse_input.vhdl"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/qnice_wrapper.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/qnice_wrapper.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/controllers/hyperram/hyperram_errata.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/controllers/hyperram/hyperram_errata.vhd"/>
+        <Attr Name="ImportTime" Val="1741159632"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/controllers/hyperram/hyperram_config.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/controllers/hyperram/hyperram_config.vhd"/>
+        <Attr Name="ImportTime" Val="1741159632"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/controllers/hyperram/hyperram_ctrl.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/controllers/hyperram/hyperram_ctrl.vhd"/>
+        <Attr Name="ImportTime" Val="1741159632"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/controllers/hyperram/hyperram_fifo.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/controllers/hyperram/hyperram_fifo.vhd"/>
+        <Attr Name="ImportTime" Val="1741159632"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/controllers/hyperram/hyperram_rx.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/controllers/hyperram/hyperram_rx.vhd"/>
+        <Attr Name="ImportTime" Val="1741159632"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/controllers/hyperram/hyperram_tx.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/controllers/hyperram/hyperram_tx.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/controllers/hyperram/hyperram.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/controllers/hyperram/hyperram.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/i2c/rtc_master.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/i2c/rtc_master.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/i2c/rtc_controller.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/i2c/rtc_controller.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/qnice_arbit.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/qnice_arbit.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/i2c/i2c_master.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/i2c/i2c_master.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/i2c/i2c_controller.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/i2c/i2c_controller.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/i2c/rtc_wrapper.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/i2c/rtc_wrapper.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/framework.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/framework.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/CORE/vhdl/keyboard.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../vhdl/keyboard.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/CORE/vhdl/main.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../vhdl/main.vhd"/>
+        <Attr Name="ImportTime" Val="1741248283"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/vdrives.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/vdrives.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/CORE/vhdl/mega65.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../vhdl/mega65.vhd"/>
+        <Attr Name="ImportTime" Val="1741248488"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/QNICE/vhdl/register_file.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/QNICE/vhdl/register_file.vhd"/>
+        <Attr Name="ImportTime" Val="1735855291"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/QNICE/vhdl/sd_spi.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/QNICE/vhdl/sd_spi.vhd"/>
+        <Attr Name="ImportTime" Val="1735855291"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Amiga-Core-Test/M2M/vhdl/top_mega65-r6.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/vhdl/top_mega65-r6.vhd"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="mega65_r6"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Amiga-Core-Test/M2M/MEGA65-R6.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/MEGA65-R6.xdc"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/Amiga-Core-Test/M2M/common.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../M2M/common.xdc"/>
+        <Attr Name="ImportTime" Val="1741159632"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/Amiga-Core-Test/CORE/CORE.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../CORE.xdc"/>
+        <Attr Name="ImportTime" Val="1735855275"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PPRDIR/../m2m-rom/synth_pre.tcl">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="UsedInSteps" Val="synth_1;SYNTH_DESIGN;TCL.PRE"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design" PreStepTclHook="$PPRDIR/../m2m-rom/synth_pre.tcl">
+      <Option Id="FlattenHierarchy">1</Option>
+    </Step>
+  </Strategy>
+</GenRun>

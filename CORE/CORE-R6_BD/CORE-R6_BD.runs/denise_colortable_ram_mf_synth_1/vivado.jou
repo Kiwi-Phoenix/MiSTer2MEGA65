@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2.1 (64-bit)
+# SW Build 5266912 on Sun Dec 15 09:03:24 MST 2024
+# IP Build 5264866 on Sun Dec 15 16:27:47 MST 2024
+# SharedData Build 5264680 on Wed Dec 11 12:48:36 MST 2024
+# Start of session at: Sat Mar 15 12:04:13 2025
+# Process ID         : 13828
+# Current directory  : D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/CORE/CORE-R6_BD/CORE-R6_BD.runs/denise_colortable_ram_mf_synth_1
+# Command line       : vivado.exe -log denise_colortable_ram_mf.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source denise_colortable_ram_mf.tcl
+# Log file           : D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/CORE/CORE-R6_BD/CORE-R6_BD.runs/denise_colortable_ram_mf_synth_1/denise_colortable_ram_mf.vds
+# Journal file       : D:/Retro/Mega65/FPGA_Projects/Amiga-Core-Test/CORE/CORE-R6_BD/CORE-R6_BD.runs/denise_colortable_ram_mf_synth_1\vivado.jou
+# Running On         : Retro-PC
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) i7-14700T
+# CPU Frequency      : 1306 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 28
+# Host memory        : 33971 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36118 MB
+# Available Virtual  : 21133 MB
+#-----------------------------------------------------------
+source denise_colortable_ram_mf.tcl -notrace

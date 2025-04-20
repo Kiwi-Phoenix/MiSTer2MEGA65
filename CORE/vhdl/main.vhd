@@ -62,49 +62,108 @@ entity main is
       pot1_x_i                : in  std_logic_vector(7 downto 0);
       pot1_y_i                : in  std_logic_vector(7 downto 0);
       pot2_x_i                : in  std_logic_vector(7 downto 0);
-      pot2_y_i                : in  std_logic_vector(7 downto 0)
+      pot2_y_i                : in  std_logic_vector(7 downto 0);
+      
+      
+            -- Paddle speed
+      paddle_speed_i          : in std_logic_vector(3 downto 0);
+      
+     -- Pll Audio      
+      pllaudio_outclk_0       : out std_logic
+      
+      
+      
    );
 end entity main;
 
 architecture synthesis of main is
 
+
+-- Forcing a signal so that it will Synthesis and run Implementation.
+-- Will need to be connected properly at some stage.
+signal HPS_BUS          : std_logic_vector(48 downto 0) := (others => '0');
+signal fb_pal_din       : std_logic_vector(23 downto 0) := (others => '0');
+signal adc_bus          : std_logic_vector(3 downto 0) := (others => '0');
+
+
+
+
 -- @TODO: Remove these demo core signals
 signal keyboard_n          : std_logic_vector(79 downto 0);
+-- Signal that contains currently used color constant
+--signal ball_color           : std_logic_vector(23 downto 0);
+
+-- Placeholder Ports for the port mapping of emu
+-- No idead for now as to what they should be connectede to!!!!
+-- Likely more ports need to be defined for main.
+signal emu_ddram_busy_i       : std_logic;
+signal emu_ddram_dout_i       : std_logic_vector(63 downto 0) := (others => '0');
+signal emu_ddram_dout_ready_i   : std_logic := '0';
+signal emu_fb_ll_i              : std_logic;
+signal emu_fb_pal_din_i         : std_logic_vector(23 downto 0);
+signal emu_fb_vbl_i             : std_logic;
+signal emu_hdmi_height_i        : std_logic_vector(11 downto 0) := (others => '0');
+signal emu_hdmi_width_i         : std_logic_vector(11 downto 0) := (others => '0');
+signal emu_osd_status_i         : std_logic := '0';
+signal emu_sdram2_en_i          : std_logic; 
+signal emu_sd_cd_i              : std_logic; 
+signal emu_sd_miso_i            : std_logic; 
+signal emu_uart_cts_i           : std_logic; 
+signal emu_uart_dsr_i           : std_logic; 
+signal emu_uart_rxd_i           : std_logic; 
+signal emu_user_in_i            : std_logic_vector(6 downto 0) := (others => '0');          
+
+
+
 
 begin
 
-   -- @TODO: Add the actual MiSTer core here
-   -- The demo core's purpose is to show a test image and to make sure, that the MiSTer2MEGA65 framework
-   -- can be synthesized and run stand-alone without an actual MiSTer core being there, yet
-   i_democore : entity work.democore
-      port map (
-         clk_main_i           => clk_main_i,
+   
+Amiga : entity emu
+    port map (
+        -- In Ports
+         CLK_50M         => clk_main_i           
+        ,RESET           => reset_hard_i
+        ,CLK_AUDIO       => pllaudio_outclk_0
+        ,DDRAM_BUSY      => emu_ddram_busy_i
+        ,DDRAM_DOUT      => emu_ddram_dout_i
+        ,DDRAM_DOUT_READY => emu_ddram_dout_ready_i
+        ,FB_LL            => emu_fb_ll_i
+        ,FB_PAL_DIN      => emu_fb_pal_din_i
+        ,FB_VBL          => emu_fb_vbl_i
+        ,HDMI_HEIGHT     => emu_hdmi_height_i
+        ,HDMI_WIDTH      => emu_hdmi_width_i
+        ,OSD_STATUS      => emu_osd_status_i
+        ,SDRAM2_EN       => emu_sdram2_en_i
+        ,SD_CD           => emu_sd_cd_i
+        ,SD_MISO         => emu_sd_miso_i
+        ,UART_CTS        => emu_uart_cts_i
+        ,UART_DSR        => emu_uart_dsr_i
+        ,UART_RXD        => emu_uart_rxd_i
+        ,USER_IN         => emu_user_in_i                                
+        
+        -- Out Ports
+        ,AUDIO_L         => audio_left_o
+        ,AUDIO_R         => audio_right_o
+        ,VGA_B           => video_blue_o
+        ,VGA_G           => video_green_o
+        ,VGA_R           => video_red_o
+        ,VGA_VS          => video_vs_o
+        
+--        ,HPS_BUS         => HPS_BUS
+        ,ADC_BUS         => adc_bus
+    );
 
-         reset_i              => reset_soft_i or reset_hard_i,       -- long and short press of reset button mean the same
-         pause_i              => pause_i,
-
-         ball_col_rgb_i       => x"EE4020",                          -- ball color (RGB): orange
-         paddle_speed_i       => x"1",                               -- paddle speed is about 50 pixels / sec (due to 50 Hz)
-
-         keyboard_n_i         => keyboard_n,                         -- move the paddle with the cursor left/right keys...
-         joy_up_n_i           => joy_1_up_n_i,                       -- ... or move the paddle with a joystick in port #1
-         joy_down_n_i         => joy_1_down_n_i,
-         joy_left_n_i         => joy_1_left_n_i,
-         joy_right_n_i        => joy_1_right_n_i,
-         joy_fire_n_i         => joy_1_fire_n_i,
-
-         vga_ce_o             => video_ce_o,
-         vga_red_o            => video_red_o,
-         vga_green_o          => video_green_o,
-         vga_blue_o           => video_blue_o,
-         vga_vs_o             => video_vs_o,
-         vga_hs_o             => video_hs_o,
-         vga_hblank_o         => video_hblank_o,
-         vga_vblank_o         => video_vblank_o,
-
-         audio_left_o         => audio_left_o,
-         audio_right_o        => audio_right_o
-      ); -- i_democore
+-- Audio clock. outclk_0 = 24.576000 MHz
+pll_audio : entity pll_audio_0002
+        port map (
+                 refclk      => clk_main_i
+                ,rst         => reset_hard_i
+                ,outclk_0    => pllaudio_outclk_0    
+        );
+        
+   
+   
 
    -- On video_ce_o and video_ce_ovl_o: You have an important @TODO when porting a core:
    -- video_ce_o: You need to make sure that video_ce_o divides clk_main_i such that it transforms clk_main_i
@@ -124,18 +183,18 @@ begin
    -- You need to adjust keyboard.vhd to your needs
    i_keyboard : entity work.keyboard
       port map (
-         clk_main_i           => clk_main_i,
+          clk_main_i           => clk_main_i
 
          -- Interface to the MEGA65 keyboard
-         key_num_i            => kb_key_num_i,
-         key_pressed_n_i      => kb_key_pressed_n_i,
+         ,key_num_i            => kb_key_num_i
+         ,key_pressed_n_i      => kb_key_pressed_n_i
 
          -- @TODO: Create the kind of keyboard output that your core needs
          -- "example_n_o" is a low active register and used by the demo core:
          --    bit 0: Space
          --    bit 1: Return
          --    bit 2: Run/Stop
-         example_n_o          => keyboard_n
+         ,example_n_o          => keyboard_n
       ); -- i_keyboard
 
 end architecture synthesis;

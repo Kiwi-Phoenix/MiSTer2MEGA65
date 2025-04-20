@@ -76,29 +76,29 @@ type WHS_RECORD_ARRAY_TYPE is array (0 to WHS_RECORDS - 1) of WHS_RECORD_TYPE;
 
 constant SCR_WELCOME : string :=
 
-   "Name of the Demo Core Version 1.0\n" &
-   "MiSTer port done by Demo Author in 2022\n\n" &
+   "MEGA65 Amiga Core BETA Version 0.01\n" &
+   "MiSTer port done by Kiwi in 2025\n\n" &
 
    -- We are not insisting. But it would be nice if you gave us credit for MiSTer2MEGA65 by leaving these lines in
    "Powered by MiSTer2MEGA65 Version [WIP],\n" &
    "done by sy2002 and MJoergen in 2022\n" &
 
-   "\n\nEdit config.vhd to modify welcome screen.\n\n" &
-   "You can for example show the keyboard map.\n" &
-   "Look at this example for the Demo core:\n\n\n" &
+--   "\n\nEdit config.vhd to modify welcome screen.\n\n" &
+--   "You can for example show the keyboard map.\n" &
+--   "Look at this example for the Demo core:\n\n\n" &
 
-   "    Key                Demo core\n" &
+   "    Key                Amiga Core\n" &
    "    " & CHR_LINE_10 & CHR_LINE_10 & CHR_LINE_10 & CHR_LINE_1 & CHR_LINE_1 & "\n" &
-   "    Left Cursor        Paddle left\n" &
-   "    Right Cursor       Paddle right\n" &
-   "    Space              Start game\n" &
+--   "    Left Cursor        Paddle left\n" &
+--   "    Right Cursor       Paddle right\n" &
+--   "    Space              Start game\n" &
    "    Help               Options menu\n\n\n" &
 
    "\n\n    Press Space to continue.\n\n\n";
 
 constant HELP_1 : string :=
 
-   "\n Demo Core for MEGA65 Version 1\n\n" &
+   "\n Amiga Core for MEGA65 Version BETA 0.01\n\n" &
 
    " MiSTer port 2022 by YOU\n" &
    " Powered by MiSTer2MEGA65\n\n\n" &

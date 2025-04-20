@@ -1,0 +1,212 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2.1 (win64) Build 5266912 Sun Dec 15 09:03:24 MST 2024
+| Date         : Sun Mar 16 14:40:52 2025
+| Host         : Retro-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tfbg484-3
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MEGA65_R6_M65_Framework_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of MEGA65_R6_M65_Framework_0_0 (xilinx.com:user:M65_Framework:1.0) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2.1 (win64) Build 5266912 Sun Dec 15 09:03:24 MST 2024
+| Date         : Sun Mar 16 14:35:54 2025
+| Host         : Retro-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tfbg484-3
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MEGA65_R6_M65_Core_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of MEGA65_R6_M65_Core_0_0 (xilinx.com:user:M65_Core:1.0 (Rev. 2)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2.1 (win64) Build 5266912 Sun Dec 15 09:03:24 MST 2024
+| Date         : Sun Mar 16 14:34:39 2025
+| Host         : Retro-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tfbg484-3
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'M65_Main_Amiga_emu_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of M65_Main_Amiga_emu_0_0 (xilinx.com:user:Amiga_emu:1.0 (Rev. 2)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2.1 (win64) Build 5266912 Sun Dec 15 09:03:24 MST 2024
+| Date         : Sun Mar 16 14:34:38 2025
+| Host         : Retro-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tfbg484-3
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'M65_Core_M65_vdrives_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of M65_Core_M65_vdrives_0_0 (xilinx.com:user:M65_vdrives:1.0 (Rev. 2)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2.1 (win64) Build 5266912 Sun Dec 15 09:03:24 MST 2024
+| Date         : Sun Mar 16 14:03:50 2025
+| Host         : Retro-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tfbg484-3
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'M65_Main_Amiga_emu_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of M65_Main_Amiga_emu_0_0 (xilinx.com:user:Amiga_emu:1.0 (Rev. 2)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2.1 (win64) Build 5266912 Sun Dec 15 09:03:24 MST 2024
+| Date         : Sun Mar 16 13:48:26 2025
+| Host         : Retro-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tfbg484-3
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'M65_Main_Amiga_emu_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the update of M65_Main_Amiga_emu_0_0 (xilinx.com:user:Amiga_emu:1.0 (Rev. 2)) to current project options.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'M65_Main_Amiga_emu_0_0'. These changes may impact your design.
+
+
+-Upgraded port 'LED_DISK' width 1 differs from original width 2
+
+-Upgraded port 'SDRAM_DQMH' width 2 differs from original width 1
+
+-Upgraded port 'SDRAM_DQML' width 2 differs from original width 1
+
+-Upgraded port 'VGA_SL' width 3 differs from original width 2
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2.1 (win64) Build 5266912 Sun Dec 15 09:03:24 MST 2024
+| Date         : Sun Mar 16 13:48:26 2025
+| Host         : Retro-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tfbg484-3
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'M65_Core_M65_Main_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of M65_Core_M65_Main_0_0 (xilinx.com:user:M65_Main:1.0 (Rev. 2)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2.1 (win64) Build 5266912 Sun Dec 15 09:03:24 MST 2024
+| Date         : Fri Mar 14 16:12:39 2025
+| Host         : Retro-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tfbg484-3
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MEGA65_R6_M65_Core_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of MEGA65_R6_M65_Core_0_0 (xilinx.com:user:M65_Core:1.0 (Rev. 2)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2.1 (win64) Build 5266912 Sun Dec 15 09:03:24 MST 2024
+| Date         : Tue Mar 11 21:18:56 2025
+| Host         : Retro-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tfbg484-3
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'MEGA65_R6_M65_Core_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the update of MEGA65_R6_M65_Core_0_0 (xilinx.com:user:M65_Core:1.0 (Rev. 2)) to current project options.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'MEGA65_R6_M65_Core_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'X_main_drive_led_col_o'
+
+

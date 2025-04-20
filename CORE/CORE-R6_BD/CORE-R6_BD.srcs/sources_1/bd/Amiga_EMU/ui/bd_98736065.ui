@@ -1,0 +1,100 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.350035",
+   "Default View_TopLeft":"-1726,3",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port port-id_CLK_50M -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace port port-id_RESET -pg 1 -lvl 0 -x 0 -y 240 -defaultsOSRD
+preplace port port-id_CLK_VIDEO -pg 1 -lvl 1 -x 40 -y 720 -defaultsOSRD
+preplace port port-id_CE_PIXEL -pg 1 -lvl 1 -x 40 -y 700 -defaultsOSRD
+preplace port port-id_VGA_HS -pg 1 -lvl 1 -x 40 -y 1360 -defaultsOSRD
+preplace port port-id_VGA_VS -pg 1 -lvl 1 -x 40 -y 1400 -defaultsOSRD
+preplace port port-id_VGA_DE -pg 1 -lvl 1 -x 40 -y 1300 -defaultsOSRD
+preplace port port-id_VGA_F1 -pg 1 -lvl 1 -x 40 -y 1340 -defaultsOSRD
+preplace port port-id_VGA_SCALER -pg 1 -lvl 1 -x 40 -y 1380 -defaultsOSRD
+preplace port port-id_VGA_DISABLE -pg 1 -lvl 1 -x 40 -y 1320 -defaultsOSRD
+preplace port port-id_HDMI_FREEZE -pg 1 -lvl 1 -x 40 -y 880 -defaultsOSRD
+preplace port port-id_FB_EN -pg 1 -lvl 1 -x 40 -y 800 -defaultsOSRD
+preplace port port-id_FB_VBL -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
+preplace port port-id_FB_LL -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
+preplace port port-id_FB_FORCE_BLANK -pg 1 -lvl 1 -x 40 -y 820 -defaultsOSRD
+preplace port port-id_FB_PAL_CLK -pg 1 -lvl 1 -x 40 -y 840 -defaultsOSRD
+preplace port port-id_FB_PAL_WR -pg 1 -lvl 1 -x 40 -y 860 -defaultsOSRD
+preplace port port-id_LED_USER -pg 1 -lvl 1 -x 40 -y 900 -defaultsOSRD
+preplace port port-id_CLK_AUDIO -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace port port-id_AUDIO_S -pg 1 -lvl 1 -x 40 -y 680 -defaultsOSRD
+preplace port port-id_SD_SCK -pg 1 -lvl 1 -x 40 -y 1220 -defaultsOSRD
+preplace port port-id_SD_MOSI -pg 1 -lvl 1 -x 40 -y 1200 -defaultsOSRD
+preplace port port-id_SD_MISO -pg 1 -lvl 0 -x 0 -y 300 -defaultsOSRD
+preplace port port-id_SD_CS -pg 1 -lvl 1 -x 40 -y 1180 -defaultsOSRD
+preplace port port-id_SD_CD -pg 1 -lvl 0 -x 0 -y 280 -defaultsOSRD
+preplace port port-id_DDRAM_CLK -pg 1 -lvl 1 -x 40 -y 740 -defaultsOSRD
+preplace port port-id_DDRAM_BUSY -pg 1 -lvl 0 -x 0 -y 140 -defaultsOSRD
+preplace port port-id_DDRAM_DOUT_READY -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
+preplace port port-id_DDRAM_RD -pg 1 -lvl 1 -x 40 -y 760 -defaultsOSRD
+preplace port port-id_DDRAM_WE -pg 1 -lvl 1 -x 40 -y 780 -defaultsOSRD
+preplace port port-id_SDRAM_CLK -pg 1 -lvl 1 -x 40 -y 940 -defaultsOSRD
+preplace port port-id_SDRAM_CKE -pg 1 -lvl 1 -x 40 -y 920 -defaultsOSRD
+preplace port port-id_SDRAM_DQML -pg 1 -lvl 1 -x 40 -y 980 -defaultsOSRD
+preplace port port-id_SDRAM_DQMH -pg 1 -lvl 1 -x 40 -y 960 -defaultsOSRD
+preplace port port-id_SDRAM_nCS -pg 1 -lvl 1 -x 40 -y 1020 -defaultsOSRD
+preplace port port-id_SDRAM_nCAS -pg 1 -lvl 1 -x 40 -y 1000 -defaultsOSRD
+preplace port port-id_SDRAM_nRAS -pg 1 -lvl 1 -x 40 -y 1040 -defaultsOSRD
+preplace port port-id_SDRAM_nWE -pg 1 -lvl 1 -x 40 -y 1060 -defaultsOSRD
+preplace port port-id_SDRAM2_EN -pg 1 -lvl 0 -x 0 -y 260 -defaultsOSRD
+preplace port port-id_SDRAM2_CLK -pg 1 -lvl 1 -x 40 -y 1080 -defaultsOSRD
+preplace port port-id_SDRAM2_nCS -pg 1 -lvl 1 -x 40 -y 1120 -defaultsOSRD
+preplace port port-id_SDRAM2_nCAS -pg 1 -lvl 1 -x 40 -y 1100 -defaultsOSRD
+preplace port port-id_SDRAM2_nRAS -pg 1 -lvl 1 -x 40 -y 1140 -defaultsOSRD
+preplace port port-id_SDRAM2_nWE -pg 1 -lvl 1 -x 40 -y 1160 -defaultsOSRD
+preplace port port-id_UART_CTS -pg 1 -lvl 0 -x 0 -y 320 -defaultsOSRD
+preplace port port-id_UART_RTS -pg 1 -lvl 1 -x 40 -y 1260 -defaultsOSRD
+preplace port port-id_UART_RXD -pg 1 -lvl 0 -x 0 -y 360 -defaultsOSRD
+preplace port port-id_UART_TXD -pg 1 -lvl 1 -x 40 -y 1280 -defaultsOSRD
+preplace port port-id_UART_DTR -pg 1 -lvl 1 -x 40 -y 1240 -defaultsOSRD
+preplace port port-id_UART_DSR -pg 1 -lvl 0 -x 0 -y 340 -defaultsOSRD
+preplace port port-id_OSD_STATUS -pg 1 -lvl 0 -x 0 -y 220 -defaultsOSRD
+preplace portBus HPS_BUS -pg 1 -lvl 1 -x 40 -y 360 -defaultsOSRD
+preplace portBus VIDEO_ARX -pg 1 -lvl 1 -x 40 -y 620 -defaultsOSRD
+preplace portBus VIDEO_ARY -pg 1 -lvl 1 -x 40 -y 640 -defaultsOSRD
+preplace portBus VIDEO_R -pg 1 -lvl 1 -x 40 -y 660 -defaultsOSRD
+preplace portBus VGA_G -pg 1 -lvl 1 -x 40 -y 580 -defaultsOSRD
+preplace portBus VGA_B -pg 1 -lvl 1 -x 40 -y 560 -defaultsOSRD
+preplace portBus VGA_SL -pg 1 -lvl 1 -x 40 -y 600 -defaultsOSRD
+preplace portBus HDMI_WIDTH -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
+preplace portBus HDMI_HEIGHT -pg 1 -lvl 0 -x 0 -y 40 -defaultsOSRD
+preplace portBus FB_FORMAT -pg 1 -lvl 1 -x 40 -y 240 -defaultsOSRD
+preplace portBus FB_WIDTH -pg 1 -lvl 1 -x 40 -y 340 -defaultsOSRD
+preplace portBus FB_HEIGHT -pg 1 -lvl 1 -x 40 -y 260 -defaultsOSRD
+preplace portBus FB_BASE -pg 1 -lvl 1 -x 40 -y 220 -defaultsOSRD
+preplace portBus FB_STRIDE -pg 1 -lvl 1 -x 40 -y 320 -defaultsOSRD
+preplace portBus FB_PAL_ADDR -pg 1 -lvl 1 -x 40 -y 280 -defaultsOSRD
+preplace portBus FB_PAL_DOUT -pg 1 -lvl 1 -x 40 -y 300 -defaultsOSRD
+preplace portBus FB_PAL_DIN -pg 1 -lvl 0 -x 0 -y 20 -defaultsOSRD
+preplace portBus LED_POWER -pg 1 -lvl 1 -x 40 -y 400 -defaultsOSRD
+preplace portBus LED_DISK -pg 1 -lvl 1 -x 40 -y 380 -defaultsOSRD
+preplace portBus BUTTONS -pg 1 -lvl 1 -x 40 -y 100 -defaultsOSRD
+preplace portBus AUDIO_L -pg 1 -lvl 1 -x 40 -y 40 -defaultsOSRD
+preplace portBus AUDIO_R -pg 1 -lvl 1 -x 40 -y 80 -defaultsOSRD
+preplace portBus AUDIO_MIX -pg 1 -lvl 1 -x 40 -y 60 -defaultsOSRD
+preplace portBus ADC_BUS -pg 1 -lvl 1 -x 40 -y 20 -defaultsOSRD
+preplace portBus DDRAM_BURSTCNT -pg 1 -lvl 1 -x 40 -y 160 -defaultsOSRD
+preplace portBus DDRAM_ADDR -pg 1 -lvl 1 -x 40 -y 120 -defaultsOSRD
+preplace portBus DDRAM_DOUT -pg 1 -lvl 1 -x 40 -y 200 -defaultsOSRD
+preplace portBus DDRAM_DIN -pg 1 -lvl 1 -x 40 -y 180 -defaultsOSRD
+preplace portBus DDRAM_BE -pg 1 -lvl 1 -x 40 -y 140 -defaultsOSRD
+preplace portBus SDRAM_A -pg 1 -lvl 1 -x 40 -y 420 -defaultsOSRD
+preplace portBus SDRAM_BA -pg 1 -lvl 1 -x 40 -y 440 -defaultsOSRD
+preplace portBus SDRAM_DQ -pg 1 -lvl 1 -x 40 -y 460 -defaultsOSRD
+preplace portBus SDRAM2_A -pg 1 -lvl 1 -x 40 -y 480 -defaultsOSRD
+preplace portBus SDRAM2_BA -pg 1 -lvl 1 -x 40 -y 500 -defaultsOSRD
+preplace portBus SDRAM2_DQ -pg 1 -lvl 1 -x 40 -y 520 -defaultsOSRD
+preplace portBus USER_IN -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
+preplace portBus USER_OUT -pg 1 -lvl 1 -x 40 -y 540 -defaultsOSRD
+levelinfo -pg 1 0 40
+pagesize -pg 1 -db -bbox -sgen -210 0 260 1420
+"
+}
+0

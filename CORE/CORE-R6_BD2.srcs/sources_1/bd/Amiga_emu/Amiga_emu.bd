@@ -1,0 +1,5409 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xCD0EACAB9C141C98",
+      "device": "xc7a200tfbg484-3",
+      "gen_directory": "../../../../CORE-R6_BD2.gen/sources_1/bd/Amiga_emu",
+      "name": "Amiga_emu",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.2.1"
+    },
+    "design_tree": {
+      "amiga_clk_0": "",
+      "pll_hier": {},
+      "pll_reset_reg": "",
+      "pll_reset_reg_2": "",
+      "hps_io_hier": {},
+      "hps_ext_0": "",
+      "cpu_wrapper_0": "",
+      "cdda_0": "",
+      "minimig_0": "",
+      "fastchip_0": "",
+      "sdram_ctrl_0_ram1": "",
+      "lpf4400_IIR_filter_0": "",
+      "lpf3275_IIR_filter_0": "",
+      "ddram_ctrl_0_ram2": "",
+      "mt32pi": {},
+      "video_mixer": {
+        "video_freezer": {},
+        "scadoubler": {},
+        "gamma_corr": {},
+        "gamma_bus": {}
+      },
+      "video_freak": {
+        "video_scale": {}
+      },
+      "ce_comb": "",
+      "xlconstant_0": "",
+      "ilconstant_0": "",
+      "ilconstant_1": "",
+      "ilconstant_2": "",
+      "input_l_comb": "",
+      "input_r_comb": "",
+      "output_l_comb": "",
+      "output_r_comb": "",
+      "output_comb": "",
+      "output2_l_comb": "",
+      "output2_r_comb": "",
+      "vm_vblank": "",
+      "vm_vblank2": "",
+      "HPS_BUS": {},
+      "led_disk_0": "",
+      "led_disk_1": "",
+      "hps_ext_ide_0": "",
+      "hps_ext_ide_1": "",
+      "hps_ext_ide_2": "",
+      "audio_l_comb_0": "",
+      "audio_r_comb_0": "",
+      "xlconstant_1": "",
+      "cpu_wrap_0": "",
+      "cpu_wrap_1": "",
+      "cpu_wrap_2": "",
+      "rxd_0": "",
+      "rxd_1": "",
+      "audio_r_comb_1": "",
+      "audio_l_comb_1": "",
+      "hps_status_0": "",
+      "hps_status_1": "",
+      "vga_b_comb_0": "",
+      "vga_g_omb_0": "",
+      "vga_r_comb_0": "",
+      "vga_comb_1": "",
+      "vga_comb_2": "",
+      "xlconstant_2": "",
+      "ilconstant_3": "",
+      "ilconstant_4": "",
+      "ilconstant_5": "",
+      "ilconstant_6": "",
+      "ilconstant_7": "",
+      "pll_config_0": ""
+    },
+    "ports": {
+      "CLK_50M": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "50000000"
+          }
+        }
+      },
+      "RESET": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "HPS_BUS": {
+        "direction": "IO",
+        "left": "48",
+        "right": "0"
+      },
+      "CLK_VIDEO": {
+        "type": "clk",
+        "direction": "O"
+      },
+      "CE_PIXEL": {
+        "direction": "O"
+      },
+      "VIDEO_ARX": {
+        "direction": "O",
+        "left": "12",
+        "right": "0"
+      },
+      "VIDEO_ARY": {
+        "direction": "O",
+        "left": "12",
+        "right": "0"
+      },
+      "VGA_R": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "VGA_G": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "VGA_B": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "VGA_HS": {
+        "direction": "O"
+      },
+      "VGA_VS": {
+        "direction": "O"
+      },
+      "VGA_DE": {
+        "direction": "O"
+      },
+      "VGA_F1": {
+        "direction": "O"
+      },
+      "VGA_SL": {
+        "direction": "O",
+        "left": "2",
+        "right": "0"
+      },
+      "VGA_SCALER": {
+        "direction": "O"
+      },
+      "VGA_DISABLE": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "HDMI_WIDTH": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "HDMI_HEIGHT": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "HDMI_FREEZE": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "FB_EN": {
+        "direction": "O"
+      },
+      "FB_FORMAT": {
+        "direction": "O",
+        "left": "4",
+        "right": "0"
+      },
+      "FB_WIDTH": {
+        "direction": "O",
+        "left": "11",
+        "right": "0"
+      },
+      "FB_HEIGHT": {
+        "direction": "O",
+        "left": "11",
+        "right": "0"
+      },
+      "FB_BASE": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "FB_STRIDE": {
+        "direction": "O",
+        "left": "13",
+        "right": "0"
+      },
+      "FB_VBL": {
+        "direction": "I"
+      },
+      "FB_LL": {
+        "direction": "I"
+      },
+      "FB_FORCE_BLANK": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "FB_PAL_CLK": {
+        "type": "clk",
+        "direction": "O"
+      },
+      "FB_PAL_ADDR": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "FB_PAL_DOUT": {
+        "direction": "O",
+        "left": "23",
+        "right": "0"
+      },
+      "FB_PAL_DIN": {
+        "direction": "I",
+        "left": "23",
+        "right": "0"
+      },
+      "FB_PAL_WR": {
+        "direction": "O"
+      },
+      "LED_USER": {
+        "direction": "O"
+      },
+      "LED_POWER": {
+        "direction": "O",
+        "left": "1",
+        "right": "0"
+      },
+      "LED_DISK": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "BUTTONS": {
+        "direction": "O",
+        "left": "1",
+        "right": "0"
+      },
+      "CLK_AUDIO": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "24576000"
+          }
+        }
+      },
+      "AUDIO_L": {
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      },
+      "AUDIO_R": {
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      },
+      "AUDIO_S": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "AUDIO_MIX": {
+        "direction": "O",
+        "left": "1",
+        "right": "0"
+      },
+      "ADC_BUS": {
+        "direction": "IO",
+        "left": "3",
+        "right": "0"
+      },
+      "SD_SCK": {
+        "direction": "O"
+      },
+      "SD_MOSI": {
+        "direction": "O"
+      },
+      "SD_MISO": {
+        "direction": "I"
+      },
+      "SD_CS": {
+        "direction": "O"
+      },
+      "SD_CD": {
+        "direction": "I"
+      },
+      "DDRAM_CLK": {
+        "type": "clk",
+        "direction": "O"
+      },
+      "DDRAM_BUSY": {
+        "direction": "I"
+      },
+      "DDRAM_BURSTCNT": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "DDRAM_ADDR": {
+        "direction": "O",
+        "left": "28",
+        "right": "0"
+      },
+      "DDRAM_DOUT": {
+        "direction": "I",
+        "left": "63",
+        "right": "0"
+      },
+      "DDRAM_DOUT_READY": {
+        "direction": "I"
+      },
+      "DDRAM_RD": {
+        "direction": "O"
+      },
+      "DDRAM_DIN": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "DDRAM_BE": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "DDRAM_WE": {
+        "direction": "O"
+      },
+      "SDRAM_CLK": {
+        "type": "clk",
+        "direction": "O"
+      },
+      "SDRAM_CKE": {
+        "direction": "O"
+      },
+      "SDRAM_A": {
+        "direction": "O",
+        "left": "12",
+        "right": "0"
+      },
+      "SDRAM_BA": {
+        "direction": "O",
+        "left": "1",
+        "right": "0"
+      },
+      "SDRAM_DQ": {
+        "direction": "IO",
+        "left": "15",
+        "right": "0"
+      },
+      "SDRAM_DQML": {
+        "direction": "O",
+        "left": "1",
+        "right": "0"
+      },
+      "SDRAM_DQMH": {
+        "direction": "O",
+        "left": "1",
+        "right": "0"
+      },
+      "SDRAM_nCS": {
+        "direction": "O"
+      },
+      "SDRAM_nCAS": {
+        "direction": "O"
+      },
+      "SDRAM_nRAS": {
+        "direction": "O"
+      },
+      "SDRAM_nWE": {
+        "direction": "O"
+      },
+      "SDRAM2_EN": {
+        "direction": "I"
+      },
+      "SDRAM2_CLK": {
+        "type": "clk",
+        "direction": "O"
+      },
+      "SDRAM2_A": {
+        "direction": "O",
+        "left": "12",
+        "right": "0"
+      },
+      "SDRAM2_BA": {
+        "direction": "O",
+        "left": "1",
+        "right": "0"
+      },
+      "SDRAM2_DQ": {
+        "direction": "IO",
+        "left": "15",
+        "right": "0"
+      },
+      "SDRAM2_nCS": {
+        "direction": "O"
+      },
+      "SDRAM2_nCAS": {
+        "direction": "O"
+      },
+      "SDRAM2_nRAS": {
+        "direction": "O"
+      },
+      "SDRAM2_nWE": {
+        "direction": "O"
+      },
+      "UART_CTS": {
+        "direction": "I"
+      },
+      "UART_RTS": {
+        "direction": "O"
+      },
+      "UART_RXD": {
+        "direction": "I"
+      },
+      "UART_TXD": {
+        "direction": "O"
+      },
+      "UART_DTR": {
+        "direction": "O"
+      },
+      "UART_DSR": {
+        "direction": "I"
+      },
+      "USER_IN": {
+        "direction": "I",
+        "left": "6",
+        "right": "0"
+      },
+      "USER_OUT": {
+        "direction": "O",
+        "left": "6",
+        "right": "0"
+      },
+      "OSD_STATUS": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "amiga_clk_0": {
+        "vlnv": "xilinx.com:module_ref:amiga_clk:1.0",
+        "ip_revision": "1",
+        "xci_name": "Amiga_emu_amiga_clk_0_0",
+        "xci_path": "ip\\Amiga_emu_amiga_clk_0_0\\Amiga_emu_amiga_clk_0_0.xci",
+        "inst_hier_path": "amiga_clk_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "amiga_clk",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk_28": {
+            "direction": "I"
+          },
+          "clk7_en": {
+            "direction": "O",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "clk7n_en": {
+            "direction": "O",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "c1": {
+            "direction": "O"
+          },
+          "c3": {
+            "direction": "O"
+          },
+          "cck": {
+            "direction": "O"
+          },
+          "eclk": {
+            "direction": "O",
+            "left": "9",
+            "right": "0"
+          },
+          "reset_n": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_HIGH",
+                "value_src": "ip_prop"
+              }
+            }
+          }
+        }
+      },
+      "pll_hier": {
+        "ports": {
+          "refclk": {
+            "direction": "I"
+          },
+          "reset": {
+            "direction": "I"
+          },
+          "outclk0": {
+            "direction": "O"
+          },
+          "outclk1": {
+            "direction": "O"
+          },
+          "locked": {
+            "direction": "O"
+          },
+          "reconfig_to_pll": {
+            "direction": "I",
+            "left": "63",
+            "right": "0"
+          },
+          "reconfig_from_pll": {
+            "direction": "O",
+            "left": "63",
+            "right": "0"
+          }
+        }
+      },
+      "pll_reset_reg": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "Amiga_emu_util_vector_logic_0_0",
+        "xci_path": "ip\\Amiga_emu_util_vector_logic_0_0\\Amiga_emu_util_vector_logic_0_0.xci",
+        "inst_hier_path": "pll_reset_reg",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "or"
+          },
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "pll_reset_reg_2": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "Amiga_emu_util_vector_logic_0_1",
+        "xci_path": "ip\\Amiga_emu_util_vector_logic_0_1\\Amiga_emu_util_vector_logic_0_1.xci",
+        "inst_hier_path": "pll_reset_reg_2",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "or"
+          },
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "hps_io_hier": {
+        "ports": {
+          "buttons": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "clk_sys": {
+            "direction": "I"
+          },
+          "HPS_BUS": {
+            "direction": "IO",
+            "left": "48",
+            "right": "0"
+          },
+          "joystick_1": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "joystick_2": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "joystick_3": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "joystick_4": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "joystick_5": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "joystick_l_analog_0": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "joystick_l_analog_1": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "joystick_l_analog_2": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "joystick_l_analog_3": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "joystick_l_analog_4": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "joystick_l_analog_5": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "joystick_r_analog_0": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "joystick_r_analog_1": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "joystick_r_analog_2": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "joystick_r_analog_3": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "joystick_r_analog_4": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "joystick_r_analog_5": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "joystick_0_rumble": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "joystick_1_rumble": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "joystick_2_rumble": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "joystick_3_rumble": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "joystick_4_rumble": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "joystick_5_rumble": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "paddle_0": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "paddle_1": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "paddle_2": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "paddle_3": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "paddle_4": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "paddle_5": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "spinner_0": {
+            "direction": "O",
+            "left": "8",
+            "right": "0"
+          },
+          "spinner_1": {
+            "direction": "O",
+            "left": "8",
+            "right": "0"
+          },
+          "spinner_2": {
+            "direction": "O",
+            "left": "8",
+            "right": "0"
+          },
+          "spinner_3": {
+            "direction": "O",
+            "left": "8",
+            "right": "0"
+          },
+          "spinner_4": {
+            "direction": "O",
+            "left": "8",
+            "right": "0"
+          },
+          "spinner_5": {
+            "direction": "O",
+            "left": "8",
+            "right": "0"
+          },
+          "ps2_kbd_clk_out": {
+            "direction": "O"
+          },
+          "ps2_kbd_data_out": {
+            "direction": "O"
+          },
+          "ps2_kbd_clk_in": {
+            "direction": "I"
+          },
+          "ps2_kbd_data_in": {
+            "direction": "I"
+          },
+          "ps2_kbd_led_status": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "ps2_kbd_led_use": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "ps2_mouse_clk_out": {
+            "direction": "O"
+          },
+          "ps2_mouse_data_out": {
+            "direction": "O"
+          },
+          "ps2_mouse_clk_in": {
+            "direction": "I"
+          },
+          "ps2_mouse_data_in": {
+            "direction": "I"
+          },
+          "ps2_key": {
+            "direction": "O",
+            "left": "10",
+            "right": "0"
+          },
+          "ps2_mouse": {
+            "direction": "O",
+            "left": "24",
+            "right": "0"
+          },
+          "ps2_mouse_ext": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "forced_scandoubler": {
+            "direction": "O"
+          },
+          "direct_video": {
+            "direction": "O"
+          },
+          "video_rotated": {
+            "direction": "I"
+          },
+          "new_vmode": {
+            "direction": "I"
+          },
+          "gamma_bus": {
+            "direction": "IO",
+            "left": "21",
+            "right": "0"
+          },
+          "status": {
+            "direction": "O",
+            "left": "127",
+            "right": "0"
+          },
+          "status_in": {
+            "direction": "I",
+            "left": "127",
+            "right": "0"
+          },
+          "status_set": {
+            "direction": "I"
+          },
+          "status_menumask": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "info_req": {
+            "direction": "I"
+          },
+          "info": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "img_mounted": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "img_readonly": {
+            "direction": "O"
+          },
+          "img_size": {
+            "direction": "O",
+            "left": "63",
+            "right": "0"
+          },
+          "sd_lba": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "sd_blk_cnt": {
+            "direction": "I",
+            "left": "5",
+            "right": "0"
+          },
+          "sd_rd": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "sd_wr": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "sd_ack": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "sd_buff_addr": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "sd_buff_dout": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "sd_buff_din": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "sd_buff_wr": {
+            "direction": "O"
+          },
+          "ioctl_download": {
+            "direction": "O"
+          },
+          "ioctl_index": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "ioctl_wr": {
+            "direction": "O"
+          },
+          "ioctl_addr": {
+            "direction": "O",
+            "left": "26",
+            "right": "0"
+          },
+          "ioctl_dout": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "ioctl_upload": {
+            "direction": "O"
+          },
+          "ioctl_upload_req": {
+            "direction": "I"
+          },
+          "ioctl_upload_index": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "ioctl_din": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "ioctl_rd": {
+            "direction": "O"
+          },
+          "ioctl_file_ext": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "ioctl_wait": {
+            "direction": "I"
+          },
+          "sdram_sz": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "RTC": {
+            "direction": "O",
+            "left": "64",
+            "right": "0"
+          },
+          "TIMESTAMP": {
+            "direction": "O",
+            "left": "32",
+            "right": "0"
+          },
+          "uart_mode": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "uart_speed": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "EXT_BUS": {
+            "direction": "IO",
+            "left": "35",
+            "right": "0"
+          },
+          "joystick_0": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "hps_ext_0": {
+        "vlnv": "xilinx.com:module_ref:hps_ext:1.0",
+        "ip_revision": "1",
+        "xci_name": "Amiga_emu_hps_ext_0_0",
+        "xci_path": "ip\\Amiga_emu_hps_ext_0_0\\Amiga_emu_hps_ext_0_0.xci",
+        "inst_hier_path": "hps_ext_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "hps_ext",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk_sys": {
+            "direction": "I"
+          },
+          "EXT_BUS": {
+            "direction": "IO",
+            "left": "35",
+            "right": "0"
+          },
+          "io_strobe": {
+            "direction": "O"
+          },
+          "io_fpga": {
+            "direction": "O"
+          },
+          "io_uio": {
+            "direction": "O"
+          },
+          "io_din": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "fpga_dout": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "ide_din": {
+            "direction": "I",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "ide_dout": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "ide_addr": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "ide_rd": {
+            "direction": "O"
+          },
+          "ide_wr": {
+            "direction": "O"
+          },
+          "ide_req": {
+            "direction": "I",
+            "left": "5",
+            "right": "0",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "mouse_buttons": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "kbd_mouse_level": {
+            "direction": "O"
+          },
+          "kbd_mouse_type": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "kbd_mouse_data": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "scr_hbl_l": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "scr_hbl_r": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "scr_hsize": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "scr_vbl_t": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "scr_vbl_b": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "scr_vsize": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "scr_flg": {
+            "direction": "I",
+            "left": "6",
+            "right": "0"
+          },
+          "scr_res": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "shbl_l": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "shbl_r": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "svbl_t": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "svbl_b": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "sset": {
+            "direction": "O"
+          },
+          "cdda_req": {
+            "direction": "I"
+          },
+          "cdda_wr": {
+            "direction": "O"
+          },
+          "cdda_dout": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "cpu_wrapper_0": {
+        "vlnv": "xilinx.com:module_ref:cpu_wrapper:1.0",
+        "ip_revision": "1",
+        "xci_name": "Amiga_emu_cpu_wrapper_0_0",
+        "xci_path": "ip\\Amiga_emu_cpu_wrapper_0_0\\Amiga_emu_cpu_wrapper_0_0.xci",
+        "inst_hier_path": "cpu_wrapper_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "cpu_wrapper",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "reset_out": {
+            "type": "rst",
+            "direction": "O"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              }
+            }
+          },
+          "ph1": {
+            "direction": "I"
+          },
+          "ph2": {
+            "direction": "I"
+          },
+          "cpucfg": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "fastramcfg": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "cachecfg": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "bootrom": {
+            "direction": "I"
+          },
+          "chip_addr": {
+            "direction": "O",
+            "left": "23",
+            "right": "1"
+          },
+          "chip_dout": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "chip_din": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "chip_as": {
+            "direction": "O"
+          },
+          "chip_uds": {
+            "direction": "O"
+          },
+          "chip_lds": {
+            "direction": "O"
+          },
+          "chip_rw": {
+            "direction": "O"
+          },
+          "chip_dtack": {
+            "direction": "I"
+          },
+          "chip_ipl": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "fastchip_dout": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "fastchip_sel": {
+            "direction": "O"
+          },
+          "fastchip_lds": {
+            "direction": "O"
+          },
+          "fastchip_uds": {
+            "direction": "O"
+          },
+          "fastchip_rnw": {
+            "direction": "O"
+          },
+          "fastchip_lw": {
+            "direction": "O"
+          },
+          "fastchip_selack": {
+            "direction": "I"
+          },
+          "fastchip_ready": {
+            "direction": "I"
+          },
+          "ramsel": {
+            "direction": "O"
+          },
+          "ramaddr": {
+            "direction": "O",
+            "left": "28",
+            "right": "1"
+          },
+          "ramdin": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "ramdout": {
+            "direction": "I",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "ramready": {
+            "direction": "I",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "ramlds": {
+            "direction": "O"
+          },
+          "ramuds": {
+            "direction": "O"
+          },
+          "ramshared": {
+            "direction": "O"
+          },
+          "toccata_ena": {
+            "direction": "O"
+          },
+          "toccata_base": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "cpustate": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "cacr": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "nmi_addr": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "cdda_0": {
+        "vlnv": "xilinx.com:module_ref:cdda:1.0",
+        "ip_revision": "1",
+        "xci_name": "Amiga_emu_cdda_0_0",
+        "xci_path": "ip\\Amiga_emu_cdda_0_0\\Amiga_emu_cdda_0_0.xci",
+        "inst_hier_path": "cdda_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "cdda",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CLK": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "nRESET": {
+            "direction": "I",
+            "parameters": {
+              "PortType": {
+                "value": "rst",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              },
+              "POLARITY": {
+                "value": "ACTIVE_HIGH",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "WRITE_REQ": {
+            "direction": "O"
+          },
+          "WRITE": {
+            "direction": "I"
+          },
+          "DIN": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "AUDIO_CE": {
+            "direction": "O"
+          },
+          "AUDIO_L": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "AUDIO_R": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "minimig_0": {
+        "vlnv": "xilinx.com:module_ref:minimig:1.0",
+        "ip_revision": "1",
+        "xci_name": "Amiga_emu_minimig_0_0",
+        "xci_path": "ip\\Amiga_emu_minimig_0_0\\Amiga_emu_minimig_0_0.xci",
+        "inst_hier_path": "minimig_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "minimig",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "cpu_address": {
+            "direction": "I",
+            "left": "23",
+            "right": "1"
+          },
+          "cpu_data": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "cpudata_in": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "_cpu_ipl": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "_cpu_as": {
+            "direction": "I"
+          },
+          "_cpu_uds": {
+            "direction": "I"
+          },
+          "_cpu_lds": {
+            "direction": "I"
+          },
+          "cpu_r_w": {
+            "direction": "I"
+          },
+          "_cpu_dtack": {
+            "direction": "O"
+          },
+          "_cpu_reset": {
+            "type": "rst",
+            "direction": "O"
+          },
+          "_cpu_reset_in": {
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "nmi_addr": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "ovr": {
+            "direction": "O"
+          },
+          "ram_data": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "ramdata_in": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "ram_address": {
+            "direction": "O",
+            "left": "23",
+            "right": "1"
+          },
+          "_ram_bhe": {
+            "direction": "O"
+          },
+          "_ram_ble": {
+            "direction": "O"
+          },
+          "_ram_we": {
+            "direction": "O"
+          },
+          "_ram_oe": {
+            "direction": "O"
+          },
+          "chip48": {
+            "direction": "I",
+            "left": "47",
+            "right": "0"
+          },
+          "rst_ext": {
+            "direction": "I",
+            "parameters": {
+              "PortType": {
+                "value": "rst",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              },
+              "POLARITY": {
+                "value": "ACTIVE_HIGH",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "rst_out": {
+            "direction": "O"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "clk7_en": {
+            "direction": "I",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "clk7n_en": {
+            "direction": "I",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "c1": {
+            "direction": "I"
+          },
+          "c3": {
+            "direction": "I"
+          },
+          "cck": {
+            "direction": "I"
+          },
+          "eclk": {
+            "direction": "I",
+            "left": "9",
+            "right": "0"
+          },
+          "rxd": {
+            "direction": "I",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "txd": {
+            "direction": "O"
+          },
+          "cts": {
+            "direction": "I"
+          },
+          "rts": {
+            "direction": "O"
+          },
+          "dtr": {
+            "direction": "O"
+          },
+          "dsr": {
+            "direction": "I"
+          },
+          "cd": {
+            "direction": "I"
+          },
+          "ri": {
+            "direction": "I"
+          },
+          "_joy1": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "_joy2": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "_joy3": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "_joy4": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "joya1": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "joya2": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "mouse_btn": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "kms_level": {
+            "direction": "I"
+          },
+          "kbd_mouse_type": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "kbd_mouse_data": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "pwr_led": {
+            "direction": "O"
+          },
+          "fdd_led": {
+            "direction": "O"
+          },
+          "hdd_led": {
+            "direction": "O",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "rtc": {
+            "direction": "I",
+            "left": "64",
+            "right": "0"
+          },
+          "IO_UIO": {
+            "direction": "I"
+          },
+          "IO_FPGA": {
+            "direction": "I"
+          },
+          "IO_STROBE": {
+            "direction": "I"
+          },
+          "IO_WAIT": {
+            "direction": "O"
+          },
+          "IO_DIN": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "IO_DOUT": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "_hsync": {
+            "direction": "O"
+          },
+          "_vsync": {
+            "direction": "O"
+          },
+          "_csync": {
+            "direction": "O"
+          },
+          "field1": {
+            "direction": "O",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "lace": {
+            "direction": "O",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "hblank": {
+            "direction": "O"
+          },
+          "vblank": {
+            "direction": "O",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "red": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "green": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "blue": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "ar": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "scanline": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "ce_pix": {
+            "direction": "O"
+          },
+          "res": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "ntsc": {
+            "direction": "O"
+          },
+          "ldata": {
+            "direction": "O",
+            "left": "14",
+            "right": "0",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "rdata": {
+            "direction": "O",
+            "left": "14",
+            "right": "0",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "ldata_okk": {
+            "direction": "O",
+            "left": "8",
+            "right": "0",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "rdata_okk": {
+            "direction": "O",
+            "left": "8",
+            "right": "0",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "aud_mix": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "toccata_ena": {
+            "direction": "I"
+          },
+          "toccata_base": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "toccata_aud_left": {
+            "direction": "O",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "toccata_aud_right": {
+            "direction": "O",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "cpucfg": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "cachecfg": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "memcfg": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          },
+          "bootrom": {
+            "direction": "O"
+          },
+          "ide_ena": {
+            "direction": "O"
+          },
+          "ide_fast": {
+            "direction": "O",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "ide_ext_irq": {
+            "type": "intr",
+            "direction": "I",
+            "parameters": {
+              "SENSITIVITY": {
+                "value": "LEVEL_HIGH",
+                "value_src": "constant"
+              }
+            }
+          },
+          "ide_req": {
+            "direction": "O",
+            "left": "5",
+            "right": "0",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "ide_address": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "ide_write": {
+            "direction": "I"
+          },
+          "ide_writedata": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "ide_read": {
+            "direction": "I"
+          },
+          "ide_readdata": {
+            "direction": "O",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          }
+        }
+      },
+      "fastchip_0": {
+        "vlnv": "xilinx.com:module_ref:fastchip:1.0",
+        "ip_revision": "1",
+        "xci_name": "Amiga_emu_fastchip_0_0",
+        "xci_path": "ip\\Amiga_emu_fastchip_0_0\\Amiga_emu_fastchip_0_0.xci",
+        "inst_hier_path": "fastchip_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "fastchip",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "cyc": {
+            "direction": "I"
+          },
+          "clk_sys": {
+            "direction": "I"
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "sel": {
+            "direction": "I"
+          },
+          "sel_ack": {
+            "direction": "O"
+          },
+          "ready": {
+            "direction": "O"
+          },
+          "addr": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "din": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "dout": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "lds": {
+            "direction": "I"
+          },
+          "uds": {
+            "direction": "I"
+          },
+          "rnw": {
+            "direction": "I"
+          },
+          "longword": {
+            "direction": "I"
+          },
+          "rtg_ena": {
+            "direction": "O"
+          },
+          "rtg_hsize": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "rtg_vsize": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "rtg_format": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "rtg_base": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "rtg_stride": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          },
+          "rtg_pal_clk": {
+            "type": "clk",
+            "direction": "O"
+          },
+          "rtg_pal_dw": {
+            "direction": "O",
+            "left": "23",
+            "right": "0"
+          },
+          "rtg_pal_dr": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "rtg_pal_a": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "rtg_pal_wr": {
+            "direction": "O"
+          },
+          "ide_ena": {
+            "direction": "I"
+          },
+          "ide_irq": {
+            "type": "intr",
+            "direction": "O",
+            "parameters": {
+              "SENSITIVITY": {
+                "value": "LEVEL_HIGH",
+                "value_src": "constant"
+              }
+            }
+          },
+          "ide_req": {
+            "direction": "O",
+            "left": "5",
+            "right": "0",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "ide_address": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "ide_write": {
+            "direction": "I"
+          },
+          "ide_writedata": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "ide_read": {
+            "direction": "I"
+          },
+          "ide_readdata": {
+            "direction": "O",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "ide_led": {
+            "direction": "O",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          }
+        }
+      },
+      "sdram_ctrl_0_ram1": {
+        "vlnv": "xilinx.com:module_ref:sdram_ctrl:1.0",
+        "ip_revision": "1",
+        "xci_name": "Amiga_emu_sdram_ctrl_0_0",
+        "xci_path": "ip\\Amiga_emu_sdram_ctrl_0_0\\Amiga_emu_sdram_ctrl_0_0.xci",
+        "inst_hier_path": "sdram_ctrl_0_ram1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "sdram_ctrl",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "sysclk": {
+            "direction": "I"
+          },
+          "c_7m": {
+            "direction": "I"
+          },
+          "reset_n": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_HIGH",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "cache_rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "cache_inhibit": {
+            "direction": "I"
+          },
+          "cpu_cache_ctrl": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "sd_addr": {
+            "direction": "O",
+            "left": "12",
+            "right": "0"
+          },
+          "sd_ba": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "sd_cs": {
+            "direction": "O"
+          },
+          "sd_we": {
+            "direction": "O"
+          },
+          "sd_ras": {
+            "direction": "O"
+          },
+          "sd_cas": {
+            "direction": "O"
+          },
+          "sd_dqm": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "sd_data": {
+            "direction": "IO",
+            "left": "15",
+            "right": "0"
+          },
+          "sd_clk": {
+            "type": "clk",
+            "direction": "O"
+          },
+          "sd_cke": {
+            "direction": "O"
+          },
+          "chipAddr": {
+            "direction": "I",
+            "left": "24",
+            "right": "1"
+          },
+          "chipL": {
+            "direction": "I"
+          },
+          "chipU": {
+            "direction": "I"
+          },
+          "chipRW": {
+            "direction": "I"
+          },
+          "chipDMA": {
+            "direction": "I"
+          },
+          "chipWR": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "chipRD": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "chip48": {
+            "direction": "O",
+            "left": "47",
+            "right": "0"
+          },
+          "cpuAddr": {
+            "direction": "I",
+            "left": "24",
+            "right": "1"
+          },
+          "cpuCS": {
+            "direction": "I"
+          },
+          "cpustate": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "cpuL": {
+            "direction": "I"
+          },
+          "cpuU": {
+            "direction": "I"
+          },
+          "cpuWR": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "cpuRD": {
+            "direction": "O",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "ramready": {
+            "direction": "O",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          }
+        }
+      },
+      "lpf4400_IIR_filter_0": {
+        "vlnv": "xilinx.com:module_ref:IIR_filter:1.0",
+        "ip_revision": "1",
+        "xci_name": "Amiga_emu_IIR_filter_0_1",
+        "xci_path": "ip\\Amiga_emu_IIR_filter_0_1\\Amiga_emu_IIR_filter_0_1.xci",
+        "inst_hier_path": "lpf4400_IIR_filter_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "IIR_filter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "ce": {
+            "direction": "I",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "sample_ce": {
+            "direction": "I"
+          },
+          "cx": {
+            "direction": "I",
+            "left": "39",
+            "right": "0"
+          },
+          "cx0": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "cx1": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "cx2": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "cy0": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "cy1": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "cy2": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "input_l": {
+            "direction": "I",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "input_r": {
+            "direction": "I",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "output_l": {
+            "direction": "O",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "output_r": {
+            "direction": "O",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          }
+        }
+      },
+      "lpf3275_IIR_filter_0": {
+        "vlnv": "xilinx.com:module_ref:IIR_filter:1.0",
+        "ip_revision": "1",
+        "xci_name": "Amiga_emu_IIR_filter_0_2",
+        "xci_path": "ip\\Amiga_emu_IIR_filter_0_2\\Amiga_emu_IIR_filter_0_2.xci",
+        "inst_hier_path": "lpf3275_IIR_filter_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "IIR_filter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "ce": {
+            "direction": "I"
+          },
+          "sample_ce": {
+            "direction": "I"
+          },
+          "cx": {
+            "direction": "I",
+            "left": "39",
+            "right": "0"
+          },
+          "cx0": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "cx1": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "cx2": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "cy0": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "cy1": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "cy2": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "input_l": {
+            "direction": "I",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "input_r": {
+            "direction": "I",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "output_l": {
+            "direction": "O",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "output_r": {
+            "direction": "O",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          }
+        }
+      },
+      "ddram_ctrl_0_ram2": {
+        "vlnv": "xilinx.com:module_ref:ddram_ctrl:1.0",
+        "ip_revision": "1",
+        "xci_name": "Amiga_emu_ddram_ctrl_0_0",
+        "xci_path": "ip\\Amiga_emu_ddram_ctrl_0_0\\Amiga_emu_ddram_ctrl_0_0.xci",
+        "inst_hier_path": "ddram_ctrl_0_ram2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ddram_ctrl",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "sysclk": {
+            "direction": "I"
+          },
+          "reset_n": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_HIGH",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "cache_rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "cache_inhibit": {
+            "direction": "I"
+          },
+          "cpu_cache_ctrl": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "DDRAM_CLK": {
+            "type": "clk",
+            "direction": "O"
+          },
+          "DDRAM_BUSY": {
+            "direction": "I"
+          },
+          "DDRAM_BURSTCNT": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "DDRAM_ADDR": {
+            "direction": "O",
+            "left": "28",
+            "right": "0"
+          },
+          "DDRAM_DOUT": {
+            "direction": "I",
+            "left": "63",
+            "right": "0"
+          },
+          "DDRAM_DOUT_READY": {
+            "direction": "I"
+          },
+          "DDRAM_RD": {
+            "direction": "O"
+          },
+          "DDRAM_DIN": {
+            "direction": "O",
+            "left": "63",
+            "right": "0"
+          },
+          "DDRAM_BE": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "DDRAM_WE": {
+            "direction": "O"
+          },
+          "cpuAddr": {
+            "direction": "I",
+            "left": "28",
+            "right": "1"
+          },
+          "cpuCS": {
+            "direction": "I"
+          },
+          "cpustate": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "cpuL": {
+            "direction": "I"
+          },
+          "cpuU": {
+            "direction": "I"
+          },
+          "cpuWR": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "cpuRD": {
+            "direction": "O",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "ramshared": {
+            "direction": "I"
+          },
+          "ramready": {
+            "direction": "O",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          }
+        }
+      },
+      "mt32pi": {
+        "ports": {
+          "CLK_AUDIO": {
+            "direction": "I"
+          },
+          "CLK_VIDEO": {
+            "direction": "I"
+          },
+          "CE_PIXEL": {
+            "direction": "I"
+          },
+          "VGA_VS": {
+            "direction": "I"
+          },
+          "VGA_DE": {
+            "direction": "I"
+          },
+          "USER_IN": {
+            "direction": "I",
+            "left": "6",
+            "right": "0"
+          },
+          "USER_OUT": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          },
+          "reset": {
+            "direction": "I"
+          },
+          "midi_tx": {
+            "direction": "I"
+          },
+          "midi_rx": {
+            "direction": "O"
+          },
+          "mt32_i2s_r": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "mt32_i2s_l": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "mt32_available": {
+            "direction": "O"
+          },
+          "mt32_mode_req": {
+            "direction": "I"
+          },
+          "mt32_rom_req": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "mt32_sf_req": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "mt32_mode": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "mt32_rom": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "mt32_sf": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "mt32_newmode": {
+            "direction": "O"
+          },
+          "mt32_lcd_en": {
+            "direction": "O"
+          },
+          "mt32_lcd_pix": {
+            "direction": "O"
+          },
+          "mt32_lcd_update": {
+            "direction": "O"
+          }
+        }
+      },
+      "video_mixer": {
+        "ports": {
+          "CLK_VIDEO": {
+            "direction": "I"
+          },
+          "CE_PIXEL": {
+            "direction": "O"
+          },
+          "ce_pix": {
+            "direction": "I"
+          },
+          "scandoubler": {
+            "direction": "I"
+          },
+          "hq2x": {
+            "direction": "I"
+          },
+          "gamma_bus": {
+            "direction": "IO",
+            "left": "21",
+            "right": "0"
+          },
+          "R": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "G": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "B": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "HSync": {
+            "direction": "I"
+          },
+          "VSync": {
+            "direction": "I"
+          },
+          "HBlank": {
+            "direction": "I"
+          },
+          "VBlank": {
+            "direction": "I"
+          },
+          "HDMI_FREEZE": {
+            "direction": "I"
+          },
+          "freeze_sync": {
+            "direction": "O"
+          },
+          "VGA_R": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "VGA_G": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "VGA_B": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "VGA_VS": {
+            "direction": "O"
+          },
+          "VGA_HS": {
+            "direction": "O"
+          },
+          "VGA_DE": {
+            "direction": "O"
+          }
+        },
+        "components": {
+          "video_freezer": {
+            "ports": {
+              "clk": {
+                "direction": "I"
+              },
+              "sync": {
+                "direction": "O"
+              },
+              "freeze": {
+                "direction": "I"
+              },
+              "hs_in": {
+                "direction": "I"
+              },
+              "vs_in": {
+                "direction": "I"
+              },
+              "hbl_in": {
+                "direction": "I"
+              },
+              "vbl_in": {
+                "direction": "I"
+              },
+              "hs_out": {
+                "direction": "O"
+              },
+              "vs_out": {
+                "direction": "O"
+              },
+              "hbl_out": {
+                "direction": "O"
+              },
+              "vbl_out": {
+                "direction": "O"
+              }
+            }
+          },
+          "scadoubler": {
+            "ports": {
+              "clk_vid": {
+                "direction": "I"
+              },
+              "hq2x": {
+                "direction": "I"
+              },
+              "ce_pix": {
+                "direction": "I"
+              },
+              "hs_in": {
+                "direction": "I"
+              },
+              "vs_in": {
+                "direction": "I"
+              },
+              "hb_in": {
+                "direction": "I"
+              },
+              "vb_in": {
+                "direction": "I"
+              },
+              "r_in": {
+                "direction": "I",
+                "left": "7",
+                "right": "0"
+              },
+              "g_in": {
+                "direction": "I",
+                "left": "7",
+                "right": "0"
+              },
+              "b_in": {
+                "direction": "I",
+                "left": "7",
+                "right": "0"
+              },
+              "ce_pix_out": {
+                "direction": "O"
+              },
+              "hs_out": {
+                "direction": "O"
+              },
+              "vs_out": {
+                "direction": "O"
+              },
+              "hb_out": {
+                "direction": "O"
+              },
+              "vb_out": {
+                "direction": "O"
+              },
+              "r_out": {
+                "direction": "O",
+                "left": "7",
+                "right": "0"
+              },
+              "g_out": {
+                "direction": "O",
+                "left": "7",
+                "right": "0"
+              },
+              "b_out": {
+                "direction": "O",
+                "left": "7",
+                "right": "0"
+              }
+            }
+          },
+          "gamma_corr": {
+            "ports": {
+              "clk_sys": {
+                "direction": "I"
+              },
+              "clk_vid": {
+                "direction": "I"
+              },
+              "ce_pix": {
+                "direction": "I"
+              },
+              "gamma_en": {
+                "direction": "I"
+              },
+              "gamma_wr": {
+                "direction": "I"
+              },
+              "gamma_wr_addr": {
+                "direction": "I",
+                "left": "9",
+                "right": "0"
+              },
+              "gamma_value": {
+                "direction": "I",
+                "left": "7",
+                "right": "0"
+              },
+              "HSync": {
+                "direction": "I"
+              },
+              "VSync": {
+                "direction": "I"
+              },
+              "HBlank": {
+                "direction": "I"
+              },
+              "VBlank": {
+                "direction": "I"
+              },
+              "RGB_in": {
+                "direction": "I",
+                "left": "23",
+                "right": "0"
+              },
+              "HSync_out": {
+                "direction": "O"
+              },
+              "VSync_out": {
+                "direction": "O"
+              },
+              "HBlank_out": {
+                "direction": "O"
+              },
+              "VBlank_out": {
+                "direction": "O"
+              },
+              "RGB_out": {
+                "direction": "O",
+                "left": "23",
+                "right": "0"
+              }
+            }
+          },
+          "gamma_bus": {
+            "ports": {
+              "gamma_bus": {
+                "direction": "IO",
+                "left": "21",
+                "right": "0"
+              },
+              "clk_sys": {
+                "direction": "I"
+              },
+              "gamma_en": {
+                "direction": "I"
+              },
+              "gamma_wr": {
+                "direction": "I"
+              },
+              "gamma_wr_addr": {
+                "direction": "I"
+              },
+              "gamma_value": {
+                "direction": "I"
+              }
+            }
+          }
+        },
+        "nets": {
+          "CLK_VIDEO_1": {
+            "ports": [
+              "CLK_VIDEO",
+              "video_freezer/clk",
+              "scadoubler/clk_vid",
+              "gamma_corr/clk_vid"
+            ]
+          },
+          "HBlank_1": {
+            "ports": [
+              "HBlank",
+              "video_freezer/hbl_in"
+            ]
+          },
+          "HDMI_FREEZE_1": {
+            "ports": [
+              "HDMI_FREEZE",
+              "video_freezer/freeze"
+            ]
+          },
+          "HSync_1": {
+            "ports": [
+              "HSync",
+              "video_freezer/hs_in"
+            ]
+          },
+          "Net": {
+            "ports": [
+              "gamma_bus",
+              "gamma_bus/gamma_bus"
+            ]
+          },
+          "VBlank_1": {
+            "ports": [
+              "VBlank",
+              "video_freezer/vbl_in"
+            ]
+          },
+          "VSync_1": {
+            "ports": [
+              "VSync",
+              "video_freezer/vs_in"
+            ]
+          },
+          "X_clk_sys_1": {
+            "ports": [
+              "gamma_corr/clk_sys",
+              "gamma_bus/clk_sys"
+            ]
+          },
+          "ce_pix_1": {
+            "ports": [
+              "ce_pix",
+              "scadoubler/ce_pix",
+              "gamma_corr/ce_pix"
+            ]
+          },
+          "gamma_corr_HBlank_out": {
+            "ports": [
+              "gamma_corr/HBlank_out",
+              "scadoubler/hb_in"
+            ]
+          },
+          "gamma_corr_HSync_out": {
+            "ports": [
+              "gamma_corr/HSync_out",
+              "scadoubler/hs_in"
+            ]
+          },
+          "gamma_corr_RGB_out": {
+            "ports": [
+              "gamma_corr/RGB_out",
+              "scadoubler/r_in",
+              "scadoubler/g_in",
+              "scadoubler/b_in"
+            ]
+          },
+          "gamma_corr_VBlank_out": {
+            "ports": [
+              "gamma_corr/VBlank_out",
+              "scadoubler/vb_in"
+            ]
+          },
+          "gamma_corr_VSync_out": {
+            "ports": [
+              "gamma_corr/VSync_out",
+              "scadoubler/vs_in"
+            ]
+          },
+          "gamma_en_1": {
+            "ports": [
+              "gamma_corr/gamma_en",
+              "gamma_bus/gamma_en"
+            ]
+          },
+          "gamma_value_1": {
+            "ports": [
+              "gamma_corr/gamma_value",
+              "gamma_bus/gamma_value"
+            ]
+          },
+          "gamma_wr_1": {
+            "ports": [
+              "gamma_corr/gamma_wr",
+              "gamma_bus/gamma_wr"
+            ]
+          },
+          "gamma_wr_addr_1": {
+            "ports": [
+              "gamma_corr/gamma_wr_addr",
+              "gamma_bus/gamma_wr_addr"
+            ]
+          },
+          "hq2x_1": {
+            "ports": [
+              "hq2x",
+              "scadoubler/hq2x"
+            ]
+          },
+          "video_freezer_hbl_out": {
+            "ports": [
+              "video_freezer/hbl_out",
+              "gamma_corr/HBlank"
+            ]
+          },
+          "video_freezer_hs_out": {
+            "ports": [
+              "video_freezer/hs_out",
+              "gamma_corr/HSync"
+            ]
+          },
+          "video_freezer_sync": {
+            "ports": [
+              "video_freezer/sync",
+              "freeze_sync"
+            ]
+          },
+          "video_freezer_vbl_out": {
+            "ports": [
+              "video_freezer/vbl_out",
+              "gamma_corr/VBlank"
+            ]
+          },
+          "video_freezer_vs_out": {
+            "ports": [
+              "video_freezer/vs_out",
+              "gamma_corr/VSync"
+            ]
+          }
+        }
+      },
+      "video_freak": {
+        "ports": {
+          "CLK_VIDEO": {
+            "direction": "I"
+          },
+          "CE_PIXEL": {
+            "direction": "I"
+          },
+          "VGA_VS": {
+            "direction": "I"
+          },
+          "HDMI_WIDTH": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "HDMI_HEIGHT": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "VGA_DE": {
+            "direction": "O"
+          },
+          "VIDEO_ARX": {
+            "direction": "O",
+            "left": "12",
+            "right": "0"
+          },
+          "VIDEO_ARY": {
+            "direction": "O",
+            "left": "12",
+            "right": "0"
+          },
+          "VGA_DE_IN": {
+            "direction": "I"
+          },
+          "ARX": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "ARY": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "CROP_SIZE": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "CROP_OFF": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "SCALE": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          }
+        },
+        "components": {
+          "video_scale": {
+            "ports": {
+              "CLK_VIDEO": {
+                "direction": "I"
+              },
+              "HDMI_WIDTH": {
+                "direction": "I",
+                "left": "11",
+                "right": "0"
+              },
+              "HDMI_HEIGHT": {
+                "direction": "I",
+                "left": "11",
+                "right": "0"
+              },
+              "SCALE": {
+                "direction": "I",
+                "left": "2",
+                "right": "0"
+              },
+              "hsize": {
+                "direction": "I",
+                "left": "11",
+                "right": "0"
+              },
+              "vsize": {
+                "direction": "I",
+                "left": "11",
+                "right": "0"
+              },
+              "arx_i": {
+                "direction": "I",
+                "left": "1",
+                "right": "0"
+              },
+              "ary_i": {
+                "direction": "I",
+                "left": "1",
+                "right": "0"
+              },
+              "arx_o": {
+                "direction": "O",
+                "left": "12",
+                "right": "0"
+              },
+              "ary_o": {
+                "direction": "O",
+                "left": "12",
+                "right": "0"
+              }
+            }
+          }
+        },
+        "nets": {
+          "ARX_1": {
+            "ports": [
+              "ARX",
+              "video_scale/arx_i"
+            ]
+          },
+          "ARY_1": {
+            "ports": [
+              "ARY",
+              "video_scale/ary_i"
+            ]
+          },
+          "CLK_VIDEO_1": {
+            "ports": [
+              "CLK_VIDEO",
+              "video_scale/CLK_VIDEO"
+            ]
+          },
+          "HDMI_HEIGHT_1": {
+            "ports": [
+              "HDMI_HEIGHT",
+              "video_scale/HDMI_HEIGHT"
+            ]
+          },
+          "HDMI_WIDTH_1": {
+            "ports": [
+              "HDMI_WIDTH",
+              "video_scale/HDMI_WIDTH"
+            ]
+          },
+          "SCALE_1": {
+            "ports": [
+              "SCALE",
+              "video_scale/SCALE"
+            ]
+          },
+          "video_scale_arx_o": {
+            "ports": [
+              "video_scale/arx_o",
+              "VIDEO_ARX"
+            ]
+          },
+          "video_scale_ary_o": {
+            "ports": [
+              "video_scale/ary_o",
+              "VIDEO_ARY"
+            ]
+          }
+        }
+      },
+      "ce_comb": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "Amiga_emu_util_vector_logic_0_2",
+        "xci_path": "ip\\Amiga_emu_util_vector_logic_0_2\\Amiga_emu_util_vector_logic_0_2.xci",
+        "inst_hier_path": "ce_comb",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "or"
+          },
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "9",
+        "xci_name": "Amiga_emu_xlconstant_0_0",
+        "xci_path": "ip\\Amiga_emu_xlconstant_0_0\\Amiga_emu_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "40"
+          },
+          "CONST_WIDTH": {
+            "value": "40"
+          }
+        }
+      },
+      "ilconstant_0": {
+        "vlnv": "xilinx.com:inline_hdl:ilconstant:1.0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "8"
+          },
+          "CONST_WIDTH": {
+            "value": "8"
+          }
+        }
+      },
+      "ilconstant_1": {
+        "vlnv": "xilinx.com:inline_hdl:ilconstant:1.0"
+      },
+      "ilconstant_2": {
+        "vlnv": "xilinx.com:inline_hdl:ilconstant:1.0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "24"
+          },
+          "CONST_WIDTH": {
+            "value": "24"
+          }
+        }
+      },
+      "input_l_comb": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "Amiga_emu_util_vector_logic_0_3",
+        "xci_path": "ip\\Amiga_emu_util_vector_logic_0_3\\Amiga_emu_util_vector_logic_0_3.xci",
+        "inst_hier_path": "input_l_comb",
+        "parameters": {
+          "C_SIZE": {
+            "value": "16"
+          }
+        }
+      },
+      "input_r_comb": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "Amiga_emu_util_vector_logic_0_4",
+        "xci_path": "ip\\Amiga_emu_util_vector_logic_0_4\\Amiga_emu_util_vector_logic_0_4.xci",
+        "inst_hier_path": "input_r_comb",
+        "parameters": {
+          "C_SIZE": {
+            "value": "16"
+          }
+        }
+      },
+      "output_l_comb": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "Amiga_emu_util_vector_logic_0_5",
+        "xci_path": "ip\\Amiga_emu_util_vector_logic_0_5\\Amiga_emu_util_vector_logic_0_5.xci",
+        "inst_hier_path": "output_l_comb",
+        "parameters": {
+          "C_SIZE": {
+            "value": "16"
+          }
+        }
+      },
+      "output_r_comb": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "Amiga_emu_util_vector_logic_0_6",
+        "xci_path": "ip\\Amiga_emu_util_vector_logic_0_6\\Amiga_emu_util_vector_logic_0_6.xci",
+        "inst_hier_path": "output_r_comb",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "and"
+          },
+          "C_SIZE": {
+            "value": "16"
+          }
+        }
+      },
+      "output_comb": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "Amiga_emu_util_vector_logic_0_7",
+        "xci_path": "ip\\Amiga_emu_util_vector_logic_0_7\\Amiga_emu_util_vector_logic_0_7.xci",
+        "inst_hier_path": "output_comb",
+        "parameters": {
+          "C_SIZE": {
+            "value": "16"
+          }
+        }
+      },
+      "output2_l_comb": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "Amiga_emu_util_vector_logic_0_8",
+        "xci_path": "ip\\Amiga_emu_util_vector_logic_0_8\\Amiga_emu_util_vector_logic_0_8.xci",
+        "inst_hier_path": "output2_l_comb",
+        "parameters": {
+          "C_SIZE": {
+            "value": "16"
+          }
+        }
+      },
+      "output2_r_comb": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "Amiga_emu_util_vector_logic_0_9",
+        "xci_path": "ip\\Amiga_emu_util_vector_logic_0_9\\Amiga_emu_util_vector_logic_0_9.xci",
+        "inst_hier_path": "output2_r_comb",
+        "parameters": {
+          "C_SIZE": {
+            "value": "16"
+          }
+        }
+      },
+      "vm_vblank": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "Amiga_emu_util_vector_logic_0_10",
+        "xci_path": "ip\\Amiga_emu_util_vector_logic_0_10\\Amiga_emu_util_vector_logic_0_10.xci",
+        "inst_hier_path": "vm_vblank",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "vm_vblank2": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "Amiga_emu_util_vector_logic_0_11",
+        "xci_path": "ip\\Amiga_emu_util_vector_logic_0_11\\Amiga_emu_util_vector_logic_0_11.xci",
+        "inst_hier_path": "vm_vblank2",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "HPS_BUS": {
+        "ports": {
+          "HPS_BUS": {
+            "direction": "IO",
+            "left": "48",
+            "right": "0"
+          },
+          "HPS_BUS_o": {
+            "direction": "O",
+            "left": "48",
+            "right": "0"
+          },
+          "HPS_BUS_i": {
+            "direction": "I",
+            "left": "48",
+            "right": "0"
+          },
+          "HPS_BUS_io": {
+            "direction": "IO"
+          },
+          "res": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          }
+        }
+      },
+      "led_disk_0": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "Amiga_emu_util_vector_logic_0_12",
+        "xci_path": "ip\\Amiga_emu_util_vector_logic_0_12\\Amiga_emu_util_vector_logic_0_12.xci",
+        "inst_hier_path": "led_disk_0",
+        "parameters": {
+          "C_SIZE": {
+            "value": "2"
+          }
+        }
+      },
+      "led_disk_1": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "Amiga_emu_util_vector_logic_0_13",
+        "xci_path": "ip\\Amiga_emu_util_vector_logic_0_13\\Amiga_emu_util_vector_logic_0_13.xci",
+        "inst_hier_path": "led_disk_1",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "hps_ext_ide_0": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "Amiga_emu_util_vector_logic_0_14",
+        "xci_path": "ip\\Amiga_emu_util_vector_logic_0_14\\Amiga_emu_util_vector_logic_0_14.xci",
+        "inst_hier_path": "hps_ext_ide_0",
+        "parameters": {
+          "C_SIZE": {
+            "value": "16"
+          }
+        }
+      },
+      "hps_ext_ide_1": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "Amiga_emu_util_vector_logic_0_15",
+        "xci_path": "ip\\Amiga_emu_util_vector_logic_0_15\\Amiga_emu_util_vector_logic_0_15.xci",
+        "inst_hier_path": "hps_ext_ide_1",
+        "parameters": {
+          "C_SIZE": {
+            "value": "16"
+          }
+        }
+      },
+      "hps_ext_ide_2": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "Amiga_emu_util_vector_logic_0_16",
+        "xci_path": "ip\\Amiga_emu_util_vector_logic_0_16\\Amiga_emu_util_vector_logic_0_16.xci",
+        "inst_hier_path": "hps_ext_ide_2",
+        "parameters": {
+          "C_SIZE": {
+            "value": "16"
+          }
+        }
+      },
+      "audio_l_comb_0": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "Amiga_emu_util_vector_logic_0_17",
+        "xci_path": "ip\\Amiga_emu_util_vector_logic_0_17\\Amiga_emu_util_vector_logic_0_17.xci",
+        "inst_hier_path": "audio_l_comb_0",
+        "parameters": {
+          "C_SIZE": {
+            "value": "16"
+          }
+        }
+      },
+      "audio_r_comb_0": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "Amiga_emu_util_vector_logic_0_18",
+        "xci_path": "ip\\Amiga_emu_util_vector_logic_0_18\\Amiga_emu_util_vector_logic_0_18.xci",
+        "inst_hier_path": "audio_r_comb_0",
+        "parameters": {
+          "C_SIZE": {
+            "value": "16"
+          }
+        }
+      },
+      "xlconstant_1": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "9",
+        "xci_name": "Amiga_emu_xlconstant_1_0",
+        "xci_path": "ip\\Amiga_emu_xlconstant_1_0\\Amiga_emu_xlconstant_1_0.xci",
+        "inst_hier_path": "xlconstant_1"
+      },
+      "cpu_wrap_0": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "Amiga_emu_util_vector_logic_0_19",
+        "xci_path": "ip\\Amiga_emu_util_vector_logic_0_19\\Amiga_emu_util_vector_logic_0_19.xci",
+        "inst_hier_path": "cpu_wrap_0",
+        "parameters": {
+          "C_SIZE": {
+            "value": "16"
+          }
+        }
+      },
+      "cpu_wrap_1": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "Amiga_emu_util_vector_logic_0_20",
+        "xci_path": "ip\\Amiga_emu_util_vector_logic_0_20\\Amiga_emu_util_vector_logic_0_20.xci",
+        "inst_hier_path": "cpu_wrap_1",
+        "parameters": {
+          "C_SIZE": {
+            "value": "16"
+          }
+        }
+      },
+      "cpu_wrap_2": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "Amiga_emu_util_vector_logic_0_21",
+        "xci_path": "ip\\Amiga_emu_util_vector_logic_0_21\\Amiga_emu_util_vector_logic_0_21.xci",
+        "inst_hier_path": "cpu_wrap_2",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "rxd_0": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "Amiga_emu_util_vector_logic_0_22",
+        "xci_path": "ip\\Amiga_emu_util_vector_logic_0_22\\Amiga_emu_util_vector_logic_0_22.xci",
+        "inst_hier_path": "rxd_0",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "rxd_1": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "Amiga_emu_util_vector_logic_0_23",
+        "xci_path": "ip\\Amiga_emu_util_vector_logic_0_23\\Amiga_emu_util_vector_logic_0_23.xci",
+        "inst_hier_path": "rxd_1",
+        "parameters": {
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "audio_r_comb_1": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "Amiga_emu_util_vector_logic_0_24",
+        "xci_path": "ip\\Amiga_emu_util_vector_logic_0_24\\Amiga_emu_util_vector_logic_0_24.xci",
+        "inst_hier_path": "audio_r_comb_1",
+        "parameters": {
+          "C_SIZE": {
+            "value": "16"
+          }
+        }
+      },
+      "audio_l_comb_1": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "Amiga_emu_util_vector_logic_0_25",
+        "xci_path": "ip\\Amiga_emu_util_vector_logic_0_25\\Amiga_emu_util_vector_logic_0_25.xci",
+        "inst_hier_path": "audio_l_comb_1",
+        "parameters": {
+          "C_SIZE": {
+            "value": "16"
+          }
+        }
+      },
+      "hps_status_0": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "Amiga_emu_util_vector_logic_0_26",
+        "xci_path": "ip\\Amiga_emu_util_vector_logic_0_26\\Amiga_emu_util_vector_logic_0_26.xci",
+        "inst_hier_path": "hps_status_0",
+        "parameters": {
+          "C_SIZE": {
+            "value": "16"
+          }
+        }
+      },
+      "hps_status_1": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "Amiga_emu_util_vector_logic_0_27",
+        "xci_path": "ip\\Amiga_emu_util_vector_logic_0_27\\Amiga_emu_util_vector_logic_0_27.xci",
+        "inst_hier_path": "hps_status_1",
+        "parameters": {
+          "C_SIZE": {
+            "value": "16"
+          }
+        }
+      },
+      "vga_b_comb_0": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "Amiga_emu_util_vector_logic_0_28",
+        "xci_path": "ip\\Amiga_emu_util_vector_logic_0_28\\Amiga_emu_util_vector_logic_0_28.xci",
+        "inst_hier_path": "vga_b_comb_0"
+      },
+      "vga_g_omb_0": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "Amiga_emu_util_vector_logic_0_29",
+        "xci_path": "ip\\Amiga_emu_util_vector_logic_0_29\\Amiga_emu_util_vector_logic_0_29.xci",
+        "inst_hier_path": "vga_g_omb_0"
+      },
+      "vga_r_comb_0": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "Amiga_emu_util_vector_logic_0_30",
+        "xci_path": "ip\\Amiga_emu_util_vector_logic_0_30\\Amiga_emu_util_vector_logic_0_30.xci",
+        "inst_hier_path": "vga_r_comb_0"
+      },
+      "vga_comb_1": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "Amiga_emu_util_vector_logic_0_31",
+        "xci_path": "ip\\Amiga_emu_util_vector_logic_0_31\\Amiga_emu_util_vector_logic_0_31.xci",
+        "inst_hier_path": "vga_comb_1"
+      },
+      "vga_comb_2": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "Amiga_emu_util_vector_logic_0_32",
+        "xci_path": "ip\\Amiga_emu_util_vector_logic_0_32\\Amiga_emu_util_vector_logic_0_32.xci",
+        "inst_hier_path": "vga_comb_2"
+      },
+      "xlconstant_2": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "9",
+        "xci_name": "Amiga_emu_xlconstant_2_0",
+        "xci_path": "ip\\Amiga_emu_xlconstant_2_0\\Amiga_emu_xlconstant_2_0.xci",
+        "inst_hier_path": "xlconstant_2"
+      },
+      "ilconstant_3": {
+        "vlnv": "xilinx.com:inline_hdl:ilconstant:1.0"
+      },
+      "ilconstant_4": {
+        "vlnv": "xilinx.com:inline_hdl:ilconstant:1.0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "2"
+          },
+          "CONST_WIDTH": {
+            "value": "2"
+          }
+        }
+      },
+      "ilconstant_5": {
+        "vlnv": "xilinx.com:inline_hdl:ilconstant:1.0"
+      },
+      "ilconstant_6": {
+        "vlnv": "xilinx.com:inline_hdl:ilconstant:1.0"
+      },
+      "ilconstant_7": {
+        "vlnv": "xilinx.com:inline_hdl:ilconstant:1.0"
+      },
+      "pll_config_0": {
+        "vlnv": "xilinx.com:module_ref:pll_config:1.0",
+        "ip_revision": "1",
+        "xci_name": "Amiga_emu_pll_config_0_0",
+        "xci_path": "ip\\Amiga_emu_pll_config_0_0\\Amiga_emu_pll_config_0_0.xci",
+        "inst_hier_path": "pll_config_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "pll_config",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "refclk": {
+            "direction": "I"
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "outclk_0": {
+            "direction": "O"
+          },
+          "outclk_1": {
+            "direction": "O"
+          },
+          "locked": {
+            "direction": "O"
+          },
+          "drp_clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "drp_enable": {
+            "direction": "I"
+          },
+          "drp_write": {
+            "direction": "I"
+          },
+          "drp_addr": {
+            "direction": "I",
+            "left": "6",
+            "right": "0"
+          },
+          "drp_data": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "drp_ready": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "ARX_1": {
+        "ports": [
+          "minimig_0/ar",
+          "video_freak/ARX",
+          "video_freak/ARY"
+        ]
+      },
+      "B_1": {
+        "ports": [
+          "minimig_0/blue",
+          "video_mixer/B"
+        ]
+      },
+      "CLK_50M_1": {
+        "ports": [
+          "CLK_50M",
+          "pll_config_0/refclk"
+        ]
+      },
+      "CLK_AUDIO_1": {
+        "ports": [
+          "CLK_AUDIO",
+          "mt32pi/CLK_AUDIO"
+        ]
+      },
+      "DDRAM_BUSY_1": {
+        "ports": [
+          "DDRAM_BUSY",
+          "ddram_ctrl_0_ram2/DDRAM_BUSY"
+        ]
+      },
+      "DDRAM_DOUT_1": {
+        "ports": [
+          "DDRAM_DOUT",
+          "ddram_ctrl_0_ram2/DDRAM_DOUT"
+        ]
+      },
+      "DDRAM_DOUT_READY_1": {
+        "ports": [
+          "DDRAM_DOUT_READY",
+          "ddram_ctrl_0_ram2/DDRAM_DOUT_READY"
+        ]
+      },
+      "FB_PAL_DIN_1": {
+        "ports": [
+          "FB_PAL_DIN",
+          "fastchip_0/rtg_pal_dr"
+        ]
+      },
+      "G_1": {
+        "ports": [
+          "minimig_0/green",
+          "video_mixer/G"
+        ]
+      },
+      "HBlank_1": {
+        "ports": [
+          "minimig_0/hblank",
+          "video_mixer/HBlank"
+        ]
+      },
+      "HDMI_HEIGHT_1": {
+        "ports": [
+          "HDMI_HEIGHT",
+          "video_freak/HDMI_HEIGHT"
+        ]
+      },
+      "HDMI_WIDTH_1": {
+        "ports": [
+          "HDMI_WIDTH",
+          "video_freak/HDMI_WIDTH"
+        ]
+      },
+      "HSync_1": {
+        "ports": [
+          "minimig_0/_hsync",
+          "video_mixer/HSync"
+        ]
+      },
+      "Net": {
+        "ports": [
+          "hps_io_hier/EXT_BUS",
+          "hps_ext_0/EXT_BUS"
+        ]
+      },
+      "Net1": {
+        "ports": [
+          "hps_io_hier/HPS_BUS",
+          "HPS_BUS/HPS_BUS_io"
+        ]
+      },
+      "Net2": {
+        "ports": [
+          "SDRAM_DQ",
+          "sdram_ctrl_0_ram1/sd_data"
+        ]
+      },
+      "Net3": {
+        "ports": [
+          "video_mixer/gamma_bus",
+          "hps_io_hier/gamma_bus"
+        ]
+      },
+      "Net4": {
+        "ports": [
+          "HPS_BUS",
+          "HPS_BUS/HPS_BUS"
+        ]
+      },
+      "RESET_1": {
+        "ports": [
+          "RESET",
+          "pll_reset_reg_2/Op1"
+        ]
+      },
+      "R_1": {
+        "ports": [
+          "minimig_0/red",
+          "video_mixer/R"
+        ]
+      },
+      "UART_CTS_1": {
+        "ports": [
+          "UART_CTS",
+          "minimig_0/cts"
+        ]
+      },
+      "UART_DSR_1": {
+        "ports": [
+          "UART_DSR",
+          "minimig_0/dsr",
+          "minimig_0/cd"
+        ]
+      },
+      "UART_RXD_1": {
+        "ports": [
+          "UART_RXD",
+          "rxd_1/Op2"
+        ]
+      },
+      "USER_IN_1": {
+        "ports": [
+          "USER_IN",
+          "mt32pi/USER_IN"
+        ]
+      },
+      "VSync_1": {
+        "ports": [
+          "minimig_0/_vsync",
+          "video_mixer/VSync"
+        ]
+      },
+      "amiga_clk_0_c1": {
+        "ports": [
+          "amiga_clk_0/c1",
+          "minimig_0/c1",
+          "sdram_ctrl_0_ram1/c_7m"
+        ]
+      },
+      "amiga_clk_0_c3": {
+        "ports": [
+          "amiga_clk_0/c3",
+          "minimig_0/c3"
+        ]
+      },
+      "amiga_clk_0_cck": {
+        "ports": [
+          "amiga_clk_0/cck",
+          "minimig_0/cck"
+        ]
+      },
+      "amiga_clk_0_clk7_en": {
+        "ports": [
+          "amiga_clk_0/clk7_en",
+          "minimig_0/clk7_en",
+          "ce_comb/Op1"
+        ]
+      },
+      "amiga_clk_0_clk7n_en": {
+        "ports": [
+          "amiga_clk_0/clk7n_en",
+          "minimig_0/clk7n_en",
+          "ce_comb/Op2"
+        ]
+      },
+      "amiga_clk_0_eclk": {
+        "ports": [
+          "amiga_clk_0/eclk",
+          "minimig_0/eclk"
+        ]
+      },
+      "audio_l_comb_0_Res": {
+        "ports": [
+          "audio_l_comb_0/Res",
+          "audio_l_comb_1/Op2"
+        ]
+      },
+      "audio_l_comb_1_Res": {
+        "ports": [
+          "audio_l_comb_1/Res",
+          "AUDIO_L"
+        ]
+      },
+      "audio_r_comb_0_Res": {
+        "ports": [
+          "audio_r_comb_0/Res",
+          "audio_r_comb_1/Op2"
+        ]
+      },
+      "audio_r_comb_1_Res": {
+        "ports": [
+          "audio_r_comb_1/Res",
+          "AUDIO_R"
+        ]
+      },
+      "cdda_0_WRITE_REQ": {
+        "ports": [
+          "cdda_0/WRITE_REQ",
+          "hps_ext_0/cdda_req"
+        ]
+      },
+      "ce_comb_Res": {
+        "ports": [
+          "ce_comb/Res",
+          "lpf4400_IIR_filter_0/ce"
+        ]
+      },
+      "cpu_wrap_0_Res": {
+        "ports": [
+          "cpu_wrap_0/Res",
+          "cpu_wrapper_0/ramdout",
+          "cpu_wrapper_0/ramready"
+        ]
+      },
+      "cpu_wrap_1_Res": {
+        "ports": [
+          "cpu_wrap_1/Res",
+          "cpu_wrap_0/Op1"
+        ]
+      },
+      "cpu_wrap_2_Res": {
+        "ports": [
+          "cpu_wrap_2/Res",
+          "cpu_wrap_0/Op2"
+        ]
+      },
+      "cpu_wrapper_0_cacr": {
+        "ports": [
+          "cpu_wrapper_0/cacr",
+          "sdram_ctrl_0_ram1/cpu_cache_ctrl",
+          "ddram_ctrl_0_ram2/cpu_cache_ctrl"
+        ]
+      },
+      "cpu_wrapper_0_chip_addr": {
+        "ports": [
+          "cpu_wrapper_0/chip_addr",
+          "minimig_0/cpu_address",
+          "fastchip_0/addr"
+        ]
+      },
+      "cpu_wrapper_0_chip_as": {
+        "ports": [
+          "cpu_wrapper_0/chip_as",
+          "minimig_0/_cpu_as"
+        ]
+      },
+      "cpu_wrapper_0_chip_din": {
+        "ports": [
+          "cpu_wrapper_0/chip_din",
+          "minimig_0/cpudata_in",
+          "fastchip_0/din"
+        ]
+      },
+      "cpu_wrapper_0_chip_lds": {
+        "ports": [
+          "cpu_wrapper_0/chip_lds",
+          "minimig_0/_cpu_lds"
+        ]
+      },
+      "cpu_wrapper_0_chip_rw": {
+        "ports": [
+          "cpu_wrapper_0/chip_rw",
+          "minimig_0/cpu_r_w"
+        ]
+      },
+      "cpu_wrapper_0_chip_uds": {
+        "ports": [
+          "cpu_wrapper_0/chip_uds",
+          "minimig_0/_cpu_uds"
+        ]
+      },
+      "cpu_wrapper_0_cpustate": {
+        "ports": [
+          "cpu_wrapper_0/cpustate",
+          "sdram_ctrl_0_ram1/cpustate",
+          "ddram_ctrl_0_ram2/cpustate"
+        ]
+      },
+      "cpu_wrapper_0_fastchip_lds": {
+        "ports": [
+          "cpu_wrapper_0/fastchip_lds",
+          "fastchip_0/lds"
+        ]
+      },
+      "cpu_wrapper_0_fastchip_lw": {
+        "ports": [
+          "cpu_wrapper_0/fastchip_lw",
+          "fastchip_0/longword"
+        ]
+      },
+      "cpu_wrapper_0_fastchip_rnw": {
+        "ports": [
+          "cpu_wrapper_0/fastchip_rnw",
+          "fastchip_0/rnw"
+        ]
+      },
+      "cpu_wrapper_0_fastchip_sel": {
+        "ports": [
+          "cpu_wrapper_0/fastchip_sel",
+          "fastchip_0/sel"
+        ]
+      },
+      "cpu_wrapper_0_fastchip_uds": {
+        "ports": [
+          "cpu_wrapper_0/fastchip_uds",
+          "fastchip_0/uds"
+        ]
+      },
+      "cpu_wrapper_0_nmi_addr": {
+        "ports": [
+          "cpu_wrapper_0/nmi_addr",
+          "minimig_0/nmi_addr"
+        ]
+      },
+      "cpu_wrapper_0_ramaddr": {
+        "ports": [
+          "cpu_wrapper_0/ramaddr",
+          "sdram_ctrl_0_ram1/cpuAddr",
+          "sdram_ctrl_0_ram1/cpuCS",
+          "ddram_ctrl_0_ram2/cpuCS",
+          "ddram_ctrl_0_ram2/cpuAddr"
+        ]
+      },
+      "cpu_wrapper_0_ramdin": {
+        "ports": [
+          "cpu_wrapper_0/ramdin",
+          "sdram_ctrl_0_ram1/cpuWR",
+          "ddram_ctrl_0_ram2/cpuWR"
+        ]
+      },
+      "cpu_wrapper_0_ramlds": {
+        "ports": [
+          "cpu_wrapper_0/ramlds",
+          "sdram_ctrl_0_ram1/cpuL",
+          "ddram_ctrl_0_ram2/cpuL"
+        ]
+      },
+      "cpu_wrapper_0_ramshared": {
+        "ports": [
+          "cpu_wrapper_0/ramshared",
+          "ddram_ctrl_0_ram2/ramshared"
+        ]
+      },
+      "cpu_wrapper_0_ramuds": {
+        "ports": [
+          "cpu_wrapper_0/ramuds",
+          "sdram_ctrl_0_ram1/cpuU",
+          "ddram_ctrl_0_ram2/cpuU"
+        ]
+      },
+      "cpu_wrapper_0_reset_out": {
+        "ports": [
+          "cpu_wrapper_0/reset_out",
+          "minimig_0/_cpu_reset_in"
+        ]
+      },
+      "cpu_wrapper_0_toccata_base": {
+        "ports": [
+          "cpu_wrapper_0/toccata_base",
+          "minimig_0/toccata_base"
+        ]
+      },
+      "cpu_wrapper_0_toccata_ena": {
+        "ports": [
+          "cpu_wrapper_0/toccata_ena",
+          "minimig_0/toccata_ena"
+        ]
+      },
+      "ddram_ctrl_0_ram2_DDRAM_ADDR": {
+        "ports": [
+          "ddram_ctrl_0_ram2/DDRAM_ADDR",
+          "DDRAM_ADDR"
+        ]
+      },
+      "ddram_ctrl_0_ram2_DDRAM_BE": {
+        "ports": [
+          "ddram_ctrl_0_ram2/DDRAM_BE",
+          "DDRAM_BE"
+        ]
+      },
+      "ddram_ctrl_0_ram2_DDRAM_BURSTCNT": {
+        "ports": [
+          "ddram_ctrl_0_ram2/DDRAM_BURSTCNT",
+          "DDRAM_BURSTCNT"
+        ]
+      },
+      "ddram_ctrl_0_ram2_DDRAM_CLK": {
+        "ports": [
+          "ddram_ctrl_0_ram2/DDRAM_CLK",
+          "DDRAM_CLK"
+        ]
+      },
+      "ddram_ctrl_0_ram2_DDRAM_DIN": {
+        "ports": [
+          "ddram_ctrl_0_ram2/DDRAM_DIN",
+          "DDRAM_DIN"
+        ]
+      },
+      "ddram_ctrl_0_ram2_DDRAM_RD": {
+        "ports": [
+          "ddram_ctrl_0_ram2/DDRAM_RD",
+          "DDRAM_RD"
+        ]
+      },
+      "ddram_ctrl_0_ram2_DDRAM_WE": {
+        "ports": [
+          "ddram_ctrl_0_ram2/DDRAM_WE",
+          "DDRAM_WE"
+        ]
+      },
+      "ddram_ctrl_0_ram2_cpuRD": {
+        "ports": [
+          "ddram_ctrl_0_ram2/cpuRD",
+          "cpu_wrap_1/Op2"
+        ]
+      },
+      "ddram_ctrl_0_ram2_ramready": {
+        "ports": [
+          "ddram_ctrl_0_ram2/ramready",
+          "cpu_wrap_2/Op2"
+        ]
+      },
+      "fastchip_0_dout": {
+        "ports": [
+          "fastchip_0/dout",
+          "cpu_wrapper_0/fastchip_dout"
+        ]
+      },
+      "fastchip_0_ide_irq": {
+        "ports": [
+          "fastchip_0/ide_irq",
+          "minimig_0/ide_ext_irq"
+        ]
+      },
+      "fastchip_0_ide_led": {
+        "ports": [
+          "fastchip_0/ide_led",
+          "led_disk_0/Op2"
+        ]
+      },
+      "fastchip_0_ide_readdata": {
+        "ports": [
+          "fastchip_0/ide_readdata",
+          "hps_ext_ide_1/Op2"
+        ]
+      },
+      "fastchip_0_ide_req": {
+        "ports": [
+          "fastchip_0/ide_req",
+          "hps_ext_ide_1/Op1"
+        ]
+      },
+      "fastchip_0_ready": {
+        "ports": [
+          "fastchip_0/ready",
+          "cpu_wrapper_0/fastchip_ready"
+        ]
+      },
+      "fastchip_0_rtg_base": {
+        "ports": [
+          "fastchip_0/rtg_base",
+          "FB_BASE"
+        ]
+      },
+      "fastchip_0_rtg_ena": {
+        "ports": [
+          "fastchip_0/rtg_ena",
+          "FB_EN"
+        ]
+      },
+      "fastchip_0_rtg_format": {
+        "ports": [
+          "fastchip_0/rtg_format",
+          "FB_FORMAT"
+        ]
+      },
+      "fastchip_0_rtg_hsize": {
+        "ports": [
+          "fastchip_0/rtg_hsize",
+          "FB_WIDTH"
+        ]
+      },
+      "fastchip_0_rtg_pal_a": {
+        "ports": [
+          "fastchip_0/rtg_pal_a",
+          "FB_PAL_ADDR"
+        ]
+      },
+      "fastchip_0_rtg_pal_clk": {
+        "ports": [
+          "fastchip_0/rtg_pal_clk",
+          "FB_PAL_CLK"
+        ]
+      },
+      "fastchip_0_rtg_pal_dw": {
+        "ports": [
+          "fastchip_0/rtg_pal_dw",
+          "FB_PAL_DOUT"
+        ]
+      },
+      "fastchip_0_rtg_pal_wr": {
+        "ports": [
+          "fastchip_0/rtg_pal_wr",
+          "FB_PAL_WR"
+        ]
+      },
+      "fastchip_0_rtg_stride": {
+        "ports": [
+          "fastchip_0/rtg_stride",
+          "FB_STRIDE"
+        ]
+      },
+      "fastchip_0_rtg_vsize": {
+        "ports": [
+          "fastchip_0/rtg_vsize",
+          "FB_HEIGHT"
+        ]
+      },
+      "fastchip_0_sel_ack": {
+        "ports": [
+          "fastchip_0/sel_ack",
+          "cpu_wrapper_0/fastchip_selack"
+        ]
+      },
+      "hps_ext_0_cdda_dout": {
+        "ports": [
+          "hps_ext_0/cdda_dout",
+          "cdda_0/DIN"
+        ]
+      },
+      "hps_ext_0_cdda_wr": {
+        "ports": [
+          "hps_ext_0/cdda_wr",
+          "cdda_0/WRITE"
+        ]
+      },
+      "hps_ext_0_ide_addr": {
+        "ports": [
+          "hps_ext_0/ide_addr",
+          "minimig_0/ide_address",
+          "fastchip_0/ide_address"
+        ]
+      },
+      "hps_ext_0_ide_dout": {
+        "ports": [
+          "hps_ext_0/ide_dout",
+          "minimig_0/ide_writedata",
+          "fastchip_0/ide_writedata"
+        ]
+      },
+      "hps_ext_0_ide_rd": {
+        "ports": [
+          "hps_ext_0/ide_rd",
+          "minimig_0/ide_read",
+          "fastchip_0/ide_read"
+        ]
+      },
+      "hps_ext_0_ide_wr": {
+        "ports": [
+          "hps_ext_0/ide_wr",
+          "minimig_0/ide_write",
+          "fastchip_0/ide_write"
+        ]
+      },
+      "hps_ext_0_io_din": {
+        "ports": [
+          "hps_ext_0/io_din",
+          "minimig_0/IO_DIN"
+        ]
+      },
+      "hps_ext_0_io_fpga": {
+        "ports": [
+          "hps_ext_0/io_fpga",
+          "minimig_0/IO_FPGA"
+        ]
+      },
+      "hps_ext_0_io_strobe": {
+        "ports": [
+          "hps_ext_0/io_strobe",
+          "minimig_0/IO_STROBE"
+        ]
+      },
+      "hps_ext_0_io_uio": {
+        "ports": [
+          "hps_ext_0/io_uio",
+          "minimig_0/IO_UIO"
+        ]
+      },
+      "hps_ext_0_kbd_mouse_data": {
+        "ports": [
+          "hps_ext_0/kbd_mouse_data",
+          "minimig_0/kbd_mouse_data"
+        ]
+      },
+      "hps_ext_0_kbd_mouse_level": {
+        "ports": [
+          "hps_ext_0/kbd_mouse_level",
+          "minimig_0/kms_level"
+        ]
+      },
+      "hps_ext_0_kbd_mouse_type": {
+        "ports": [
+          "hps_ext_0/kbd_mouse_type",
+          "minimig_0/kbd_mouse_type"
+        ]
+      },
+      "hps_ext_0_mouse_buttons": {
+        "ports": [
+          "hps_ext_0/mouse_buttons",
+          "minimig_0/mouse_btn"
+        ]
+      },
+      "hps_ext_ide_1_Res": {
+        "ports": [
+          "hps_ext_ide_1/Res",
+          "hps_ext_ide_0/Op1"
+        ]
+      },
+      "hps_ext_ide_2_Res": {
+        "ports": [
+          "hps_ext_ide_2/Res",
+          "hps_ext_ide_0/Op2"
+        ]
+      },
+      "hps_ext_ide_Res": {
+        "ports": [
+          "hps_ext_ide_0/Res",
+          "hps_ext_0/ide_din",
+          "hps_ext_0/ide_req"
+        ]
+      },
+      "hps_io_hier_RTC": {
+        "ports": [
+          "hps_io_hier/RTC",
+          "minimig_0/rtc"
+        ]
+      },
+      "hps_io_hier_buttons": {
+        "ports": [
+          "hps_io_hier/buttons",
+          "pll_reset_reg_2/Op2"
+        ]
+      },
+      "hps_io_hier_forced_scandoubler": {
+        "ports": [
+          "hps_io_hier/forced_scandoubler",
+          "video_mixer/scandoubler"
+        ]
+      },
+      "hps_io_hier_joystick_0": {
+        "ports": [
+          "hps_io_hier/joystick_0",
+          "minimig_0/_joy1"
+        ]
+      },
+      "hps_io_hier_joystick_1": {
+        "ports": [
+          "hps_io_hier/joystick_1",
+          "minimig_0/_joy2"
+        ]
+      },
+      "hps_io_hier_joystick_2": {
+        "ports": [
+          "hps_io_hier/joystick_2",
+          "minimig_0/_joy3"
+        ]
+      },
+      "hps_io_hier_joystick_3": {
+        "ports": [
+          "hps_io_hier/joystick_3",
+          "minimig_0/_joy4"
+        ]
+      },
+      "hps_io_hier_joystick_l_analog_0": {
+        "ports": [
+          "hps_io_hier/joystick_l_analog_0",
+          "minimig_0/joya1"
+        ]
+      },
+      "hps_io_hier_joystick_l_analog_1": {
+        "ports": [
+          "hps_io_hier/joystick_l_analog_1",
+          "minimig_0/joya2"
+        ]
+      },
+      "hps_io_hier_status": {
+        "ports": [
+          "hps_io_hier/status",
+          "mt32pi/midi_tx",
+          "mt32pi/mt32_mode_req",
+          "mt32pi/mt32_rom_req",
+          "mt32pi/mt32_sf_req",
+          "video_freak/SCALE"
+        ]
+      },
+      "hps_io_hier_uart_mode": {
+        "ports": [
+          "hps_io_hier/uart_mode",
+          "rxd_1/Op1"
+        ]
+      },
+      "hps_status_0_Res": {
+        "ports": [
+          "hps_status_0/Res",
+          "hps_io_hier/status_menumask"
+        ]
+      },
+      "hps_status_1_Res": {
+        "ports": [
+          "hps_status_1/Res",
+          "hps_status_0/Op2"
+        ]
+      },
+      "ilconstant_0_dout": {
+        "ports": [
+          "ilconstant_0/dout",
+          "lpf4400_IIR_filter_0/cx0"
+        ]
+      },
+      "ilconstant_1_dout": {
+        "ports": [
+          "ilconstant_1/dout",
+          "lpf4400_IIR_filter_0/sample_ce"
+        ]
+      },
+      "ilconstant_2_dout": {
+        "ports": [
+          "ilconstant_2/dout",
+          "lpf4400_IIR_filter_0/cy0"
+        ]
+      },
+      "ilconstant_3_dout": {
+        "ports": [
+          "ilconstant_3/dout",
+          "AUDIO_S"
+        ]
+      },
+      "ilconstant_4_dout": {
+        "ports": [
+          "ilconstant_4/dout",
+          "BUTTONS"
+        ]
+      },
+      "ilconstant_5_dout": {
+        "ports": [
+          "ilconstant_5/dout",
+          "FB_FORCE_BLANK"
+        ]
+      },
+      "ilconstant_6_dout": {
+        "ports": [
+          "ilconstant_6/dout",
+          "HDMI_FREEZE"
+        ]
+      },
+      "ilconstant_7_dout": {
+        "ports": [
+          "ilconstant_7/dout",
+          "VGA_DISABLE"
+        ]
+      },
+      "info_1": {
+        "ports": [
+          "mt32pi/mt32_mode",
+          "hps_io_hier/info"
+        ]
+      },
+      "info_req_1": {
+        "ports": [
+          "mt32pi/mt32_newmode",
+          "hps_io_hier/info_req"
+        ]
+      },
+      "input_l_comb_Res": {
+        "ports": [
+          "input_l_comb/Res",
+          "lpf4400_IIR_filter_0/input_l",
+          "output_l_comb/Op2"
+        ]
+      },
+      "input_r_comb_Res": {
+        "ports": [
+          "input_r_comb/Res",
+          "lpf4400_IIR_filter_0/input_r",
+          "output_r_comb/Op2"
+        ]
+      },
+      "ioctl_wait_1": {
+        "ports": [
+          "minimig_0/IO_WAIT",
+          "hps_io_hier/ioctl_wait"
+        ]
+      },
+      "led_disk_0_Res": {
+        "ports": [
+          "led_disk_0/Res",
+          "led_disk_1/Op1"
+        ]
+      },
+      "led_disk_1_Res": {
+        "ports": [
+          "led_disk_1/Res",
+          "LED_DISK"
+        ]
+      },
+      "lpf3275_IIR_filter_0_output_l": {
+        "ports": [
+          "lpf3275_IIR_filter_0/output_l",
+          "output2_l_comb/Op2"
+        ]
+      },
+      "lpf3275_IIR_filter_0_output_r": {
+        "ports": [
+          "lpf3275_IIR_filter_0/output_r",
+          "output2_r_comb/Op2"
+        ]
+      },
+      "lpf4400_IIR_filter_0_output_l": {
+        "ports": [
+          "lpf4400_IIR_filter_0/output_l",
+          "output_l_comb/Op1"
+        ]
+      },
+      "lpf4400_IIR_filter_0_output_r": {
+        "ports": [
+          "lpf4400_IIR_filter_0/output_r",
+          "output_r_comb/Op1"
+        ]
+      },
+      "minimig_0_IO_DOUT": {
+        "ports": [
+          "minimig_0/IO_DOUT",
+          "hps_ext_0/fpga_dout"
+        ]
+      },
+      "minimig_0__cpu_dtack": {
+        "ports": [
+          "minimig_0/_cpu_dtack",
+          "cpu_wrapper_0/chip_dtack"
+        ]
+      },
+      "minimig_0__cpu_ipl": {
+        "ports": [
+          "minimig_0/_cpu_ipl",
+          "cpu_wrapper_0/chip_ipl"
+        ]
+      },
+      "minimig_0__cpu_reset": {
+        "ports": [
+          "minimig_0/_cpu_reset",
+          "cpu_wrapper_0/reset",
+          "ddram_ctrl_0_ram2/cache_rst",
+          "sdram_ctrl_0_ram1/cache_rst"
+        ]
+      },
+      "minimig_0__ram_bhe": {
+        "ports": [
+          "minimig_0/_ram_bhe",
+          "sdram_ctrl_0_ram1/chipU"
+        ]
+      },
+      "minimig_0__ram_ble": {
+        "ports": [
+          "minimig_0/_ram_ble",
+          "sdram_ctrl_0_ram1/chipL"
+        ]
+      },
+      "minimig_0__ram_oe": {
+        "ports": [
+          "minimig_0/_ram_oe",
+          "sdram_ctrl_0_ram1/chipDMA"
+        ]
+      },
+      "minimig_0__ram_we": {
+        "ports": [
+          "minimig_0/_ram_we",
+          "sdram_ctrl_0_ram1/chipRW"
+        ]
+      },
+      "minimig_0_aud_mix": {
+        "ports": [
+          "minimig_0/aud_mix",
+          "AUDIO_MIX"
+        ]
+      },
+      "minimig_0_bootrom": {
+        "ports": [
+          "minimig_0/bootrom",
+          "cpu_wrapper_0/bootrom"
+        ]
+      },
+      "minimig_0_cachecfg": {
+        "ports": [
+          "minimig_0/cachecfg",
+          "cpu_wrapper_0/cachecfg"
+        ]
+      },
+      "minimig_0_cpu_data": {
+        "ports": [
+          "minimig_0/cpu_data",
+          "cpu_wrapper_0/chip_dout"
+        ]
+      },
+      "minimig_0_cpucfg": {
+        "ports": [
+          "minimig_0/cpucfg",
+          "cpu_wrapper_0/cpucfg"
+        ]
+      },
+      "minimig_0_dtr": {
+        "ports": [
+          "minimig_0/dtr",
+          "UART_DTR"
+        ]
+      },
+      "minimig_0_fdd_led": {
+        "ports": [
+          "minimig_0/fdd_led",
+          "LED_USER"
+        ]
+      },
+      "minimig_0_field1": {
+        "ports": [
+          "minimig_0/field1",
+          "VGA_F1",
+          "vm_vblank/Op1"
+        ]
+      },
+      "minimig_0_hdd_led": {
+        "ports": [
+          "minimig_0/hdd_led",
+          "led_disk_0/Op1"
+        ]
+      },
+      "minimig_0_ide_ena": {
+        "ports": [
+          "minimig_0/ide_ena",
+          "fastchip_0/ide_ena"
+        ]
+      },
+      "minimig_0_ide_fast": {
+        "ports": [
+          "minimig_0/ide_fast",
+          "led_disk_1/Op2"
+        ]
+      },
+      "minimig_0_ide_readdata": {
+        "ports": [
+          "minimig_0/ide_readdata",
+          "hps_ext_ide_2/Op2"
+        ]
+      },
+      "minimig_0_ide_req": {
+        "ports": [
+          "minimig_0/ide_req",
+          "hps_ext_ide_2/Op1"
+        ]
+      },
+      "minimig_0_lace": {
+        "ports": [
+          "minimig_0/lace",
+          "vm_vblank/Op2"
+        ]
+      },
+      "minimig_0_ldata": {
+        "ports": [
+          "minimig_0/ldata",
+          "input_l_comb/Op2"
+        ]
+      },
+      "minimig_0_ldata_okk": {
+        "ports": [
+          "minimig_0/ldata_okk",
+          "input_l_comb/Op1"
+        ]
+      },
+      "minimig_0_memcfg": {
+        "ports": [
+          "minimig_0/memcfg",
+          "cpu_wrapper_0/fastramcfg"
+        ]
+      },
+      "minimig_0_pwr_led": {
+        "ports": [
+          "minimig_0/pwr_led",
+          "LED_POWER"
+        ]
+      },
+      "minimig_0_ram_address": {
+        "ports": [
+          "minimig_0/ram_address",
+          "sdram_ctrl_0_ram1/chipAddr"
+        ]
+      },
+      "minimig_0_ram_data": {
+        "ports": [
+          "minimig_0/ram_data",
+          "sdram_ctrl_0_ram1/chipWR"
+        ]
+      },
+      "minimig_0_rdata": {
+        "ports": [
+          "minimig_0/rdata",
+          "input_r_comb/Op2"
+        ]
+      },
+      "minimig_0_rdata_okk": {
+        "ports": [
+          "minimig_0/rdata_okk",
+          "input_r_comb/Op1"
+        ]
+      },
+      "minimig_0_res": {
+        "ports": [
+          "minimig_0/res",
+          "HPS_BUS/res"
+        ]
+      },
+      "minimig_0_rst_out": {
+        "ports": [
+          "minimig_0/rst_out",
+          "fastchip_0/reset"
+        ]
+      },
+      "minimig_0_rts": {
+        "ports": [
+          "minimig_0/rts",
+          "UART_RTS"
+        ]
+      },
+      "minimig_0_scanline": {
+        "ports": [
+          "minimig_0/scanline",
+          "VGA_SL"
+        ]
+      },
+      "minimig_0_toccata_aud_left": {
+        "ports": [
+          "minimig_0/toccata_aud_left",
+          "audio_l_comb_0/Op1"
+        ]
+      },
+      "minimig_0_toccata_aud_right": {
+        "ports": [
+          "minimig_0/toccata_aud_right",
+          "audio_r_comb_0/Op1"
+        ]
+      },
+      "minimig_0_txd": {
+        "ports": [
+          "minimig_0/txd",
+          "UART_TXD"
+        ]
+      },
+      "minimig_0_vblank": {
+        "ports": [
+          "minimig_0/vblank",
+          "vm_vblank2/Op1"
+        ]
+      },
+      "mt32pi_USER_OUT": {
+        "ports": [
+          "mt32pi/USER_OUT",
+          "USER_OUT"
+        ]
+      },
+      "mt32pi_midi_rx": {
+        "ports": [
+          "mt32pi/midi_rx",
+          "rxd_0/Op1"
+        ]
+      },
+      "mt32pi_mt32_available": {
+        "ports": [
+          "mt32pi/mt32_available",
+          "hps_status_0/Op1"
+        ]
+      },
+      "mt32pi_mt32_i2s_l": {
+        "ports": [
+          "mt32pi/mt32_i2s_l",
+          "audio_l_comb_1/Op1"
+        ]
+      },
+      "mt32pi_mt32_i2s_r": {
+        "ports": [
+          "mt32pi/mt32_i2s_r",
+          "audio_r_comb_1/Op1"
+        ]
+      },
+      "mt32pi_mt32_lcd_en": {
+        "ports": [
+          "mt32pi/mt32_lcd_en",
+          "vga_comb_1/Op1"
+        ]
+      },
+      "mt32pi_mt32_lcd_pix": {
+        "ports": [
+          "mt32pi/mt32_lcd_pix",
+          "vga_comb_1/Op2"
+        ]
+      },
+      "mt32pi_mt32_lcd_update": {
+        "ports": [
+          "mt32pi/mt32_lcd_update",
+          "vga_comb_2/Op2"
+        ]
+      },
+      "mt32pi_mt32_rom": {
+        "ports": [
+          "mt32pi/mt32_rom",
+          "hps_status_1/Op1"
+        ]
+      },
+      "mt32pi_mt32_sf": {
+        "ports": [
+          "mt32pi/mt32_sf",
+          "hps_status_1/Op2"
+        ]
+      },
+      "output2_l_comb_Res": {
+        "ports": [
+          "output2_l_comb/Res",
+          "audio_l_comb_0/Op2"
+        ]
+      },
+      "output2_r_comb_Res": {
+        "ports": [
+          "output2_r_comb/Res",
+          "audio_r_comb_0/Op2"
+        ]
+      },
+      "output_comb_Res": {
+        "ports": [
+          "output_comb/Res",
+          "lpf3275_IIR_filter_0/input_l",
+          "lpf3275_IIR_filter_0/input_r",
+          "output2_l_comb/Op1",
+          "output2_r_comb/Op1"
+        ]
+      },
+      "output_l_comb_Res": {
+        "ports": [
+          "output_l_comb/Res",
+          "output_comb/Op1"
+        ]
+      },
+      "output_r_comb_Res": {
+        "ports": [
+          "output_r_comb/Res",
+          "output_comb/Op2"
+        ]
+      },
+      "pll_config_0_locked": {
+        "ports": [
+          "pll_config_0/locked",
+          "pll_reset_reg/Op2"
+        ]
+      },
+      "pll_config_0_outclk_0": {
+        "ports": [
+          "pll_config_0/outclk_0",
+          "video_mixer/CLK_VIDEO",
+          "video_freak/CLK_VIDEO",
+          "CLK_VIDEO",
+          "fastchip_0/clk",
+          "sdram_ctrl_0_ram1/sysclk",
+          "ddram_ctrl_0_ram2/sysclk",
+          "mt32pi/CLK_VIDEO"
+        ]
+      },
+      "pll_config_0_outclk_1": {
+        "ports": [
+          "pll_config_0/outclk_1",
+          "hps_io_hier/clk_sys",
+          "amiga_clk_0/clk_28",
+          "lpf4400_IIR_filter_0/clk",
+          "lpf3275_IIR_filter_0/clk",
+          "fastchip_0/clk_sys",
+          "minimig_0/clk",
+          "cpu_wrapper_0/clk",
+          "hps_ext_0/clk_sys",
+          "cdda_0/CLK"
+        ]
+      },
+      "pll_reset_reg_2_Res": {
+        "ports": [
+          "pll_reset_reg_2/Res",
+          "pll_reset_reg/Op1"
+        ]
+      },
+      "pll_reset_reg_Res": {
+        "ports": [
+          "pll_reset_reg/Res",
+          "amiga_clk_0/reset_n",
+          "sdram_ctrl_0_ram1/reset_n",
+          "minimig_0/rst_ext",
+          "mt32pi/reset",
+          "ddram_ctrl_0_ram2/reset_n",
+          "cdda_0/nRESET"
+        ]
+      },
+      "rxd_0_Res": {
+        "ports": [
+          "rxd_0/Res",
+          "minimig_0/rxd"
+        ]
+      },
+      "rxd_1_Res": {
+        "ports": [
+          "rxd_1/Res",
+          "rxd_0/Op2"
+        ]
+      },
+      "sdram_ctrl_0_ram1_chip48": {
+        "ports": [
+          "sdram_ctrl_0_ram1/chip48",
+          "minimig_0/chip48"
+        ]
+      },
+      "sdram_ctrl_0_ram1_chipRD": {
+        "ports": [
+          "sdram_ctrl_0_ram1/chipRD",
+          "minimig_0/ramdata_in"
+        ]
+      },
+      "sdram_ctrl_0_ram1_cpuRD": {
+        "ports": [
+          "sdram_ctrl_0_ram1/cpuRD",
+          "cpu_wrap_1/Op1"
+        ]
+      },
+      "sdram_ctrl_0_ram1_ramready": {
+        "ports": [
+          "sdram_ctrl_0_ram1/ramready",
+          "cpu_wrap_2/Op1"
+        ]
+      },
+      "sdram_ctrl_0_ram1_sd_addr": {
+        "ports": [
+          "sdram_ctrl_0_ram1/sd_addr",
+          "SDRAM_A"
+        ]
+      },
+      "sdram_ctrl_0_ram1_sd_ba": {
+        "ports": [
+          "sdram_ctrl_0_ram1/sd_ba",
+          "SDRAM_BA"
+        ]
+      },
+      "sdram_ctrl_0_ram1_sd_cas": {
+        "ports": [
+          "sdram_ctrl_0_ram1/sd_cas",
+          "SDRAM2_nCAS"
+        ]
+      },
+      "sdram_ctrl_0_ram1_sd_cke": {
+        "ports": [
+          "sdram_ctrl_0_ram1/sd_cke",
+          "SDRAM_CKE"
+        ]
+      },
+      "sdram_ctrl_0_ram1_sd_clk": {
+        "ports": [
+          "sdram_ctrl_0_ram1/sd_clk",
+          "SDRAM_CLK"
+        ]
+      },
+      "sdram_ctrl_0_ram1_sd_cs": {
+        "ports": [
+          "sdram_ctrl_0_ram1/sd_cs",
+          "SDRAM_nCS"
+        ]
+      },
+      "sdram_ctrl_0_ram1_sd_dqm": {
+        "ports": [
+          "sdram_ctrl_0_ram1/sd_dqm",
+          "SDRAM_DQMH",
+          "SDRAM_DQML"
+        ]
+      },
+      "sdram_ctrl_0_ram1_sd_ras": {
+        "ports": [
+          "sdram_ctrl_0_ram1/sd_ras",
+          "SDRAM_nRAS"
+        ]
+      },
+      "sdram_ctrl_0_ram1_sd_we": {
+        "ports": [
+          "sdram_ctrl_0_ram1/sd_we",
+          "SDRAM_nWE"
+        ]
+      },
+      "vga_b_comb_0_Res": {
+        "ports": [
+          "vga_b_comb_0/Res",
+          "VGA_B"
+        ]
+      },
+      "vga_comb_1_Res": {
+        "ports": [
+          "vga_comb_1/Res",
+          "vga_comb_2/Op1"
+        ]
+      },
+      "vga_comb_2_Res": {
+        "ports": [
+          "vga_comb_2/Res",
+          "vga_b_comb_0/Op2",
+          "vga_g_omb_0/Op2",
+          "vga_r_comb_0/Op2"
+        ]
+      },
+      "vga_g_omb_0_Res": {
+        "ports": [
+          "vga_g_omb_0/Res",
+          "VGA_G"
+        ]
+      },
+      "vga_r_comb_0_Res": {
+        "ports": [
+          "vga_r_comb_0/Res",
+          "VGA_R"
+        ]
+      },
+      "video_freak_VIDEO_ARX": {
+        "ports": [
+          "video_freak/VIDEO_ARX",
+          "VIDEO_ARX"
+        ]
+      },
+      "video_freak_VIDEO_ARY": {
+        "ports": [
+          "video_freak/VIDEO_ARY",
+          "VIDEO_ARY"
+        ]
+      },
+      "video_mixer_CE_PIXEL": {
+        "ports": [
+          "video_mixer/CE_PIXEL",
+          "video_freak/CE_PIXEL",
+          "CE_PIXEL"
+        ]
+      },
+      "video_mixer_VGA_B": {
+        "ports": [
+          "video_mixer/VGA_B",
+          "vga_b_comb_0/Op1"
+        ]
+      },
+      "video_mixer_VGA_DE": {
+        "ports": [
+          "video_mixer/VGA_DE",
+          "video_freak/VGA_DE_IN",
+          "VGA_DE",
+          "mt32pi/VGA_DE"
+        ]
+      },
+      "video_mixer_VGA_G": {
+        "ports": [
+          "video_mixer/VGA_G",
+          "vga_g_omb_0/Op1"
+        ]
+      },
+      "video_mixer_VGA_HS": {
+        "ports": [
+          "video_mixer/VGA_HS",
+          "VGA_HS"
+        ]
+      },
+      "video_mixer_VGA_R": {
+        "ports": [
+          "video_mixer/VGA_R",
+          "vga_r_comb_0/Op1"
+        ]
+      },
+      "video_mixer_VGA_VS": {
+        "ports": [
+          "video_mixer/VGA_VS",
+          "video_freak/VGA_VS",
+          "VGA_VS",
+          "mt32pi/VGA_VS"
+        ]
+      },
+      "vm_vblank2_Res": {
+        "ports": [
+          "vm_vblank2/Res",
+          "video_mixer/VBlank"
+        ]
+      },
+      "vm_vblank_Res": {
+        "ports": [
+          "vm_vblank/Res",
+          "vm_vblank2/Op2"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "lpf4400_IIR_filter_0/cx"
+        ]
+      },
+      "xlconstant_1_dout": {
+        "ports": [
+          "xlconstant_1/dout",
+          "minimig_0/ri"
+        ]
+      },
+      "xlconstant_2_dout": {
+        "ports": [
+          "xlconstant_2/dout",
+          "video_mixer/HDMI_FREEZE"
+        ]
+      }
+    },
+    "comments": {
+      "/": {
+        "comment_0": "To Be Completed"
+      }
+    }
+  }
+}

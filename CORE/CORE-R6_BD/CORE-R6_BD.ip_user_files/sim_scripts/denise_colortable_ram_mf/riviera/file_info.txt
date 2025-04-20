@@ -1,0 +1,7 @@
+xpm_memory.sv,systemverilog,xpm,C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,
+xpm_cdc.sv,systemverilog,xpm,C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,
+xpm_fifo.sv,systemverilog,xpm,C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv,
+xpm_VCOMP.vhd,vhdl,xpm,C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_VCOMP.vhd,
+blk_mem_gen_v8_4.v,verilog,blk_mem_gen_v8_4_10,../../../ipstatic/simulation/blk_mem_gen_v8_4.v,
+denise_colortable_ram_mf.v,verilog,xil_defaultlib,../../../../CORE-R6_BD.gen/sources_1/ip/denise_colortable_ram_mf/sim/denise_colortable_ram_mf.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,31 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-1361,-448",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port port-id_X_clk_sys -pg 1 -lvl 0 -x -30 -y 180 -defaultsOSRD
+preplace port port-id_clk_vid -pg 1 -lvl 0 -x -30 -y 200 -defaultsOSRD
+preplace port port-id_ce_pix -pg 1 -lvl 0 -x -30 -y 160 -defaultsOSRD
+preplace port port-id_X_gamma_en -pg 1 -lvl 0 -x -30 -y 220 -defaultsOSRD
+preplace port port-id_gamma_wr -pg 1 -lvl 0 -x -30 -y 240 -defaultsOSRD
+preplace port port-id_HSync -pg 1 -lvl 0 -x -30 -y 100 -defaultsOSRD
+preplace port port-id_VSync -pg 1 -lvl 0 -x -30 -y 140 -defaultsOSRD
+preplace port port-id_HBlank -pg 1 -lvl 0 -x -30 -y 80 -defaultsOSRD
+preplace port port-id_VBlank -pg 1 -lvl 0 -x -30 -y 120 -defaultsOSRD
+preplace port port-id_HSync_out -pg 1 -lvl 1 -x 10 -y 60 -defaultsOSRD
+preplace port port-id_VSync_out -pg 1 -lvl 1 -x 10 -y 100 -defaultsOSRD
+preplace port port-id_HBlank_out -pg 1 -lvl 1 -x 10 -y 40 -defaultsOSRD
+preplace port port-id_VBlank_out -pg 1 -lvl 1 -x 10 -y 80 -defaultsOSRD
+preplace port port-id_clk_sys_io -pg 1 -lvl 1 -x 10 -y 120 -defaultsOSRD
+preplace port port-id_gamma_en_io -pg 1 -lvl 1 -x 10 -y 140 -defaultsOSRD
+preplace portBus gamma_wr_addr -pg 1 -lvl 0 -x -30 -y 60 -defaultsOSRD
+preplace portBus gamma_value -pg 1 -lvl 0 -x -30 -y 40 -defaultsOSRD
+preplace portBus RGB_in -pg 1 -lvl 0 -x -30 -y 20 -defaultsOSRD
+preplace portBus RGB_out -pg 1 -lvl 1 -x 10 -y 20 -defaultsOSRD
+levelinfo -pg 1 -30 10
+pagesize -pg 1 -db -bbox -sgen -210 0 160 260
+"
+}
+

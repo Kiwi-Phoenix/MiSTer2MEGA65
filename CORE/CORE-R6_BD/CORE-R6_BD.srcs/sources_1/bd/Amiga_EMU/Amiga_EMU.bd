@@ -1,0 +1,523 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x2940302015540EA9",
+      "device": "xc7a200tfbg484-3",
+      "gen_directory": "../../../../CORE-R6_BD.gen/sources_1/bd/Amiga_EMU",
+      "name": "Amiga_EMU",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.2.1",
+      "validated": "true"
+    },
+    "design_tree": {},
+    "ports": {
+      "CLK_50M": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "Amiga_EMU_CLK_50M",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "50000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "RESET": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "HPS_BUS": {
+        "direction": "IO",
+        "left": "48",
+        "right": "0"
+      },
+      "CLK_VIDEO": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "CE_PIXEL": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "VIDEO_ARX": {
+        "direction": "O",
+        "left": "12",
+        "right": "0"
+      },
+      "VIDEO_ARY": {
+        "direction": "O",
+        "left": "12",
+        "right": "0"
+      },
+      "VIDEO_R": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "VGA_G": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "VGA_B": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "VGA_HS": {
+        "direction": "O"
+      },
+      "VGA_VS": {
+        "direction": "O"
+      },
+      "VGA_DE": {
+        "direction": "O"
+      },
+      "VGA_F1": {
+        "direction": "O"
+      },
+      "VGA_SL": {
+        "direction": "O",
+        "left": "1",
+        "right": "0"
+      },
+      "VGA_SCALER": {
+        "direction": "O"
+      },
+      "VGA_DISABLE": {
+        "direction": "O"
+      },
+      "HDMI_WIDTH": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "HDMI_HEIGHT": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "HDMI_FREEZE": {
+        "direction": "O"
+      },
+      "FB_EN": {
+        "direction": "O"
+      },
+      "FB_FORMAT": {
+        "direction": "O",
+        "left": "4",
+        "right": "0"
+      },
+      "FB_WIDTH": {
+        "direction": "O",
+        "left": "11",
+        "right": "0"
+      },
+      "FB_HEIGHT": {
+        "direction": "O",
+        "left": "11",
+        "right": "0"
+      },
+      "FB_BASE": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "FB_STRIDE": {
+        "direction": "O",
+        "left": "13",
+        "right": "0"
+      },
+      "FB_VBL": {
+        "direction": "I"
+      },
+      "FB_LL": {
+        "direction": "I"
+      },
+      "FB_FORCE_BLANK": {
+        "direction": "O"
+      },
+      "FB_PAL_CLK": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "FB_PAL_ADDR": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "FB_PAL_DOUT": {
+        "direction": "O",
+        "left": "23",
+        "right": "0"
+      },
+      "FB_PAL_DIN": {
+        "direction": "I",
+        "left": "23",
+        "right": "0"
+      },
+      "FB_PAL_WR": {
+        "direction": "O"
+      },
+      "LED_USER": {
+        "direction": "O"
+      },
+      "LED_POWER": {
+        "direction": "O",
+        "left": "1",
+        "right": "0"
+      },
+      "LED_DISK": {
+        "direction": "O",
+        "left": "1",
+        "right": "0"
+      },
+      "BUTTONS": {
+        "direction": "O",
+        "left": "1",
+        "right": "0"
+      },
+      "CLK_AUDIO": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "Amiga_EMU_CLK_AUDIO",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "AUDIO_L": {
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      },
+      "AUDIO_R": {
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      },
+      "AUDIO_S": {
+        "direction": "O"
+      },
+      "AUDIO_MIX": {
+        "direction": "O",
+        "left": "1",
+        "right": "0"
+      },
+      "ADC_BUS": {
+        "direction": "IO",
+        "left": "3",
+        "right": "0"
+      },
+      "SD_SCK": {
+        "direction": "O"
+      },
+      "SD_MOSI": {
+        "direction": "O"
+      },
+      "SD_MISO": {
+        "direction": "I"
+      },
+      "SD_CS": {
+        "direction": "O"
+      },
+      "SD_CD": {
+        "direction": "I"
+      },
+      "DDRAM_CLK": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "DDRAM_BUSY": {
+        "direction": "I"
+      },
+      "DDRAM_BURSTCNT": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "DDRAM_ADDR": {
+        "direction": "O",
+        "left": "28",
+        "right": "0"
+      },
+      "DDRAM_DOUT": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "DDRAM_DOUT_READY": {
+        "direction": "I"
+      },
+      "DDRAM_RD": {
+        "direction": "O"
+      },
+      "DDRAM_DIN": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "DDRAM_BE": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "DDRAM_WE": {
+        "direction": "O"
+      },
+      "SDRAM_CLK": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "SDRAM_CKE": {
+        "direction": "O"
+      },
+      "SDRAM_A": {
+        "direction": "O",
+        "left": "12",
+        "right": "0"
+      },
+      "SDRAM_BA": {
+        "direction": "O",
+        "left": "1",
+        "right": "0"
+      },
+      "SDRAM_DQ": {
+        "direction": "IO",
+        "left": "15",
+        "right": "0"
+      },
+      "SDRAM_DQML": {
+        "direction": "O"
+      },
+      "SDRAM_DQMH": {
+        "direction": "O"
+      },
+      "SDRAM_nCS": {
+        "direction": "O"
+      },
+      "SDRAM_nCAS": {
+        "direction": "O"
+      },
+      "SDRAM_nRAS": {
+        "direction": "O"
+      },
+      "SDRAM_nWE": {
+        "direction": "O"
+      },
+      "SDRAM2_EN": {
+        "direction": "I"
+      },
+      "SDRAM2_CLK": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "SDRAM2_A": {
+        "direction": "O",
+        "left": "12",
+        "right": "0"
+      },
+      "SDRAM2_BA": {
+        "direction": "O",
+        "left": "1",
+        "right": "0"
+      },
+      "SDRAM2_DQ": {
+        "direction": "IO",
+        "left": "15",
+        "right": "0"
+      },
+      "SDRAM2_nCS": {
+        "direction": "O"
+      },
+      "SDRAM2_nCAS": {
+        "direction": "O"
+      },
+      "SDRAM2_nRAS": {
+        "direction": "O"
+      },
+      "SDRAM2_nWE": {
+        "direction": "O"
+      },
+      "UART_CTS": {
+        "direction": "I"
+      },
+      "UART_RTS": {
+        "direction": "O"
+      },
+      "UART_RXD": {
+        "direction": "I"
+      },
+      "UART_TXD": {
+        "direction": "O"
+      },
+      "UART_DTR": {
+        "direction": "O"
+      },
+      "UART_DSR": {
+        "direction": "I"
+      },
+      "USER_IN": {
+        "direction": "I",
+        "left": "6",
+        "right": "0"
+      },
+      "USER_OUT": {
+        "direction": "O",
+        "left": "6",
+        "right": "0"
+      },
+      "OSD_STATUS": {
+        "direction": "I"
+      }
+    }
+  }
+}

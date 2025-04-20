@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Mar 16 14:34:11 2025" VIVADOVERSION="2024.2.1">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a200t" NAME="M65_vdrives" PACKAGE="fbg484" SPEEDGRADE="-3"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="O" LEFT="0" NAME="cache_dirty_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="1" NAME="cache_flushing_o" RIGHT="0" SIGIS="undef"/>
+    <PORT CLKFREQUENCY="50000000" DIR="I" NAME="clk_core_i" SIGIS="clk"/>
+    <PORT CLKFREQUENCY="50000000" DIR="I" NAME="clk_qnice_i" SIGIS="clk"/>
+    <PORT DIR="O" LEFT="0" NAME="drive_mounted_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="0" NAME="img_mounted_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="img_readonly_o" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="31" NAME="img_size_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="1" NAME="img_type_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="27" NAME="qnice_addr_i" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="qnice_ce_i" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="15" NAME="qnice_data_i" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="15" NAME="qnice_data_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" NAME="qnice_we_i" SIGIS="undef"/>
+    <PORT DIR="I" NAME="reset_core_i" POLARITY="ACTIVE_HIGH" SIGIS="rst"/>
+    <PORT DIR="O" LEFT="0" NAME="sd_ack_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="5" NAME="sd_blk_cnt_i" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="13" NAME="sd_buff_addr_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="7" NAME="sd_buff_din_i" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" LEFT="7" NAME="sd_buff_dout_o" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="O" NAME="sd_buff_wr_o" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="31" NAME="sd_lba_i" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="0" NAME="sd_rd_i" RIGHT="0" SIGIS="undef"/>
+    <PORT DIR="I" LEFT="0" NAME="sd_wr_i" RIGHT="0" SIGIS="undef"/>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES/>
+
+</EDKSYSTEM>

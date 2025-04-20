@@ -1,0 +1,35 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-1358,-448",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port port-id_CLK_AUDIO -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace port port-id_CLK_VIDEO -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace port port-id_CE_PIXEL -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
+preplace port port-id_VGA_VS -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
+preplace port port-id_VGA_DE -pg 1 -lvl 0 -x 0 -y 140 -defaultsOSRD
+preplace port port-id_reset -pg 1 -lvl 0 -x 0 -y 220 -defaultsOSRD
+preplace port port-id_midi_tx -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
+preplace port port-id_midi_rx -pg 1 -lvl 1 -x 40 -y 140 -defaultsOSRD
+preplace port port-id_mt32_available -pg 1 -lvl 1 -x 40 -y 160 -defaultsOSRD
+preplace port port-id_mt32_mode_req -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
+preplace port port-id_mt32_newmode -pg 1 -lvl 1 -x 40 -y 240 -defaultsOSRD
+preplace port port-id_mt32_lcd_en -pg 1 -lvl 1 -x 40 -y 180 -defaultsOSRD
+preplace port port-id_mt32_lcd_pix -pg 1 -lvl 1 -x 40 -y 200 -defaultsOSRD
+preplace port port-id_mt32_lcd_update -pg 1 -lvl 1 -x 40 -y 220 -defaultsOSRD
+preplace portBus USER_IN -pg 1 -lvl 0 -x 0 -y 20 -defaultsOSRD
+preplace portBus USER_OUT -pg 1 -lvl 1 -x 40 -y 20 -defaultsOSRD
+preplace portBus mt32_i2s_r -pg 1 -lvl 1 -x 40 -y 60 -defaultsOSRD
+preplace portBus mt32_i2s_l -pg 1 -lvl 1 -x 40 -y 40 -defaultsOSRD
+preplace portBus mt32_rom_req -pg 1 -lvl 0 -x 0 -y 40 -defaultsOSRD
+preplace portBus mt32_sf_req -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
+preplace portBus mt32_mode -pg 1 -lvl 1 -x 40 -y 80 -defaultsOSRD
+preplace portBus mt32_rom -pg 1 -lvl 1 -x 40 -y 100 -defaultsOSRD
+preplace portBus mt32_sf -pg 1 -lvl 1 -x 40 -y 120 -defaultsOSRD
+levelinfo -pg 1 0 40
+pagesize -pg 1 -db -bbox -sgen -170 0 200 260
+"
+}
+
